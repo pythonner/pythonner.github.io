@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Innodata Public Datasets Survey</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!--[if lte IE 9]>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="row">
+    <div class="">
+      <a href="http://www.innodata.com/" class="is-logo"><img src="images/Innodata-Logo.png"  ></a>
+    </div>
+    <div class="searchbox-container">
+      <div class="input-group">
+        <input type="text" class="form-control" id="q" />
+        <span class="input-group-btn">
+          <button class="btn btn-default"><i class="fa fa-search"></i></button>
+        </span>
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <section class="">
+    
+    <ads>
+    <ul class="nav">
+      <li><a href="http://innodata.com/solutions/business-info-media/content-transformation-enrichment/?ref=public_search">Learn how Innodata can help <b>turn raw data into smart data</b>.</a></li>
+      <li><a href="http://innodata.com/solutions/business-info-media/content-transformation-enrichment/?ref=public_search"><img src="images/smart-data.png"></a></li>
+      <li class="separator"></li>
+      <li><a href="http://innodata.com/solutions/enterprises/machine-learning-solutions/?ref=public_search">Learn how Innodata can help <b>leverage your data with Machine Learning</b>.</a></li>
+      <li><a href="http://innodata.com/solutions/enterprises/machine-learning-solutions/?ref=public_search"><img src="images/machine-learning.png"></a></li>
+      <li class="separator"></li>
+    </ul>
+    </ads>
+
+    <aside>
+      <ul class="nav nav-list">
+        <li><a href="public_datasets.html"><i class="fa fa-home"></i> Public Datasets Survey</a></li>
+        <li class="separator"></li>
+      </ul>
+
+      <h5><i class="fa fa-chevron-right"></i> Organizations</h5>
+      <div id="organizations"></div>
+      <h5><i class="fa fa-chevron-right"></i> Formats</h5>
+      <div id="formats"></div>
+      <h5><i class="fa fa-chevron-right"></i> Domains</h5>
+      <div id="domains"></div>
+      <h5><i class="fa fa-chevron-right"></i> Dataset size (Mb)</h5>
+      <div id="sizemb"></div>
+      <hr />
+
+      <div class="thank-you"><img src="images/algolia-powered-by.svg"></div>
+      <div class="thank-you">    
+          <a href="http://innodata.com/privacy-policy/">privacy policy</a>
+      </div>
+
+    </aside>
+    <article>
+      <div id="stats" class="text-right text-muted"></div>
+      <hr />
+      <div id="hits"></div>
+      <div id="pagination" class="text-center"></div>
+    </article>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
+  
+  <script src="js/search.js"></script>
+
+  <script src="js/script.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38697747-4', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+</body>
+</html>
