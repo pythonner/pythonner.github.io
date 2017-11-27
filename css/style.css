@@ -464,6 +464,22 @@ strong, .bold {
 .bg-contrast {
   background: #fff;
 }
+.bg-contrast-purple {
+  background: #2E369D;
+  height: 460px;
+}
+.bg-contrast-purple--before {
+  position: relative;
+}
+.bg-contrast-purple--before:before {
+  content: '';
+  position: absolute;
+  background: #2E369D;
+  height: 460px;
+  width: 5000px;
+  right: 100%;
+  top: 0;
+}
 
 .bg-contrast--after {
   position: relative;
@@ -504,11 +520,11 @@ strong, .bold {
 .bg-img {
   -webkit-background-size: cover;
   background-size: cover;
-  background: url("../images/bg2.jpg") no-repeat fixed;
+  background: url("../images/bg1.jpg") no-repeat fixed;
 }
 @media (max-width: 1199px) {
   .bg-img {
-    background: url("../images/bg2.jpg") no-repeat scroll center center;
+    background: url("../images/bg1.jpg") no-repeat scroll center center;
   }
 }
 
@@ -716,6 +732,8 @@ strong, .bold {
 }
 .thumb-wrap .thumb {
   display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 @media (max-width: 991px) {
   .thumb-wrap .thumb {
