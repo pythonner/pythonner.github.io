@@ -466,7 +466,7 @@ strong, .bold {
 }
 .bg-contrast-purple {
   background: #2E369D;
-  height: 460px;
+  min-height: 460px;
 }
 .bg-contrast-purple--before {
   position: relative;
@@ -740,9 +740,7 @@ strong, .bold {
     float: left;
     width: 50%;
   }
-  .thumb-wrap .thumb:first-child {
-    width: 100%;
-  }
+
 }
 
 /*==================  Team   ======================*/
