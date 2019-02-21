@@ -99,7 +99,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#authority',
-    attributeName: 'Authority',
+    attributeName: 'authority',
     limit: 5,
     showMore: true,
     cssClasses: {
