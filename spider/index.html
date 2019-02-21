@@ -8,57 +8,50 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/main_public_dataset.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/main_public_dataset.css" /> -->
 </head>
 <body>
-  <header class="row">
+  <div class="section">
     <div class="">
       <a href="https://www.innodata.com/" class="is-logo"><img src="images/innodata-logo.png"  ></a>
       <!-- <a href="https://www.innodata.com/" class="is-logo"><img src="images/spider-hanging.png"  ></a> -->
     </div>
-    <div class="searchbox-container">
-      <div class="input-group">
-        <input type="text" class="form-control" id="q" />
-        <span class="input-group-btn">
-          <button class="btn btn-default"><i class="fa fa-search"></i></button>
-        </span>
+  </div>
+  <div class="">
+      <div class="field">
+        <div class="control has-icons-left">
+          <input class="input is-info is-medium" type="text" placeholder="Search Me" id="q" >
+        </div>
       </div>
-
     </div>
-  </header>
-
-  <section class="">
-    <aside>
-      <h5><i class="fa fa-chevron-right"></i> Keywords</h5>
-      <div id="keywords"></div>
-      <h5><i class="fa fa-chevron-right"></i> Topic</h5>
-      <div id="topic"></div>
-      <h5><i class="fa fa-chevron-right"></i> Authority</h5>
-      <div id="authority"></div>
-      <h5><i class="fa fa-chevron-right"></i> Content Type</h5>
-      <div id="content-type"></div>
-      <h5><i class="fa fa-chevron-right"></i> Jurisdiction</h5>
-      <div id="jurisdiction"></div>
-      <h5><i class="fa fa-chevron-right"></i> Source</h5>
-      <div id="source"></div>
-      <h5><i class="fa fa-chevron-right"></i> Compliance User</h5>
-      <div id="compliance-user"></div>
-      <hr />
-
-      <!-- <div class="thank-you"><img src="images/algolia-powered-by.svg"></div>
-      <div class="thank-you">Copyright © 2019 Innodata Inc.</div>
-      <div class="thank-you">
-          <a href="https://innodata.com/privacy-policy/">privacy policy</a>
-      </div> -->
-
-    </aside>
-    <article>
-      <div id="stats" class="text-right text-muted"></div>
-      <hr />
-      <div id="hits"></div>
-      <div id="pagination" class="text-center"></div>
-    </article>
-  </section>
+  </div>
+  <div class="columns">
+    <div class="column is-one-third">
+      <section class="section has-background-white-ter">
+        <div class="control">
+          <h5><i class="fa fa-chevron-right"></i> Topic</h5>
+          <div id="topic"></div>
+          <h5><i class="fa fa-chevron-right"></i> Keywords</h5>
+          <div id="keywords"></div>
+          <h5><i class="fa fa-chevron-right"></i> Authority</h5>
+          <div id="authority"></div>
+          <h5><i class="fa fa-chevron-right"></i> Content Type</h5>
+          <div id="content-type"></div>
+          <h5><i class="fa fa-chevron-right"></i> Jurisdiction</h5>
+          <div id="jurisdiction"></div>
+          <h5><i class="fa fa-chevron-right"></i> Source</h5>
+          <div id="source"></div>
+          <h5><i class="fa fa-chevron-right"></i> Compliance User</h5>
+          <div id="compliance-user"></div>
+        </div>
+      </section>
+    </div>
+    <div class="column">
+        <div id="stats" class="text-right text-muted"></div>
+        <div id="hits" class="section"></div>
+        <div id="pagination" class="text-center"></div>
+    </div>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>

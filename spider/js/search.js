@@ -20,8 +20,8 @@ search.addWidget(
 );
 
 var hitTemplate =
-  '<div class="hit media">' +
-    '<div class="media-body">' +
+  '<div class="hit section">' +
+    '<div class="media-content">' +
       '<a href="files/{{basename}}" target="_blank"><h4 class="media-heading">{{h1}}</h4></a>' +
       '<p class="description">{{source}} | {{jurisdiction}} | {{content_type}}</p>'+
       '<p>{{Authority}}</p>'
