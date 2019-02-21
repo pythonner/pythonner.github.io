@@ -22,13 +22,9 @@ search.addWidget(
 var hitTemplate =
   '<div class="hit media">' +
     '<div class="media-body">' +
-      '<a href="{{Url}}"><h4 class="media-heading">{{{_highlightResult.Name.value}}}</h4></a>' +
-      '<p class="description">{{{_highlightResult.Description.value}}}</p>'+
-      '<p class="genre">'+
-          '<span class="badge">by: {{{_highlightResult.Host.value}}}</span>&nbsp;'+
-          '<span class="badge">{{{_highlightResult.Format.value}}}</span>&nbsp;'+
-          '<span class="badge">{{{_highlightResult.Domain.value}}}</span>&nbsp;'+
-      '</p>' +
+      '<a href="files/{{basename}}" target="_blank"><h4 class="media-heading">{{h1}}</h4></a>' +
+      '<p class="description">{{source}} | {{jurisdiction}} | {{content_type}}</p>'+
+      '<p>{{Authority}}</p>'
     '</div>' +
   '</div>';
 
@@ -57,25 +53,25 @@ search.addWidget(
   })
 );
 
-search.addWidget(
-  instantsearch.widgets.rangeSlider({
-    container: '#sizemb',
-    attributeName: 'Size',
-    min: 0,
-    max: 100000,
-    step: 1000,
-    pips: false,
-    tooltips: {format: function(rawValue) {return parseInt(rawValue)}},
-    cssClasses: {
-      body: 'nav-narrow'
-    }
-  })
-);
+// search.addWidget(
+//   instantsearch.widgets.rangeSlider({
+//     container: '#sizemb',
+//     attributeName: 'Size',
+//     min: 0,
+//     max: 100000,
+//     step: 1000,
+//     pips: false,
+//     tooltips: {format: function(rawValue) {return parseInt(rawValue)}},
+//     cssClasses: {
+//       body: 'nav-narrow'
+//     }
+//   })
+// );
 
 search.addWidget(
   instantsearch.widgets.refinementList({
-    container: '#organizations',
-    attributeName: 'Host',
+    container: '#keywords',
+    attributeName: 'Keywords',
     limit: 5,
     showMore: true,
     cssClasses: {
@@ -88,8 +84,8 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.refinementList({
-    container: '#formats',
-    attributeName: 'Format',
+    container: '#topic',
+    attributeName: 'Topic',
     limit: 5,
     showMore: true,
     cssClasses: {
@@ -102,8 +98,64 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.refinementList({
-    container: '#domains',
-    attributeName: 'Domain',
+    container: '#authority',
+    attributeName: 'Authority',
+    limit: 5,
+    showMore: true,
+    cssClasses: {
+      list: 'nav nav-list',
+      count: 'badge pull-right',
+      active: 'active'
+    }
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#content-type',
+    attributeName: 'content_type',
+    limit: 5,
+    showMore: true,
+    cssClasses: {
+      list: 'nav nav-list',
+      count: 'badge pull-right',
+      active: 'active'
+    }
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#jurisdiction',
+    attributeName: 'jurisdiction',
+    limit: 5,
+    showMore: true,
+    cssClasses: {
+      list: 'nav nav-list',
+      count: 'badge pull-right',
+      active: 'active'
+    }
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#source',
+    attributeName: 'source',
+    limit: 5,
+    showMore: true,
+    cssClasses: {
+      list: 'nav nav-list',
+      count: 'badge pull-right',
+      active: 'active'
+    }
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#compliance-user',
+    attributeName: 'Compliance User',
     limit: 5,
     showMore: true,
     cssClasses: {

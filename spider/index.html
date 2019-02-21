@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <title>Innodata Spider</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css" />
   <link rel="stylesheet" type="text/css" href="css/main_public_dataset.css" />
-  <!--[if lte IE 9]>
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-  <![endif]-->
 </head>
 <body>
   <header class="row">
     <div class="">
       <a href="https://www.innodata.com/" class="is-logo"><img src="images/innodata-logo.png"  ></a>
-      <a href="https://www.innodata.com/" class="is-logo"><img src="images/spider-hanging.png"  ></a>
+      <!-- <a href="https://www.innodata.com/" class="is-logo"><img src="images/spider-hanging.png"  ></a> -->
     </div>
     <div class="searchbox-container">
       <div class="input-group">
@@ -27,30 +25,30 @@
       </div>
 
     </div>
-
-
   </header>
 
   <section class="">
     <aside>
-      <ul class="nav nav-list">
-        <li><a href="public_datasets.html"><i class="fa fa-home"></i> Public Datasets Survey</a></li>
-        <li class="separator"></li>
-      </ul>
-
-      <h5><i class="fa fa-chevron-right"></i> Organizations</h5>
-      <div id="organizations"></div>
-      <h5><i class="fa fa-chevron-right"></i> Formats</h5>
-      <div id="formats"></div>
-      <h5><i class="fa fa-chevron-right"></i> Domains</h5>
-      <div id="domains"></div>
-      <h5><i class="fa fa-chevron-right"></i> Dataset size (Mb)</h5>
-      <div id="sizemb"></div>
+      <h4>Keywords</h4>
+      <h5><i class="fa fa-chevron-right"></i> Keywords</h5>
+      <div id="keywords"></div>
+      <h5><i class="fa fa-chevron-right"></i> Topic</h5>
+      <div id="topic"></div>
+      <h5><i class="fa fa-chevron-right"></i> Authority</h5>
+      <div id="authority"></div>
+      <h5><i class="fa fa-chevron-right"></i> Content Type</h5>
+      <div id="content-type"></div>
+      <h5><i class="fa fa-chevron-right"></i> Jurisdiction</h5>
+      <div id="jurisdiction"></div>
+      <h5><i class="fa fa-chevron-right"></i> Source</h5>
+      <div id="source"></div>
+      <h5><i class="fa fa-chevron-right"></i> Compliance User</h5>
+      <div id="compliance-user"></div>
       <hr />
 
       <div class="thank-you"><img src="images/algolia-powered-by.svg"></div>
       <div class="thank-you">Copyright © 2019 Innodata Inc.</div>
-      <div class="thank-you">    
+      <div class="thank-you">
           <a href="https://innodata.com/privacy-policy/">privacy policy</a>
       </div>
 

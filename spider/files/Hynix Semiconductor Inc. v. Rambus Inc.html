@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+			}
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: United States</code>
+  <code class="meta">authority: United States District Court, N.D. California, San Jose Division</code>
+  <code class="meta">content_type: Case</code>
+  <code class="meta">document_title: Hynix Semiconductor Inc. v. Rambus Inc.</code>
+  <code class="meta">source: Case Law</code>
+  <div class="level2"><code class="pubeffdate">pubdate: 2006-07-06T00:00:00 effdate: 2006-07-06T00:00:00</code>
+    <h1 class="headline">Hynix Semiconductor Inc. v. Rambus Inc.</h1>
+    <code class="topic">Topic: Banking Financial Services Review, Record Retention, Legal Standards</code>
+    <code class="compliance_user">Compliance User: N/A</code>
+    <code class="keywords">Keywords: 
+      Legal Standards, 
+      Retention Policies, 
+      Statutes of Limitations, 
+    </code>
+    <p id="babc76ba-185c-4db5-b05b-88faad79f564">United States District Court, N.D. California, San Jose Division Jul 6, 2006</p>
+    <p id="27f76f92-06eb-4f8c-a835-c942fda820df">No. CV-00-20905 RMW, [Re Docket Nos. 1724, 1803, 1827, 1853]. (N.D. Cal. Jul. 6, 2006)</p>
+    <p id="b6abd6d3-7449-458f-b5e2-dd7e45029932">ORDER GRANTING SUMMARY ADJUDICATION OF HYNIX'S ANTITRUST AND UNFAIR COMPETITION CLAIMS BASED ON "RDRAM DOMINANCE" AND "DDR SUPPRESSION"</p>
+    <p id="1b0caee5-d337-4bc4-8ccf-804e9ef5c314">RONALD WHYTE, District Judge</p>
+    <p id="02d8d1a1-b9f1-4a9a-8936-8f3f87180e7e">Defendant Rambus Inc. ("Rambus") moves for summary judgment on the first and third claims for relief in the Second Amended Complaint ("SAC") filed by plaintiffs Hynix Semiconductor Inc., Hynix Semiconductor America Inc., Hynix Semiconductor U.K. Ltd., and Hynix Semiconductor Deutschland GmbH ("Hynix") to the extent such claims are premised upon Rambus's purported efforts to make RDRAM the dominant memory device and to suppress DDR SDRAM. In the alternative, Rambus seeks summary adjudication of these issues. Hynix opposes the motion. The court has reviewed the papers and arguments of counsel. For the reasons discussed below, the court treats Rambus's motion as one for summary adjudication and summarily adjudicates that the RDRAM never achieved sufficient market power in the alleged DRAM interface market to hold Rambus liable for monopolization or attempted monopolization because it allegedly sought dominance for the RDRAM technology and suppressed the DDR technology. However, nothing in this order is intended to imply that evidence concerning Rambus's efforts to make RDRAM dominant is inadmissible on Hynix's claim that Rambus's intent was to acquire monopoly power in the alleged DRAM interface market by assertion of patent rights covering RDRAMs and DRAMs incorporating JEDEC standards.</p>
+    <p id="6ff77568-a544-4d63-a0bd-997d86e2989d">Hynix was formerly known as Hyundai Electronics Industries, Ltd. References to Hynix in this order refers also to Hyundai Electronics Industries, Ltd.</p>
+    <p id="eed464b1-8748-40be-9fee-eb56a310fc4d">I. BACKGROUND</p>
+    <p id="54892192-0a30-4dd3-865d-1628d669b5cb">The court will not set forth the factual background as the parties are familiar with it, and it is contained in other orders of the court.</p>
+    <p id="5177e4f2-d615-464b-8ff4-3d7e7dcf6da4">Rambus states, and Hynix does not dispute, that the market share of the RDRAM never exceeded 10% of the DRAM market. Rambus's Mot. Summ. J. at 5-6 (citing documents purportedly produced by Hynix).</p>
+    <p id="246c630e-743f-4bf1-946e-eb8e98356e24">II. ANALYSIS</p>
+    <p id="20f808ac-6bcc-4e78-ab1e-773f0836a4d0">Rambus seeks summary judgment or, in the alternative, summary adjudication of Hynix's first cause of action for monopolization and attempted monopolization under section 2 of the Sherman Act and its third cause of action for unfair competition under section 17200 of the California Business Professions Code, "if and to the extent that Hynix intends to pursue monopolization or attempted monopolization claims based upon Rambus's purported efforts to make RDRAM the `dominant' memory device and to `suppress' DDR SDRAM." Rambus's Mot. Summ. J. at 1. Since Rambus only seeks to summarily resolve certain aspects of Hynix's claims, the court will treat the motion as one for partial summary judgment (summary adjudication) rather than summary judgment.</p>
+    <p id="88067e0a-06c4-43d6-ac23-06a822754f56">Rambus argues RDRAM never achieved market power in the alleged DRAM interface technology market sufficient to raise a triable issue of fact as to Rambus's liability for either</p>
+    <p id="07070fcb-6f8d-4b59-af94-390031700749">monopolization or attempted monopolization. In opposition, Hynix argues that the relevant determination of market power it asserts includes all of Rambus's patents (including those asserted for SDRAM and DDR SDRAM) and Rambus's course of conduct associated with obtaining that patent power. Hynix appears to essentially argue the admissibility of Rambus's attempts to get market dominance by RDRAM on its claim that Rambus unlawfully acquired market power for its portfolio of patents (including those asserted against Hynix products incorporating JEDEC standards for SDRAM and DDR SDRAM). The court, however, reads Rambus's motion as expressly excluding questions of admissibility of evidence on Hynix's monopolization claim based upon Rambus's assertion of its portfolio of patents and Rambus's conduct related to that portfolio.</p>
+    <p id="0a88fc41-ef9d-4955-83c4-4acd5c8cd71f">A. Legal Standard</p>
+    <p id="bbe487ae-7306-4a56-aa96-84754a8dab56">Summary judgment is granted where there is no genuine issue as to any material fact. Fed.R.Civ.P. 56(c); Celotex Corp. v. Catrett, 477 U.S. 317, 322 (1986). In a motion for summary judgment the court draws all reasonable inferences that may be taken from the underlying facts in the light most favorable to the nonmovant. Matsushita Elec. Indus. Co., Ltd. v. Zenith Radio Corp., 475 U.S. 574, 587 (1986). Under Fed.R.Civ.P. 56(d) the court may "make an order specifying the facts that appear without substantial controversy, including to which . . . relief is not in controversy."</p>
+    <p id="ccb31bad-01ef-4156-b151-f6a3dcd07d75">B. Minimum Market Share</p>
+    <p id="b390165e-f235-4b2e-a700-1ccddd88033a">Rambus argues that Hynix cannot base a monopolization or attempted monopolization claim on "Rambus's efforts to achieve `dominance' for the RDRAM device" because the RDRAM never achieved market share rising to the level of a monopoly. Rambus's Mot. Summ. J. at 4. Hynix does not appear to dispute that RDRAM's market share never achieved market power.</p>
+    <p id="007fac3f-e6ef-416a-b259-344e1516724a">Section 2 of the Sherman Act states: " [e]very person who shall monopolize, or attempt to monopolize, or combine or conspire with any person or persons, to monopolize trade shall be guilty" of an antitrust violation. 15 U.S.C. &#167; 2 (2004). To establish a section 2 violation for attempted monopolization, the plaintiff must show "specific intent to control prices or destroy competition, predatory or anticompetitive conduct directed at accomplishing that purpose, dangerous probability of achieving monopoly power, and causal antitrust injury." McGlinchy v. Shell Chem. Co., 845 F.2d 802, 811 (9th Cir. 1988).</p>
+    <p id="a9d2a69b-e13b-4758-a1ce-e5aae32e1fbe">In Rebel Oil Co., Inc. v. Atlantic Richfield Co., 51 F.3d 1421, 1438 (9th Cir. 1995), the Ninth Circuit explained that in an allegation of actualmonopolization, a market share below 50% is presumably insufficient to establish market power. For an attempted monopolization claim, a market share of 30% is presumably insufficient. Id. Another way to demonstrate market power for a section 2 claim is through direct evidence of the "injurious exercise of market power." Id. at 1434. Under this method, the plaintiff offers evidence of "restricted output and supracompetitive prices that is direct proof of the injury to competition which a competitor with market power may inflict." Id. Thus, under both methods, a showing of market power is a threshold requirement.</p>
+    <p id="056d5818-e768-4aed-952e-72da6de6f166">Hynix offers nothing to rebut the presumption as applied to the market share of the RDRAM alone. The court agrees that, as a matter of law, the RDRAM in and of itself never achieved market power sufficient to constitute a monopoly or an attempted monopoly within the meaning of the Sherman Act.</p>
+    <p id="11644ac4-a309-4e5a-ad7e-750dfb4fea86">III. ORDER</p>
+    <p id="09b06324-0667-425b-9938-30e68f7c9110">For the foregoing reasons, the court GRANTS summary adjudication with respect to plaintiffs' first and third claims for relief as follows:</p>
+    <p id="acd91436-4506-493a-a769-f2a50924b512">1. As a matter of law, the RDRAM never achieved sufficient market power to hold Rambus liable for monopolization or attempted monopolization because it allegedly sought dominance for the RDRAM technology and suppressed the DDR technology.</p>
+    <p id="38a5bc07-5688-40fa-a179-86277caf9303">2. Nothing in this order is intended to preclude evidence concerning Rambus's attempts to gain market power in the alleged DRAM technology market.</p>
+  </div>
+</body></html>

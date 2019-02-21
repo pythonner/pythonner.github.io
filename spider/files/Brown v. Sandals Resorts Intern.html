@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+			}
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: United States</code>
+  <code class="meta">authority: United States Court of Appeals 8th Circuit</code>
+  <code class="meta">content_type: Case</code>
+  <code class="meta">document_title: Brown v. Sandals Resorts Intern</code>
+  <code class="meta">source: Case Law</code>
+  <div class="level2"><code class="pubeffdate">pubdate: 2002-03-28T00:00:00 effdate: 2002-03-28T00:00:00</code>
+    <h1 class="headline">Brown v. Sandals Resorts Intern</h1>
+    <code class="topic">Topic: Banking Financial Services Review, Record Retention, Legal Standards</code>
+    <code class="compliance_user">Compliance User: N/A</code>
+    <code class="keywords">Keywords: 
+      Legal Standards, 
+      Retention Policies, 
+      Statutes of Limitations, 
+    </code>
+    <p id="b818674e-2ed5-4e1c-b76c-cefeee8422e3">United States Court of Appeals, Eighth Circuit Mar 28, 2002</p>
+    <p id="f1ef3ffa-c4e9-4994-92b4-4c6a002a15e6">284 F.3d 949 (8th Cir. 2002)</p>
+    <p id="e90f4b43-4341-48ed-ba29-df2e63e3ea01">McMILLIAN, Circuit Judge.</p>
+    <p id="6fb9b618-8fae-4ec1-b325-f64f3103cab2">Bill and Lynette Brown and Jan and Dorothy Anderson ("appellants") appeal from a final judgment entered in the United States District Court for the District of South Dakota upon a jury verdict in favor of Sandals Resorts International, Sandals Negril, Ltd., Unique Vacations, Inc., and Gorstew, Ltd. ("appellees") on appellants' claim of negligence. See Brown v. Sandals Resorts International, No. 99-4026-KES (D.S.D. Dec. 21, 2000) (denying appellants' motion for judgment as a matter of law or for a new trial) (hereinafter "slip op."). For reversal, appellants argue that the district court erred in submitting to the jury an instruction on appellees' act of God defense, and in refusing to instruct the jury about the adverse inference that could be drawn from appellees' alleged destruction of evidence. For the reasons discussed below, we affirm the judgment of the district court.</p>
+    <p id="f7b0c2a8-0c97-44cb-a139-fb5217957435">The Honorable Karen E. Schreier, United States District Judge for the District of South Dakota.</p>
+    <p id="d3b05c8a-1d03-41a4-99fa-bbcbcdbee034">Jurisdiction</p>
+    <p id="7c7d835a-298f-4e33-a209-78cad1ae6b3a">Jurisdiction in the district court was proper based on 28 U.S.C. &#167; 1332. Jurisdiction is proper in this Court based upon 28 U.S.C. &#167; 1291.Appellants filed a timely notice of appeal under Fed.R.App.P. 4(a)(1) (A).</p>
+    <p id="915a7fcd-3f23-43de-bbf6-3af38be8a52e">I. Background</p>
+    <p id="1be4facb-5cf9-4336-a0f5-af285e1c62b7">On February 3, 1998, appellants were vacationing at a Jamaican resort owned and operated by appellees. Bill Brown and Jan Anderson were sitting in lounge chairs on the beach when a palm tree fell and struck them. As a result of the palm tree falling on them, Anderson suffered a disabling tibial plateau fracture, and Brown suffered at least four broken vertebrae, a broken rib, renal contusion, and deep bruising and a large hematoma on his back. Appellants subsequently brought this negligence action against appellees, alleging that appellees were negligent in failing to care for and inspect the tree, that the tree fell because its root system and base were rotten and inadequate to support its weight, and that appellees failed to warn of the tree's hazardous condition.</p>
+    <p id="75111d68-d635-454f-8bae-c3aa131a26bd">On several occasions during the pretrial discovery phase, the district court sanctioned appellees for violations of the discovery rules. On July 21, 2000, appellants moved for Rule 37 sanctions against appellees because appellees failed to disclose photographs taken of the fallen tree and an incident report prepared immediately after the accident. On August 11, 2000, the district court granted in part appellants' motion for sanctions, finding that appellees had "engaged in a pattern of discovery abuse, such as failures to meet deadlines regarding discovery, evasive or nonresponsive answers to interrogatories, failure to answer interrogatories, and refusal to produce documents." The district court then prohibited appellees from introducing at trial any testimony or evidence that had not been previously disclosed.</p>
+    <p id="240b441d-d36f-415c-a191-73880d582b68">The trial was conducted during the week of August 14, 2000. At trial, appellants introduced weather reports suggesting that the wind was not particularly forceful on the day the tree fell, and Brown, Anderson, and their spouses testified that it was not unusually windy. Appellants presented expert testimony from arborist Walter Barrows, who opined that the tree fell because its vascular system was damaged, as evidenced by a large scar on its trunk, and because its root system was inadequate to bear its weight. Barrows concluded that any person using generally accepted inspection principles would have discovered the hazard posed by the tree. Barrows also testified that he was unable to inspect the actual tree because appellees removed and disposed of the tree shortly after it fell, so he relied instead on photographs of the tree taken immediately after it had fallen. Barrows admitted, however, that he did not believe it would have done "any good" for him to conduct an onsite inspection because he was not retained until more than six months after the incident.</p>
+    <p id="fee89710-0607-46a7-aa01-c0d0da08e383">Appellees presented evidence to support their defense that the tree fell as the result of an act of God, and not due to any negligence on their part. The resort's general manager, Baldwin Powell, testified that it was "extremely windy" the night preceding the incident. Another resort guest, Matthew Bakalars, testified that it was very windy the day before the tree fell, and much windier than on previous days. Bakalars also testified that the tops of all of the trees on the beach were moving, causing debris to fall on the beach.</p>
+    <p id="503d72f3-4c3e-49e9-90ad-c20cab3cdf59">Appellees introduced expert testimony from Diane Clarke, a landscape consultant from Barbados, who testified that, in her opinion, the incident was the result of an act of God. Clarke testified that she visited the site more than two years after the incident, and discovered the tree's root ball where the tree had fallen. Clarke testified that she conducted a series of tests which indicated that no disease or other biological phenomena caused the tree to fall, that her investigation revealed that the wind was gusting the day of the incident, and that she found no evidence that an act of negligence caused the tree to fall. After ruling out biological factors and negligence, and considering the extreme wind, Clarke testified that the tree's falling could only be attributed to an act of God.</p>
+    <p id="772286b8-138b-4619-9c2c-85bbe31d8691">Clarke testified that she could not preserve the root ball because her business did not operate from Jamaica. She speculated that the resort staff probably would have disposed of it.</p>
+    <p id="b81012be-a395-4ea8-8fb6-ae1a10073c37">At the close of evidence, appellants moved for judgment as a matter of law on appellees' defense that the tree fell due to an act of God. The district court denied the motion and subsequently instructed the jury on the act of God defense. Appellants proposed a jury instruction on the adverse inference the jury could draw from appellees' alleged destruction of the tree's root ball. The district court rejected this proposed instruction as well, ruling that its instruction on appellees' failure to produce the evidence was sufficient.</p>
+    <p id="4ad99e24-d036-4add-9fce-b9353ea20d14">With respect to the act of God defense, the district court instructed the jury, in part, that "The defendants have the burden of proving these issues: (1) [t]hat an act of God occurred; and (2) [t]hat such an act of God was the only legal cause of the palm tree's falling." The court also instructed the jury that "[a]n `Act of God' is defined as any accident, due directly and exclusively to natural causes without human intervention, which by no amount of foresight, pains, or care, reasonably to have been expected could have been prevented."</p>
+    <p id="23ef65a2-fbfa-4ef1-973b-93d0edee9798">Appellants' proposed destruction of evidence instruction stated as follows:</p>
+    <p id="4a965ab2-6e48-400c-9c29-7bf88d2bdddf">If a party or its expert witness destroyed or failed to preserve evidence under its or her control, you may infer that that evidence would not have been favorable to such party if you find that the party or expert witness knew or reasonably should have known of the existence of a dispute between the party and another.</p>
+    <p id="a53f0f83-cb49-4abe-b1fa-67a18613b4db">With respect to the failure to produce evidence, the district court instructed the jury as follows:</p>
+    <p id="9a4013f0-054d-4c4b-96f9-10fb126d994f">If a party has the power to produce a witness or evidence but fails or refuses to produce such a witness or evidence, you may infer that the evidence or the testimony of that witness would not have been favorable to such party. This rule applies if and only if you find the following facts: (1) [t]he relationship between the party and the witness was of a nature whereby with exercise of reasonable diligence such party could have produced such witness, or the party, with the exercise of reasonable diligence, could have produce such evidence; and (2) [a] reasonably prudent person in the same circumstances would have produced such witness or evidence if the party believed the evidence or the testimony of such witness would be favorable; and (3) [n]o reasonable excuse exists for the failure of such party to produce such witness or evidence; and (4) [t]he witness or evidence was not equally available to the adverse party or parties.</p>
+    <p id="027841ca-bc8a-4c17-a7aa-bd9049934348">On August 18, 2000, the jury returned a general verdict in favor of appellees, and the district court entered judgment on August 31, 2000. On September 14, 2000, appellants filed a renewed motion for judgment as a matter of law or for a new trial on the grounds that the district court erred in instructing the jury on the act of God defense and in refusing to instruct the jury on the adverse inference it could draw from appellees' alleged destruction of evidence. On December 21, 2000, the district court denied appellants' motion, holding that there was sufficient evidence to support the act of God instruction and that appellants had not been prejudiced by the instruction. See slip op. at 5-6. The district court also held that appellants' proposed destruction of the evidence instruction would have been repetitious and would have unduly emphasized this aspect of appellants' case, and that, in any event, appellants had not been prejudiced by the failure to give this instruction. See id. at 4-5. This appeal followed.</p>
+    <p id="feb20e48-052b-49ce-9824-acc643f4f7e0">II. Discussion</p>
+    <p id="0106a4bd-2aea-496b-aee5-cce9199a4315">A. Standard of Review</p>
+    <p id="a3c0d2d5-7e1f-4440-a16b-499bcf728c13">We review the jury instructions given by a district court for an abuse of discretion. See, e.g., B B Hardware, Inc. v. Hargis Indus., 252 F.3d 1010, 1012-13 (8th Cir. 2001) (emphasizing that "district court has broad discretion in instructing the jury, and jury instructions do not need to be technically perfect or even a model of clarity").</p>
+    <p id="53c2aa61-4320-4e5a-a6c8-4666e1cca80a">Our review is limited to whether the jury instructions, taken as a whole, "fairly and adequately represent the evidence and applicable law in light of the issues presented to the jury in a particular case." Ford v. GACS, Inc., 265 F.3d 670, 679 (8th Cir. 2001) (citation omitted) (affirming district court's refusal to submit defendant's proposed jury instructions on mitigation because defendant failed to meet initial burden). In a diversity case, the substance of the jury instructions must fairly and adequately represent the law of the forum state. See id. The jury should receive instructions on issues supported by competent evidence in the record; the trial court is not required to instruct on issues that do not find support in the record. See id. at 679-80. Moreover, even where a jury instruction is erroneously given to the jury, reversal is warranted only where the error affects the substantial rights of the parties. See Phillips v. Collings, 256 F.3d 843, 851-52 (8th Cir. 2001) (affirming ruling of district court, holding no reversible error because defendant "suffered no prejudice from the absence of more detailed instructions"); Burry v. Eustis Plumbing Heating, Inc., 243 F.3d 432, 434 (8th Cir. 2001) (Burry).</p>
+    <p id="36698cd1-788e-4c7c-b605-b9f7336ba3b0">As an initial matter, appellees argued that appellants had failed to preserve their instruction objections for appeal because appellants did not formally object to the instructions at trial. We disagree. Appellants sufficiently made the trial court aware of their position with respect the jury instructions when they moved for judgment as a matter of law at the close of evidence. As this Court has previously stated,</p>
+    <p id="e42652d5-1245-45cd-89a5-3904c27b8c07">[Rule 51 of the Federal Rules of Civil Procedure] does not require formality, and it is not important in what form an objection is made or even that a formal objection is made at all, as long as it is clear that the trial judge understood the party's position; the purpose of the rule is to inform the trial judge of possible errors so that he [or she] may have an opportunity to correct them.</p>
+    <p id="03fc4b32-819b-4af6-a106-1ac869687d4a">Meitz v. Garrison, 413 F.2d 895, 899 (8th Cir. 1969) (citation omitted) (holding that plaintiff did not waive opportunity to assert error in jury instructions where trial court was fully advised of plaintiff's objections to trial court's jury instructions and defendant was not prejudiced by plaintiff's failure to literally comply with Rule 51).</p>
+    <p id="93296d25-564c-4587-a6bb-b8c577ae5aa0">B. Act of God Defense Instruction</p>
+    <p id="a182325a-89b8-453a-9cd7-e78f6ea2fcf4">Appellants first argue that the district court erred in instructing the jury on the act of God defense. Under South Dakota law, an act of God is defined as "any accident, due directly and exclusively to natural causes without human intervention, which by no amount of foresight, pains, or care, reasonably to have been expected, could have been prevented." Northwestern Bell Telephone Co. v. Henry Carlson Co., 83 S.D. 664, 165 N.W.2d 346, 349 (S.D. 1969) (holding that whether damage was proximately caused by act of God is question of fact for jury to resolve, and that trial judge erred in taking issue away from jury). "An act of God must be the sole proximate cause of damages without concurrent negligent participation of the defendant before the defendant is entitled to a verdict." Id.</p>
+    <p id="6da604d0-7d72-4423-bb3a-f5826d17e80f">Appellants argue that the evidence at trial was insufficient to establish that the wind was so unusual and extraordinary a manifestation of nature as could not under normal conditions have been reasonably anticipated or expected, as is required for an act of God defense. However, because there was conflicting evidence presented at trial with respect to the wind, this argument is actually a challenge to the weight of the evidence presented, and not to its sufficiency as a matter of law. See id.</p>
+    <p id="21a51875-9e44-48bd-b0df-606835e19ab1">It is axiomatic that "[c]redibility determinations, the weighing of the evidence, and the drawing of legitimate inferences from the facts are jury functions, not those of a judge." See Reeves v. Sanderson Plumbing Prods., Inc., 530 U.S. 133, 150, 120 S.Ct. 2097, 147 L.Ed.2d 105 (2000) (holding that district court was correct to submit case to jury, and court of appeals erred in reversing jury verdict); see also City of Bridgewater v. Morris, Inc.,594 N.W.2d 712, 715 (S.D. 1999) ("It is the jury's responsibility to judge the credibility of the witnesses and the weight to give to the evidence."). It was within the province of the jury to determine the credibility of the evidence that the unusual wind, and not concurrent negligence on the part of appellees, caused the tree to fall. There was ample evidence in the record from which a jury could reasonably find that an act of God &#8212; that is, the unusually strong winds &#8212; caused the tree to fall. See slip op. at 952. Resort guest Bakalars testified that it was very windy the day before the tree fell, and much windier than it had been on previous days. Resort manager Powell testified that it had been very windy the night before the incident. Expert witness Clarke testified that her investigation led to her conclude that wind caused the tree to fall. Apparently, the jury believed this evidence, and found that appellees were not negligent. See id. at 953.</p>
+    <p id="7df71bf9-1de1-4638-b4af-a10445489589">Because there was sufficient evidence upon which the jury could determine that an act of God caused the tree to fall, we hold that the district court did not abuse its discretion in instructing the jury on the act of God defense.</p>
+    <p id="3b997c41-de48-4c29-bf5a-355ae292f172">C. Destruction of Evidence Instruction</p>
+    <p id="c774ff1e-4a79-40e0-bf0d-eff0507a9601">Appellants next contend that the district court erred in refusing to give their proposed instruction on the adverse inference that could be drawn from appellees' alleged destruction of evidence by failing to preserve and produce the tree's root ball. Appellants insist that their proposed instruction would not have been repetitious of the failure to produce instruction, and point out that the most relevant South Dakota Pattern Jury Instruction refers to the failure to produce evidence as well as the destruction of evidence. Appellants also argue that they were entitled to such an adverse inference instruction as a sanction for the prejudicial destruction of evidence because they now cannot examine the root ball in order to refute the conclusions of appellees' expert witness.</p>
+    <p id="a027ce80-c117-46d0-b3af-d22854bcc9f6">South Dakota Pattern Jury Instruction 5-01-02, pertaining to the failure of a party to introduce documentary evidence, suggests the following language:</p>
+    <p id="5d9dc211-104f-434f-86ec-931080997004">If a party has the power to produce evidence but fails or refuses to produce such evidence, you may infer that that evidence would not have been favorable to such party. This rule applies if and only if you find the following facts: (1) [t]he party, with exercise of reasonable diligence, could have produced such evidence; and (2) [a] reasonably prudent person in the same circumstances would have produced such evidence if the party believed that such evidence would be favorable; and (3) [n]o reasonable excuse exists for the failure of such party to produce such evidence; and (4) [t]he evidence was not equally available to the adverse party or parties.</p>
+    <p id="7aed2a9f-59f7-4800-9649-b33f6e90dd3e">If documents were destroyed by Defendants pursuant to a formal document destruction policy, in considering whether this is a reasonable excuse for the failure to produce the destroyed documents, you may consider the following factors: (1) [w]hether the record retention policy is reasonable considering the facts and circumstances surrounding the documents; (2) [w]hether lawsuits concerning customer complaints have been filed, the frequency of customer complaints, and the magnitude of such complaints; and (3) [w]hether Defendant instituted its document retention policy in bad faith in an attempt to limit the availability of damaging evidence to potential plaintiffs.</p>
+    <p id="1e924cbe-1cc2-4da7-a12a-c264f433d439">The district court instructed the jury that it could draw a negative inference from appellees' failure to produce the root ball. See op. at 951-52. When viewed in the light of the instructions as a whole, we cannot say that the district court abused its discretion in refusing to also give the proposed instruction regarding the adverse inference that could be drawn from appellees' alleged destruction of the evidence. The very inference that appellants sought to have the jury draw from their proposed instruction &#8212; that appellees' destruction of evidence indicated that the evidence was not favorable to appellees &#8212; could have been drawn from the failure to produce instruction that was given by the district court. We hold that the district court did not abuse its discretion in concluding that submitting the proposed instruction to the jury would have been overly repetitious and would have placed undue emphasis on this aspect of appellants' case. See id.at 952; see also Dupre v. Fru-Con Eng'g, Inc., 112 F.3d 329, 335 (8th Cir. 1997) ("Repetitious instructions that place undue emphasis on a certain aspect of a party's case so as to prejudice the jury require reversal.").</p>
+    <p id="80bd8c8d-f3ef-408a-a9f5-58ead9376fca">III. Conclusion</p>
+    <p id="f7cf5080-f623-4cfe-96f4-0109c3e42305">In sum, we hold that the district court did not abuse its discretion in submitting to the jury an instruction on the act of God defense or in refusing to instruct the jury about the adverse inference that could be drawn from appellees' alleged destruction of evidence. The judgment of the district court is affirmed.</p>
+    <p id="4e9b8836-1726-49c7-92e4-c061d30c5499">BEAM, Circuit Judge, dissenting.</p>
+    <p id="30d30e10-ce43-4262-a03f-814f464bf7cd">In my view, the evidence does not support the act of God affirmative defense instruction given by the district court. Thus, I would remand this case for a new trial. Upon remand, I would strike the answer of Sandals Resorts as a sanction for the contumacious conduct of its lawyer noted by the district court. Thus, I respectfully dissent.</p>
+    <p id="3f0867c8-60fb-41b2-a57d-5a977dc752cc">This is an issue we review de novo. On questions of fact, we defer to the fact-finder, but the sufficiency of the evidence to create an issue of fact is a question of law. Cox v. Miller County R-I Sch. Dist., 951 F.2d 927, 931 (8th Cir. 1991). Accordingly, the court is wrong when it makes the matter a "weight of the evidence" question.</p>
+    <p id="23be25e7-b507-4942-bfdb-fe3d0c3a9703">Reports that it was "very windy" the night before the incident, and that it was "very windy" the day before the tree fell, and "much windier than it had been on previous days" are simply insufficient as a matter of law to justify the act of God defense. Coastal resorts can "reasonably expect" very windy conditions on occasion, given the irregularity of coastal winds and weather, thus even the definition of "act of God" provided in the instant case was not satisfied by the evidence. Under South Dakota case law, an act of God is defined as "any accident, due directly and exclusively to natural causes without human intervention, which by no amount of foresight, pains, or care, reasonably to have been expected, could have been prevented." Northwestern Bell Tel. Co. v. Henry Carlson Co., 83 S.D. 664, 165 N.W.2d 346, 349 (S.D. 1969). Mulder v. Tague, 85 S.D. 544, 186 N.W.2d 884, 886 (S.D. 1971), in passing, deals with the sufficiency of unusualness required for an act of God defense by stating that even though rainfalls in excess of four inches in a twenty-four-hour period had occurred only twice before in South Dakota, the third occurrence at issue in that case was not so unprecedented as to constitute a so-called act of God. Id.</p>
+    <p id="f22bb91a-e181-4789-924d-c4fa7116d554">Other jurisdictions note that "[t]he ordinary force of nature such as winds which are usual at the time and place are conditions which reasonably could have been anticipated and will not relieve from liability the person guilty of the original negligent act." Sky Aviation Corp. v. Colt,475 P.2d 301, 304 (Wyo. 1970). Courts consider whether the natural "occurrence and magnitude should or might have been anticipated, in view of the . . . history of the locality and the existing conditions affecting the likelihood of [the natural occurrence], by a person of reasonable prudence." Keystone Elec. Mfg. Co. v. City of Des Moines, 586 N.W.2d 340, 351 (Ia. 1998) (quotation omitted); see also McCutcheon v. TriCounty Group XV, Inc., 920 S.W.2d 627, 632 n. 2 (Mo.Ct.App. 1996) (holding that act of God defense "is only available where it is `an event in nature so extraordinary that the history of climatic variations in the locality affords no reasonable warning of their coming'" (citation omitted)). The Sandals Resorts, in this case, ought to have been held to a standard of proving that even though the winds were from natural causes, they were of such unusual and extraordinary manifestation of nature that they could not have been anticipated or expected. 1 AmJur 2d, Act of God &#167;&#167; 2, 5 (1994); Sky Aviation, 475 P.2d at 304.</p>
+    <p id="d492825f-7e04-47b3-9c37-e1c5e4da30d9">It is the defendants' burden in raising the act of God as a defense, to prove that the plaintiffs' damage was caused solely by an act of God. Northwestern Bell, 165 N.W.2d at 350. "[W]here an act of God and the negligence of a defendant concur and proximately cause damage, the defendant is liable as though his negligence alone had caused the damage. . . ." Id.</p>
+    <p id="c6ae90b9-f6d1-48bc-b820-734cf2f9eb52">In their opening brief and in a motion to supplement the record, the appellants presented information supporting a finding that Sandals Resorts and its lawyer deliberately obstructed discovery in this case. It also appears, from affidavits and other filings in other cases, that this is standard operating procedure for Sandals' counsel in litigation involving the resorts. Based upon this additional information, it is clear to me that the sanctions imposed in this case were insufficient. The district court, as noted by the court's opinion today, found that Sandals' attorney had "engaged in a pattern of discovery abuse, such as failures to meet deadlines regarding discovery, evasive or nonresponsive answers to interrogatories, failure to answer interrogatories, and refusal to produce documents." These transgressions are all the more serious when the site of the incident and the location of evidence is several thousand miles away from the forum.</p>
+    <p id="8ab7312e-6701-4a01-9947-bafb76473b58">At a time when the ethics, civility and professionalism of the bar are under intense scrutiny, the courts cannot permit a "slap on the wrist" to suffice. A more appropriate remedy for this type of conduct would have been to direct liability against the defendants or, at least, to strike the defendants' answer and require trial on a general denial of negligence, causation, liability and damages.</p>
+    <p id="d5d3da59-f235-424c-8447-49aac8d6a2ad">I dissent.</p>
+  </div>
+</body></html>
