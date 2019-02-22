@@ -1,0 +1,82 @@
+.page {
+  padding-top: 30px;
+}
+
+.filters .filters-list .filters-list-item {
+  padding-left: 0.5rem;
+}
+
+.search-form {
+  padding-bottom: 15px;
+}
+
+.search-form .input-group .input-group-prepend .input-group-text {
+  background-color: transparent;
+  border-right: 0;
+}
+
+.search-form .input-group .form-control {
+  border-left: 0;
+}
+
+.search-form .input-group .ais-search-box {
+  flex: 1 1 auto;
+}
+
+.hits-container {
+  padding-top: 10px;
+}
+
+.ais-hits--item {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 15px;
+}
+
+.ais-hits--item:first-child {
+  padding-top: 0;
+}
+
+.ais-hits--item:last-child {
+  border-bottom: 0;
+}
+
+.ais-hits--item .list-inline li {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ais-hits--item .list-inline li::before {
+  margin-right: 0.5rem;
+  content: "|";
+}
+
+.ais-hits--item .list-inline li:first-child::before {
+  display: none;
+}
+
+.nav .nav-item i.fa {
+  margin-right: 5px;
+}
+
+footer {
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .footer-links {
+  margin-left: 1rem;
+}
+
+footer .footer-link {
+  text-decoration: underline;
+}
+
+footer .footer-link-divider {
+  padding: 0 0.5rem;
+}
