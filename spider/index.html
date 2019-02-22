@@ -2,61 +2,152 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Innodata Spider</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css/main_public_dataset.css" /> -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css"/>
 </head>
 <body>
-  <div class="section">
-    <div class="">
-      <a href="https://www.innodata.com/" class="is-logo"><img src="images/innodata-logo.png"  ></a>
-      <!-- <a href="https://www.innodata.com/" class="is-logo"><img src="images/spider-hanging.png"  ></a> -->
+<nav class="navbar navbar-dark navbar-expand-md bg-dark">
+  <div class="container">
+    <a href="https://www.innodata.com/" class="navbar-brand">
+      <img
+        src="images/innodata-logo.png"
+        style="height: 22px; width: auto; margin-top: -5px"
+      >
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+      <ul class="nav navbar-nav">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" href="#">
+            <i class="fa fa-search"></i>
+            Search
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#">
+            <i class="fa fa-briefcase"></i>
+            Briefing
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#">
+            <i class="fa fa-files-o"></i>
+            Archive
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#">
+            <i class="fa fa-pie-chart"></i>
+            Reports
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown" role="presentation">
+          <a class="nav-link active dropdown-toggle" href="#">
+            <i class="fa fa-user"></i>
+            My Profile
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="">
-      <div class="field">
-        <div class="control has-icons-left">
-          <input class="input is-info is-medium" type="text" placeholder="Search Me" id="q" >
+</nav>
+<div class="container page">
+  <div class="row">
+    <div class="col-4 filters">
+      <div class="card shadow">
+        <div class="card-header">
+          <h5 class="mb-0">Filters</h5>
+        </div>
+        <div class="card-body">
+          <div>
+            <h4>Topic</h4>
+            <div id="topic"></div>
+          </div>
+          <div>
+            <h4>Keywords</h4>
+            <div id="keywords"></div>
+          </div>
+          <div>
+            <h4>Authority</h4>
+            <div id="authority"></div>
+          </div>
+          <div>
+            <h4>Content Type</h4>
+            <div id="content-type"></div>
+          </div>
+          <div>
+            <h4>Jurisdiction</h4>
+            <div id="jurisdiction"></div>
+          </div>
+          <div>
+            <h4>Source</h4>
+            <div id="source"></div>
+          </div>
+          <div>
+            <h4>Compliance User</h4>
+            <div id="compliance-user"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col">
+          <form class="search-form">
+            <div class="input-group shadow">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-search"></i>
+                </span>
+              </div>
+              <input class="form-control" id="q" type="search">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <small id="stats"></small>
+        </div>
+        <div class="col text-right"><a href="#">Advanced</a></div>
+      </div>
+      <div class="row">
+        <div class="col hits-container">
+          <div class="card shadow">
+            <div class="card-body" id="hits">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="pagination"></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="columns">
-    <div class="column is-one-third">
-      <section class="section has-background-white-ter">
-        <div class="control">
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Topic</h5>
-          <div id="topic"></div>
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Keywords</h5>
-          <div id="keywords"></div>
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Authority</h5>
-          <div id="authority"></div>
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Content Type</h5>
-          <div id="content-type"></div>
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Jurisdiction</h5>
-          <div id="jurisdiction"></div>
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Source</h5>
-          <div id="source"></div>
-          <h5 class="h4"><i class="fa fa-chevron-right"></i> Compliance User</h5>
-          <div id="compliance-user"></div>
-        </div>
-      </section>
-    </div>
-    <div class="column">
-        <div id="stats" class="text-right text-muted"></div>
-        <div id="hits" class="section"></div>
-        <div id="pagination" class="text-center"></div>
-    </div>
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
-  
-  <script src="js/search.js"></script>
-
+</div>
+<footer class="text-center d-xl-flex justify-content-xl-center align-items-xl-center bg-dark text-light position-fixed">
+  <p class="d-xl-flex m-0">Copyright © 2019 Innodata</p>
+  <small class="footer-links">
+    <a class="footer-link text-light" href="#">Terms of Use</u></a>
+    <span class="footer-link-divider">|</span>
+    <a class="footer-link text-light" href="#">Privacy Policy</a>
+  </small>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>
