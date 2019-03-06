@@ -1,153 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Innodata Spider</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Global Regulatory &amp; Compliance Utility</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-<nav class="navbar navbar-dark navbar-expand-md bg-dark">
-  <div class="container">
-    <a href="https://www.innodata.com/" class="navbar-brand">
-      <img
-        src="images/innodata-logo.png"
-        style="height: 22px; width: auto; margin-top: -5px"
-      >
-    </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navcol-1">
-      <ul class="nav navbar-nav">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" href="#">
-            <i class="fa fa-search"></i>
-            Search
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" href="#">
-            <i class="fa fa-briefcase"></i>
-            Briefing
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" href="#">
-            <i class="fa fa-files-o"></i>
-            Archive
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" href="#">
-            <i class="fa fa-pie-chart"></i>
-            Reports
-          </a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item dropdown" role="presentation">
-          <a class="nav-link active dropdown-toggle" href="#">
-            <i class="fa fa-user"></i>
-            My Profile
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="container page">
-  <div class="row">
-    <div class="col-4 filters">
-      <div class="card shadow">
-        <div class="card-header">
-          <h5 class="mb-0">Filters</h5>
-        </div>
-        <div class="card-body">
-          <div>
-            <h4>Topic</h4>
-            <div id="topic"></div>
-          </div>
-          <div>
-            <h4>Keywords</h4>
-            <div id="keywords"></div>
-          </div>
-          <div>
-            <h4>Authority</h4>
-            <div id="authority"></div>
-          </div>
-          <div>
-            <h4>Content Type</h4>
-            <div id="content-type"></div>
-          </div>
-          <div>
-            <h4>Jurisdiction</h4>
-            <div id="jurisdiction"></div>
-          </div>
-          <div>
-            <h4>Source</h4>
-            <div id="source"></div>
-          </div>
-          <div>
-            <h4>Compliance User</h4>
-            <div id="compliance-user"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-8">
-      <div class="row">
-        <div class="col">
-          <form class="search-form">
-            <div class="input-group shadow">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fa fa-search"></i>
-                </span>
-              </div>
-              <input class="form-control" id="q" type="search">
+
+<body class="d-flex flex-column justify-content-center" style="background-color: rgb(232,232,232);min-height: calc(100vh - 41px);">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col d-flex align-items-center"><img src="assets/img/logo-transparent.png" width="200px">
+                                <h1 class="ml-4 mb-0">Global Regulatory &amp; Compliance Utility</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6 border-right">
+                                <h3 class="mb-4">Login</h3>
+                                <form method="post">
+                                    <h2 class="sr-only">Login Form</h2>
+                                    <div class="mb-2 text-center"></div>
+                                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                                    <div class="form-group text-right"><a href="home.html" class="btn btn-primary">Login</a></div><a href="#" class="forgot">Forgot your email or password?</a></form>
+                                <hr>
+                                <div class="m-auto w-75">
+                                    <p class="lead">Become a member in the financial industry's newest and most comprehensive data utility for tracking complex change in global law and regulation.</p>
+                                    <p class="lead"><a href="#">Register now for a free trial</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-4">Top News</h3>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5><a href="#">CAT's Future Still Cloudy as NMS Committee Declines to Name New Processor</a></h5>
+                                        <p>Technical specifications will remain the same even as committee works on finding a new database operator.<em class="ml-2">Feb 21 2019</em></p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5><a href="#">CAT's Tale: How Thesys, the SROs and the SEC Mishandled the Consolidated Audit Trail</a></h5>
+                                        <p>Waters Technology investiages the torturous journey to create a stock-trading database for the US, and where the project goes from here.<em class="ml-2">Feb 14 2019</em></p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5><a href="#">SEC Taps FIF Vet Kimmel to Oversee CAT Implementation</a></h5>
+                                        <p>After a decade leading data industry assocation the Financial Information Forum, Kimmel is well-versed in directing industry-wide initiatives.<em class="ml-2">Jan 30 2019</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <small id="stats"></small>
-        </div>
-        <div class="col text-right"><a href="#">Advanced</a></div>
-      </div>
-      <div class="row">
-        <div class="col hits-container">
-          <div class="card shadow">
-            <div class="card-body" id="hits">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="pagination"></div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-<footer class="text-center d-xl-flex justify-content-xl-center align-items-xl-center bg-dark text-light position-fixed">
-  <p class="d-xl-flex m-0">Copyright © 2019 Innodata</p>
-  <small class="footer-links">
-    <a class="footer-link text-light" href="#">Terms of Use</u></a>
-    <span class="footer-link-divider">|</span>
-    <a class="footer-link text-light" href="#">Privacy Policy</a>
-  </small>
-</footer>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
-<script src="js/search.js"></script>
+    <footer class="text-center d-xl-flex justify-content-xl-center align-items-xl-center bg-dark text-light position-fixed">
+        <p class="d-xl-flex m-0">Copyright © 2019 Innodata</p><small><a class="text-light" href="#" style="margin-left: 15px;text-decoration: underline;">Terms of Use</a><span>&nbsp; &nbsp;| &nbsp;&nbsp;</span><a class="text-light" href="#" style="text-decoration: underline;">Privacy Policy</a></small></footer>
+    <script
+        src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
+        <script src="assets/js/search.js"></script>
 </body>
+
 </html>
