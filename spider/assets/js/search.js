@@ -31,8 +31,8 @@ var hitTemplate = `
     <div class="media-body">
       <h5>
         {{__hitIndex}}.
-        <a href="files/{{basename}}">
-          {{h1}}
+        <a href="files/{{file_name}}#{{id}}">
+          {{title}}
         </a>
       </h5>
     </div>
