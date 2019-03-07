@@ -38,11 +38,12 @@ var hitTemplate = `
           </h5>
         </div>
       </div>
+      {{source}} {{content_type}} {{jurisdiction}}
       {{#summary}}
       <div class="row">
         <div class="col">
           <p class="summary">
-            {{source_type}}
+            {{summary}}
           </p>
         </div>
       </div>
