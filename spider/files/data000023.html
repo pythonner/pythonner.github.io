@@ -1,0 +1,317 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Consolidated Audit Trail (CAT) Update</code>
+  <code class="meta">source: NYSE Trader Update</code>
+  <code class="meta">source_type: Notice</code>
+  <code class="meta">language: English</code>
+  <div class="level2" id="4f885f59-c25c-4969-8e27-3e626be0abba"><code class="pubeffdate">pubdate: February 1, 2019 effdate: N/A</code>
+    <h1 class="headline">Subject: Consolidated Audit Trail (CAT) Update</h1>
+    <code class="topic">Topic: Trader Update, Consolidated Audit Trail (CAT) Update</code>
+    <code class="compliance_user">Compliance User: 9c3d20f0-eb09-4a1d-bdef-a2f9b7200102</code>
+    <code class="keywords">Keywords: 
+      CAT NMS plan, 
+      LLC, 
+      Rule 613, 
+      FINRA Rule 6800, 
+    </code>
+    <p id="c8f81d73-11ef-4c44-94ad-69c9953bac62">Date: February 1, 2019</p>
+    <p id="51a3a4fb-698e-4280-9af1-127dc9580b62">Audience: NYSE, NYSE American, NYSE Arca, NYSE National, and Chicago Stock Exchange Traders</p>
+    <p id="e6be8afb-8717-4c38-8e02-5a844a26c561">CAT NMS, LLC confirms that it is working to transition the Consolidated Audit Trail (&#8220;CAT&#8221;) project to a new Plan Processor. In transitioning the project to a new Plan Processor, the Participants are evaluating the impact the transition will have on current Industry Member implementation plans. While certain dates may change, there are no material changes planned for the Industry Member Technical Specifications. The Participants will continue to work with industry participants to finalize the Industry Member Reporting Specification. As an initial matter, the Participants anticipate the initial test period for data ingestion will move from August 2019 to late 2019 and plan to announce a more detailed implementation schedule shortly. The Participants plan to host an industry webcast in the very near future to provide more information and answer questions.</p>
+    <p id="439aac82-931d-46ce-b3fd-21bbb447ddee">Background</p>
+    <p id="bd03b373-8cd7-40f4-832b-8f1bc743f910"><a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613 of the Securities Exchange Act of 1934</a> requires national securities exchanges and national securities associations to submit a national market system plan to the Commission to create, implement, and maintain the CAT that would allow regulators to more efficiently and accurately track all activity in U.S. equity and options markets. Pursuant to Rule 613, the Participants filed with the Commission the CAT NMS Plan, which was approved by the Commission on November 15, 2016.</p>
+    <p id="8133c304-538f-449f-9d43-de2b8f7c2bc0">Under <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613(g)(2)</a>, each member of a national securities exchange or national securities association is required to comply with all the provisions of the CAT NMS Plan. Relatedly, as mandated under <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613</a>, the CAT NMS Plan requires each Participant to adopt rules requiring its members to comply with Rule 613 and the CAT NMS Plan, and to agree to enforce compliance by its members in that regard. Accordingly, each Participant has adopted rules requiring its members to comply with <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613</a> and the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>. See, e.g., <a href="FINRA Manual, Rules, 6800">FINRA Rule 6800 Series</a>.</p>
+    <p id="6cd4cef1-a2cc-47fe-a146-dd0e514a1364">The SROs jointly own and operate CAT NMS, LLC, which was formed by the SROs to arrange for and oversee the creation, implementation, and maintenance of the CAT as required under Rule 613. Further, the CAT is a facility of each SRO. Accordingly, when Industry Member reporting commences, Industry Members will submit data to an SRO facility.</p>
+    
+  </div>
+</body></html>

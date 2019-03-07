@@ -1,0 +1,335 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Industry Update on the Consolidated Audit Trail (CAT)</code>
+  <code class="meta">source: Industry Update</code>
+  <code class="meta">source_type: Notice</code>
+  <code class="meta">language: English</code>
+  <div class="level2" id="b21e153e-f724-4509-b784-9ff708761e21"><code class="pubeffdate">pubdate: 2017 effdate: N/A</code>
+    <h1 class="headline">Industry Update on the Consolidated Audit Trail (CAT)</h1>
+    <code class="topic">Topic: BATS BZX Industry Update, Consolidated Audit Trail (CAT)</code>
+    <code class="compliance_user">Compliance User: 9c3d20f0-eb09-4a1d-bdef-a2f9b7200102</code>
+    <code class="keywords">Keywords: 
+      NMS Plan, 
+      LLC, 
+      Rule 613, 
+    </code>
+    <p id="abf733a2-27ea-4c9b-ad8c-ea3e22e6e2f0">Overview</p>
+    <p id="a8a43783-a752-4e2c-bf85-a322fff26395">With the approval of the Consolidated Audit Trail (CAT) National Market System (NMS) Plan in 2016, and the selection of Thesys Technologies as the Plan Processor in early 2017, industry timelines for compliance with the CAT are in effect. The CAT NMS Plan requires exchanges, national securities associations, alternative trading systems, and broker-dealers to submit information on order and trade events for listed and OTC equities and listed options to the CAT on a daily basis, in addition to customer data.</p>
+    <p id="6e1a46eb-af27-4e64-bf68-b98b161ef387">On Thursday, September 7, 2017, at 4:15 PM EST, the CAT NMS, LLC Operating Committee will be hosting a Consolidated Audit Trail webcast to discuss current progress on the CAT. Representatives from the CAT NMS, LLC Operating Committee, as well as the CAT Plan Processor, Thesys CAT, will discuss upcoming milestones, requirements, and the timelines and process for development and delivery of the industry technical specifications for compliance with the CAT reporting requirements. The webcast will be recorded and playback will be available on the CAT NMS website (<a href="https://www.catnmsplan.com/">www.catnmsplan.com</a>). Please see the below details for joining the webcast:</p>
+    <p id="a37e62f1-daf9-4d14-9e46-f03386502009">Toll Free: +1-888-455-5069</p>
+    <p id="85f32dd5-9d90-45fa-a7d9-bf821f769bed">Passcode: 6495498</p>
+    <p id="ffa998e0-37fa-4388-b254-f2ee1e5bf9c8">
+      <a href="https://deloitteevents.webex.com/deloitteevents/onstage/g.php?MTID=e69f52ad1c35671a96be6a654a40b7cc2">Click here to join the virtual webcast (WebEx)</a>
+    </p>
+    <p id="b234d1ed-2c32-477c-99c6-b05ef5dfc9c6">We kindly ask that you share this alert with any interested parties.</p>
+    <p id="7dea5ae2-2ab0-4018-beb5-e1890f8fa42f">Additional Information</p>
+    <p id="fa2466c6-a4fb-4d6b-9e92-19d79773057b">For additional information on SEC Rule 613 and the CAT NMS Plan generally, please refer to <a href="https://www.catnmsplan.com/">www.catnmsplan.com</a>. For additional information on the CAT compliance rules series applicable to Exchange Members, please refer to the following rule filings:</p>
+    <p id="47661f60-5731-4728-bd5f-94654fb33fcf">
+      <a href="http://cdn.batstrading.com/resources/regulation/rule_filings/approved/2017/SR-BatsBZX-2017-08.pdf">SR-BatsBZX-2017-08</a>
+    </p>
+    <p id="d390346f-fbcc-4d8b-9cea-a1d7997dc68f">
+      <a href="http://cdn.batstrading.com/resources/regulation/rule_filings/approved/2017/SR-BatsBYX-2017-02.pdf">SR-BatsBYX-2017-02</a>
+    </p>
+    <p id="555101f7-cf27-4301-a00d-36134d495009">
+      <a href="http://cdn.batstrading.com/resources/regulation/rule_filings/approved/2017/SR-BatsEDGX-2017-08.pdf">SR-BatsEDGX-2017-08</a>
+    </p>
+    <p id="9cba959b-2ae5-44c7-91dc-4a08960a6ba3">
+      <a href="http://cdn.batstrading.com/resources/regulation/rule_filings/approved/2017/SR-BatsEDGA-2017-03.pdf">SR-BatsEDGA-2017-03</a>
+    </p>
+    <p id="b315c3d0-7c00-48ff-a17d-84d12d08955c">Please also refer to joint BYX, BZX, EDGA and EDGX Regulatory Circular <a href="http://cdn.batstrading.com/resources/regulation/circulars/regulatory/RC-2017-003.pdf">2017-003</a>. Any questions about the CAT compliance rule series may be referred to the Regulatory Interpretations team at RegInterps@bats.com or (312) 786-8775. Any further questions may be directed to:</p>
+    <p id="33be966d-33d0-40fa-8c57-6c9bf90421ef">CBOE Bats Trade Desk</p>
+    <p id="56b0c55d-0622-4587-a882-4349923203d8">913.815.7001</p>
+    <p id="20c4684a-65ba-400f-a4b9-7a9029727a44">tradedesk@bats.com</p>
+  </div>
+</body></html>

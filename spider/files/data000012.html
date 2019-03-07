@@ -1,0 +1,316 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: CAT NMS, LLC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: CAT NMS Announces Initiation of Reporting to the Consolidated Audit Trail</code>
+  <code class="meta">source: CAT NMS Immediate Release</code>
+  <code class="meta">source_type: Press Release</code>
+  <code class="meta">language: English</code>
+  <div class="level2" id="ef4a65bf-75f4-4b42-b5da-f8146192ba82"><code class="pubeffdate">pubdate: November 16, 2018 effdate: N/A</code>
+    <h1 class="headline">CAT NMS Announces Initiation of Reporting to the Consolidated Audit Trail</h1>
+    <code class="topic">Topic: CAT NMS, Press Relelase, Initiation of Reporting to the Consolidated Audit Trail</code>
+    <code class="compliance_user">Compliance User: 1556b799-9c2a-4c2c-8204-ddec238fcbf1</code>
+    <code class="keywords">Keywords: 
+      CAT NMS, 
+      LLC, 
+      FINRA, 
+    </code>
+    <p id="8fa76023-3431-4f04-bfd6-f3911f939ff5">FOR IMMEDIATE RELEASE</p>
+    <p id="fa7eaa12-d11f-4d1e-8761-ab5e8fe279bf">NEW YORK, NY, November 16, 2018 CAT NMS, LLC (CAT NMS) announced the initiation of reporting by exchanges and Financial Industry Regulatory Authority, Inc. (FINRA, and together with the exchanges, the SROs &#8211; self-regulatory organizations) of order and transaction data to the Consolidated Audit Trail (CAT). The CAT is intended to enable the SROs and the U.S. Securities and Exchange Commission (SEC) to more efficiently track securities trading activity throughout U.S. markets by collecting how orders are processed, and trades executed.</p>
+    <p id="af9a4758-b5b0-4459-99fa-4efadb1ab965">With yesterday&#8217;s development, the SROs are reporting to the CAT central repository quote, order, trade, and other information required to be reported by the exchanges and FINRA under the National Market System Plan Governing the Consolidated Audit Trail (CAT NMS Plan). Thesys CAT LLC (Thesys CAT), the plan processor of CAT, has advised the SROs it continues to work to provide the capabilities required for the first reporting phase, such as the regulators&#8217; query functionality and linkages between reported events. Thesys CAT has informed the SROs that it plans to complete the full functionality required by the CAT NMS Plan for the first reporting phase on or before March 31, 2019.</p>
+    <p id="79c4bbe1-509e-4ce6-940c-57e8a3909724">At this time, the reporting deadlines for Industry Members as set forth in the August 9, 2018 Industry Outreach Webinar at <a href="https://bit.ly/2PXYBsq">https://bit.ly/2PXYBsq</a> remain the same.</p>
+    <p id="e623c13d-b664-4637-b975-752ce27647d1">The CAT is intended to allow regulators to improve securities&#8217; market surveillance by creating an extensive audit trail of customer and order event information for all orders in U.S. exchange-listed and over-the-counter equity securities across all markets and trading venues. The CAT is also meant to collect all such data for exchange-listed options contracts. When fully complete, the CAT will ingest billions of records per day to be the world's largest data repository of information on securities transactions, tracking all orders throughout their life cycle.</p>
+    <p id="1858b934-793f-4ef9-9f3d-94b5ea4a178f">About CAT NMS, LLC</p>
+    <p id="e39e7f5c-81a0-4ed2-b6e2-144d545ef14c">CAT NMS, LLC was formed by the SROs to implement the requirements of SEC Rule 613. SEC Rule 613 that requires the SROs to jointly submit to the SEC the CAT NMS Plan to create, implement and maintain the CAT. The SEC approved the CAT NMS Plan on November 15, 2016. Once implemented, the CAT will facilitate regulatory surveillance by creating an extensive audit trail that will capture customer and order event information for orders in NMS securities across all markets, from the time of order inception through routing, cancellation, modification or execution, in a single, consolidated source. More information can be found at <a href="https://www.catnmsplan.com/">www.catnmsplan.com/</a></p>
+    <p id="0dea90e6-0732-4a97-82fe-e56c0594631f">For CAT NMS LLC related Press Inquiries: mediarequests@catnmsplan.com</p>
+  </div>
+</body></html>

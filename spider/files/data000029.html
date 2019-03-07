@@ -1,0 +1,391 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: SEC Exemptive Relief (SEC Release 34-69060)</code>
+  <code class="meta">document_type: Reliefs</code>
+  <code class="meta">source: US/SEC/Reliefs/Exemptive Relief</code>
+  <code class="meta">source_type: Exemptive Relief</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: SEC Exemptive Relief (SEC Release 34-69060)</code>
+  <div id="e5afa6ad-4872-468f-ab87-ac352ba51c65" class="level2"><code class="pubeffdate">pubdate: March 07, 2013 effdate: N/A</code>
+    <h1 class="headline">SEC Exemptive Relief (SEC Release 34-69060)</h1>
+    <code class="topic" id="topic-e5afa6ad-4872-468f-ab87-ac352ba51c65">Topic: SEC Release, Release No. 34-69060), Exemptive Relief</code>
+    <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+    <code class="keywords">Keywords: 
+      Sec Rule 613, 
+      FINRA, 
+      SRO, 
+      NMS Plan, 
+      Exemptive Order, 
+      Request Letter, 
+      Exchange Act - Section 36, 
+    </code>
+    <p id="56e20f72-6cf3-4d0c-afcb-4fc03ef9903b">SECURITIES AND EXCHANGE COMMISSION</p>
+    <p id="95f8412d-a299-48a1-9240-fd97be1d6637">(Release No. 34-69060)</p>
+    <p id="04ce1d14-215c-4b00-8bc9-ef33434015a1">Order Granting a Temporary Exemption Pursuant to Section 36(a)(1) of the Securities Exchange Act of 1934 from the Filing Deadline Specified in Rule 613(a)(1) of the Exchange Act</p>
+    <p id="65e8c90d-ae61-4dd7-80f7-326da58a9654">March 7, 2013</p>
+    <p id="047b7834-a01d-41d3-82e1-08875427b1f7">Rule 613(a)(1) of the Securities Exchange Act of 1934 (&#8220;Exchange Act&#8221;)<a class="sup" HREF="#fn_pz1-5" NAME="fr_pz1-5">1</a> requires the Financial Industry Regulatory Authority, Inc. (&#8220;FINRA&#8221;) and the seventeen registered national securities exchanges (collectively, the &#8220;SROs&#8221;) to &#8220;jointly file on or before 270 days from the date of publication of the Adopting Release [for Rule 613 of the Exchange Act<a class="sup" HREF="#fn_pz1-6" NAME="fr_pz1-6">2</a>] in the Federal Register a national market system plan to govern the creation, implementation, and maintenance of a consolidated audit trail and central repository as required by [the rule].&#8221; The Adopting Release for Rule 613 was published in the Federal Register on August 1, 2012,<a class="sup" HREF="#fn_pz1-7" NAME="fr_pz1-7">3</a> thus requiring the national market system plan (the &#8220;NMS plan&#8221;) to be filed on or before April 28, 2013.<a class="sup" HREF="#fn_pz1-8" NAME="fr_pz1-8">4</a> On February 8, 2013, the Commission received a request from the SROs, pursuant to Rule 0-12 under the Exchange Act,<a class="sup" HREF="#fn_pz1-9" NAME="fr_pz1-9">5</a> that the Securities and Exchange Commission (&#8220;Commission&#8221;) grant a temporary exemption under Section 36 of the Exchange Act,<a class="sup" HREF="#fn_Aij" NAME="fr_Aij">6</a> from the deadline specified in Rule 613(a)(1) of the Exchange Act<a class="sup" HREF="#fn_A9c" NAME="fr_A9c">7</a> for submitting the NMS plan to the Commission.<a class="sup" HREF="#fn_pz2-4" NAME="fr_pz2-4">8</a></p>
+    <p id="a04752f2-0212-407e-be29-ab59f8c45d70">In the Request Letter, the SROs noted that <a href="">Rule 613</a> requires that they include in the NMS plan &#8220;cost estimates for the proposed solution, and a discussion of the costs and benefits of alternative solutions considered but not proposed.&#8221;<a class="sup" HREF="#fn_pz2-5" NAME="fr_pz2-5">9</a> They also noted that <a href="">Rule 613</a> requires that the NMS plan include a discussion of &#8220;[t]he process by which the [SROs] solicited views of their members and other appropriate parties regarding the creation, implementation, and maintenance of the consolidated audit trail, a summary of the views of such members and other parties, and how the [SROs] took such views into account in preparing the [NMS plan].&#8221;<a class="sup" HREF="#fn_Alki" NAME="fr_Alki">10</a></p>
+    <p id="2afe2947-3a3e-4edd-8be0-be012a082f74">In order to satisfy these requirements, the SROs believe that conducting a request for proposal (&#8220;RFP&#8221;) process is necessary prior to filing an NMS plan. The SROs believe that such a process will ensure that potential alternative solutions for creating the consolidated audit trail can be presented to the SROs for their consideration, and will provide the SROs with information necessary to prepare a detailed cost/benefit analysis as required by <a href="">Rule 613</a>. To ensure that the RFP process is effective, the SROs believe the concepts that will be contained in the RFP should be subject to public comment before the document is finalized and formally published. The SROs believe that public comment will ensure that the RFP addresses areas of concerns to the industry and the SROs, and will also provide potential bidders with information on the RFP prior to its formal publication. To this end, the SROs published an RFP concept document on December 5, 2012, and requested public feedback by January 18, 2013.<a class="sup" HREF="#fn_ALc" NAME="fr_ALc">11</a></p>
+    <p id="beb4571b-ba8f-48d9-a292-351611591fdd">The SROs stated in their Request Letter that they do not believe that the 270-day time period provided for in <a href="">Rule 613(a)(1)</a> provides sufficient time for the development of the RFP, formulation and submission of bids, and review and evaluation of such bids. The SROs also stated that they believe additional time beyond the 270 days provided for in <a href="">Rule 613(a)(1)</a> is necessary in order to provide sufficient time for effective consultation with and input from the industry and the public on the proposed solution chosen by the SROs for the creation of the consolidated audit trail at the conclusion of the RFP process and the NMS plan itself. The SROs believe that such a comment process is necessary in order to gather information needed to perform an effective cost/benefit analysis, including the estimated costs to broker-dealers and other market participants of building the consolidated audit trail in accord with the proposed solution, as well as to meaningfully assess and respond to the comments and draft the final NMS plan for submission to the Commission.</p>
+    <p id="2de29d7a-3924-407f-a186-15a6968e4d81">In the Request Letter, the SROs provided the following estimated timeline, which is based on their current expectation for conducting the RFP process and drafting the NMS plan:</p>
+    <p id="73dd67f3-907a-4ea6-ba67-a9521ee2c86d">&#8226; December 5, 2012: The SROs published an RFP concept document for comment</p>
+    <p id="32f92dfc-abef-4dfa-adb4-efed123b5d32">&#8226; January 18, 2013: Deadline to submit comments on the RFP concept document made publicly available (i.e., a 45-day comment period)</p>
+    <p id="f355dbf5-1940-46b6-822e-3dcd1c528455">&#8226; February 2013: The SROs will publish the final RFP for bids</p>
+    <p id="f8b284b3-88be-40b3-aee4-5b4a89b8f7c2">&#8226; March 2013: The SROs will solicit public comment on certain portions of the draft NMS plan that are not dependent on the RFP process and can benefit from public comment</p>
+    <p id="2872f7ed-817f-4c83-81b0-ae0bd4b33c4a">&#8226; April 2013: Deadline for submitting bids in response to the RFP</p>
+    <p id="b51b5125-7777-41c7-8592-1db61044d574">&#8226; July 2013: The SROs will select a proposed solution after reviewing and evaluating the RFP bids</p>
+    <p id="8f06109a-15cf-45f2-bbc0-b2c7d60c3235">&#8226; August 2013: The SROs will solicit public comment on other specific portions of the proposed NMS plan that the SROs believe can benefit from public comment and that incorporate the RFP process and the proposed solution, including soliciting estimates on industry costs</p>
+    <p id="cf0a1132-cc26-4cbf-a04e-be8f12f7d5f4">&#8226; October 2013: Comments must be submitted on the proposed solution (i.e., a 60-day comment period)</p>
+    <p id="406deba5-de3e-4677-9291-e774ae2b3bdb">&#8226; December 6, 2013: The SROs file the proposed NMS plan with the Commission</p>
+    <p id="c3dd2efa-5353-4c49-82dd-3fd258342f29">For the reasons set forth above, the SROs stated that a temporary exemption from the filing deadline until December 6, 2013 is &#8220;necessary to allow the SROs to conduct the thoughtful and comprehensive analysis this important regulatory initiative deserves.&#8221;<a class="sup" HREF="#fn_pz4-6" NAME="fr_pz4-6">12</a> The SROs also stated their belief that &#8220;the timeline outlined above will lead to a significantly better and more informed process and, as a result, the proposed solution will be the result of a more meaningful and careful analysis.&#8221;<a class="sup" HREF="#fn_pz4-7" NAME="fr_pz4-7">13</a></p>
+    <p id="bbdabb9f-5ff9-464d-a6be-1f4b9b9cd2d0">Section 36 of the Exchange Act<a class="sup" HREF="#fn_pz4-8" NAME="fr_pz4-8">14</a> authorizes the Commission, by rule, regulation, or order, to exempt, either conditionally or unconditionally, any person, security, or transaction, or any class or classes of persons, securities, or transactions, from any provision or provisions of the Exchange Act or any rule or regulation thereunder, to the extent that such exemption is necessary or appropriate in the public interest, and is consistent with the protection of investors.</p>
+    <p id="238fedcb-431a-4a79-9536-9696cda898ce">After considering the SROs&#8217; proposed process for developing the NMS plan, the Commission finds that it is appropriate in the public interest, and is consistent with the protection of investors, to grant the SROs a temporary exemption from the deadline for filing the NMS plan contained in Rule 613(a)(1)<a class="sup" HREF="#fn_pz5-3" NAME="fr_pz5-3">15</a> until December 6, 2013. The Commission understands that the creation of a consolidated audit trail is a significant undertaking and that a proposed NMS plan must include detailed information and discussion about many things, including the methods for reporting the required data; a detailed estimate of the costs to plan sponsors and to members of the plan sponsors of creating, implementing, and maintaining the consolidated audit trail (including issues relating to funding of the consolidated audit trail); an analysis of the impact on competition, efficiency and capital formation of creating, implementing and maintaining the NMS plan; and a discussion of any reasonable alternative approaches that the plan sponsors considered including a description of any such alternative approach, the relative advantages and disadvantages of each such alternative, including an assessment of the alternative&#8217;s costs and benefits, and the basis upon which the plan sponsors selected the approach in the NMS Plan submitted.<a class="sup" HREF="#fn_pz5-4" NAME="fr_pz5-4">16</a></p>
+    <p id="37b9cabe-84e3-4509-a01f-9a2498b27158">Additionally, given that the planned RFP process as described in the Request Letter is expected to include multiple solicitations for public comment, the Commission believes that it is appropriate in the public interest and consistent with the protection of investors to provide the SROs with additional time. This additional time to complete the RFP process should allow the SROs to engage in a more thoughtful and comprehensive process for the development of an NMS plan. In this regard, the Commission notes that the additional time to solicit comment from the industry and the public at certain key points in the development of the NMS plan could identify issues that can be resolved earlier in the development of the consolidated audit trail and prior to filing the NMS plan with the Commission. In granting the SROs&#8217; request, the Commission expects the SROs to work diligently to adhere to the milestones specified by the SROs in the Request Letter. The Commission also expects the SROs to utilize the additional time to prepare a detailed and complete NMS plan for the Commission and the public to consider.</p>
+    <p id="e51cae7a-0828-435f-a928-9ba19ef2b05b">Accordingly, IT IS HEREBY ORDERED, pursuant to Section 36 of the Exchange Act,<a class="sup" HREF="#fn_pz6-6" NAME="fr_pz6-6">17</a> that the SROs are temporarily exempted from the deadline for submitting the NMS plan to govern the creation, implementation, and maintenance of a consolidated audit trail and central repository contained in <a href="">Rule 613(a)(1)</a> until December 6, 2013.</p>
+    <p id="c6e7dd72-38f4-4540-939d-717ab6eac55d">By the Commission.</p>
+    <p id="24a0f71d-31f4-4666-b866-b0c4e5d63806">Elizabeth M. Murphy</p>
+    <p id="fe5e78e1-748a-44c3-9126-e40bd1a457ab">Secretary</p>
+    <hr width="65%"/><table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-5" HREF="#fr_pz1-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>1 <a href="">17 CFR 242.613(a)(1)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-6" HREF="#fr_pz1-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>2 <a href="">17 CFR 242.613</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-7" HREF="#fr_pz1-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>3 <a href="SEC Final Rule, Release No. 34-67457">Securities Exchange Act Release No. 67457</a> (July 18, 2012), <a href="https://www.federalregister.gov/documents/2012/08/01/2012-17918/consolidated-audit-trail">77 FR 45722</a> (August 1, 2012) (&#8220;Adopting Release&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-8" HREF="#fr_pz1-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>4 April 28, 2013, is a Sunday. Therefore, in accordance with Rule 160(a) of the Commission Rules of Practice, the deadline for filing the NMS plan is Monday, April 29, 2013. The SROs, however, had established an earlier deadline for the filing of the NMS plan of Friday, April 26, 2013.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-9" HREF="#fr_pz1-9" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>5 <a href="">17 CFR 240.0-12</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_Aij" HREF="#fr_Aij" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>6 <a href="">15 U.S.C. 78mm(a)(1)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_A9c" HREF="#fr_A9c" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>7 <a href="">17 CFR 242.613(a)(1)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-4" HREF="#fr_pz2-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>8 See Letter from Robert L.D. Colby, Chief Legal Officer, FINRA, to Elizabeth M. Murphy, Secretary, Commission, dated February 7, 2013 (the &#8220;Request Letter&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-5" HREF="#fr_pz2-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>9 See Request Letter (quoting Adopting Release, supra 3, at 45725).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_Alki" HREF="#fr_Alki" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>10 See Request Letter (quoting <a href="">17 CFR 242.613(a)(1)(xi)</a>).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_ALc" HREF="#fr_ALc" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>11 See Request Letter.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-6" HREF="#fr_pz4-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>12 See Request Letter.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-7" HREF="#fr_pz4-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>13 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-8" HREF="#fr_pz4-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>14 <a href="">15 U.S.C. 78mm</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz5-3" HREF="#fr_pz5-3" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>15 As noted above, the current deadline for submitting the NMS plan is April 29, 2013. This deadline is calculated pursuant to <a href="">Rule 613(a)(1)</a> which requires the NMS plan to be filed 270 days from the date of publication of the Adopting Release in the Federal Register. See note 4, supra.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz5-4" HREF="#fr_pz5-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>16 See <a href="">Rule 613(a)(1)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz6-6" HREF="#fr_pz6-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>17 <a href="">15 U.S.C. 78mm</a>.</p>
+    </small></td></tr></tbody></table>
+  </div>
+</body></html>

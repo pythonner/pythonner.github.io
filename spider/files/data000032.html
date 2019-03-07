@@ -1,0 +1,490 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Selection of CAT NMS Plan Processor (SEC File Number 4-698)</code>
+  <code class="meta">document_type: Notices</code>
+  <code class="meta">source: US/SEC/Notices/Plan Processor Notice</code>
+  <code class="meta">source_type: Plan Processor Notice</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: SEC File Number 4-698</code>
+  <div id="8644bfe5-763d-4b84-affa-3e1a0c3637da" class="level2"><code class="pubeffdate">pubdate: January 18, 2017 effdate: N/A</code>
+    <h1 class="headline">Selection of CAT NMS Plan Processor (SEC File Number 4-698)</h1>
+    <code class="topic" id="topic-8644bfe5-763d-4b84-affa-3e1a0c3637da">Topic: SEC, File Number 4-698, Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail</code>
+    <code class="compliance_user">Compliance User: Thesys Technologies, LLC</code>
+    <code class="keywords">Keywords: 
+      CAT NMS plan, 
+      SRO, 
+      Rule 608, 
+      Securities Exchange Act, 
+    </code>
+    <p id="d47c9130-5c0c-4b32-be78-4cc1261e909b">January 18, 2017</p>
+    <p id="6a922f2d-06c2-43a7-953b-1dc342d45fab">Secretary</p>
+    <p id="d3cea622-1c07-4ae5-8f3e-45b7f0838d91">Brent J. Fields</p>
+    <p id="b4c5ae91-796c-43ec-9203-3eca2a329f07">Securities and Exchange Commission</p>
+    <p id="e05f3477-a7bd-49d3-9395-5e8a6ac78217">100 F Street, NE</p>
+    <p id="1a7f49a9-78ea-47e4-8364-57ac1abe3445">Washington, DC 20549-1090</p>
+    <p id="9c2c7117-ad44-4896-b707-5a62efabf5ec">Re: File Number 4-698</p>
+    <p id="094d38da-893e-42e9-b8ec-2484a120770a">Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail</p>
+    <p id="32143844-b374-46af-9df4-800d4d0cb4f4">Dear Mr. Fields:</p>
+    <p id="f9ec7d3b-e387-421e-9be0-4be4065b0ee0">The parties to the National Market System Plan Governing the Consolidated Audit Trail (the "CAT NMS Plan" or "Plan")- Bats BYX Exchange, Inc., Bats BZX Exchange, Inc., Bats EDGA Exchange, Inc., Bats EDGX Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, Investors' Exchange LLC, ISE Gemini, LLC, ISE Mercury, LLC, Miami International Securities Exchange LLC, MIAX PEARL, LLC, NASDAQ BX, Inc., NASDAQ PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, NYSE MKT LLC, and NYSE Arca, Inc. (collectively, "Participants")- respectfully file with the Securities and Exchange Commission ("SEC" or "Commission") this statement in connection with the selection of a person to act as the Plan Processor for the CAT NMS Plan pursuant to Rule 608(a)(6) of Regulation NMS under the Securities Exchange Act of 1934 ("Exchange Act").<a class="sup" HREF="#fn_pz1-25" NAME="fr_pz1-25">1</a></p>
+    <div id="9afaf75a-dc00-4f70-918f-c9d7792acf74" class="level3"><code class="pubeffdate">pubdate: January 18, 2017 effdate: N/A</code>
+      <h2>A. Identification of Person Selected as Plan Processor</h2>
+      <code class="topic" id="topic-9afaf75a-dc00-4f70-918f-c9d7792acf74">Topic: SEC, File Number 4-698, Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail, Identification of Person Selected as Plan Processor</code>
+      <code class="compliance_user">Compliance User: Thesys Technologies, LLC</code>
+      <code class="keywords">Keywords: 
+        CAT NMS plan, 
+        Selection Committe, 
+        Thesys Technologies, LLC, 
+        Plan Processor, 
+      </code>
+      <p id="378c9dfd-9689-4ab8-922d-62024ddce767">On, January 17, 2017, the Selection Committee of the CATNMS Plan selected Thesys Technologies, LLC ("Plan Processor") as the Plan Processor for the CAT NMS Plan pursuant to Article V of the CAT NMS Plan.</p>
+    </div>
+    <div id="e08dcbe1-4952-457b-bf88-d70fbcb0bd6d" class="level3"><code class="pubeffdate">pubdate: January 18, 2017 effdate: N/A</code>
+      <h2>B. Material Terms under which such Person is to Serve as Plan Processor</h2>
+      <code class="topic" id="topic-e08dcbe1-4952-457b-bf88-d70fbcb0bd6d">Topic: SEC, File Number 4-698, Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail, Material Terms under which such Person is to Serve as Plan Processor</code>
+      <code class="compliance_user">Compliance User: Thesys Technologies, LLC</code>
+      <code class="keywords">Keywords: 
+        CAT NMS Plan LLC, 
+        Plan Processor Agreement, 
+        CAT NMS plan, 
+      </code>
+      <p id="892a2340-6a25-4811-a495-3974b4c08d78">The CAT NMS, LLC and the Plan Processor (the "Parties") are in the process of negotiating the terms of the agreement under which the Plan Processor will act as such with regard to the CAT NMS Plan ("Plan Processor Agreement"). Nevertheless, the Participants anticipate that Plan Processor Agreement will contain provisions that require the Plan Processor to: (1) serve as the Plan Processor to perform CAT-related functions and services required by <a href="">SEC Rule 613</a> and the CAT NMS Plan (the "Services"); (2) develop and implement the CAT System in accordance with the development and implementation phases, milestones and timeline agreed upon by the Parties; (3) provide the Services in accordance with service level requirements to be agreed upon by the Parties; and (4) develop the CAT System in a manner consistent with the Plan Processor's response to the RFP. The Participants also anticipate that the Plan Processor Agreement will require the Services to be provided in manner that is consistent with and in accordance with the CAT NMS Plan and SEC rules and regulations. Furthermore, the Participants expect that the Plan Processor Agreement will include other provisions related to the Services, including: (1) pricing and fees; (2) term of the agreement; (3) limitations of liability; (4) indemnification; (5) insurance; (6) capitalization of the Plan Processor; and (7) intellectual property. Now that the Plan Processor has been selected, the CAT NMS, LLC and the Plan Processor will finalize their negotiations regarding the Plan Processor Agreement, which will define the terms under which the Plan Processor will act as the Plan Processor for the CAT. The Participants believe that finalizing negotiations with the Plan Processor and executing the Plan Processor Agreement are necessary conditions for the Plan Processor to serve in that role.</p>
+    </div>
+    <div id="19b43053-3066-4d60-a35e-ab82b6526ee8" class="level3"><code class="pubeffdate">pubdate: January 18, 2017 effdate: N/A</code>
+      <h2>C. Solicitation Efforts for Alternative Plan Processors</h2>
+      <code class="topic" id="topic-19b43053-3066-4d60-a35e-ab82b6526ee8">Topic: SEC, File Number 4-698, Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail, Solicitation Efforts for Alternative Plan Processors</code>
+      <code class="compliance_user">Compliance User: Thesys Technologies, LLC</code>
+      <code class="keywords">Keywords: 
+        Request for Proposal, 
+        CAT NMS plan, 
+        Development Advisory Group, 
+        Bidders, 
+      </code>
+      <p id="56c2fc53-1dae-4463-a311-a4f2f9e6a8e8">The Participants utilized a Request for Proposal ("RFP") to seek proposals to implement the main requirements to successfully build and operate the CAT.<a class="sup" HREF="#fn_pz2-20" NAME="fr_pz2-20">2</a> "This approach was designed to solicit imaginative and competitive proposals from the private sector as well as to provide an adequate amount of insight into the costs associated with creating, implementing and maintaining the CAT. To design the RFP process, the Participants consulted with their technology subject matter resources to determine the technical implications and requirements of the CAT and to develop the RFP."<a class="sup" HREF="#fn_ASQ" NAME="fr_ASQ">3</a> Based on these requirements, the Participants developed the Proposed RFP Concepts Documents, which identified the high level requirements for which potential Bidders would be expected to design a solution, ahead of publishing the full RFP.<a class="sup" HREF="#fn_pz2-21" NAME="fr_pz2-21">4</a> The Participants also sought the input ofthe Development Advisory Group ("DAG") regarding the RFP and, over time, continued to engage in meaningful dialogue with the DAG regarding the selection process and development ofthe CAT. The Participants then developed the RFP to solicit interest from potential plan processors. The RFP was published on February 26, 2013. In response to the RFP, the Participants received 31 intents to bid, and hosted a Bidders conference on March 8, 2013 to discuss the requirements and provide additional context to the industry and potential Bidders. Two additional conference calls to discuss additional questions on the RFP were held on April 25, 2013 and May 2, 2013. The Participants also established an e-mail box through which questions on the RFP were received. After this process, the Participants received ten competitive proposals on March 21, 2014 in response to the RFP. The Plan Processor was selected from among these Bidders.</p>
+    </div>
+    <div id="f55381a3-a2e2-4aac-8f21-98291c5cf038" class="level3"><code class="pubeffdate">pubdate: January 18, 2017 effdate: N/A</code>
+      <h2>D. Alternative Plan Processors Considered</h2>
+      <code class="topic" id="topic-f55381a3-a2e2-4aac-8f21-98291c5cf038">Topic: SEC, File Number 4-698, Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail, Alternative Plan Processors Considered</code>
+      <code class="compliance_user">Compliance User: Thesys Technologies, LLC</code>
+      <code class="keywords">Keywords: 
+        Bidders, 
+        AxiomSL, 
+        Cinnober, 
+        EPAM, 
+        FINRA, 
+        First Derivatives, 
+        IBM, 
+        J. Streicher Analytics, 
+        Sungard Data Systems, 
+        TATA America International Corporation, 
+        Thesys Technologies LLC, 
+        Participants, 
+      </code>
+      <p id="1bd4bbd2-6002-4cd8-8456-7f38fbfd1157">The Participants received responses to the RFP from the following ten Bidders:</p>
+      <p id="031ea97e-45dc-43cd-ad63-08ca3cd1c019">&#8226; AxiomSL and Computer Sciences Corporation (CSC) (with subcontractor MIAX)</p>
+      <p id="c2ab4cbb-e24a-435b-bab9-0e845458dba3">&#8226; Cinnober (with subcontractors Equinix, OneMarketData, and Fundamental Interactions)</p>
+      <p id="7509205c-73a9-461b-80e4-a7d7c1e8dd6e">&#8226; EPAM (with subcontractor Broadridge Financial Solutions, Inc.)</p>
+      <p id="c6237d07-ee63-4131-9f84-245d8a39ce36">&#8226; FINRA (with subcontractor DTCC/Kingland)</p>
+      <p id="45a279ce-efe5-4b27-aa7f-288ed7e44a82">&#8226; First Derivatives (with subcontractors Kx Systems, Inc., Equinix and Steadfast)</p>
+      <p id="6dd88bfe-c174-44ac-afdf-4433402ab21c">&#8226; IBM</p>
+      <p id="4f843a86-e3c3-461a-ab01-5a84a99556b6">&#8226; J. Streicher Analytics on behalfofCATPRO Consortium: Hewlett Packard, Booz Allen and Buckley Sandler (with subcontractors CBX Technologies Inc., and Networth Services Inc.)</p>
+      <p id="c076e35e-9375-458f-9fcd-bf8cae6c5ce7">&#8226; Sungard Data Systems (with subcontractor Google)</p>
+      <p id="6a5a6d95-85ed-409b-90f3-792c3f11468f">&#8226; TATA America International Corporation (TAIC) (with subcontractors Promontory Financial Group and Tata Consultancy Services)</p>
+      <p id="45c849df-410d-4211-9828-ed5104cb2eb1">&#8226; Thesys Technologies, LLC</p>
+      <p id="0a904efe-3291-426b-9208-6ca69a423bef">The Participants carefully reviewed and considered each of the ten proposals, including holding in-person meetings with each of the ten Bidders. Following this review, the Selection Committee voted to reduce the number of Bidders to six in accordance with the National Market System Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail ("Selection Plan"). After additional reviews and discussions, the Selection Committee voted to reduce the number of Bidders to three pursuant to the Selection Plan. Finally, after further discussions with the Bidders, the Selection Committee reduced the number of Bidders to two, and then selected the Plan Processor, pursuant to the CAT NMS Plan.</p>
+    </div>
+    <div id="17a842ce-5610-43d2-a927-41943fa08a59" class="level3"><code class="pubeffdate">pubdate: January 18, 2017 effdate: N/A</code>
+      <h2>E. Reasons for Selection of the Plan Processor</h2>
+      <code class="topic" id="topic-17a842ce-5610-43d2-a927-41943fa08a59">Topic: SEC, File Number 4-698, Selection of Plan Processor for the National Market System Plan Governing the Consolidated Audit Trail, Reasons for Selection of the Plan Processor</code>
+      <code class="compliance_user">Compliance User: Thesys Technologies, LLC</code>
+      <code class="keywords">Keywords: 
+        Participants, 
+        Plan Processor, 
+        Reporting Requirements, 
+        Sec Rule 613, 
+        Thesys Technologies LLC, 
+      </code>
+      <p id="ffb6c939-02aa-4014-baf3-191e05e90048">In selecting the Plan Processor, the Selection Committee has been guided by the need to satisfy the requirements of <a href="">Rule 613</a> and the CAT NMS Plan. In addition, the Selection Committee also has been guided by Guiding Principles that the Participants adopted for the CAT development process. The Participants developed the following Guiding Principles:</p>
+      <p id="a1b553f0-7c98-442d-aa53-5c52a88febb2">&#8226; The CAT must meet the specific requirements of <a href="">Rule 613</a> and achieve the primary goal of creating a single, comprehensive audit trail to enhance regulators' ability to surveil the U.S. markets in an effective and efficient way.</p>
+      <p id="67ed11ab-89e9-48f2-a8af-481df5970373">&#8226; The reporting requirements and technology infrastructure developed must be adaptable to changing market structures and reflective of trading practices, as well as scalable to increasing market volumes.</p>
+      <p id="c8a29f3d-bd27-4d54-b0b7-b70ff010a02e">&#8226; The costs of developing, implementing, and operating the CAT should be minimized to the extent possible. To this end, existing reporting structures and technology interfaces will be utilized where practicable.</p>
+      <p id="0eb64ad3-3e85-47e2-9b76-d6b32009cfeb">&#8226; Industry input is a critical component in the creation of the CAT. The Participants will consider industry feedback before decisions are made with respect to reporting requirements and cost allocation models.</p>
+      <p id="618da716-d8fa-4f88-a253-d00443171b62">With these requirements and principles as guides, each Participant serving on the Selection Committee voted on the Bidders in each round of voting based on its own view of how each Bid satisfied these various provisions. Accordingly, the Selection Committee has determined that Thesys Technologies, LLC was the most appropriate Bidder to become the Plan Processor.</p>
+      <p id="904c7d03-2736-4adf-9a8d-ad233d21ced9">* * * * *</p>
+      <p id="0c8d21a4-7a24-42df-adca-584d75ebc248">Thank you for your attention to this matter. Please contact any of the undersigned if you have any questions or comments.</p>
+      <p id="9da1ffcc-940e-4ead-8b24-a1fad41ab96f">Respectfully submitted,</p>
+      <p id="d0938510-3faa-457d-a1b9-74a8d037d90b">[Executed signature pages are located at the end of this submission.]</p>
+      <p id="afe7883f-f033-4151-8c3e-f6b1aeee66b7">cc: The Hon. Mary Jo White, Chair</p>
+      <p id="16216711-6ce4-4f7a-bae7-a596a338be65">The Hon. Kara M. Stein, Commissioner</p>
+      <p id="3056f84f-8c19-4bd9-a36c-ab7962cf8b41">The Hon. Michael S. Piwowar, Commissioner</p>
+      <p id="22b5fd2f-60a9-473f-87a1-d4786fa37ba6">Ms. Heather Seidel, Acting Director, Division of Trading and Markets</p>
+      <p id="5844d375-d997-409b-8f8c-e21c08bc57ef">Mr. Gary L. Goldsholle, Deputy Director, Division of Trading and Markets</p>
+      <p id="0f4038d1-c0be-4c8f-8f20-1733f3750912">Mr. David S. Shillman, Associate Director, Division of Trading and Markets</p>
+      <p id="71bf6168-412d-4d32-8f48-a603fad98614">Mr. David Hsu, Assistant Director, Division of Trading and Markets</p>
+      <p id="c8adf3a6-dc04-45cc-a341-891c604fba6a">IN WITNESS WHEREOF, the Participants have executed this Limited Liability Company Agreement as of the day and year first above written.</p>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z5-2.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z5-8.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z5-13.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z5-18.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z6-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z6-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z6-9.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z6-13.png"/>
+      <p id="71e97f7f-be90-414e-8e66-312e2259b4de">IN WITNESS WHEREOF, the Participants have executed this Limited Liability Company Agreement as of the day and year first above written.</p>
+      <p id="c3c10ecb-54e7-42a6-b5bb-2e06849d4983">P A R T I C I P A N T S:</p>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z7-3.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z7-7.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z7-11.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z7-16.png"/>
+      <p id="e5377af6-4956-446b-a87f-ecb596c006f9">TN WITNESS WHEREOF, the Participants have executed this Limited Liability Company Agreement as ofthe day and year first above written.</p>
+      <p id="fc9787c3-6b69-4450-9079-ffb9e6baed2d">PARTICIPANTS:</p>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z8-3.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z8-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z8-8.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z8-13.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z9-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z9-3.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z9-7.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z9-11.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z10-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z10-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z10-6.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z10-10.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z11-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z11-4.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z11-8.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z11-12.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z11-16.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z12-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z12-3.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z12-4.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z12-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z12-10.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z13-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z13-6.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z13-11.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z13-16.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z13-20.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z14-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z14-8.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z14-12.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z14-16.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z14-20.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z15-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z15-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z15-9.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z15-11.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z15-14.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z16-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z16-4.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z16-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z16-6.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z17-1.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z17-5.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z17-11.png"/>
+      <img src="../xml/images/img-3c68638a-406a-11e9-9b38-1866da051c2b-z17-15.png"/>
+    </div>
+    <hr width="65%"/><table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-25" HREF="#fr_pz1-25" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>1 <a href="">17 C.F.R. &#167; 242.608(a)(6)</a>. Unless otherwise defined herein, capitalized terms are defined as set forth in the CAT NMS Plan.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-20" HREF="#fr_pz2-20" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>2 The RFP process is described in Appendix C of the CAT NMS Plan, as well as on the CAT NMS Plan website (<a href="http://www.catnmsplan.com">www.catnmsplan.com</a>).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_ASQ" HREF="#fr_ASQ" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>3 Appendix C, CAT NMS Plan.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-21" HREF="#fr_pz2-21" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>4 The RFP is set forth in Appendix A of the CAT NMS Plan. The RFP was published in full in the notice of the CAT NMS Plan. See <a href="">Securities Exchange Act Rel. No. 77724 (Apr. 17, 2016), 81 Fed. Reg. 30614 (May 17, 2016)</a>.</p>
+    </small></td></tr></tbody></table>
+  </div>
+</body></html>

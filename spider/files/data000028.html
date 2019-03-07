@@ -1,0 +1,337 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: SEC Comment Letters (SEC Release 34-62174)</code>
+  <code class="meta">document_type: Letters</code>
+  <code class="meta">source: US/SEC/Letters/Comment Letter</code>
+  <code class="meta">source_type: Comment Letter</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: SEC Comment Letters (SEC Release 34-62174)</code>
+  <div id="56e34e0c-00b7-43a5-bd53-20f18c96ccd5" class="level2"><code class="pubeffdate">pubdate: July 28, 2010 effdate: N/A</code>
+    <h1 class="headline">SEC Comment Letters (SEC Release 34-62174)</h1>
+    <code class="topic" id="topic-56e34e0c-00b7-43a5-bd53-20f18c96ccd5">Topic: SEC Comment Letter, File Number S-&#173;&#8208;7-&#173;11-&#8208;10, Consolidated Audit Trail, Release No. 34-&#8208;62174</code>
+    <code class="compliance_user">Compliance User: Securities and Exchange Commission/Self-Regulatory Organization</code>
+    <code class="keywords">Keywords: 
+      FIX Protocol, 
+      Consolidated Audit Trail System, 
+    </code>
+    <p id="642e117a-5324-407a-b7f0-e843f21d22fa">28 July 2010</p>
+    <p id="ba16d2ef-8ebe-4f7c-a27e-07b8873654b9">Securities and Exchange Commission</p>
+    <p id="0b1f1a7f-6227-46e9-b3ae-1fc6dbd1d526">100 F Street, NE</p>
+    <p id="d6db6ca6-3cca-4fbd-af44-f11667b7bf51">Washington, DC 20549-1090</p>
+    <p id="effa4430-8bfd-456f-850b-ad269b91cbf8">File Number S-7-11-10, Consolidated Audit Trail, Release No. 34-62174</p>
+    <p id="c8c6c40b-9543-4c67-a3b4-7a7ab95b4f9e">Re: Recommendation to Use FIX Protocol in Consolidated Audit Trail System</p>
+    <p id="3229c9fe-3e8b-4040-bb0e-78750971af67">Dear Sir or Madam:</p>
+    <p id="7e9491e5-3819-444c-9d60-7c925756bb2e">I work as a consultant to the electronic trading industry with my company Aditat. Previous to this, I was President of Orc Software North America and President of Cameron Systems. I was co-chair of the FIX Protocol Americas Committee and member of the Global Steering Committee 2005-2007.</p>
+    <p id="da1df01e-1021-4790-9462-4b7803a83665">My submission is limited to only the data protocol used and is a recommendation that the SEC mandates that the FIX data protocol be used for the proposed Consolidated Audit Trail System.</p>
+    <p id="bc68d9e4-ad04-49ba-85f8-646c093af363">The Financial Information Exchange (FIX) protocol is an industry driven protocol for electronic trading. It is now the global industry standard and has been a great success within the securities industry in the last 15 years. FIX is used in equities, foreign exchange, fixed income, commodities, and derivative markets. FIX is used by the buy side, sell side and exchanges. It is a global standard, being the dominant protocol in all major European and most major Asian markets. Its usage is governed by the industry run non-profit FIX Protocol Ltd (<a href="">http://www.fixprotocol.org</a>). A list of buy and sell side members, plus exchanges, is available at <a href="">http://www.fixprotocol.org/members/</a>. Please note that though this list is large it is not exhaustive, as firms do not need to be a member to use the protocol.</p>
+    <p id="d11659cd-2f83-45d5-b898-05810e223917">Nearly all pre-trade, trade, and some post-trade messages that are sent between the buy side, sell side and exchanges are sent using the FIX protocol. FIX is used for indications of interest, quotes, orders, basket/list orders, cancel/replace orders, executions and allocations. Many brokers also use the FIX protocol for routing messages within their organization. The FIX protocol already captures most of the information that the Consolidated Audit Trail System hopes to capture, including timestamp, side, quantity, type of order, client order ID, account, order handling instructions, desk received, and stock locate for short sales. If any extra data needs to be captured for the Consolidated Audit Trail System this can be easily done by adding new fields to the protocol, which the FIX Protocol organization often does.</p>
+    <p id="8798a9d1-ebc1-4405-9c30-b07553d03506">The advantages of using the FIX Protocol for the Consolidated Audit Trail System are:</p>
+    <p id="15c49d30-f8dc-43d2-9ffb-6a3b33697a1a">a. Lower Costs to the Industry &#8211; Buy side, sell side and exchanges already communicate and store messages using the FIX protocol. Costs to develop systems to store and communicate trading information to the SEC or SROs would be lower using FIX as the data already exists in a suitable format today.</p>
+    <p id="866d450e-4b1b-4a5f-8d8d-588aa8a11342">b. Less Error and Easier Auditing &#8211; As records are currently kept using the FIX protocol, if any other protocol is used a translation is required to transform data into a different protocol. This introduces error and offers the potential for manipulation of the data. Using FIX means the SEC is looking at the original format of the data.</p>
+    <p id="8863a2a1-33e6-4c95-8f2f-e46e36aecf07">c. Real Time &#8211; All FIX messages are generated in real time for trading. The SEC could more easily attain a real time reporting system by using FIX.</p>
+    <p id="b00073b5-da10-4753-9265-250b1995eda8">d. Ability to Co-ordinate Across Derivative Markets and Globally &#8211; Market events such as the May 6 flash crash require looking at not just historical equity data but also data from equity derivative markets and international markets. As the FIX protocol is dominant in other asset classes and derivative markets including equity index futures, equity futures, equity options, and global markets, regulators can more easily gain a broader view.</p>
+    <p id="b6ba5532-7616-4ccc-b246-86195f919fa7">e. Ability to Use Established Knowledge and Vendor Base &#8211; All buy side and sell side firms and exchanges today have experience working with the FIX protocol. There are thousands of business analysts, developers and consultants with in depth experience. There are hundreds of suppliers with products that communicate, monitor and manage the FIX protocol. These products range from free open source to robust vendor solutions. Using the FIX protocol will allow the SEC, SROs and firms to use this established experience and vendor base.</p>
+    <p id="3e3e58be-f93d-4e8d-9dd6-9d5589238e99">Currently some of the scope of the Consolidated Audit Trail System is captured in FINRA&#8217;s Order Audit Trail System (OATS) and the NYSE&#8217;s Order Tracking System (OTS). It is worthwhile to use many of the processes around data requested and the data transmission between brokers and the SRO from these systems. However the advantage of moving to FIX protocol instead of using one of the custom data protocols that these systems use is that the data is first in FIX and therefore requires no translation ensuring accuracy. FIX is in real time, while these custom data protocols are used for end of day reporting. Using a custom data protocol means that the data will not be as easily compared with data from derivatives and international markets that use FIX. And using a custom protocol will forever silo understanding of the data in the protocol within the limited number of people who focus on regulatory and compliance issues at securities firms. The entire global securities industry uses FIX, while only the regulatory and compliance departments at US equity brokers understand the OATS or OTS data format.</p>
+    <p id="27e56e35-fb66-4d33-9214-ad054cce4586">FIX is currently used to support regulations from FINRA, CFTC, SEC and internationally from the Investment Industry Regulatory Organization of Canada</p>
+    <p id="21afeac7-559b-41fa-9f0d-ac98f924e055">(IIROC) and the Australian Securities and Investment Commission (ASIC). An overview of this regulatory support is at: <a href="">http://www.fixprotocol.org/regulations/</a>.</p>
+    <p id="a03a2111-bf65-48f7-8f0c-f80b5915ffb1">For clarity, the FIX protocol has two parts. The application layer governs the data format (what the data looks like) and is what this recommendation is focused on. The session layer governs the transport of the messages (how the messages are sent between firms). While the session layer could be used for sending the messages from firms to the SRO, there may be other ways of sending the messages that are just as suitable.</p>
+    <p id="d7a28ca0-9f0b-48c9-b3f5-ffcc5b46110f">Thank you for consideration of this submission.</p>
+    <p id="247e4ebe-8b89-49a9-87df-9877bd0eb01f">Sincerely,</p>
+    <p id="9c87899c-ce97-4e2f-be16-346fd9551e08">Martin Koopman</p>
+    <p id="e30c4bb3-06b5-4f9e-865f-8ff2365d746f">martink@aditat.com</p>
+    <p id="a9b03cfb-0bb8-4885-8f88-dbc4f9535d95">+1 917 3885775</p>
+    <p id="4137c61b-b34a-42e4-af44-bdfd511a7099">137 West 78th Street</p>
+    <p id="673bd902-3267-404a-b5ad-3475bb159d56">New York, NY 10024</p>
+  </div>
+</body></html>

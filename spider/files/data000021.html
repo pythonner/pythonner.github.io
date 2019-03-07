@@ -1,0 +1,441 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Joint Industry Plan (Order Approving Plan Amendment No. 2 Release 34-75980)</code>
+  <code class="meta">document_type: Orders</code>
+  <code class="meta">source: US/SEC/Orders/Order Approving Plan Amendment</code>
+  <code class="meta">source_type: Order Approving Plan Amendment</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: Order Approving Plan Amendment No. 2 Release 34-75980</code>
+  <div id="f2b2020b-e80d-4a64-a8b9-fb4592e3bfaf" class="level2"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+    <h1 class="headline">Joint Industry Plan (Order Approving Plan Amendment No. 2 Release 34-75980)</h1>
+    <code class="topic" id="topic-f2b2020b-e80d-4a64-a8b9-fb4592e3bfaf">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2</code>
+    <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+    <code class="keywords">Keywords: 
+      SRO, 
+      NMS Plan, 
+    </code>
+    <p id="2de898f3-a6f0-43c0-9306-aadf68603b76">SECURITIES AND EXCHANGE COMMISSION</p>
+    <p id="83d89893-92a8-4c1e-845f-6da6cd742bed">(Release No. 34-75980; File No. 4-668)</p>
+    <p id="2755f0af-7d77-4b72-84cb-35f266f1a9e1">September 24, 2015</p>
+    <p id="d0b9ae18-bf80-47d3-9b1e-3cf5a362ce1f">Joint Industry Plan; Order Approving Amendment No. 2 to the National Market System Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail by BATS Exchange, Inc., BATS-Y Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., EDGA Exchange, Inc., EDGX Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, ISE Gemini, LLC, Miami International Securities Exchange LLC, NASDAQ OMX BX, Inc., NASDAQ OMX PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, NYSE MKT LLC, and NYSE Arca, Inc.</p>
+    <div id="0f15ef28-9fb9-49ba-b437-b1dcd7d718af" class="level3"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+      <h2>I. Introduction</h2>
+      <code class="topic" id="topic-0f15ef28-9fb9-49ba-b437-b1dcd7d718af">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2, Introduction</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+      <code class="keywords">Keywords: 
+        SRO, 
+        NMS Plan, 
+        Rule 608, 
+        Securities and Exchange Act - Section 11A, 
+        Selecting a Plan Processor, 
+        Selection Plan, 
+      </code>
+      <p id="c0a9cbb7-1021-4747-9c1e-6a359fe7781b">On March 6, 2015, BATS Exchange, Inc., BATS-Y Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., EDGA Exchange, Inc., EDGX Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, ISE Gemini, LLC, Miami International Securities Exchange LLC, NASDAQ OMX BX, Inc., NASDAQ OMX PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, NYSE MKT LLC, and NYSE Arca, Inc. (collectively, &#8220;SROs&#8221; or &#8220;Participants&#8221;) filed with the Securities and Exchange Commission (&#8220;Commission&#8221; or &#8220;SEC&#8221;) pursuant to Section 11A of the Securities Exchange Act of 1934 (&#8220;Act&#8221;),<a class="sup" HREF="#fn_pz1-24" NAME="fr_pz1-24">1</a> and Rule 608 thereunder,<a class="sup" HREF="#fn_pz1-25" NAME="fr_pz1-25">2</a> an amendment (&#8220;Amendment No. 2&#8221;) to the National Market System (&#8220;NMS&#8221;) Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail (&#8220;Selection Plan&#8221;).<a class="sup" HREF="#fn_pz2-7" NAME="fr_pz2-7">3</a> Amendment No. 2 was published for comment in the Federal Register on June 23, 2015.<a class="sup" HREF="#fn_pz2-8" NAME="fr_pz2-8">4</a> The Commission received no comment letters on this proposal. This Order approves Amendment No. 2 to the Selection Plan.</p>
+    </div>
+    <div id="7c9e328d-90bd-4422-bd03-8de6b4b64815" class="level3"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+      <h2>II. Background and Description of the Proposal</h2>
+      <code class="topic" id="topic-7c9e328d-90bd-4422-bd03-8de6b4b64815">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2, Background and Description of the Proposal</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+      <code class="keywords">Keywords: 
+        Sec Rule 613, 
+        NMS Plan, 
+      </code>
+      <div id="77ba6917-abd3-4d69-b553-5e3af8483a2f" class="level4"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+        <h3>A. Background</h3>
+        <code class="topic" id="topic-77ba6917-abd3-4d69-b553-5e3af8483a2f">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2, Background and Description of the Proposal, Background</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+        <code class="keywords">Keywords: 
+          Sec Rule 613, 
+          NMS Plan, 
+          CAT NMS plan, 
+        </code>
+        <p id="70d56ba7-8ad2-4d3d-9fa3-96b7d4116846">The Commission adopted <a href="">Rule 613</a> on July 11, 2012, to require the SROs to jointly submit an NMS plan to create, implement, and maintain a consolidated audit trail (&#8220;CAT NMS Plan&#8221;).<a class="sup" HREF="#fn_pz2-9" NAME="fr_pz2-9">5</a> In response, the SROs engaged in a request for proposal (&#8220;RFP&#8221;) process to help them develop an NMS Plan proposal and solicit bids (&#8220;Bids&#8221;) for the role of Plan Processor<a class="sup" HREF="#fn_pz2-10" NAME="fr_pz2-10">6</a> to build, operate, administer, and maintain the consolidated audit trail. The Selection Plan, which was approved by the Commission on February 21, 2014, sets forth the process by which the Participants will review, evaluate, and narrow down the Bids submitted in response to the RFP to &#8220;Shortlisted Bids,&#8221; and ultimately select the Plan Processor following Commission approval of the proposed CAT NMS Plan.<a class="sup" HREF="#fn_pz2-11" NAME="fr_pz2-11">7</a> Amendment No.1 to the Selection Plan, which the Commission approved on June 17, 2015, among other things, permits the SROs to vote to narrow the set of Shortlisted Bids to an even shorter list prior to Commission approval of the proposed CAT NMS Plan.<a class="sup" HREF="#fn_pz3-5" NAME="fr_pz3-5">8</a> The Selection Plan, as amended, provides that the SROs&#8217; Selection Committee will vote to select the Plan Processor from among the remaining bidders, using a two-round voting process, within two months of Commission approval of the proposed CAT NMS Plan.<a class="sup" HREF="#fn_pz3-6" NAME="fr_pz3-6">9</a></p>
+      </div>
+      <div id="a82663e6-ab1a-433c-9814-e703374c1d8d" class="level4"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+        <h3>B. Description of the Proposal</h3>
+        <code class="topic" id="topic-a82663e6-ab1a-433c-9814-e703374c1d8d">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2, Background and Description of the Proposal, Description of the Proposal</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+        <code class="keywords">Keywords: 
+          Bidding Participant, 
+          SRO, 
+          Plan Processor, 
+          Selection Plan, 
+          CAT NMS plan, 
+        </code>
+        <p id="d1f290fe-0474-4efa-9263-5ec614d2bf82">Amendment No. 1 included a provision providing that no SRO shall vote in the process narrowing the set of Shortlisted Bidders if a Bid submitted by the SRO or an Affiliate of the SRO is a Shortlisted Bid or if the SRO or its Affiliate is included as a material subcontractor as part of a Bid (a &#8220;Bidding Participant&#8221;<a class="sup" HREF="#fn_pz3-7" NAME="fr_pz3-7">10</a>).<a class="sup" HREF="#fn_pz3-8" NAME="fr_pz3-8">11</a> The same recusal provision exists in the second&#8212;but not the first&#8212;round of a two-round voting process by the Selection Committee<a class="sup" HREF="#fn_pz3-9" NAME="fr_pz3-9">12</a> to select the Plan Processor from among the Shortlisted Bidders.<a class="sup" HREF="#fn_pz3-10" NAME="fr_pz3-10">13</a> The SROs state that they included the recusal provision to address potential conflicts of interest in selecting the Plan Processor.</p>
+        <p id="f6c55f0f-63da-41aa-91fa-1d069616254e">In Amendment No. 2, the SROs propose to modify the Selection Plan to require that an SRO that is a Bidding Participant be recused from voting in any round to select the Plan Processor in which a Bid from or including such Bidding Participant or its Affiliate is being considered.<a class="sup" HREF="#fn_pz4-4" NAME="fr_pz4-4">14</a> Amendment No. 2 therefore would extend to the first selection round the recusal requirement that is currently only in place for the second selection round and the vote, if any, that narrows the list of Shortlisted Bidders.</p>
+        <p id="27f6e44a-812a-433f-93ef-2a63cad9e064">The SROs reiterate that the Selection Plan balances the competing goals of ensuring all SROs participate meaningfully in the process of developing the CAT NMS Plan and mitigating potential conflicts of interest related to the involvement of a bidding SRO through information barriers and the voting limitations.<a class="sup" HREF="#fn_pz4-5" NAME="fr_pz4-5">15</a> The SROs state that, based on their experience with these existing measures, the Selection Plan adequately addresses the potential conflicts of interest related to bidding SROs.<a class="sup" HREF="#fn_pz4-6" NAME="fr_pz4-6">16</a> Nonetheless, the SROs explain that requiring recusal in all rounds of the selection process will further the SROs&#8217; goal of ensuring the fair and impartial consideration and selection of the CAT Plan Processor.<a class="sup" HREF="#fn_pz4-7" NAME="fr_pz4-7">17</a></p>
+      </div>
+    </div>
+    <div id="8f4265ae-8187-43b9-8c1c-6b41b7d169c7" class="level3"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+      <h2>III. Discussion</h2>
+      <code class="topic" id="topic-8f4265ae-8187-43b9-8c1c-6b41b7d169c7">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2, Discussion</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+      <code class="keywords">Keywords: 
+        Amendment No. 2, 
+        Plan Processor, 
+      </code>
+      <p id="657631a9-f04f-4baf-9e77-677bb6fbe095">After careful review, the Commission finds that Amendment No. 2 is appropriate in the public interest, for the protection of investors and the maintenance of fair and orderly markets, and to remove impediments to, and perfect the mechanisms of, a national market system. By extending the aforementioned recusal requirement to both selection rounds, Amendment No. 2 adds an additional procedural safeguard that is designed to further the fairness and impartiality of the Plan Processor selection.</p>
+    </div>
+    <div id="7279ed3b-0d97-4e00-ac29-be5a00d03275" class="level3"><code class="pubeffdate">pubdate: September 24, 2015 effdate: N/A</code>
+      <h2>IV. Conclusion</h2>
+      <code class="topic" id="topic-7279ed3b-0d97-4e00-ac29-be5a00d03275">Topic: SEC Release, Release No. 34-75980, Joint Industry Plan; Order Approving Amendment No. 2, Conclusion</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organizations</code>
+      <code class="keywords">Keywords: 
+        Amendment No. 2, 
+        National Market System, 
+        Selection Plan, 
+      </code>
+      <p id="d6228189-9e75-47bf-84c9-c6d1ad418599">For the reasons discussed above, the Commission finds that Amendment No. 2 is appropriate in the public interest, for the protection of investors and the maintenance of fair and orderly markets, and to remove impediments to, and perfect the mechanisms of, a national market system, or otherwise in furtherance of the purposes of the Act.</p>
+      <p id="64455074-48dd-4a82-86af-1b2e1bf999c9">IT IS THEREFORE ORDERED, pursuant to Section 11A of the Act,<a class="sup" HREF="#fn_pz5-6" NAME="fr_pz5-6">18</a> and the rules thereunder, that Amendment No. 2 to the Selection Plan be, and it hereby is, approved.</p>
+      <p id="d2264f88-4a29-425c-bc53-de82cb4893e6">By the Commission.</p>
+      <p id="9dd78699-ca5f-4b27-a892-f037c3f62240">Robert W. Errett</p>
+      <p id="96b4b15e-9de4-4741-8505-ceb608c35b5c">Deputy Secretary</p>
+    </div>
+    <hr width="65%"/><table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-24" HREF="#fr_pz1-24" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>1 <a href="">15 U.S.C. 78k-1</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-25" HREF="#fr_pz1-25" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>2 <a href="">17 CFR 242.608</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-7" HREF="#fr_pz2-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>3 The Selection Plan is an NMS Plan approved by the Commission pursuant to <a href="">Section 11A of the Act</a> and <a href="">Rule 608</a> thereunder. See <a href="">Securities Exchange Act Release No. 71596</a> (Feb. 21, 2014), <a href="">79 FR 11152</a> (Feb. 27, 2014) (&#8220;Order Approving Selection Plan&#8221;); see also <a href="">Securities Exchange Act Release No. 70892</a> (Nov. 15, 2013), <a href="https://www.federalregister.gov/documents/2013/11/21/2013-27906/joint-industry-plan-bats-exchange-inc-bats-y-exchange-inc-box-options-exchange-llc-c2-options">78 FR 69910</a> (Nov. 21, 2013) (&#8220;Notice of Selection Plan&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-8" HREF="#fr_pz2-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>4 See <a href="">Securities Exchange Act Release No. 75193</a> (June 17, 2015), <a href="">80 FR 36006</a> (June 23, 2015) (&#8220;Notice of Amendment No. 2&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-9" HREF="#fr_pz2-9" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>5 <a href="SEC Final Rule, Release No. 34-67457">Securities Exchange Act Release No. 67457</a> (July 18, 2012), <a href="https://www.federalregister.gov/documents/2012/08/01/2012-17918/consolidated-audit-trail">77 FR 45722</a> (Aug. 1, 2012).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-10" HREF="#fr_pz2-10" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>6 Unless otherwise noted, capitalized terms are used as defined in <a href="">Rule 613</a>, in the Selection Plan, or in this Order.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-11" HREF="#fr_pz2-11" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>7 See Order Approving Selection Plan, supra note 3.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-5" HREF="#fr_pz3-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>8 See <a href="">Securities Exchange Act Release No. 75192</a>, <a href="">80 FR 36028</a> (June 23, 2015) (&#8220;Order Approving Amendment No. 1&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-6" HREF="#fr_pz3-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>9 See Order Approving Selection Plan, supra note 3; Order Approving Amendment No. 1, supra note 8.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-7" HREF="#fr_pz3-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>10 The Selection Plan defines &#8220;Bidding Participant&#8221; as a Participant that: (1) submits a Bid; (2) is an Affiliate of an entity that submits a Bid; or (3) is included, or is an Affiliate of an entity that is included, as a Material Subcontractor as part of a Bid. See Notice of Selection Plan, supra note 3, Exhibit A, at 2.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-8" HREF="#fr_pz3-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>11 See Order Approving Amendment No. 1, supra note 8.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-9" HREF="#fr_pz3-9" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>12 The Selection Committee is composed of one senior officer from each Participant. See Section V.A of the Selection Plan.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-10" HREF="#fr_pz3-10" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>13 This two-round voting process would take place after any further narrowing of the Shortlisted Bids, if such narrowing were to occur pursuant to Amendment No. 1. See Order Approving Amendment No. 1, supra note 8, at 36029 &amp; n.21.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-4" HREF="#fr_pz4-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>14 Notice of Amendment No. 2, supra note 4, at 36007.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-5" HREF="#fr_pz4-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>15 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-6" HREF="#fr_pz4-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>16 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-7" HREF="#fr_pz4-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>17 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz5-6" HREF="#fr_pz5-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>18 <a href="">15 U.S.C. 78k-1</a>.</p>
+    </small></td></tr></tbody></table>
+  </div>
+</body></html>

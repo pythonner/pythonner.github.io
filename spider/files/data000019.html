@@ -1,0 +1,790 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Joint Industry Plan (Notice of Proposed Plan Release 34-70892)</code>
+  <code class="meta">document_type: Notices</code>
+  <code class="meta">source: US/SEC/Notices/Notice of Proposed Plan</code>
+  <code class="meta">source_type: Notice of Proposed Plan</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: Notice of Proposed Plan Release 34-70892</code>
+  <div id="9d716c20-b3b4-4fb1-ac4b-404a5422c659" class="level2"><code class="pubeffdate">pubdate: November 15, 2013 effdate: N/A</code>
+    <h1 class="headline">Joint Industry Plan (Notice of Proposed Plan Release 34-70892)</h1>
+    <code class="topic" id="topic-9d716c20-b3b4-4fb1-ac4b-404a5422c659">Topic: Joint Industry Plan (Notice of Proposed Plan Release 34-70892)</code>
+    <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+    <code class="keywords">Keywords: 
+      Joint Industry Plan, 
+      Selection Plan, 
+    </code>
+    <p id="c6c4ac52-071f-4e9f-a8af-cff590a733b9">SECURITIES AND EXCHANGE COMMISSION</p>
+    <p id="f58f6a7a-1c80-466c-8489-1b6d3a02ef27">(Release No. 34-70892; File No. 4-668)</p>
+    <p id="43dfabdc-bf27-4c75-87cc-996fefb19c24">November 15, 2013</p>
+    <p id="ae64a1f2-0064-4e41-8a5f-7c0e0b78b31b">Joint Industry Plan; BATS Exchange, Inc., BATS-Y Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., EDGA Exchange, Inc., EDGX Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, Miami International Securities Exchange LLC, NASDAQ OMX BX, Inc., NASDAQ OMX PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, NYSE MKT LLC, NYSE Arca, Inc. and Topaz Exchange, LLC; Notice of Filing of Proposed National Market System Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail</p>
+    <div id="041a51cc-9476-446f-8cca-c42de040c282" class="level3"><code class="pubeffdate">pubdate: November 16, 2013 effdate: N/A</code>
+      <h2>I. Introduction</h2>
+      <code class="topic" id="topic-041a51cc-9476-446f-8cca-c42de040c282">Topic: I. Introduction</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Securities Exchange Act - Section 11A, 
+        SRO, 
+        Selection Plan, 
+        CAT NMS plan, 
+      </code>
+      <p id="a1106631-4897-4384-9d4d-8cb921001a18">Pursuant to Section 11A of the Securities Exchange Act of 1934 (&#8220;Exchange Act&#8221; or &#8220;Act&#8221;)<a class="sup" HREF="#fn_pz1-25" NAME="fr_pz1-25">1</a> and Rule 608 thereunder (&#8220;Rule 608&#8221;),<a class="sup" HREF="#fn_pz1-26" NAME="fr_pz1-26">2</a> notice is hereby given that on September 3, 2013, BATS Exchange, Inc., BATS-Y Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., EDGA Exchange, Inc., EDGX Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, Miami International Securities Exchange LLC, NASDAQ OMX BX, Inc., NASDAQ OMX PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, NYSE MKT LLC, NYSE Arca, Inc., and Topaz Exchange, LLC (collectively, &#8220;SROs&#8221; or &#8220;Participants&#8221;) filed with the Securities and Exchange Commission (&#8220;Commission&#8221;) the proposed National Market System (&#8220;NMS&#8221;) Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail (&#8220;Plan&#8221;). A copy of the Plan is attached as Exhibit A hereto. The Commission is publishing this notice to solicit comments on the Plan.</p>
+    </div>
+    <div id="ba3ca7be-5823-4502-82e3-430edc2d968a" class="level3"><code class="pubeffdate">pubdate: November 17, 2013 effdate: N/A</code>
+      <h2>II. Background</h2>
+      <code class="topic" id="topic-ba3ca7be-5823-4502-82e3-430edc2d968a">Topic: II. Background</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        SRO, 
+        Selection Plan, 
+        CAT NMS plan, 
+        Sec Rule 613, 
+      </code>
+      <p id="df6b851b-f14e-4f66-aaaa-97d2dba09e3e">On July 11, 2012, the Commission adopted Rule 613 under the Exchange Act<a class="sup" HREF="#fn_pz2-4" NAME="fr_pz2-4">3</a> to require the SROs to jointly submit an NMS plan (the &#8220;CAT NMS Plan&#8221;) to create, implement, and maintain a consolidated order tracking system, or consolidated audit trail, with respect to the trading of NMS securities, that would capture customer and order event information for orders in NMS securities, across all markets, from the time of order inception through routing, cancellation, modification, or execution.<a class="sup" HREF="#fn_pz2-5" NAME="fr_pz2-5">4</a> <a href="">Rule 613</a> outlines a broad framework for the creation, implementation, and maintenance of the consolidated audit trail, including the minimum elements the Commission believes are necessary for an effective consolidated audit trail.<a class="sup" HREF="#fn_pz2-7" NAME="fr_pz2-7">5</a> In instances where <a href="">Rule 613</a> sets forth minimum requirements for the consolidated audit trail, the Rule provides flexibility to the SROs to draft the requirements of the CAT NMS Plan in a way that best achieves the objectives of the Rule.<a class="sup" HREF="#fn_pz2-8" NAME="fr_pz2-8">6</a></p>
+      <p id="23315385-2d0e-4e69-a688-267af7806f66">As described in more detail below, the SROs concluded that publication of a request for proposal was necessary to ensure that potential alternative solutions to creating the consolidated audit trail can be presented and considered by the SROs and that a detailed and meaningful cost/benefit analysis can be performed, both of which are required considerations to be addressed in the CAT NMS Plan. The SROs also decided, for the reasons set forth below, to file the Plan to govern how the SROs will proceed with formulating and submitting the CAT NMS Plan&#8212;and, as part of that process, how to review, evaluate, and narrow down the bids submitted in response to the request for proposal&#8212;and ultimately choosing the plan processor that would build, operate, and maintain the consolidated audit trail.</p>
+    </div>
+    <div id="42d6ff5d-253a-4735-a36b-eafc6167ff4b" class="level3"><code class="pubeffdate">pubdate: November 18, 2013 effdate: N/A</code>
+      <h2>III. Description of the Plan</h2>
+      <code class="topic" id="topic-42d6ff5d-253a-4735-a36b-eafc6167ff4b">Topic: III. Description of the Plan</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Rule 608, 
+        SRO, 
+        Purpose of the Plan, 
+      </code>
+      <p id="cf599f16-301a-464a-ad60-49fdb2aac392">Set forth in this Section III is the statement of the purpose of the Plan, along with the information required by Rule 608(a)(4) and (5) under the Exchange Act,<a class="sup" HREF="#fn_pz3-17" NAME="fr_pz3-17">7</a> prepared and submitted by the SROs with the Plan to the Commission.<a class="sup" HREF="#fn_pz3-18" NAME="fr_pz3-18">8</a></p>
+      <div id="70ae3339-a95e-4235-b7d9-151976a4e647" class="level4"><code class="pubeffdate">pubdate: November 19, 2013 effdate: N/A</code>
+        <h3>A. Statement of Purpose</h3>
+        <code class="topic" id="topic-70ae3339-a95e-4235-b7d9-151976a4e647">Topic: A. Statement of Purpose</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Sec Rule 613, 
+          CAT NMS plan, 
+          Purpose of the Plan, 
+          Selection Committe, 
+          Plan Processor, 
+          Participant, 
+          Section (V) Selection Plan, 
+          Bidder, 
+          Shortlisted Bids, 
+          Qualified Bids, 
+          Voting Senior Officer, 
+        </code>
+        <p id="dc1a8878-e19e-4ce0-97f7-1364d5cc8693"><a href="">Rule 613</a> requires the Participants to &#8220;jointly file . . . a national market system plan to govern the creation, implementation, and maintenance of a consolidated audit trail and central repository.&#8221;<a class="sup" HREF="#fn_pz3-20" NAME="fr_pz3-20">9</a> The Plan being submitted for approval by the Participants governs the process of selecting a Plan Processor for the consolidated audit trail and developing the CAT NMS Plan.</p>
+        <p id="a0eabff7-ce73-41d3-8b85-ad6d3fcfd0c3">As adopted, <a href="">Rule 613</a> &#8220;expand[ed] the set of solutions that could be considered by the SROs for creating, implementing, and maintaining a consolidated audit trail and [provided] the SROs with increased flexibility in how they choose to meet the requirements of the adopted Rule.&#8221;<a class="sup" HREF="#fn_pz4-9" NAME="fr_pz4-9">10</a> As the Commission noted in the Adopting Release, because of this expanded solution set, &#8220;the adopted Rule now requires the [Participants] to provide much more information and analysis to the Commission as part of their [CAT NMS Plan] submission.&#8221;<a class="sup" HREF="#fn_pz4-10" NAME="fr_pz4-10">11</a> Specifically, these requirements were incorporated into <a href="">Rule 613</a> as a series of twelve &#8220;considerations&#8221; that the Participants must address in the CAT NMS Plan, including:</p>
+        <p id="0fdb05be-986b-4f9b-987e-8bf270873be7">&#8226; the specific details and features of the CAT NMS Plan;</p>
+        <p id="6bef1773-f954-44e9-ab03-cec2b2776edf">&#8226; the Participants&#8217; analysis of the CAT NMS Plan&#8217;s costs and impact on competition, efficiency, and capital formation;</p>
+        <p id="d1daec4b-07d5-49b1-9a49-20de026cdc8c">&#8226; the process in developing the CAT NMS Plan;</p>
+        <p id="a1bfd024-069b-4c00-82d1-a37a35f3bb2e">&#8226; information about the implementation of the CAT NMS Plan; and</p>
+        <p id="353028cc-c7bb-4ee3-be9f-227309ae5b78">&#8226; milestones for the creation of the consolidated audit trail.</p>
+        <p id="cb736735-d518-431e-ac1a-7a8c80877db0">As part of the discussion of these &#8220;considerations,&#8221; the Participants must include &#8220;cost estimates for the proposed solution, and a discussion of the costs and benefits of alternative [sic] solutions considered but not proposed.&#8221;<a class="sup" HREF="#fn_pz4-11" NAME="fr_pz4-11">12</a> In addition, the Commission noted that <a href="">Rule 613</a> requires that the [Participants]: (1) Provide an estimate of the costs associated with creating, implementing, and maintaining the consolidated audit trail under the terms of the [CAT NMS Plan] submitted to the Commission for its consideration; (2) discuss the costs, benefits, and rationale for the choices made in developing the [CAT NMS Plan] submitted; and (3) provide their own analysis of the submitted [CAT NMS Plan&#8217;s] potential impact on competition, efficiency, and capital formation.<a class="sup" HREF="#fn_pz5-5" NAME="fr_pz5-5">13</a></p>
+        <p id="ff6d1c22-ed91-456e-b822-d132318dae9a">The Commission stated that these detailed requirements are &#8220;intended to ensure that the Commission and the public have sufficiently detailed information to carefully consider all aspects of the [CAT NMS Plan] ultimately submitted by the [Participants].&#8221;<a class="sup" HREF="#fn_A0y" NAME="fr_A0y">14</a> Indeed, the Commission expressed its expectation that &#8220;the [Participants] will seriously consider various options as they develop the [CAT NMS Plan] to be submitted to the Commission for its consideration.&#8221;<a class="sup" HREF="#fn_AZR" NAME="fr_AZR">15</a></p>
+        <p id="bd31ad74-333b-42ec-bd25-989059a761b0">In light of the numerous specific requirements of <a href="">Rule 613</a>, on March 7, 2013, the Commission granted the Participants an extension of the time in which to file the CAT NMS Plan so that the Participants could ensure that all potential options for the consolidated audit trail could be considered. As noted in the Exemptive Letter, the Participants concluded that publication of a request for proposal (&#8220;RFP&#8221;) was necessary to ensure that potential alternative solutions to creating the consolidated audit trail can be presented and considered by the Participants and that a detailed and meaningful cost/benefit analysis can be performed, both of which are required considerations to be addressed in the CAT NMS Plan.</p>
+        <p id="b836f04d-857b-42b4-a023-d64fd808822a">The Participants published the RFP on February 26, 2013, and requested that any potential bidders notify the Participants of their intent to bid by March 5, 2013. Thirty-one firms submitted an intent to bid in response to the publication of the RFP; four of the firms were Participants or Affiliates of Participants.<a class="sup" HREF="#fn_pz6-4" NAME="fr_pz6-4">16</a></p>
+        <p id="dbe8347b-f927-4a1e-963f-8805f8c2418a">The Plan is intended to govern how the Participants will proceed with formulating and submitting the CAT NMS Plan&#8212;and, as part of that process, reviewing, evaluating, and narrowing down the Bids submitted in response to the RFP&#8212;and ultimately choosing the Plan Processor. Because of the important regulatory obligations that exist for each Participant with respect to the creation and operation of the consolidated audit trail, it is essential that each Participant contribute to the development of the CAT NMS Plan. The Participants recognize, however, that Participants or Affiliates of Participants may also be Bidders seeking to serve as the Plan Processor or may be included as part of a Bid. The Participants have sought to mitigate these potential conflicts of interest by including in the Plan multiple provisions, which are described below, designed to balance these competing factors. The Participants believe that the Plan achieves this balance by allowing all Participants to participate meaningfully in the process of creating the CAT NMS Plan and choosing the Plan Processor while imposing strict requirements to ensure that the participation is independent and that the process is fair and transparent.</p>
+        <p id="d2df7ebe-df95-47e4-a11c-28d709f73f53">Section III of the Plan establishes the overall governance structure the Participants have chosen.<a class="sup" HREF="#fn_pz6-5" NAME="fr_pz6-5">17</a> Specifically, the Participants propose establishing an Operating Committee responsible for formulating, drafting, and filing with the Commission the CAT NMS Plan and for ensuring the Participants&#8217; joint obligations under <a href="">Rule 613</a> are met in a timely and efficient manner. As set forth in Section III(B) of the Plan, each Participant will select one individual and one substitute to serve on the Operating Committee; however, other representatives of each Participant are permitted to attend Operating Committee meetings. Section III of the Plan also establishes the procedures for the Operating Committee, including provisions regarding meetings, Participants&#8217; voting rights, and voting requirements.</p>
+        <p id="5d4e677b-6538-4d80-ad84-5ad735b072fc">Sections V and VI of the Plan<a class="sup" HREF="#fn_pz7-3" NAME="fr_pz7-3">18</a> set forth the process for the Participants&#8217; evaluation of Bids and the selection process for narrowing down the Bids and choosing the Plan Processor.<a class="sup" HREF="#fn_pz7-4" NAME="fr_pz7-4">19</a> Pursuant to these Sections, the evaluation of Bids and selection of the Plan Processor will be performed by a Selection Committee composed of one senior officer from each Participant (referred to as the &#8220;Voting Senior Officer&#8221;).<a class="sup" HREF="#fn_pz7-5" NAME="fr_pz7-5">20</a> Because of the potential conflicts of interest noted above, the Plan includes multiple requirements to increase the independence of the Voting Senior Officer who participates on the Selection Committee on behalf of a Bidding Participant.<a class="sup" HREF="#fn_pz8-3" NAME="fr_pz8-3">21</a> The criteria set forth in Section V(D) of the Plan include requirements concerning the Voting Senior Officer&#8217;s job responsibilities, decision-making authority, and reporting, and require that the Bidding Participant establish functional separation between its Plan responsibilities and its business/commercial (including market operations) functions. In addition, the criteria prohibit any disclosure of information regarding the Bid to the Voting Senior Officer and prohibit the Voting Senior Officer from disclosing any non-public information gained in his or her role as such. These criteria are intended to insulate the Voting Senior Officer from any inside knowledge regarding the Bid (while also preventing any information about the evaluation process from being shared with staff preparing the Bidding Participant&#8217;s Bid) and to reduce any potential personal motivation that may exist that could improperly influence a Voting Senior Officer&#8217;s decisions.<a class="sup" HREF="#fn_pz8-4" NAME="fr_pz8-4">22</a></p>
+        <p id="cd827748-174b-4dc2-a59b-07ea7a573930">Because of the integral role played by the Selection Committee, any action requiring a vote by the Selection Committee under the Plan can only be taken in a meeting in which all Participants entitled to vote are present. All votes taken by the Selection Committee are confidential and non-public, and a Participant&#8217;s individual votes will not be disclosed to other Participants or to the public. For this reason, the Plan provides that votes of the Selection Committee will be tabulated by an independent third party approved by the Operating Committee. Moreover, the Participants do not anticipate that aggregate votes or anonymized voting distribution numbers will be provided to the Participants following votes by the Selection Committee.</p>
+        <p id="3245889d-afbe-4047-9a2b-6f855a6d7be4">The Plan divides the review and evaluation of Bids and selection of the Plan Processor into four separate stages. After Bids are received,<a class="sup" HREF="#fn_pz9-4" NAME="fr_pz9-4">23</a> Section VI(A) of the Plan provides that the Selection Committee will review all submitted Bids to determine which Bids are Qualified Bids (i.e., Bids that contain sufficient information to allow the Voting Senior Officers to meaningfully assess and evaluate the Bid).<a class="sup" HREF="#fn_pz9-5" NAME="fr_pz9-5">24</a> At this initial stage, if two-thirds or more of the Participants determine that a Bid does not meet the threshold for a Qualified Bid, the Bid will be eliminated from further consideration. The Participants believe this initial step will ensure that only those Bids meeting a minimum level of detail and sufficiency will move forward in the process, and insufficient Bids can be eliminated.</p>
+        <p id="47d462c4-f542-484e-b293-601f63e00b54">Following the elimination of Bids that are not Qualified Bids, each Qualified Bidder will be provided the opportunity to present its Bid to the Selection Committee. After the Qualified Bidders have made their presentations, the Selection Committee will establish a &#8220;shortlist&#8221; of Bids that will move on in the process. The Plan provides that, if there are six or fewer Qualified Bids submitted, all of those Bids will be selected as &#8220;Shortlisted Bids.&#8221;<a class="sup" HREF="#fn_pz10-3" NAME="fr_pz10-3">25</a> If there are more than six but fewer than eleven Qualified Bids, the Selection Committee will choose five Shortlisted Bids, and if there are eleven or more Qualified Bids, the Selection Committee will choose 50% of the Qualified Bids as Shortlisted Bids.<a class="sup" HREF="#fn_pz10-4" NAME="fr_pz10-4">26</a></p>
+        <p id="c3fe92bf-0f47-4e25-b3f2-c49a8774b014">When voting to select the Shortlisted Bids from among the Qualified Bids, each Voting Senior Officer must rank his or her selections, and the points assigned to the rankings increase in single-point increments. Thus, for example, if five Shortlisted Bids are to be chosen, each Participant will vote for its top five choices in rank order, with the first choice being given five points, the second choice four points, the third choice three points, the fourth choice two points, and the fifth choice one point. The Participants considered numerous alternative voting procedures but determined that the proposed process appropriately balances the need to differentiate among Qualified Bids while also ensuring that each Qualified Bid receives due consideration for inclusion as a Shortlisted Bid since each Voting Senior Officer must select multiple Qualified Bids for inclusion as a Shortlisted Bid. Further, while the Participants believe that the independence indicia sufficiently address any potential conflicts of interest that may arise with respect to Bids with which a Participant is affiliated, the proposed process will further</p>
+        <p id="45d9120d-aa16-44e7-baf1-bae818133d73">mitigate potential conflicts because each Voting Senior Officer must select multiple unaffiliated Qualified Bids. The Participants believe this step is appropriate both to ensure that Bidders submit a complete and thorough Bid initially and so that Qualified Bidders will know whether they have a realistic opportunity to be selected as the Plan Processor after the CAT NMS Plan is approved.</p>
+        <p id="5b0ac048-216a-4819-9384-0f736f4fea19">To further reduce the impact of potential conflicts of interest in choosing Shortlisted Bids, the Plan also provides that at least two Non-SRO Bids must be included as Shortlisted Bids, provided there are two Non-SRO Bids that are Qualified Bids.<a class="sup" HREF="#fn_pz11-4" NAME="fr_pz11-4">27</a> If, following the vote, no Non-SRO Bids have been selected as Shortlisted Bids, the Plan requires that the two Non-SRO Bids receiving the highest cumulative votes be added as Shortlisted Bids. If, in this scenario, a single Non-SRO Bid was a Qualified Bid, that Non-SRO Bid would be added as a Shortlisted Bid.</p>
+        <p id="a838a547-9876-4cb4-930c-aed7c01b7a03">Following the selection of Shortlisted Bids, the Participants will identify the optimal proposed solution(s) for the consolidated audit trail for inclusion in the CAT NMS Plan for submission to the Commission. Following approval of the CAT NMS Plan by the Commission, the Selection Committee will determine, by majority vote, which Shortlisted Bidders will be provided the opportunity to revise their Bids in light of the provisions in the final, approved CAT NMS Plan. In making a decision whether to permit a Shortlisted Bidder to revise its Bid, the Selection Committee will consider the provisions in the CAT NMS Plan as well as the content of the Shortlisted Bidder&#8217;s initial Bid. To reduce potential conflicts of interest, the Plan also provides that if a Bid submitted by or including a Bidding Participant or an Affiliate of a Bidding Participant is a Shortlisted Bidder, that Bidding Participant will be recused from all votes regarding whether a Shortlisted Bidder will be permitted to revise its Bid.</p>
+        <p id="d7341e1d-3a0d-4318-9840-a6f90e1e421c">After any permitted revisions have been received, the Selection Committee will select the Plan Processor from the Shortlisted Bids in two rounds of voting where, subject to the recusal provision described below, each Participant has one vote. In the first round, each Participant will select a first and second choice, with the first choice receiving two points and the second choice receiving one point. The two Shortlisted Bids receiving the highest cumulative scores in the first round will advance to the second round.<a class="sup" HREF="#fn_pz12-5" NAME="fr_pz12-5">28</a> In the event of a tie, the tie will be broken by assigning one point per vote to the tied Shortlisted Bids, and the Shortlisted Bid with the most votes will advance. If this procedure fails to break the tie, a revote will be taken on the tied Bids with each vote receiving one point. If the tie persists, the Participants will identify areas for discussion, and revotes will be taken until the tie is broken.</p>
+        <p id="9181029c-9d76-49ce-aa00-68a64db8c2e4">Once two Shortlisted Bids have been chosen, the Participants will vote for a single Shortlisted Bid from the final two to determine the Plan Processor. If one or both of the final Bids is submitted by or includes a Bidding Participant or an Affiliate of a Bidding Participant, the Bidding Participant must recuse itself from the final vote. In the event of a tie, a revote will be taken. If the tie persists, the Participants will identify areas for discussion and, following these discussions, revotes will be taken until the tie is broken. As set forth in Section VII of the Plan, following the selection of the Plan Processor, the Participants will file with the Commission a statement identifying the Plan Processor and including the information required by Rule 608.</p>
+      </div>
+      <div id="7b39daa9-767f-4e35-899f-36819eacbcf6" class="level4"><code class="pubeffdate">pubdate: November 20, 2013 effdate: N/A</code>
+        <h3>B. Governing or Constituent Documents</h3>
+        <code class="topic" id="topic-7b39daa9-767f-4e35-899f-36819eacbcf6">Topic: B. Governing or Constituent Documents</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: </code>
+        <p id="e907f899-8790-4dd4-9e87-9911b8fd4858">Not applicable.</p>
+      </div>
+      <div id="46bda6b4-1bf7-4f78-815e-f00afffd13d7" class="level4"><code class="pubeffdate">pubdate: November 21, 2013 effdate: N/A</code>
+        <h3>C. Implementation of Plan</h3>
+        <code class="topic" id="topic-46bda6b4-1bf7-4f78-815e-f00afffd13d7">Topic: C. Implementation of Plan</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Selection Plan - Section VI, 
+          CAT NMS plan, 
+        </code>
+        <p id="efa6ca79-ed1b-449d-88bb-86624cfc7bd9">The terms of the Plan will be operative immediately upon approval of the Plan by the Commission. The Participants have announced that Bids must be submitted four weeks after the Commission&#8217;s approval of the Plan. The Participants will begin reviewing and evaluating the Bids pursuant to Section VI of the Plan upon receipt of the Bids.</p>
+        <p id="69c4fd38-dd65-4dd0-b93e-b189ee2410f8">The Participants anticipate that it will take seven months to evaluate the Bids and submit the CAT NMS Plan to the Commission pursuant to Sections VI(A) and (B) of the Plan.<a class="sup" HREF="#fn_pz13-9" NAME="fr_pz13-9">29</a> As noted above, upon approval of the CAT NMS Plan, the Plan will automatically terminate. The review of revised Shortlisted Bids and the selection of the Plan Processor will be undertaken as set forth in Sections VI(D) and (E) of the Plan as those sections are incorporated into the CAT NMS Plan.</p>
+      </div>
+      <div id="39834705-76a1-45dc-b6b8-3bab73799f4d" class="level4"><code class="pubeffdate">pubdate: November 22, 2013 effdate: N/A</code>
+        <h3>D. Development and Implementation Phases</h3>
+        <code class="topic" id="topic-39834705-76a1-45dc-b6b8-3bab73799f4d">Topic: D. Development and Implementation Phases</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: </code>
+        <p id="2d86962a-ed20-4d0b-9f11-89ecf46cc6d8">Not applicable.</p>
+      </div>
+      <div id="866bcf50-36a6-4da8-887b-30472890d28c" class="level4"><code class="pubeffdate">pubdate: November 23, 2013 effdate: N/A</code>
+        <h3>E. Analysis of Impact on Competition</h3>
+        <code class="topic" id="topic-866bcf50-36a6-4da8-887b-30472890d28c">Topic: E. Analysis of Impact on Competition</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Exchange Act - Section 11A, 
+          Bidding Participants, 
+        </code>
+        <p id="475e65f0-a853-4267-b4ba-9df8286c9077">The Plan does not impose any burden on competition that is not necessary or appropriate in furtherance of the purposes of the Exchange Act. The Participants do not believe that the Plan introduces terms that are unreasonably discriminatory for the purposes of Section 11A(c)(1)(D) of the Exchange Act. As noted in Section A, the Participants are aware that potential conflicts of interest are raised because a Participant, or an affiliate of a Participant, may be both submitting a Bid (or participating in a Bid) and participating in the evaluation of Bids to select the Plan Processor. As described in Section A, the Plan includes multiple provisions designed to mitigate the potential impact of these conflicts by imposing restrictions on the Voting Senior Officer and by requiring the recusal of Bidding Participants for certain votes taken by the Selection Committee. In addition, the Plan requires that at least two Non-SRO Bids be Shortlisted Bids to ensure Non-SRO Bids are given full and fair consideration.</p>
+      </div>
+      <div id="1d86a4c0-622a-47d6-844c-b9f13691ba6c" class="level4"><code class="pubeffdate">pubdate: November 24, 2013 effdate: N/A</code>
+        <h3>F. Written Understanding or Agreements Relating to Interpretation of, or Participation in, Plan</h3>
+        <code class="topic" id="topic-1d86a4c0-622a-47d6-844c-b9f13691ba6c">Topic: F. Written Understanding or Agreements Relating to Interpretation of, or Participation in, Plan</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Selection Plan - Section III, 
+          Selection Plan - Section II, 
+        </code>
+        <p id="dc3bc865-7ee9-459f-ac24-2b0247eb7be3">The Participants have no written understandings or agreements relating to interpretations of, or participation in, the Plan other than those set forth in the Plan itself. Section III(F)(2)(a) of the Plan provides that interpretations of the Plan require approval by a majority of Participants entitled to vote. Section II(B) of the Plan sets forth how any entity registered as a national securities exchange or national securities association under the Exchange Act may become a Participant.</p>
+      </div>
+      <div id="d65c68c8-3e4d-43ca-bae3-218eeee7097e" class="level4"><code class="pubeffdate">pubdate: November 25, 2013 effdate: N/A</code>
+        <h3>G. Approval of Amendment of the Plan</h3>
+        <code class="topic" id="topic-d65c68c8-3e4d-43ca-bae3-218eeee7097e">Topic: G. Approval of Amendment of the Plan</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: </code>
+        <p id="f00f568a-0a1b-4188-a8ea-aae196786336">Not applicable.</p>
+      </div>
+      <div id="7dba0cbf-fbdc-4d42-b6fa-1b738b0b7f60" class="level4"><code class="pubeffdate">pubdate: November 26, 2013 effdate: N/A</code>
+        <h3>H. Terms and Conditions of Access</h3>
+        <code class="topic" id="topic-7dba0cbf-fbdc-4d42-b6fa-1b738b0b7f60">Topic: H. Terms and Conditions of Access</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Sec Rule 613, 
+          Selection Plan - Section II, 
+        </code>
+        <p id="21240f43-cffd-4542-8719-efdcde5d29c1">Each currently approved national securities exchange and national securities association subject to <a href="">Rule 613(a)(1)</a> is a Participant in the Plan. Section II(B) of the Plan provides that any entity approved by the Commission as a national securities exchange or national securities association under the Exchange Act after the effectiveness of the Plan shall become a Participant by satisfying each of the following requirements: (1) effecting an amendment to the Plan by executing a copy of the Plan as then in effect (with the only change being the addition of the new</p>
+        <p id="7c27c41c-3b44-4aa5-ab15-d11a9a87ec4c">Participant&#8217;s name in Section II of the Plan) and submitting such amendment to the Commission for approval; and (2) providing each then-current Participant with a copy of such executed Plan.</p>
+      </div>
+      <div id="ff16d3e2-75d1-4d04-8a26-560e1037bc1b" class="level4"><code class="pubeffdate">pubdate: November 27, 2013 effdate: N/A</code>
+        <h3>I. Method of Determination and Imposition, and Amount of, Fees and Charges</h3>
+        <code class="topic" id="topic-ff16d3e2-75d1-4d04-8a26-560e1037bc1b">Topic: I. Method of Determination and Imposition, and Amount of, Fees and Charges</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: </code>
+        <p id="3123ee13-c79c-4861-ade5-3e95eaa4cdeb">Not applicable.</p>
+      </div>
+      <div id="b5a59eda-7834-402c-8949-7687458da446" class="level4"><code class="pubeffdate">pubdate: November 28, 2013 effdate: N/A</code>
+        <h3>J. Method and Frequency of Processor Evaluation</h3>
+        <code class="topic" id="topic-b5a59eda-7834-402c-8949-7687458da446">Topic: J. Method and Frequency of Processor Evaluation</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: </code>
+        <p id="37ddc83f-e251-4e4a-81ef-0ce87674b4e1">Not applicable.</p>
+      </div>
+      <div id="b0fe8cdc-f987-46cc-b1d2-0e56f1f89c25" class="level4"><code class="pubeffdate">pubdate: November 29, 2013 effdate: N/A</code>
+        <h3>K. Dispute Resolution</h3>
+        <code class="topic" id="topic-b0fe8cdc-f987-46cc-b1d2-0e56f1f89c25">Topic: K. Dispute Resolution</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Selection Plan - Section III, 
+          CAT NMS plan, 
+          Sec Rule 613, 
+          Rule 608, 
+        </code>
+        <p id="9438b58b-61d8-40df-8473-84640ce3b8ac">The Plan does not include specific provisions regarding resolution of disputes between or among Participants. Section III(B) of the Plan provides for each Participant to designate an individual to represent the Participant as a member of an Operating Committee. Section III(A) of the Plan provides that the Operating Committee is responsible for: (1) formulating, drafting, and filing with the Commission the CAT NMS Plan; and (2) ensuring the Participants&#8217; obligations under <a href="">Rule 613</a> are met in a timely and efficient manner. Within the areas of its responsibilities and authority as set forth in the Plan, decisions made or actions taken by the Operating Committee, directly or by duly delegated individuals or Subcommittees, shall be binding upon each Participant, without prejudice to the rights of any Participant to seek redress from the Commission pursuant to Rule 608 or in any other appropriate forum.</p>
+      </div>
+    </div>
+    <div id="44e5c1bd-aecc-4fb3-a85b-35d492defb57" class="level3"><code class="pubeffdate">pubdate: November 30, 2013 effdate: N/A</code>
+      <h2>IV. Solicitation of Comments</h2>
+      <code class="topic" id="topic-44e5c1bd-aecc-4fb3-a85b-35d492defb57">Topic: IV. Solicitation of Comments</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Submission of Comments, 
+        Electronic Comments, 
+        Paper Comments, 
+        File Number 4-668, 
+        5 U.S.C. 552, 
+      </code>
+      <p id="6664e517-0dff-49ee-afb8-0d31a774503c">Interested persons are invited to submit written data, views, and arguments concerning the foregoing, including whether the Plan is consistent with the Act.</p>
+      <p id="ee77e542-e029-4008-85e0-041239751147">Comments may be submitted by any of the following methods:</p>
+      <p id="117ebc00-a90a-42d0-aeee-a1b580135081">Electronic comments:</p>
+      <p id="436b1097-fc00-4feb-8731-613161c67fde">&#8226; Use the Commission&#8217;s Internet comment form (<a href="">http://www.sec.gov/rules/sro.shtml</a>); or</p>
+      <p id="46d56bf0-203b-4497-bda4-3ca3c98157fc">&#8226; Send an e-mail to rule-comments@sec.gov. Please include File Number 4-668 on the subject line.</p>
+      <p id="c84878d0-5ad8-4171-87a6-66a6710610d0">Paper comments:</p>
+      <p id="4e8e8545-be0d-4938-8efd-c7fefc995f76">&#8226; Send paper comments in triplicate to Elizabeth M. Murphy, Secretary, Securities and Exchange Commission, 100 F Street, NE, Washington, DC 20549-1090.</p>
+      <p id="23504856-4449-47f8-9672-045a3fc03b9b">All submissions should refer to File Number 4-668. This file number should be included on the subject line if e-mail is used. To help the Commission process and review your comments more efficiently, please use only one method. The Commission will post all comments on the Commission&#8217;s Internet website (<a href="">http://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all written statements with respect to the Plan that are filed with the Commission, and all written communications relating to the Plan between the Commission and any person, other than those that may be withheld from the public in accordance with the provisions of <a href="">5 U.S.C. 552</a>, will be available for website viewing and printing in the Commission&#8217;s Public Reference Room, 100 F Street, NE, Washington, DC 20549, on official business days between the hours of 10:00 a.m. and 3:00 p.m. Copies of such filing also will be available for inspection and copying at the Participants&#8217; principal offices. All comments received will be posted without change; the Commission does not edit personal identifying information from submissions. You should submit only information that you wish to make available publicly. All submissions should refer to File Number 4-668 and should be submitted on or before [insert date 30 days from publication in the Federal Register].</p>
+      <p id="8ae0aa3b-6f0f-4fb2-855d-6b5cd92f30d6">By the Commission.</p>
+      <p id="18007a4f-dbea-4455-80a9-e9d74422bfca">Kevin O&#8217;Neill</p>
+      <p id="93f57561-0387-4eed-9281-f48c9c579f40">Deputy Secretary</p>
+    </div>
+    <div id="751a7b78-341c-469b-861a-dbd7f96e666a" class="level3"><code class="pubeffdate">pubdate: December 01, 2013 effdate: N/A</code>
+      <h2>EXHIBIT A</h2>
+      <code class="topic" id="topic-751a7b78-341c-469b-861a-dbd7f96e666a">Topic: EXHIBIT A</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Consolidated Audit trail, 
+        Plan Processor Evaluation and Selection Plan, 
+      </code>
+      <p id="3aae2b04-c9aa-4e5b-b171-f115964d452e">NATIONAL MARKET SYSTEM PLAN GOVERNING THE PROCESS OF SELECTING A PLAN PROCESSOR AND DEVELOPING A PLAN FOR</p>
+      <p id="4514f72a-3d82-4592-8dbb-01c401668403">THE CONSOLIDATED AUDIT TRAIL</p>
+      <p id="c9910032-4817-4ee7-9bff-90262719f49f">SUBMITTED TO THE SECURITIES AND EXCHANGE COMMISSION PURSUANT TO RULE 608 OF REGULATION NMS UNDER THE SECURITIES EXCHANGE ACT OF 1934</p>
+      <p id="7daaa042-fed0-4d52-946d-bda80fe3539c">Consolidated Audit Trail: Plan Processor Evaluation and Selection Plan</p>
+      <p id="255cad5d-4c32-43b7-9994-3f1bea02dc53">Preamble</p>
+      <p id="32ccb480-b1c5-4c8f-9227-929a121ce0b0">This Plan governs the process of: (1) evaluating and selecting a Plan Processor for the consolidated audit trail; and (2) developing a national market system plan pursuant to <a href="">SEC Rule 613</a> to create, implement, and maintain a consolidated audit trail. This Plan will automatically terminate upon the SEC&#8217;s approval of the CAT NMS Plan. The Participants developed this Plan pursuant to <a href="">Rule 608(a)(3) of Regulation NMS</a> under the Exchange Act, which authorizes the Participants to act jointly in preparing, filing, and implementing national market system plans.</p>
+      <p id="97adcea2-d6fe-4a63-aa02-c8c3b6b05e68">I. Definitions</p>
+      <p id="e41c5000-6702-4376-a294-d653d301a763">(A) An &#8220;Affiliate&#8221; of an entity means any entity controlling, controlled by, or under common control with such entity.</p>
+      <p id="f669b49d-bad5-428e-a690-d546329e1377">(B) &#8220;Affiliated Participant&#8221; means any Participant controlling, controlled by, or under common control with another Participant.</p>
+      <p id="b27d86f4-9b23-4de9-a12a-bc3bae02e3e4">(C) &#8220;Bid&#8221; means a proposal submitted by a Bidder in response to the RFP.</p>
+      <p id="f0d84e16-5419-45f9-83ab-d063214e9fac">(D) &#8220;Bidder&#8221; means any entity, or any combination of separate entities, submitting a Bid.</p>
+      <p id="fb514e98-322e-43b5-8521-0f7ba2b63354">(E) &#8220;Bidding Participant&#8221; means a Participant that: (1) submits a Bid; (2) is an</p>
+      <p id="f058b761-dace-4108-af49-856467180047">Affiliate of an entity that submits a Bid; or (3) is included, or is an Affiliate of an entity that is included, as a Material Subcontractor as part of a Bid.</p>
+      <p id="a6abc69c-b635-439f-8d5f-636d3b4c744f">(F) &#8220;CAT NMS Plan&#8221; means the NMS Plan to be jointly submitted to the Commission by the Participants pursuant to <a href="">paragraph (a)(1) of SEC Rule 613</a>.</p>
+      <p id="d96743e6-ccdd-4b7c-845f-7d701231d6c6">(G) &#8220;Commission&#8221; or &#8220;SEC&#8221; means the United States Securities and Exchange Commission.</p>
+      <p id="c57214fd-639c-4574-8d55-de010efa40de">(H) &#8220;Exchange Act&#8221; means the Securities Exchange Act of 1934, as amended.</p>
+      <p id="590e828e-5b76-4ec8-bb3d-860df0b9154c">(I) &#8220;Material Contract&#8221; means any contract resulting in a total cost to all Participants of more than $1,000,000.</p>
+      <p id="93174b05-54f6-4756-bcd8-5d37e16491a7">(J) &#8220;Material Subcontractor&#8221; means any entity that is known to the Participant to be included as part of a Bid as a vendor, subcontractor, service provider, or in any other similar capacity and, excluding products or services offered by the Participant to one or more Bidders on terms subject to a fee filing approved by the SEC, (1) is anticipated to derive 5% or more of its annual revenue in any given year from services provided in such capacity; or (2) accounts for 5% or more of the total estimated annual cost of the Bid for any given year. An entity will not be considered a &#8220;Material Subcontractor&#8221; solely due to the entity providing services associated with any of the entity&#8217;s regulatory functions as a self-regulatory organization registered with the SEC.</p>
+      <p id="a467e7ca-4a19-4149-8623-3f615c7325f7">(K) &#8220;NMS Plan&#8221; shall have the same meaning as &#8220;[n]ational market system plan&#8221; provided in Rule 600(b)(43) of Regulation NMS under the Exchange Act.</p>
+      <p id="e90ef9bf-e22c-483e-8b56-1adc30d66b54">(L) &#8220;Non-SRO Bid&#8221; means a Bid that does not include a Bidding Participant.</p>
+      <p id="f92f8b68-9617-49d7-9bac-70dfc5c8514b">(M) &#8220;Operating Committee&#8221; shall have the meaning provided in Section III of the Plan.</p>
+      <p id="6553fd58-6bd4-4467-84ba-4b652eafe55f">(N) &#8220;Participant&#8221; means a party to the Plan.</p>
+      <p id="1e81d966-b77d-475a-92dc-e3922854727a">(O) &#8220;Plan&#8221; means the plan set forth in this instrument, as amended from time to time in accordance with its provisions.</p>
+      <p id="b14c0117-9611-4314-b9f7-ba8dd96cc2be">(P) &#8220;Plan Processor&#8221; means the entity jointly selected by the Participants pursuant to <a href="">SEC Rule 613</a>, the Plan, and the CAT NMS Plan to perform the consolidated audit trail processing functions required by <a href="">SEC Rule 613</a> and set forth in the RFP.</p>
+      <p id="4976e072-6133-41a8-8cac-e6d0d6896fcf">(Q) &#8220;Qualified Bid&#8221; means a Bid that is deemed by the Selection Committee to include sufficient information regarding the Bidder&#8217;s ability to provide the necessary capabilities to create, implement, and maintain a consolidated audit trail so that such Bid can be effectively evaluated by the Selection Committee. When evaluating whether a Bid is a Qualified Bid, each member of the Selection Committee shall consider whether the Bid adequately addresses the evaluation factors set forth in the RFP, and apply such weighting and priority to the factors as such member of the Selection Committee deems appropriate in his or her professional judgment. The determination of whether a Bid is a Qualified Bid shall be determined pursuant to the process set forth in Section VI of the Plan.</p>
+      <p id="00c41f39-4238-4a0d-9529-e1f03e37bd80">(R) &#8220;Qualified Bidder&#8221; means a Bidder that has submitted a Qualified Bid.</p>
+      <p id="598be6a6-b487-48fb-bbb2-ac8e493597bd">(S) &#8220;RFP&#8221; means the &#8220;Consolidated Audit Trail National Market System Plan Request for Proposal&#8221; published by the Participants on February 26, 2013, as amended from time to time.</p>
+      <p id="61fdadc6-73ab-4d35-a825-45cdbcdced60">(T) &#8220;Selection Committee&#8221; means the committee formed pursuant to Section V of the Plan.</p>
+      <p id="25b97b77-ed64-457e-8e40-b21db6883588">(U) &#8220;SEC Rule 608&#8221; means Rule 608 of Regulation NMS under the Exchange Act.</p>
+      <p id="be7feffb-59bb-4fbd-a5e3-dc68940df8e4">(V) &#8220;SEC Rule 613&#8221; means Rule 613 of Regulation NMS under the Exchange Act.</p>
+      <p id="3ea4aa60-afb2-4926-a1f3-4c4c1e174a06">(W) &#8220;Shortlisted Bid&#8221; means a Bid submitted by a Qualified Bidder and selected as a Shortlisted Bid by the Selection Committee pursuant to Section VI(B) of the Plan.</p>
+      <p id="926afc31-8d1b-45e0-b36f-67492dd0f0f7">(X) &#8220;Shortlisted Bidder&#8221; means a Qualified Bidder that has submitted a Bid selected as a Shortlisted Bid.</p>
+      <p id="539cda7a-fad8-49ff-9aa1-1c5fba521fab">(Y) &#8220;Voting Senior Officer&#8221; means the senior officer of a Participant chosen to serve on the Selection Committee pursuant to Section V of the Plan.</p>
+      <p id="dfa0d714-3c21-4917-8bd7-21384df3fefa">II. Participants</p>
+      <p id="8a10f4ae-820a-4d0e-8c29-a957b6731d42">(A) List of Participants</p>
+      <p id="bb318bae-d5cb-4092-8f54-4d3d2075bcc2">The Participants are as follows:</p>
+      <p id="5f049604-295c-4981-bbeb-fd576b66b7af">(1) BATS Exchange, Inc.</p>
+      <p id="36e3dcad-1749-4847-81a3-8335b5e6506c">(2) BATS Y-Exchange, Inc.</p>
+      <p id="043bb2ac-e026-4e23-ac8a-daf1aebd984f">(3) BOX Options Exchange LLC</p>
+      <p id="62e4d465-41dd-40b6-8732-eb01981a656d">(4) C2 Options Exchange, Incorporated</p>
+      <p id="68e9471f-6fed-4222-add5-3b33aa77378a">(5) Chicago Board Options Exchange, Incorporated</p>
+      <p id="59f57a41-851e-4103-a20f-41fbbb7b21a4">(6) Chicago Stock Exchange, Inc.</p>
+      <p id="f092f0d4-1c9d-4141-865c-a58e34731804">(7) EDGA Exchange, Inc.</p>
+      <p id="6d5c706e-962d-457a-9c71-2bde38f4a3b7">(8) EDGX Exchange, Inc.</p>
+      <p id="8eb833e9-b35d-4c1c-9c3f-32124bff83fd">(9) Financial Industry Regulatory Authority, Inc.</p>
+      <p id="92dbe104-016e-49f9-8da2-7c052b11d274">(10) International Securities Exchange, LLC</p>
+      <p id="68660645-cc4b-403e-a5df-86153703dcae">(11) Miami International Securities Exchange LLC</p>
+      <p id="01e21eb4-40bc-4a57-a153-04d5677f79bc">(12) NASDAQ OMX BX, Inc.</p>
+      <p id="ee53a83f-4536-46b2-bc63-a9a772ae397f">(13) NASDAQ OMX PHLX LLC</p>
+      <p id="749d26c3-82a0-49a3-9154-3d21182a3018">(14) The Nasdaq Stock Market LLC</p>
+      <p id="dfd1efce-7da7-4d3a-a0ec-f0367ce04c3c">(15) National Stock Exchange, Inc.</p>
+      <p id="be88a313-dd2f-4183-8f9d-0b882c1e3710">(16) New York Stock Exchange LLC</p>
+      <p id="500e0132-483c-4e9d-ae14-30d2fb6b495d">(17) NYSE MKT LLC</p>
+      <p id="757570da-2115-4516-bed9-c83885c920ec">(18) NYSE Arca, Inc.</p>
+      <p id="9c63c4b1-818a-458d-8deb-170a9f5dd30c">(19) Topaz Exchange, LLC</p>
+      <p id="f3779ac3-8257-4fea-abb5-7932b084a9f8">(B) Admission of New Participants</p>
+      <p id="169ef20c-400d-4a19-a8f0-163020b82360">Any entity approved by the SEC as a national securities exchange or national securities association under the Exchange Act after the effectiveness of the Plan shall become a Participant by satisfying each of the following requirements: (1) effecting an amendment to the Plan by executing a copy of the Plan as then in effect (with the only change being the addition of the new Participant&#8217;s name in Section II of the Plan) and submitting such amendment to the SEC for approval; and (2) providing each then-current Participant with a copy of such executed Plan. The amendment shall be effective when it is approved by the SEC in accordance with SEC Rule 608 or otherwise becomes effective pursuant to SEC Rule 608.</p>
+      <p id="b031e850-4766-4775-b2d9-e70d023ff839">(C) Withdrawal of Participants</p>
+      <p id="8b5ed70d-52a4-4fd4-92e2-4064d776234d">(1) A Participant may withdraw from the Plan upon written notice to each of the other Participants of no less than 30 days. The written notice must include the legal basis for the Participant's withdrawal from the Plan, including, if applicable, any required approvals or orders issued by the SEC.</p>
+      <p id="7917d034-2bab-4a42-998a-0317f96348e4">(2) Withdrawal of a Participant shall be effectuated by an amendment to the Plan, including, if applicable, approval of any such amendment by the SEC.</p>
+      <p id="aca98e88-bab4-4a5b-918f-57a4e4346529">(3) Notwithstanding a Participant&#8217;s withdrawal from the Plan, the Participant shall remain liable for, and shall pay upon demand:</p>
+      <p id="5d306a6d-d5dd-4f12-9554-b1d4a2b535a5">(a) its proportionate share of any costs, including those resulting from any Material Contracts, accrued or incurred before the effectiveness of the Participant&#8217;s withdrawal;</p>
+      <p id="dd2d9767-6907-4151-8629-d767a8215471">(b) its proportionate share of any liabilities arising while the organization was a Participant that are based on actions jointly undertaken by the Participants pursuant to the Plan or in furtherance of the Participants&#8217; obligations pursuant to <a href="">SEC Rule 613</a>; and</p>
+      <p id="b6f761d2-a5b2-4df8-bdab-64740c686857">(c) any costs incurred as a result of the Participant&#8217;s withdrawal from the Plan.</p>
+      <p id="fde06747-c1c5-4cac-b0fd-49e3358b4636">(4) Except as aforesaid, a withdrawing Participant shall have no further obligation under the Plan or to any of the other Participants with respect to the period following the effectiveness of its withdrawal.</p>
+      <p id="314e8a74-c4f6-4345-9e05-419ecbcb7114">III. Operating Committee</p>
+      <p id="407e226a-c6ab-4b6f-9c42-ea51846e7f2a">(A) Authority</p>
+      <p id="7d4badef-7d92-49ac-8903-830c6a4dd8c8">The Operating Committee shall be responsible for: (1) formulating, drafting, and filing with the SEC the CAT NMS Plan; and (2) ensuring the Participants&#8217; obligations under <a href="">SEC Rule 613</a> are met in a timely and efficient manner. Within the areas of its responsibilities and authority as set forth in the Plan, decisions made or actions taken by the Operating Committee, directly or by duly delegated individuals or Subcommittees, shall be binding upon each Participant, without prejudice to the rights of any Participants to seek redress from the SEC pursuant to SEC Rule 608 or in any other appropriate forum.</p>
+      <p id="c5cc94f4-8af8-4ec6-a73d-fe4260c1ad7e">(B) Composition</p>
+      <p id="4fa00457-75e1-48b4-b9dd-002d75072cb1">(1) Each Participant shall select from its staff one individual (the &#8220;primary representative&#8221;) to represent the Participant as a member of the Operating Committee, together with a substitute(s) for such individual. In the case of Affiliated Participants, one individual may be the primary representative for all or some of the Affiliated Participants, and another individual may be the substitute for all or some of the Affiliated Participants.</p>
+      <p id="1d0733c5-b088-4279-8b59-d68c83267209">(2) Regular meetings of the Operating Committee may be attended by each Participant&#8217;s primary representative and its substitute(s), and may be attended by other representatives of the Participant.</p>
+      <p id="0a2cfbc1-f75a-4939-8571-edab3ec735cd">(3) Any organization that is not a Participant but has an actively pending Form 1 Application on file with the Commission to become a national securities exchange will be permitted to appoint one primary representative and one alternate representative to attend regularly scheduled Operating Committee meetings in the capacity of a non-voting observer/advisor. If the organization&#8217;s Form 1 Application is withdrawn, returned, or otherwise not actively pending with the Commission for any reason, then the organization will no longer be eligible to be represented in the Operating Committee meetings. The Operating Committee shall have the discretion, in limited instances, to deviate from this policy if, as indicated by majority vote, the Operating Committee agrees that circumstances so warrant.</p>
+      <p id="95dea996-55ca-4323-888a-7ed0cd7ec016">(4) Nothing in this section or elsewhere within the Plan shall authorize any person or organization other than Participants and their representatives to participate on the Operating Committee in any manner.</p>
+      <p id="c8f10f92-7577-4ebe-9893-8f262e27d710">(C) Meetings</p>
+      <p id="b616bc13-f0dc-485a-9bba-93c0162cbb40">(1) Quorum</p>
+      <p id="4bafc4bb-9cd0-4a9e-a978-f3f8747a5107">(a) Any action requiring a vote can only be taken at a meeting in which a quorum of all Participants is present. For actions requiring a majority vote of all Participants, a quorum of greater than 50% of all Participants entitled to vote must be present at the meeting before such a vote may be taken. For actions requiring at least a two-thirds vote of all Participants, a quorum of at least two-thirds of all Participants entitled to vote must be present at the meeting before such a vote may be taken.</p>
+      <p id="2e4c4e8e-5233-4d08-8d6a-a01f75ee7e25">(b) For purposes of establishing a quorum, a Participant is considered present at a meeting only if a Participant&#8217;s primary representative or substitute is either in physical attendance at the meeting or is participating by conference telephone or other acceptable electronic means.</p>
+      <p id="f9b0bda4-5e6f-4f98-800a-197c10d496c6">(c) Any Participant recused from voting on a particular action pursuant to Paragraph (E) below shall not be considered to be &#8220;entitled to vote&#8221; for purposes of establishing whether a quorum is present for a vote to be taken on that action.</p>
+      <p id="98769ab8-b47d-46e6-a9e2-c0de31f59667">(2) Frequency</p>
+      <p id="dce65747-1b9a-4aba-9975-7c5da2d0653a">Meetings of the Operating Committee shall be held as needed at such times and locations as shall from time to time be determined by the Operating Committee. Meetings may be held by conference telephone or other acceptable electronic means if all Participants entitled to vote consent thereto in writing or by other means the Operating Committee deems acceptable.</p>
+      <p id="a799bcae-734d-4247-bb8e-3b436244b54d">(3) Written Consent</p>
+      <p id="efdc5b85-f56c-41ef-9432-e6a10176df00">Any action may be taken without a meeting if a consent in writing, setting forth the action so taken, is sent to, via physical or electronic means, and agreed to by all Participants entitled to vote with respect to the subject matter thereof. The action taken shall be effective when the minimum number of Participants entitled to vote have approved the action, unless the consent specifies a different effective date.</p>
+      <p id="337a5887-2a81-4c29-aed2-6b6483890f49">(4) Minutes</p>
+      <p id="2c836af6-8861-45de-b944-cb686d42d11e">Minutes of each meeting of the Operating Committee shall be taken.</p>
+      <p id="d89ffc77-9cc6-4c6c-84ef-27d7c60cf4b7">(5) Subcommittees</p>
+      <p id="14a7e8fb-b291-4db0-acf3-9af3e24b9aef">In addition to the Selection Committee established pursuant to Section V of the Plan, the Operating Committee may establish any Subcommittees it deems necessary in fulfilling its obligations under the Plan. Membership on any Subcommittee is open to any Participant indicating a desire to participate. Minutes of each meeting of any Subcommittee shall be taken.</p>
+      <p id="73803b62-ffe9-4aa1-9ddf-06b5d47a6fee">(D) Voting Rights</p>
+      <p id="a9cdf20e-fc64-412e-b238-5c9b125c6d91">(1) Unless recused pursuant to Paragraph (E) below, each Participant shall have one vote on all matters considered by the Operating Committee.</p>
+      <p id="f6a1eb85-2a76-4ce3-821b-486c4e2c914c">(2) Where one individual represents more than one Affiliated Participant, either as the primary representative or as a substitute, such individual will have the right to vote on behalf of each such Affiliated Participant. The substitute(s) may participate in deliberations of the Operating Committee and shall be considered a voting member thereof only in the absence of the primary representative.</p>
+      <p id="17feb6a7-47e1-48ff-980d-b2880be4cbc5">(E) Conflicts and Recusals</p>
+      <p id="8cb6738d-e6f4-48c6-86c5-365e98277997">A Participant may recuse itself from voting on any matter under consideration by the Operating Committee if the Participant determines that voting on such matter raises a conflict of interest. Except as provided in Sections V(B)(2) and V(B)(3) of the Plan, no Participant is automatically recused from voting on any matter.</p>
+      <p id="8fbe058a-e293-4961-89bf-5bf4a356cba7">(F) Voting Requirements</p>
+      <p id="335a0bb1-9198-4fcb-b34f-308c81c17a41">(1) Supermajority Voting Requirements</p>
+      <p id="b95541a2-4b84-4a36-94cd-e0d24b5292c4">The following actions require approval by at least two-thirds of Participants entitled to vote:</p>
+      <p id="d502e753-b31f-43b3-b736-fa81a5dde604">(a) Amendments to the Plan, other than amendments to add a new Participant; and</p>
+      <p id="c6e681d1-188a-4bdb-b50e-fc107cdb5864">(b) Material Contracts.</p>
+      <p id="201104c3-61b9-4174-936d-7e6d38b453c5">(2) Majority Voting Requirements</p>
+      <p id="c7d62427-bb60-46da-93f9-a72ac72bc894">The following actions require approval by a majority of Participants entitled to vote:</p>
+      <p id="19aff0ec-88e7-4e9e-9dee-8673ea756078">(a) Interpretations of the Plan; and</p>
+      <p id="3ee3ad31-4738-49af-a16c-b54f2e518008">(b) Any other matters not specified as requiring a supermajority vote.</p>
+      <p id="5623110e-d7bb-4b50-8f88-3673d3b2a8b2">(G) Interpretations of Regulations</p>
+      <p id="42e68777-e0bf-4861-bd70-6d0729ec5a4f">Interpretative questions arising during the time for which the Plan is operative will be presented to the Operating Committee, which will determine whether to seek interpretive guidance from the Commission or other regulatory body and, if so, in what form.</p>
+      <p id="83e92680-fab9-43d6-81ad-db174e75be33">(H) Delegated Authority Within the areas of its responsibilities, the Operating Committee may delegate an individual or Subcommittee to make decisions or take action on behalf of the Operating Committee. Any decision made or action taken by such duly delegated individual or Subcommittee within the scope of such delegation shall be binding upon each Participant.</p>
+      <p id="836f1ba2-65ba-44f5-a6e7-01105564f6eb">IV. Plan Amendments</p>
+      <p id="d161037a-d6af-4e5e-a870-2bd2d5bac583">(A) General Amendments</p>
+      <p id="7e4499ba-209d-4dc7-8562-92badd6d91ab">Except with respect to the addition of new Participants, any proposed change in, addition to, or deletion from the Plan shall be effected by means of a written amendment to the Plan that: (1) sets forth the change, addition, or deletion; (2) is executed by over two-thirds of the Participants; and (3) is approved by the SEC pursuant to SEC Rule 608, or otherwise becomes effective under SEC Rule 608.</p>
+      <p id="caa463a9-ac33-4b68-83ef-e20e26ec59d8">(B) New Participants</p>
+      <p id="7e7586f8-097a-404c-b658-49d13167224e">With respect to new Participants, an amendment to the Plan may be effected by the new national securities exchange or national securities association in accordance with Section II of the Plan.</p>
+      <p id="5951ba04-dcaa-4f42-98cd-80747c7a2e33">V. Selection Committee</p>
+      <p id="cfe2cf3e-0d7c-4f54-8b4a-06e3dab716fb">The Participants shall establish a Selection Committee in accordance with this Section V to:</p>
+      <p id="54a85acb-49ec-40d7-8009-a27f3f9f39bd">(1) evaluate and review Bids; and (2) select the Plan Processor.</p>
+      <p id="c4f15de5-3993-403e-be73-036e6699c499">(A) Composition</p>
+      <p id="d3849178-631d-40ef-9b66-1c9fba7da3da">Each Participant shall select from its staff one senior officer (&#8220;Voting Senior Officer&#8221;) to represent the Participant as a member of a Selection Committee. In the case of Affiliated Participants, one individual may be (but is not required to be) the Voting Senior Officer for more than one or all of the Affiliated Participants. Where one individual serves as the Voting Senior Officer for more than one Affiliated Participant, such individual will have the right to vote on behalf of each such Affiliated Participant.</p>
+      <p id="45e77a57-072e-4f47-8be3-c0b71357f466">(B) Voting</p>
+      <p id="8d5ca795-a5a4-41ab-a704-d60b59a09e9f">(1) Unless recused pursuant to Paragraph (2) or (3) below, each Participant shall have one vote on all matters considered by the Selection Committee.</p>
+      <p id="14aeb269-bd1c-4a71-817d-a7cf576a99c3">(2) No Bidding Participant shall vote on whether a Shortlisted Bidder will be permitted to revise its Bid pursuant to Section VI(D)(1) below if a Bid submitted by or including the Participant or an Affiliate of the Participant is a Shortlisted Bid.</p>
+      <p id="e6b43010-a533-4182-8edc-11f68c75fc10">(3) No Bidding Participant shall vote in the second round set forth in Section VI(E)(4) below if a Bid submitted by or including the Participant or an Affiliate of the Participant is part of the second round.</p>
+      <p id="129d1236-7bfd-42a9-be17-f14528561fe1">(4) All votes by the Selection Committee shall be confidential and non-public. All such votes will be tabulated by an independent third party approved by the Operating Committee, and a Participant&#8217;s individual votes will not be disclosed to other Participants or to the public.</p>
+      <p id="7608053f-3593-4f7a-86dc-eacf2053e51f">(C) Quorum</p>
+      <p id="94872ba5-93b3-40a8-9bce-35b67d86a65a">(1) Any action requiring a vote by the Selection Committee can only be taken at a meeting in which all Participants entitled to vote are present. Meetings of the Selection Committee shall be held as needed at such times and locations as shall from time to time be determined by the Selection Committee. Meetings may be held by conference telephone or other acceptable electronic means if all Participants entitled to vote consent thereto in writing or by other means the Selection Committee deems acceptable.</p>
+      <p id="97cbdc17-847c-44a8-8ab5-994211606893">(2) For purposes of establishing a quorum, a Participant is considered present at a meeting only if the Participant&#8217;s Voting Senior Officer is either in physical attendance at the meeting or is participating by conference telephone or other acceptable electronic means.</p>
+      <p id="dfde10eb-efc0-489b-9033-6a852298740d">(3) Any Participant recused from voting on a particular action pursuant to Paragraph (B) above shall not be considered &#8220;entitled to vote&#8221; for purposes of establishing whether a quorum is present for a vote to be taken on that action.</p>
+      <p id="f50ea8e7-9654-4adf-89e2-199f78e5d51c">(D) Qualifications for Voting Senior Officer of Bidding Participants</p>
+      <p id="c93917e0-0271-4a00-9a1f-1c60562ae8c4">The following criteria must be met before a Voting Senior Officer is eligible to represent a Bidding Participant and serve on the Selection Committee:</p>
+      <p id="3ce0168b-a2c5-4404-86da-a49918103d01">(1) the Voting Senior Officer is not responsible for the Bidding Participant&#8217;s market operations, and is responsible primarily for the Bidding Participant&#8217;s legal and/or regulatory functions, including functions related to the formulation and implementation of the Bidding Participant&#8217;s legal and/or regulatory program;</p>
+      <p id="f85be1ba-72be-45da-86d7-92b6084f2466">(2) the Bidding Participant has established functional separation of its legal and/or regulatory functions from its market operations and other business or commercial objectives;</p>
+      <p id="dc08c4dc-d618-4861-92d3-602fa7e72aa9">(3) the Voting Senior Officer ultimately reports (including through the Bidding Participant&#8217;s CEO or Chief Legal Officer/General Counsel) to an independent governing body that determines or oversees the Voting Senior Officer&#8217;s compensation, and the Voting Senior Officer does not receive any compensation (other than what is determined or overseen by the independent governing body) that is based on achieving business or commercial objectives;</p>
+      <p id="12516f52-b052-4ab4-b2f9-89746bbfa425">(4) the Voting Senior Officer does not have responsibility for any non-regulatory functions of the Bidding Participant, other than the legal aspects of the organization performed by the Chief Legal Officer/General Counsel or the Office of the General Counsel;</p>
+      <p id="cebc9acf-d0b4-4833-9fa4-7985cacd20e9">(5) the ultimate decision making of the Voting Senior Officer position is tied to the regulatory effectiveness of the Bidding Participant, as opposed to other business or commercial objectives;</p>
+      <p id="c32609df-a5af-45fd-bca4-265409583696">(6) promotion or termination of the Voting Senior Officer is not based on achieving business or commercial objectives;</p>
+      <p id="52fe91f0-2bd8-4d8c-83c5-cd4d73f7f456">(7) the Voting Senior Officer has no decision-making authority with respect to the development or formulation of the Bid submitted by or including the Participant or an Affiliate of the Participant; however, the staff assigned to developing and formulating such Bid may consult with the Voting Senior Officer, provided such staff members cannot share information concerning the Bid with the Voting Senior Officer;</p>
+      <p id="0b51bd4e-c866-473b-b88c-20b06e8eb450">(8) the Voting Senior Officer does not report to any senior officers responsible for the development or formulation of the Bid submitted by or including the Participant or by an Affiliate of the Participant; however, joint reporting to the Bidding Participant&#8217;s CEO or similar executive officer by the Voting Senior Officer and senior staff developing and formulating such Bid is permissible, but the Bidding Participant&#8217;s CEO or similar executive officer cannot share information concerning such Bid with the Voting Senior Officer;</p>
+      <p id="30878930-8fa1-4cfd-b060-e8bfa8a7a5ca">(9) the compensation of the Voting Senior Officer is not separately tied to income earned if the Bid submitted by or including the Participant or an Affiliate of the Participant is selected; and</p>
+      <p id="4e077cad-8720-4ea5-8ed5-a0e9aab2f93f">(10) the Voting Senior Officer, any staff advising the Voting Senior Officer, and any similar executive officer or member of an independent governing body to which the Voting Senior Officer reports may not disclose to any person any non-public information gained during the review of Bids, presentation by Qualified Bidders, and selection process. Staff advising the Voting Senior Officer during the Bid review, presentation, and selection process may not include the staff, contractors, or subcontractors that are developing or formulating the Bid submitted by or including a Participant or an Affiliate of the Participant.</p>
+      <p id="2ec479e0-ff7d-4c6a-83a3-bc03e28f03a1">VI. RFP Bid Evaluation and Plan Processor Selection</p>
+      <p id="217d9b58-34c2-48b7-836c-8b6fc3f86002">(A) Initial Bid Review to Determine Qualified Bids</p>
+      <p id="068a69e8-75da-43a7-b2f5-a93a04b0cea8">(1) The Selection Committee shall review all Bids in accordance with the process developed by the Selection Committee.</p>
+      <p id="4537f941-38e5-4ff8-8034-e68d505d8ed0">(2) After review, the Selection Committee shall vote on each Bid to determine whether such Bid is a Qualified Bid. A Bid that is deemed unqualified by at least a two-thirds vote of the Selection Committee will not be deemed a Qualified Bid and will be eliminated individually from further consideration.</p>
+      <p id="b350b9c7-966a-48bd-8c81-4feb45e94b6f">(B) Selection of Shortlisted Bids</p>
+      <p id="528ea5e2-f5bd-4ffe-89c9-029a72f5a295">(1) Each Qualified Bidder shall be given the opportunity to present its Bid to the Selection Committee. Following the presentations by Qualified Bidders, the Selection Committee shall review and evaluate the Qualified Bids to select the Shortlisted Bids in accordance with the process in this Paragraph (B).</p>
+      <p id="bc067215-54ed-4530-bca8-b74a7334d2bc">(2) If there are six or fewer Qualified Bids, all such Qualified Bids shall be Shortlisted Bids.</p>
+      <p id="797aa26b-edac-4cf5-954a-69c545d1f6dc">(3) If there are more than six Qualified Bids but fewer than eleven Qualified Bids, the Selection Committee shall select five Qualified Bids as Shortlisted Bids, subject to the requirement in Paragraph (d) below. Each Voting Senior Officer shall select a first, second, third, fourth, and fifth choice from among the Qualified Bids.</p>
+      <p id="62967aec-5f0f-46b3-a492-d59801efde36">(a) A weighted score shall be assigned to each choice as follows:</p>
+      <p id="b8b1399e-0008-4aa5-b301-5630f5c61eb3">&#8226; First &#8211; 5 points</p>
+      <p id="1873d112-9e35-443f-87a4-75745549c99e">&#8226; Second &#8211; 4 points</p>
+      <p id="a575823d-58d9-4794-9432-f0d75ab832a0">&#8226; Third &#8211; 3 points</p>
+      <p id="229292a7-b9c9-4c18-9b53-a67d7fbe1f2b">&#8226; Fourth &#8211; 2 points</p>
+      <p id="b60b6876-7b02-4cb8-9b86-69474aa13a4b">&#8226; Fifth &#8211; 1 point</p>
+      <p id="05913508-05e8-46d3-82ee-7c75ecefcf5d">(b) The five Qualified Bids receiving the highest cumulative scores will be Shortlisted Bids.</p>
+      <p id="52f83a26-c7a8-4a6b-aab3-64b47f5f6790">(c) In the event of a tie to select the five Shortlisted Bids, all such tied Qualified Bids will be Shortlisted Bids.</p>
+      <p id="50c31211-b6d5-4368-85c5-c6fe052e9a6a">(d) To the extent there are Non-SRO Bids that are Qualified Bids, the Shortlisted Bids selected pursuant to this Section VI(B)(3) must, if possible, include at least two Non-SRO Bids. If, following the vote set forth in this Section VI(B)(3), no Non-SRO Bid was selected as a Shortlisted Bid, the two Non-SRO Bids receiving the highest cumulative votes (or one Non-SRO Bid if a single Non-SRO Bid is a Qualified Bid) shall be added as Shortlisted Bids. If one Non-SRO Bid was selected as a Shortlisted Bid, the Non-SRO Bid receiving the next highest cumulative vote shall be added as a Shortlisted Bid.</p>
+      <p id="58f7b665-649d-4716-8f82-6d100820cc76">(4) If there are eleven or more Qualified Bids, the Selection Committee shall select fifty percent of the Qualified Bids as Shortlisted Bids, subject to the requirement in Paragraph (d) below. If there is an odd number of Qualified Bids, the number of Shortlisted Bids chosen shall be rounded up to the next whole number (e.g., if there are thirteen Qualified Bids, then seven Shortlisted Bids will be selected). Each Voting Senior Officer shall select as many choices as Shortlisted Bids to be chosen.</p>
+      <p id="ca4d338c-893f-4e55-aad8-ad3f6fd87d40">(a) A weighted score shall be assigned to each choice in single point increments as follows:</p>
+      <p id="e13be095-4f66-450f-a59a-aa5fd79eee2a">&#8226; Last &#8211; 1 point</p>
+      <p id="bf5b5ea8-54f0-4344-b450-d304ce204356">&#8226; Next-to-Last &#8211; 2 points</p>
+      <p id="19eb6360-34d9-4abc-b428-e30ad222960a">&#8226; Second-from-Last &#8211; 3 points</p>
+      <p id="3133a19a-de37-468b-9d3a-16aaeec46588">&#8226; Third-from-Last &#8211; 4 points</p>
+      <p id="f105747e-12be-4e33-ace6-c4b905034ab4">&#8226; Fourth-from-Last &#8211; 5 points</p>
+      <p id="cd95ec72-e3c8-4532-a334-da76b0401145">&#8226; Fifth-from-Last &#8211; 6 points</p>
+      <p id="79bd8668-ac9c-4bd9-b587-db32de8b44eb">For each additional Shortlisted Bid that must be chosen, the points assigned will increase in single point increments.</p>
+      <p id="0774625b-cc44-4a89-b426-a9b023a9385b">(b) The fifty percent of Qualified Bids (or, if there is an odd number of Qualified Bids, the next whole number above fifty percent of Qualified Bids) receiving the highest cumulative scores will be Shortlisted Bids.</p>
+      <p id="ad8dc119-e092-4767-abfe-6f91060b630f">(c) In the event of a tie to select the Shortlisted Bids, all such tied Qualified Bids will be Shortlisted Bids.</p>
+      <p id="cf154361-89ea-4bf3-a5c5-a8bd7e7d5960">(d) To the extent there are Non-SRO Bids that are Qualified Bids, the Shortlisted Bids selected pursuant to this Section VI(B)(4) must, if possible, include at least two Non-SRO Bids. If, following the vote set forth in this Section VI(B)(4), no Non-SRO Bid was selected as a Shortlisted Bid, the two Non-SRO Bids receiving the highest cumulative votes (or one Non-SRO Bid if a single Non-SRO Bid is a Qualified Bid) shall be added as Shortlisted Bids. If one Non-SRO Bid was selected as a Shortlisted Bid, the Non-SRO Bid receiving the next highest cumulative vote shall be added as a Shortlisted Bid.</p>
+      <p id="6f0450a7-bd21-4947-81cc-8cf53997888b">(C) Formulation of the CAT NMS Plan</p>
+      <p id="3595fc1e-c592-4a55-99b7-3bf47c1dddce">(1) The Selection Committee shall review the Shortlisted Bids to identify optimal proposed solutions for the consolidated audit trail and provide descriptions of such proposed solutions for inclusion in the CAT NMS Plan. This process may, but is not required to, include iterative discussions with Shortlisted Bidders to address any aspects of an optimal proposed solution that were not fully addressed in a particular Bid.</p>
+      <p id="4dab21b5-1f70-4851-904f-e9a4c97f6922">(2) The Participants shall incorporate information on optimal proposed solutions in the CAT NMS Plan, including cost-benefit information as required by <a href="">SEC Rule 613</a>.</p>
+      <p id="83b9775a-b26f-47ca-a7ce-f6920a81ae11">(D) Review of Shortlisted Bids Under the CAT NMS Plan</p>
+      <p id="35065101-c2f2-4d7a-8742-2a9a10beca3f">(1) Following approval of the CAT NMS Plan by the SEC, Shortlisted Bidders may be permitted to revise their Bids based on the provisions in the approved CAT NMS Plan, including further discussions if determined to be necessary by the Selection Committee. A Shortlisted Bidder will be permitted to revise its Bid only upon approval by a majority of the Selection Committee, subject to the recusal provision in Section V(B)(2) above, that revisions are necessary or appropriate in light of the content of the Shortlisted Bidder&#8217;s initial Bid and the provisions in the approved CAT NMS Plan. A Shortlisted Bidder may not revise its Bid unless approved to do so by the Selection Committee pursuant to this paragraph.</p>
+      <p id="cfcde8eb-33b7-4abe-8da8-8d2018ed11e1">(2) The Selection Committee shall review and evaluate all Shortlisted Bids, including any permitted revisions thereto submitted by Shortlisted Bidders. In performing the review and evaluation, the Selection Committee may consult with the Advisory Committee established pursuant to <a href="">paragraph (b)(7) of SEC Rule 613</a>.</p>
+      <p id="ea2a7b1e-7b5b-4468-8bb2-9236a1933b11">(E) Selection of Plan Processor Under the CAT NMS Plan</p>
+      <p id="6a5c24d2-df37-4230-9bdb-d1c2cac5629b">(1) Under the CAT NMS Plan, there will be two rounds of voting by the Selection Committee to select the Plan Processor from among the Shortlisted Bidders. Each round shall be scored independently of prior rounds of voting, including the scoring to determine the Shortlisted Bids under Section VI(B) of the Plan.</p>
+      <p id="1a3d9e19-f2e8-4e82-8e32-995ccba07f33">(2) Each Participant shall have one vote in each round, except that no Bidding Participant shall be entitled to vote in the second round if the Participant&#8217;s Bid, a Bid submitted by an Affiliate of the Participant, or a Bid including the Participant or an Affiliate of the Participant is considered in the second round. Until the second round, Bidding Participants may vote for any Shortlisted Bid.</p>
+      <p id="91b794f4-c75c-4676-84c0-778fade29e2b">(3) First Round Voting by the Selection Committee</p>
+      <p id="2c729770-aa6b-4fe5-8177-8bc485f77227">(a) In the first round of voting, each Voting Senior Officer shall select a first and second choice from among the Shortlisted Bids.</p>
+      <p id="2878deac-30c2-468a-96c2-df3f5947f572">(b) A weighted score shall be assigned to each choice as follows:</p>
+      <p id="93944a80-478e-49b1-b184-8fa3eb2c7949">&#8226; First &#8211; 2 points</p>
+      <p id="b9b63ea6-d877-4b1b-8a54-d6f2d3c35546">&#8226; Second &#8211; 1 point</p>
+      <p id="75ea742a-822a-48fb-9c8a-67518946336c">(c) The two Shortlisted Bids receiving the highest cumulative scores in the first round will advance to the second round.</p>
+      <p id="c8f3c0c2-8fa7-4ec7-8a26-eb2e90973cf4">(d) In the event of a tie that would result in more than two Shortlisted Bids advancing to the second round, the tie will be broken by assigning one point per vote, with the Shortlisted Bid(s) receiving the highest number of votes advancing to the second round. If, at this point, the Shortlisted Bids remain tied, a revote will be taken with each vote receiving one point. If the revote results in a tie, the Participants shall identify areas for further discussion and, following any such discussion, voting will continue until two Shortlisted Bids are selected to advance to the second round.</p>
+      <p id="77672fab-e95f-44f1-8241-fddea599901c">(4) Second Round Voting by the Selection Committee</p>
+      <p id="d5144094-7efb-48d8-8900-a392e4422101">(a) In the second round of voting, each Voting Senior Officer, subject to the recusal provisions in Paragraph (E)(2) above, shall vote for one Shortlisted Bid.</p>
+      <p id="4f8e5a4c-c972-4ed4-814d-1dcdc9070055">(b) The Shortlisted Bid receiving the most votes in the second round shall be selected, and the proposed entity included in the Shortlisted Bid to serve as the Plan Processor shall be selected as the Plan Processor.</p>
+      <p id="8970d887-a1c0-4a94-9fce-c6a88a584755">(c) In the event of a tie, a revote will be taken. If the revote results in a tie, the Participants shall identify areas for further discussions with the two Shortlisted Bidders. Following any such discussions, voting will continue until one Shortlisted Bid is selected.</p>
+      <p id="bffca0eb-be05-46a8-8b35-e05fd10b7725">VII. Implementation</p>
+      <p id="b65086dd-1288-4996-9ca9-51118865a94e">Within two months after effectiveness of the CAT NMS Plan, the Participants will jointly select the winning Shortlisted Bid and the Plan Processor pursuant to the process set forth in Section VI of the Plan and as incorporated into the CAT NMS Plan. Following the selection of the Plan Processor, the Participants will file with the Commission a statement identifying the Plan Processor and including the information required by SEC Rule 608.</p>
+      <p id="9f941372-61ad-4409-8616-61581adaa3ba">VIII. Applicability of the Exchange Act</p>
+      <p id="5413ac20-d434-433c-9b72-56f5dcd80b29">The rights and obligations of the Participants in respect of the matters covered by the Plan shall at all times be subject to any applicable provisions of the Exchange Act, as amended, and any rules and regulations promulgated thereunder.</p>
+      <p id="26aabbc4-2d39-4e62-8180-d1efb2e6e826">IX. Counterparts and Signatures</p>
+      <p id="32d99c5f-2b8c-41d7-9c57-500a084e15e2">The Plan may be executed in any number of counterparts, no one of which need contain all signatures of all Participants, and as many of such counterparts as shall together contain all such signatures shall constitute one and the same instrument.</p>
+      <p id="46ab0d4b-8856-46e2-8825-a107dae0c110">IN WITNESS WHEREOF, this Plan has been executed as of the 23rd day of August 2013 by each of the parties hereto.</p>
+      <p id="af916f23-7ebc-4581-94dc-9fbc40909009"/>
+      
+    </div>
+    <hr width="65%"/><table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-25" HREF="#fr_pz1-25" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>1 <a href="">15 U.S.C. 78k-1</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-26" HREF="#fr_pz1-26" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>2 <a href="">17 CFR 242.608</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-4" HREF="#fr_pz2-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>3 <a href="">17 CFR 242.613</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-5" HREF="#fr_pz2-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>4 <a href="SEC Final Rule, Release No. 34-67457">Securities Exchange Act Release No. 67457</a> (July 18, 2012), <a href="https://www.federalregister.gov/documents/2012/08/01/2012-17918/consolidated-audit-trail">77 FR 45722</a> (August 1, 2012) (&#8220;Adopting Release&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-7" HREF="#fr_pz2-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>5 <a href="https://www.federalregister.gov/documents/2012/08/01/2012-17918/consolidated-audit-trail">Id. at 45742</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-8" HREF="#fr_pz2-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>6 <a href="https://www.federalregister.gov/documents/2012/08/01/2012-17918/consolidated-audit-trail">Id.</a></p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-17" HREF="#fr_pz3-17" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>7 See <a href="">17 CFR 242.608(a)(4) and (a)(5)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-18" HREF="#fr_pz3-18" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>8 See Letter from the SROs, to Elizabeth Murphy, Secretary, Commission, dated August 23, 2013.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-20" HREF="#fr_pz3-20" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>9 <a href="">17 CFR 242.613(a)(1)</a>. <a href="">Rule 613(a)</a> requires that the Participants jointly file the CAT NMS Plan &#8220;on or before 270 days from the date of publication of the Adopting Release in the Federal Register.&#8221; The release adopting <a href="">Rule 613</a> was published in the Federal Register on August 1, 2012. See Adopting Release, supra note 4. On March 7, 2013, the Commission provided a temporary exemption to the Participants to permit them to file the CAT NMS Plan by December 6, 2013. See <a href="">Exchange Act Release No. 69060</a> (March 7, 2013), <a href="">78 FR 15771</a> (March 12, 2013) (&#8220;Exemptive Order&#8221;); see also Letter from Robert L.D. Colby, Chief Legal Officer, FINRA, to Elizabeth M. Murphy, Secretary, Securities and Exchange Commission, dated February 7, 2013 (&#8220;Exemptive Letter&#8221;).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-9" HREF="#fr_pz4-9" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>10 Adopting Release, supra note 4 at 45725.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-10" HREF="#fr_pz4-10" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>11 Id. See also id. at 45789.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-11" HREF="#fr_pz4-11" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>12 Id. at 45789.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz5-5" HREF="#fr_pz5-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>13 Id. at 45726.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_A0y" HREF="#fr_A0y" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>14 Id. at 45725.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_AZR" HREF="#fr_AZR" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>15 Id. at 45725 and 45789.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz6-4" HREF="#fr_pz6-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>16 Since that time, six firms&#8212;including one Participant and one Affiliate of a Participant&#8212;have formally notified the Participants that they will not submit Bids as primary bidders. A list of firms that submitted an intent to bid is located on the Participants&#8217; website at catnmsplan.com.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz6-5" HREF="#fr_pz6-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>17 Section I of the Plan sets forth the definitions used throughout the Plan. Section II of the Plan lists the Participants, as well as establishing the requirements to admit new Participants or to withdraw as a Participant.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz7-3" HREF="#fr_pz7-3" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>18 Section IV of the Plan governs amendments to the Plan. In general, except with respect to the addition of new Participants, any change to the Plan requires a written amendment that sets forth the change, is executed by over two-thirds of the Participants, and is approved by the Commission pursuant to Rule 608 or otherwise becomes effective under Rule 608.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz7-4" HREF="#fr_pz7-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>19 Initial steps in the evaluation and selection process will be performed pursuant to the Plan; the final two rounds of evaluation and voting, as well as the final selection of the Plan Processor, will be performed pursuant to the CAT NMS Plan. The sections of the CAT NMS Plan governing these final two voting rounds are set forth in Sections VI(D) and (E) of the Plan and will be incorporated into the CAT NMS Plan. The Participants believe it is essential that the entire process be laid out in the Plan so that the Commission can consider and approve the entire evaluation and selection process, even though the final two voting rounds, including the selection of the Plan Processor, will not be conducted until after the approval of the CAT NMS Plan.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz7-5" HREF="#fr_pz7-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>20 In the case of Affiliated Participants, one individual may be (but is not required to be) the Voting Senior Officer for more than one or all of the Affiliated Participants.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz8-3" HREF="#fr_pz8-3" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>21 The Plan defines a &#8220;Bidding Participant&#8221; broadly to include any Participant that (1) submits a Bid; (2) is an Affiliate of an entity that submits a Bid; or (3) is included, or is an Affiliate of an entity that is included, as a Material Subcontractor as part of a Bid. A &#8220;Material Subcontractor&#8221; is &#8220;any entity that is known to the Participant to be included as part of a Bid as a vendor, subcontractor, service provider, or in any other similar capacity and, excluding products or services offered by the Participant to one or more Bidders on terms subject to a fee filing approved by the SEC, (1) is anticipated to derive 5% or more of its annual revenue in any given year from services provided in such capacity; or (2) accounts for 5% or more of the total estimated annual cost of the Bid for any given year.&#8221; The Plan provides that &#8220;[a]n entity will not be considered a &#8216;Material Subcontractor&#8217; solely due to the entity providing services associated with any of the entity&#8217;s regulatory functions as a self-regulatory organization registered with the SEC.&#8221;</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz8-4" HREF="#fr_pz8-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>22 As described below, even with the independence criteria in place, the Plan also requires recusal from certain votes.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz9-4" HREF="#fr_pz9-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>23 The Participants anticipate that Bids must be submitted four weeks after the Commission approves the Plan.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz9-5" HREF="#fr_pz9-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>24 The Plan defines a Qualified Bid as &#8220;a Bid that is deemed by the Selection Committee to include sufficient information regarding the Bidder&#8217;s ability to provide the necessary capabilities to create, implement, and maintain a consolidated audit trail so that such Bid can be effectively evaluated by the Selection Committee.&#8221; The Plan provides that, &#8220;[w]hen evaluating whether a Bid is a Qualified Bid, each member of the Selection Committee shall consider whether the Bid adequately addresses the evaluation factors set forth in the RFP, and apply such weighting and priority to the factors as such member of the Selection Committee deems appropriate in his or her professional judgment.&#8221;</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz10-3" HREF="#fr_pz10-3" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>25 In the Letter submitted by the SROs describing the Plan, the SROs state that the Plan provides that, if there are fewer than six Qualified Bids submitted, all of those bids will be selected as Shortlisted Bids. See supra note 8. The Commission notes, however, that Section IV(B)(2) of the Plan states, &#8220;If there are six or fewer Qualified Bids, all such Qualified Bids shall be Shortlisted Bids.&#8221; (emphasis added)</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz10-4" HREF="#fr_pz10-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>26 The Plan provides that, if there is an odd number of Qualified Bids, the number of Shortlisted Bids to be chosen will be rounded up to the next whole number (e.g., if there are thirteen Qualified Bids, seven Shortlisted Bids will be selected). In the event of a tie to select the Shortlisted Bids, all such tied Qualified Bids will be Shortlisted Bids.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz11-4" HREF="#fr_pz11-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>27 The Plan defines a &#8220;Non-SRO Bid&#8221; as &#8220;a Bid that does not include a Bidding Participant.&#8221; See supra note 21.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz12-5" HREF="#fr_pz12-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>28 Each round of voting throughout the Plan is independent of other rounds.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz13-9" HREF="#fr_pz13-9" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>29 The Participants recognize that a seven-month timeframe is inconsistent with the current obligation to submit the CAT NMS Plan by December 6, 2013. The Participants anticipate filing an exemptive request with the Commission to extend the date.</p>
+    </small></td></tr></tbody></table>
+  </div>
+</body></html>

@@ -1,0 +1,599 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Joint Industry Plan (Notice of Plan Amendment No. 1 Release 34-74223)</code>
+  <code class="meta">document_type: Notices</code>
+  <code class="meta">source: US/SEC/Notices/Notice of Plan Amendment</code>
+  <code class="meta">source_type: Notice of Plan Amendment</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: Notice of Plan Amendment No. 1 Release 34-74223</code>
+  <div id="cc23c0d1-e3a7-47a0-928b-d88d89b64aa6" class="level2"><code class="pubeffdate">pubdate: February 06, 2015 effdate: N/A</code>
+    <h1 class="headline">Joint Industry Plan (Notice of Plan Amendment No. 1 Release 34-74223)</h1>
+    <code class="topic" id="topic-cc23c0d1-e3a7-47a0-928b-d88d89b64aa6">Topic: SEC Release, Release No. 34-74223, Release No. 34-74223, Joint Industry Plan; Notice of Amendment</code>
+    <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+    <code class="keywords">Keywords: 
+      Joint Industry Plan, 
+      Selection Plan, 
+    </code>
+    <p id="3aed2d27-3c58-4811-8707-6d047fe2b2bc">SECURITIES AND EXCHANGE COMMISSION</p>
+    <p id="7b214ac7-79a4-42aa-b76f-726a5a86ea04">(Release No. 34-74223; File No. 4-668)</p>
+    <p id="14bdfd20-2e41-4ee6-8b81-420db170bbf7">February 6, 2015</p>
+    <p id="0439922d-7d4f-4a7b-937c-a3c59a3fdb72">Joint Industry Plan; Notice of Amendment to the National Market System Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail by BATS Exchange, Inc., BATS-Y Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., EDGA Exchange, Inc., EDGX Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, ISE Gemini, LLC, Miami International Securities Exchange LLC, NASDAQ OMX BX, Inc., NASDAQ OMX PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, and NYSE MKT LLC, NYSE Arca, Inc.</p>
+    <div id="f465e516-0f7d-46ed-9498-af49e114362e" class="level3"><code class="pubeffdate">pubdate: February 07, 2015 effdate: N/A</code>
+      <h2>I. Introduction</h2>
+      <code class="topic" id="topic-f465e516-0f7d-46ed-9498-af49e114362e">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Introduction</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Securities Exchange Act of 1934, 
+        SEC Rule 608, 
+        National Market System Plan, 
+        Developing a Plan for the Consolidated Audit Trail, 
+      </code>
+      <p id="bc004eeb-073a-40c2-bfff-61c10cb58a5e">Pursuant to Section 11A of the Securities Exchange Act of 1934 (&#8220;Act&#8221;)<a class="sup" HREF="#fn_pz1-24" NAME="fr_pz1-24">1</a> and Rule 608 thereunder<a class="sup" HREF="#fn_pz1-25" NAME="fr_pz1-25">2</a>, notice is hereby given that, on December 12, 2014, BATS Exchange, Inc., BATS-Y Exchange, Inc., BOX Options Exchange LLC, C2 Options Exchange, Incorporated, Chicago Board Options Exchange, Incorporated, Chicago Stock Exchange, Inc., EDGA Exchange, Inc., EDGX Exchange, Inc., Financial Industry Regulatory Authority, Inc., International Securities Exchange, LLC, ISE Gemini, LLC, Miami International Securities Exchange LLC, NASDAQ OMX BX, Inc., NASDAQ OMX PHLX LLC, The NASDAQ Stock Market LLC, National Stock Exchange, Inc., New York Stock Exchange LLC, NYSE MKT LLC, and NYSE Arca, Inc. (collectively, &#8220;SROs&#8221; or &#8220;Participants&#8221;), filed with the Securities and Exchange Commission (the &#8220;Commission&#8221;) a proposal to amend the Plan Governing the Process of Selecting a Plan Processor and Developing a Plan for the Consolidated Audit Trail (the &#8220;Selection Plan&#8221;).</p>
+    </div>
+    <div id="12df2e41-ba16-4330-8ba1-0e99a8e7b7da" class="level3"><code class="pubeffdate">pubdate: February 08, 2015 effdate: N/A</code>
+      <h2>II. Background</h2>
+      <code class="topic" id="topic-12df2e41-ba16-4330-8ba1-0e99a8e7b7da">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Background</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Sec Rule 613, 
+        CAT NMS plan, 
+        SRO, 
+        Selection Plan, 
+      </code>
+      <p id="2d1baaa9-6f66-4d88-b87b-cd6d1022ec17">On July 11, 2012, the Commission adopted <a href="17 CFR 242.613.html">Rule 613</a> to require the SROs to jointly submit a national market system (&#8220;NMS&#8221;) plan to create, implement, and maintain a consolidated audit trail (&#8220;CAT NMS Plan&#8221;).<a class="sup" HREF="#fn_pz2-3" NAME="fr_pz2-3">3</a> To facilitate the development of the consolidated audit trail, following the adoption of Rule 613, the SROs created a working group consisting of representatives from each SRO. The SROs also decided to engage in a request for proposal (&#8220;RFP&#8221;) process to help them develop the CAT NMS Plan and to solicit bids (&#8220;Bids<a class="sup" HREF="#fn_pz2-4" NAME="fr_pz2-4">4</a>&#8221;) for the role of Plan Processor to build, operate, administer, and maintain the consolidated audit trail.<a class="sup" HREF="#fn_pz2-5" NAME="fr_pz2-5">5</a> In addition, on September 3, 2013, the SROs filed, for approval, the Selection Plan to govern how the SROs would proceed with formulating and submitting the CAT NMS Plan&#8212;and, as part of that process, how the SROs would review, evaluate, and narrow down the Bids submitted in response to the RFP&#8212;and ultimately selecting the Plan Processor.<a class="sup" HREF="#fn_pz2-7" NAME="fr_pz2-7">6</a> The Selection Plan was approved on February 21, 2014.<a class="sup" HREF="#fn_pz2-8" NAME="fr_pz2-8">7</a></p>
+      <p id="d280e8e5-431a-4f5d-8e48-a607f44cd29e">The SROs propose to amend the Selection Plan in two ways. First, the SROs propose to provide opportunities to accept revised Bids prior to approval of the CAT NMS Plan, and second, to allow the list of Shortlisted Bids to be narrowed prior to Commission approval of the CAT NMS Plan. A copy of the proposed amendment to the Selection Plan is attached as Exhibit A hereto. The Commission is publishing this notice to solicit comments from interested persons on the proposed amendment to the Selection Plan.</p>
+    </div>
+    <div id="b3cfc126-cd83-4655-966e-84d7cadbfd9a" class="level3"><code class="pubeffdate">pubdate: February 09, 2015 effdate: N/A</code>
+      <h2>III. Description of the Plan</h2>
+      <code class="topic" id="topic-b3cfc126-cd83-4655-966e-84d7cadbfd9a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Selection Plan, 
+        Rule 608, 
+        SRO, 
+      </code>
+      <p id="6630ae8e-463a-4679-a44d-f84d64bfcf59">Set forth in this <a href="#12df2e41-ba16-4330-8ba1-0e99a8e7b7da">Section II</a> is the statement of the purpose of the Selection Plan, along with the information required by Rule 608(a)(4) and (5) under the Exchange Act,<a class="sup" HREF="#fn_pz3-8" NAME="fr_pz3-8">8</a> prepared and submitted by the SROs to the Commission.<a class="sup" HREF="#fn_pz3-9" NAME="fr_pz3-9">9</a></p>
+      <div id="660b2385-2a84-43c7-a28d-0e963661b3cb" class="level4"><code class="pubeffdate">pubdate: February 10, 2015 effdate: N/A</code>
+        <h3>A. Background</h3>
+        <code class="topic" id="topic-660b2385-2a84-43c7-a28d-0e963661b3cb">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Background</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Selection Plan, 
+          CAT NMS plan, 
+          Sec Rule 613, 
+        </code>
+        <p id="e24d7f08-5710-42ea-9742-f1baf265a5ac">The Selection Plan governs the process for Participant review of Bids for the role of Plan Processor for the CAT NMS Plan, the procedures for evaluating the Bids, and ultimately, until approval of the CAT NMS Plan, the selection of the Plan Processor. The CAT NMS Plan was filed with the Commission for approval on September 30, 2014.</p>
+        <p id="1f2bfcb6-0df4-4883-8438-d34552245fb3">After gaining experience with the development process for the CAT NMS Plan, the Participants believe it is necessary to amend the Selection Plan to ensure that the Participants will be able to choose a Plan Processor within the timeframe provided in the Selection Plan and <a href="17 CFR 242.613.html">Rule 613</a>. The Participants propose amending the Selection Plan to (1) provide for additional opportunities to accept revised Bids and (2) allow the set of Shortlisted Bids to be narrowed prior to Commission approval of the CAT NMS Plan.</p>
+        <div id="650dbd4f-f7b9-42af-b173-cdff644e1705" class="level5"><code class="pubeffdate">pubdate: February 11, 2015 effdate: N/A</code>
+          <h4>1. The Selection Plan Currently Allows Bid Revisions Only Following CAT NMS Plan Approval, and Does Not Allow for Narrowing of the Set of Shortlisted Bids</h4>
+          <code class="topic" id="topic-650dbd4f-f7b9-42af-b173-cdff644e1705">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Background, The Selection Plan Currently Allows Bid Revisions Only Following CAT NMS Plan Approval, and Does Not Allow for Narrowing of the Set of Shortlisted Bids</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: 
+            Selection Plan, 
+            Shortlisted Bidders, 
+            CAT NMS plan, 
+            Plan Processor, 
+            Selection Plan Section VI(B), 
+          </code>
+          <p id="d2989d9d-a83c-4f5c-86aa-8b29f1c35f26">Under the Selection Plan, Shortlisted Bidders are only eligible to revise Bids following Commission approval of the CAT NMS Plan. The Selection Plan specifies that, following approval of the CAT NMS Plan by the SEC, Shortlisted Bidders for the role of Plan Processor may be permitted to revise their Bids based on the provisions in the approved CAT NMS Plan, including further discussions if determined to be necessary by the Selection Committee described in the Selection Plan.<a class="sup" HREF="#fn_pz4-5" NAME="fr_pz4-5">10</a> The Selection Plan provides that a Shortlisted Bidder will be permitted to revise its Bid only upon approval by a majority of the Selection Committee, subject to certain recusal provisions in the Selection Plan, that revisions are necessary or appropriate in the light of the content of the Shortlisted Bidder&#8217;s initial Bid and the provisions in the approved CAT NMS Plan.<a class="sup" HREF="#fn_pz4-6" NAME="fr_pz4-6">11</a></p>
+          <p id="9728ec7c-4345-417b-8ca2-f3c1a079d2b4">The Selection Plan also requires that selection of the Plan Processor occur from among the initial set of Shortlisted Bids.<a class="sup" HREF="#fn_pz4-7" NAME="fr_pz4-7">12</a> Under the current Selection Plan, the Participants are not permitted to narrow the list of Shortlisted Bids determined pursuant to Section VI(B) of the Selection Plan.</p>
+        </div>
+        <div id="650dbd4f-f7b9-42af-b173-cdff644e1705" class="level5"><code class="pubeffdate">pubdate: February 12, 2015 effdate: N/A</code>
+          <h4>2. Allowing Revision(s) of Bids In Light of Additional Information Available to Shortlisted Bidders and Providing for Narrowing the Set of Shortlisted Bidders Will Allow the Participants to Select the Plan Processor More Effectively and Efficiently Within the Rule 613 Timeframe</h4>
+          <code class="topic" id="topic-650dbd4f-f7b9-42af-b173-cdff644e1705">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Background, The Selection Plan Currently Allows Bid Revisions Only Following CAT NMS Plan Approval, and Does Not Allow for Narrowing of the Set of Shortlisted Bids</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: 
+            Shortlisted Bidders, 
+            CAT NMS plan, 
+            Plan Processor, 
+            Sec Rule 613, 
+            Selection Plan Section VI(D), 
+          </code>
+          <p id="90a76a9d-68b4-4c3e-ab0a-2e4158b2db99">The Participants believe that providing the Shortlisted Bidders with an additional opportunity or opportunities to revise their Bids prior to the approval of the CAT NMS Plan is critical to the timely and considered selection of the Plan Processor. Since the Bidders submitted their Bids, the Participants have expended substantial effort in analyzing potential solutions for the consolidated audit trail (&#8220;CAT&#8221;) by gathering and evaluating data and information from a variety of market participants, including Bidders, broker-dealers, vendors, regulators and others. As a result, since the original Bid date, the Participants have made substantial strides in identifying characteristics of an optimal solution and formalizing these determinations in the proposed CAT NMS Plan and related technical documents. Given the development of the requirements for an optimal solution for the CAT, the Participants believe that waiting until after the approval of the CAT NMS Plan to permit the Shortlisted Bidders to revise their Bids will shortchange the Bid process to the detriment of the final plan. Moreover, given the passage of time since the original Bids, Bidders have indicated that new technological and other beneficial solutions are now available that may further improve the Bids, and, ultimately, the proposed solutions.</p>
+          <p id="26b4d20c-3d59-47d5-bcf2-33c4481910c9">In addition, the Participants believe that delaying the Bid revision process until after the approval of the CAT NMS Plan will prevent Bidders from submitting, and the Participants from adequately reviewing the most relevant, informative and fulsome Bids before selecting a Plan Processor. Specifically, <a href="17 CFR 242.613.html">Rule 613(a)(2)(i)</a> requires the Participants to select the Plan Processor within two months after effectiveness of the CAT NMS Plan. The Participants anticipate permitting the Shortlisted Bidders to revise their Bids, pursuant to Section VI(D) of the Selection Plan, after approval of the CAT NMS Plan, if there are substantial changes to the CAT NMS Plan before the CAT NMS Plan is approved by the Commission. Therefore, the Participants will have only a short time period of two months to analyze the Shortlisted Bids &#8211; Bids that are likely to have substantial revisions after the approval of the CAT NMS Plan for the reasons discussed above. Given the very large amount of information to digest in the revised Bids and the importance of appropriately analyzing such information, the Participants do not believe that two months will be sufficient to select the Plan Processor given the limitations of the current Selection Plan. However, if the Shortlisted Bidders are able to revise their Bids to reflect the provisions of the proposed CAT NMS Plan and any draft technical materials, as well as any new technology or other relevant developments, prior to the approval of the CAT NMS Plan, then the Participants believe that they will be able to select the Plan Processor within the time limits imposed by <a href="17 CFR 242.613.html">Rule 613</a> in a more thoughtful and deliberative manner.</p>
+          <p id="b41533ae-a23d-474a-9963-ddffcffd33fa">In addition, the Participants believe that providing the Selection Committee the discretion to further reduce the number of Shortlisted Bids, either before or after any revisions to Shortlisted Bids are accepted, would also facilitate the selection of the Plan Processor within the time limits imposed by <a href="17 CFR 242.613.html">Rule 613</a>. Allowing the Selection Committee to reduce the number of Shortlisted Bids before approval of the CAT NMS Plan could allow the Participants to more efficiently select the Plan Processor by focusing attention on a more refined set of options during the limited two month time period for selection following approval of the CAT NMS Plan.</p>
+        </div>
+      </div>
+      <div id="b22b62c6-bdbb-469c-8e17-c874ecde2f6a" class="level4"><code class="pubeffdate">pubdate: February 13, 2015 effdate: N/A</code>
+        <h3>B. Requirements Pursuant to Rule 608(a)</h3>
+        <code class="topic" id="topic-b22b62c6-bdbb-469c-8e17-c874ecde2f6a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a)</code>
+        <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+        <code class="keywords">Keywords: 
+          Rule 608, 
+        </code>
+        <div id="7ccc13b6-eee5-408f-bc1f-e6c5def54df8" class="level5"><code class="pubeffdate">pubdate: February 14, 2015 effdate: N/A</code>
+          <h4>1. Description of the Amendments to the Selection Plan</h4>
+          <code class="topic" id="topic-7ccc13b6-eee5-408f-bc1f-e6c5def54df8">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Description of the Amendments to the Selection Plan</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: 
+            Selection Plan, 
+            CAT NMS plan, 
+            Selection Plan Section VI(D), 
+            Shortlisted Bids, 
+          </code>
+          <p id="d3b229be-3d3a-48b1-bee4-2580335b2b6f">The Participants propose amending the Selection Plan to permit the Shortlisted Bidders to revise their Bids one or more times prior to approval of the CAT NMS Plan if the Selection Committee determines, by majority vote, subject to the applicable recusal provisions, that such revisions are necessary and appropriate. The proposed amendment would not affect Section VI(D) of the Selection Plan, which allows for revisions to Shortlisted Bids following Commission approval of the CAT NMS Plan.</p>
+          <p id="40e850e0-32c9-4f00-abc8-560a04055622">The Participants also propose amending the Selection Plan to provide the Selection Committee discretion to narrow the set of Shortlisted Bids prior to approval of the CAT NMS Plan. Specifically, the proposed amendment would authorize another round of voting to narrow the set of Shortlisted Bids. This round of voting, which could occur either before or after any revisions to Shortlisted Bids are accepted, would be commenced upon at least a two-thirds vote of the Selection Committee, and would proceed in a manner similar to the initial round for voting for the Shortlisted Bids. Each Voting Senior Officer would choose a first, second, and third choice Shortlisted Bid, with each choice receiving a weight of, respectively, three points, two points, and one point. The three bids receiving the highest cumulative number of points would constitute the new set of Shortlisted Bids. In the event of a tie that would result in more than three final Shortlisted Bids, the votes would be recounted, excluding each Voting Senior Officer&#8217;s third choice. The three Shortlisted Bids receiving the largest number of cumulative votes in this recount would be the new Shortlisted Bids. If this recount were to result in a tie leading to a larger or equal number of final Shortlisted Bids than the initial count, the results of the initial count would constitute the new set of Shortlisted Bids. The proposed amendment also includes, for the sake of clarity, a provision ensuring that at least one Non-SRO Bid is included in the narrowed set of Shortlisted Bids. The individual scores and rankings under any vote to narrow the list of Shortlisted Bids shall be kept confidential.</p>
+          <p id="85b9541f-5efd-422a-9815-429a371ffc43">Finally, the proposed amendment includes provisions with respect to the recusal of Participants that also are Shortlisted Bidders. Under this proposed provision, no Bidding Participant shall vote in the process narrowing the set of Shortlisted Bidders, if a Bid submitted by or including the Participant or an Affiliate of the Participant is a Shortlisted Bid.</p>
+        </div>
+        <div id="d477e717-d5fe-4dff-ac1e-2677328417cd" class="level5"><code class="pubeffdate">pubdate: February 15, 2015 effdate: N/A</code>
+          <h4>2. Governing or Constituent Documents</h4>
+          <code class="topic" id="topic-d477e717-d5fe-4dff-ac1e-2677328417cd">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Governing or Constituent Documents</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="1556f488-eaa7-4772-8d44-3a939f167a70">Not applicable.</p>
+        </div>
+        <div id="d070670b-58ad-46de-a29d-b9c535a907ca" class="level5"><code class="pubeffdate">pubdate: February 16, 2015 effdate: N/A</code>
+          <h4>3. Implementation of Amendment</h4>
+          <code class="topic" id="topic-d070670b-58ad-46de-a29d-b9c535a907ca">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Implementation of Amendment</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: 
+            Amendment approval, 
+          </code>
+          <p id="2ffc1ffb-1c87-4dbd-80f3-76263af73f92">The terms of the proposed amendments will be operative immediately upon approval of the amendments by the Commission.</p>
+        </div>
+        <div id="21ef204f-5cf1-4d0c-b476-3cf0c45a25d7" class="level5"><code class="pubeffdate">pubdate: February 17, 2015 effdate: N/A</code>
+          <h4>4. Development and Implementation Phases</h4>
+          <code class="topic" id="topic-21ef204f-5cf1-4d0c-b476-3cf0c45a25d7">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Development and Implementation Phases</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="3bf1ab73-cf8d-4140-93b7-d3f06a0ce7e4">Not applicable.</p>
+        </div>
+        <div id="57f110d1-70c1-48ce-a841-0ad24f7d270a" class="level5"><code class="pubeffdate">pubdate: February 18, 2015 effdate: N/A</code>
+          <h4>5. Analysis of Impact on Competition</h4>
+          <code class="topic" id="topic-57f110d1-70c1-48ce-a841-0ad24f7d270a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Analysis of Impact on Competition</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: 
+            Exchange Act, 
+            SRO, 
+            CAT NMS plan, 
+            Sec Rule 613, 
+          </code>
+          <p id="169ee59d-18c0-41e1-b883-b4eb614b0c75">The proposed amendments do not impose any burden on competition that is not necessary or appropriate in furtherance of the purposes of the Exchange Act. The SROs believe that the amendments are reasonably designed to help assure that the SROs receive more updated and informed submissions from Shortlisted Bidders before the CAT NMS Plan is finalized, thereby helping to assure that the selection of the Plan Processor for the CAT NMS Plan proceeds efficiently within the timeframe provided by <a href="17 CFR 242.613.html">Rule 613</a>. Moreover, the SROs believe that the amended process will facilitate the development of an audit trail that maximizes its regulatory utility while minimizing unnecessary costs, to the benefit of all market participants. Furthermore, providing the ability to narrow the list of Bidders at an earlier stage will prevent Bidders whose Bids are unlikely to be selected from misallocating their resources toward the further development of their Bid.</p>
+        </div>
+        <div id="e3f5f8f2-0f37-4f9d-b4c6-dd5b72e3cc92" class="level5"><code class="pubeffdate">pubdate: February 19, 2015 effdate: N/A</code>
+          <h4>6. Written Understanding or Agreements Relating to Interpretation of, or Participation in, Plan.</h4>
+          <code class="topic" id="topic-e3f5f8f2-0f37-4f9d-b4c6-dd5b72e3cc92">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Written Understanding or Agreements Relating to Interpretation of, or Participation in, Plan</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="7bf51288-2a82-4885-be0d-61a6561778cb">Not applicable.</p>
+        </div>
+        <div id="80ccd150-3e74-48dc-863a-a7c3a0b90a5d" class="level5"><code class="pubeffdate">pubdate: February 20, 2015 effdate: N/A</code>
+          <h4>7. Statement that the Amendments Have Been Approved by the Plan Sponsors</h4>
+          <code class="topic" id="topic-80ccd150-3e74-48dc-863a-a7c3a0b90a5d">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Statement that the Amendments Have Been Approved by the Plan Sponsors</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: 
+            Selection Plan, 
+            Rule 608, 
+          </code>
+          <p id="00a7be2f-707c-4ddf-80df-6fd74cd20162">The Selection Plan provides that amendments to the Selection Plan shall be effected by means of a written amendment that: (1) sets forth the change, addition, or deletion; (2) is executed by over two-thirds of the Participants; and (3) is approved by the SEC pursuant to Rule 608, or otherwise becomes effective under Rule 608.<a class="sup" HREF="#fn_pz8-7" NAME="fr_pz8-7">13</a></p>
+          <p id="b3919d84-e158-440d-9d7f-02fff9392307">The proposed amendments have been executed by eighteen of the Participants, and have consequently been approved by the SROs. One Participant which is also a Shortlisted Bidder, abstained from the decision whether to adopt these amendments to avoid potential conflicts of interest.</p>
+        </div>
+        <div id="c07e1388-56de-4cd3-91d1-1dcdcd3fb875" class="level5"><code class="pubeffdate">pubdate: February 21, 2015 effdate: N/A</code>
+          <h4>8. Terms and Conditions of Access</h4>
+          <code class="topic" id="topic-c07e1388-56de-4cd3-91d1-1dcdcd3fb875">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a), Terms and Conditions of Access</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="baceb2e4-123d-4c24-8981-edcfcccaaef7">Not applicable.</p>
+        </div>
+        <div id="b22b62c6-bdbb-469c-8e17-c874ecde2f6a" class="level5"><code class="pubeffdate">pubdate: February 22, 2015 effdate: N/A</code>
+          <h4>9. Method of Determination and Imposition, and Amount of, Fees and Charges</h4>
+          <code class="topic" id="topic-b22b62c6-bdbb-469c-8e17-c874ecde2f6a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a)</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="d825488c-ed33-4e68-976e-945ef414e018">Not applicable.</p>
+        </div>
+        <div id="b22b62c6-bdbb-469c-8e17-c874ecde2f6a" class="level5"><code class="pubeffdate">pubdate: February 23, 2015 effdate: N/A</code>
+          <h4>10. Method and Frequency of Processor Evaluation</h4>
+          <code class="topic" id="topic-b22b62c6-bdbb-469c-8e17-c874ecde2f6a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a)</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="2133dd63-f659-4f07-b514-d6539d99ed25">Not applicable.</p>
+        </div>
+        <div id="b22b62c6-bdbb-469c-8e17-c874ecde2f6a" class="level5"><code class="pubeffdate">pubdate: February 24, 2015 effdate: N/A</code>
+          <h4>11. Dispute Resolution</h4>
+          <code class="topic" id="topic-b22b62c6-bdbb-469c-8e17-c874ecde2f6a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan, Requirements Pursuant to Rule 608(a)</code>
+          <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+          <code class="keywords">Keywords: </code>
+          <p id="8e0f89e1-d04a-44d8-b5bb-9856404db2b1">Not applicable.</p>
+        </div>
+      </div>
+    </div>
+    <div id="126d10c6-8acb-46ee-a560-1e20c7cd9afc" class="level3"><code class="pubeffdate">pubdate: February 25, 2015 effdate: N/A</code>
+      <h2>IV. Solicitation of Comments</h2>
+      <code class="topic" id="topic-126d10c6-8acb-46ee-a560-1e20c7cd9afc">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Solicitation of Comments</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Submission of Comments, 
+        Electronic Comments, 
+        Paper Comments, 
+        File Number 4-668, 
+        5 U.S.C. 552, 
+      </code>
+      <p id="cf62f9d0-bf54-4a12-a031-bcacdc3ec4c0">Interested persons are invited to submit written data, views, and arguments concerning the foregoing, including whether the Amendment to the Plan is consistent with the Act. Comments may be submitted by any of the following methods: Electronic comments:</p>
+      <p id="25740c3d-0900-4c96-8399-e82aefb7bf0d">&#8226; Use the Commission&#8217;s Internet comment form (<a href="">http://www.sec.gov/rules/sro.shtml</a>); or</p>
+      <p id="e913c360-e269-4a5f-a26e-1b382412a660">&#8226; Send an e-mail to rule-comments@sec.gov. Please include File Number 4-668 on the</p>
+      <p id="7663c98e-34f6-49fd-94f6-f3ec133ab11d">subject line.</p>
+      <p id="becfedfe-2cf6-47d7-bfca-a318dc81041e">Paper comments:</p>
+      <p id="5bd3f329-70c2-4901-8c8d-b1cef772ca14">&#8226; Send paper comments in triplicate to Brent J. Fields, Secretary, Securities and Exchange Commission, 100 F Street, NE, Washington, DC 20549-1090.</p>
+      <p id="84754828-0685-4b51-b202-876355bc77be">All submissions should refer to File Number 4-668. This file number should be included on the subject line if e-mail is used. To help the Commission process and review your comments more efficiently, please use only one method. The Commission will post all comments on the Commission&#8217;s Internet website (<a href="">http://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all written statements with respect to the Amendment to the Plan that are filed with the Commission, and all written communications relating to the Amendment to the Plan between the Commission and any person, other than those that may be withheld from the public in accordance with the provisions of <a href="">5 U.S.C. 552</a>, will be available for website viewing and printing in the Commission&#8217;s Public Reference Room, 100 F Street, NE, Washington, DC 20549 on official business days between 10:00 a.m. and 3:00 p.m. Copies of the filing will also be available for inspection and copying at the Participants&#8217; principal offices. All comments received will be posted without change; the Commission does not edit personal identifying information from submissions. You should submit only information that you wish to make available publicly. All submissions should refer to File Number 4-668 and should be submitted on or before [insert date 30 days from publication in the Federal Register].</p>
+      <p id="2f704c23-6f10-4ed7-becb-86838f7d028c">By the Commission.</p>
+      <p id="615ef5fe-cc7c-4752-a36a-0a0e6d73fe20">Brent J. Fields</p>
+      <p id="fe5bd724-3086-4198-9b7c-df51a58f72ab">Secretary</p>
+    </div>
+    <div id="b3cfc126-cd83-4655-966e-84d7cadbfd9a" class="level3"><code class="pubeffdate">pubdate: February 26, 2015 effdate: N/A</code>
+      <h2>Exhibit A</h2>
+      <code class="topic" id="topic-b3cfc126-cd83-4655-966e-84d7cadbfd9a">Topic: SEC Release, Release No. 34-74223, Joint Industry Plan; Notice of Amendment, Description of the Plan</code>
+      <code class="compliance_user">Compliance User: Self-Regulatory Organization</code>
+      <code class="keywords">Keywords: 
+        Proposed Amendments, 
+      </code>
+      <p id="4f911695-4924-4bd9-a92f-7ccf8090dd87">Proposed new language is italicized; proposed deletions are in [brackets].</p>
+      <p id="195fdf8a-cf3d-4d0e-a5ac-1b34a100fbec">PROPOSED AMENDMENT TEXT</p>
+      <p id="cf94f9b3-0bdf-4abb-bd07-e00e621614e4">Plan Processor Evaluation and Selection Plan</p>
+      <p id="b6ed08e6-a8df-4f35-8866-4a772ca55c25">I. Definitions</p>
+      <p id="12270381-aaea-4f1c-b5a1-491aef5d9745">* * * * *</p>
+      <p id="117a8a5c-f2ed-439b-82eb-d2c4bf588483">(X) &#8220;Shortlisted Bid&#8221; means a Bid submitted by a Qualified Bidder and selected as a Shortlisted Bid by the Selection Committee pursuant to Section VI(B) and, if applicable, pursuant to Section VI(C)(3) of the Plan.</p>
+      <p id="b8902ecb-125a-4d0c-ae18-cf9c08811f26">* * * * *</p>
+      <p id="b45887d6-7cb2-44ec-9b68-2f5867a06bc3">III. Operating Committee</p>
+      <p id="d0da0718-d310-424a-842d-935a32bc1456">* * * * *</p>
+      <p id="e8ba45db-fbbc-4029-b608-d8c79b0af15f">(E) Conflicts and Recusals</p>
+      <p id="c1188374-e8ea-4e60-af82-418d982d7dab">A Participant may recuse itself from voting on any matter under consideration by the Operating Committee if the Participant determines that voting on such matter raises a conflict of interest. Except as provided in Sections V(B)(2), and V(B)(3), and V(B)(4) of the Plan, no Participant is automatically recused from voting on any matter.</p>
+      <p id="fae271e3-78eb-4c28-8507-3fa1c03e653a">* * * * *</p>
+      <p id="69e2c019-549f-4606-9857-a96fcdf0330b">V. Selection Committee</p>
+      <p id="fa8446ee-a6c4-4294-ae26-d000c40f1e53">* * * * *</p>
+      <p id="9fe34707-5739-43d6-9b6f-772260005e46">(B) Voting</p>
+      <p id="29922e68-3431-4ea2-9158-78efdc49e1da">* * * * *</p>
+      <p id="5bf66835-d8e2-4418-b43e-953155c8554d">(2) No Bidding Participant shall vote on whether a Shortlisted Bidder will be permitted to revise its Bid pursuant to Section VI(C)(2) or Section VI(D)(1) below if a Bid submitted by or including the Participant or an Affiliate of the Participant is a Shortlisted Bid.</p>
+      <p id="3a04f722-f9c2-4425-9b0e-3f27f4e513a2">(3) No Bidding Participant shall vote in the process narrowing the set of Shortlisted Bidders as set forth in Section VI(C)(3) if a Bid submitted by or including the Participant or an Affiliate of the Participant is a Shortlisted Bid.</p>
+      <p id="914d8d63-73e6-499e-948b-621a4a6178a5">(4) No Bidding Participant shall vote in the second round set forth in Section VI(E)(4) below if a Bid submitted by or including the Participant or an Affiliate of the Participant is part of the second round.</p>
+      <p id="2f1e58a2-fc1c-4f5d-90c0-2dabc02cf147">(5) All votes by the Selection Committee shall be confidential and non-public. All such votes will be tabulated by an independent third party approved by the Operating Committee, and a Participant's individual votes will not be disclosed to other Participants or to the public.</p>
+      <p id="d4e435b5-d210-46c9-a31c-5be0366684fb">* * * * *</p>
+      <p id="f6803bbf-a9fd-484a-b699-9a06f0505b92">VI. RFP Bid Evaluation and Plan Processor Selection</p>
+      <p id="8b5daa8a-ebd1-43e5-905f-d8d4233421f6">* * * * *</p>
+      <p id="f48724d7-c494-426f-bd32-b1e124b46413">(C) Formulation of the CAT NMS Plan</p>
+      <p id="01f849d3-13f3-4f23-95ae-b81efde72470">(1) The Selection Committee shall review the Shortlisted Bids to identify optimal proposed solutions for the consolidated audit trail and provide descriptions of such proposed solutions for inclusion in the CAT NMS Plan. This process may, but is not required to, include iterative discussions with Shortlisted Bidders to address any aspects of an optimal proposed solution that were not fully addressed in a particular Bid.</p>
+      <p id="66a37235-1194-432b-b87b-5b50f81c44a4">(2) Prior to the approval of the CAT NMS Plan, all Shortlisted Bidders will be permitted to revise their Bids one or more times if the Selection Committee determines, by majority vote, that such revision(s) are necessary or appropriate.</p>
+      <p id="b51bdc60-31e4-45f0-892d-5e5d77350d0e">(3) Prior to approval of the CAT NMS Plan, and either before or after any revisions to Shortlisted Bids are accepted, the Selection Committee may determine, by at least a two-thirds vote, to narrow the number of Shortlisted Bids to three Bids, in accordance with the process in this Paragraph (C)(3).</p>
+      <p id="1e702bb5-a384-41ac-9623-324d04284f72">(a) Each Voting Senior Officer shall select a first, second, and third choice from among the Shortlisted Bids.</p>
+      <p id="4488139a-6e4b-4101-940c-0eeb6e9ebea0">(b) A weighted score shall be assigned to each choice as follows:</p>
+      <p id="54108a48-a208-476d-9a11-2a09a11750ad">&#8226; First&#8212;3 points</p>
+      <p id="9e5dccb5-3695-42cc-8d45-b44a9f1ece95">&#8226; Second&#8212;2 points</p>
+      <p id="7655034f-7b6a-4b40-8e78-c538b52f57bf">&#8226; Third&#8212;1 point</p>
+      <p id="a085e8b3-cb94-43f4-8b33-6f59e94c1584">(c) The three Shortlisted Bids receiving the highest cumulative scores will be the new set of Shortlisted Bids.</p>
+      <p id="423120a4-b4ed-43ab-80a9-6d1753cb3600">(d) In the event of a tie that would result in more than three final Shortlisted Bids, the votes shall be recounted, omitting each Voting Senior Officer&#8217;s third choice, in order to break the tie. If this recount produces a tie that would result in a number of final Shortlisted Bids larger than or equal to that from the initial count, the results of the initial count shall constitute the final set of Shortlisted Bids.</p>
+      <p id="63365419-b2d8-47a3-89b8-5c8f46d8c4d7">(e) To the extent there are Non-SRO Bids that are Shortlisted Bids, the final Shortlisted Bids selected pursuant to this Section VI(C)(3) must, if possible, include at least one Non-SRO Bid. If following the vote set forth in this Section VI(C)(3), no Non-SRO Bid was selected as a final Shortlisted Bid, the Non-SRO Bid receiving the highest cumulative votes shall be retained as a Shortlisted Bid.</p>
+      <p id="11d3191e-f40f-48c9-b541-94932257f3fb">(f) The third party tabulating votes, as specified in Section V(B)(5), shall identify to the Selection Committee the new set of Shortlisted Bids, but shall keep confidential the individual scores and rankings of the Shortlisted Bids from the process in this Paragraph (C)(3).</p>
+      <p id="83d81e07-42c9-40e6-bf48-7a90174541a5">(4) The Participants shall incorporate information on optimal proposed solutions in the CAT NMS Plan, including cost-benefit information as required by <a href="17 CFR 242.613.html">SEC Rule 613</a>.</p>
+    </div>
+    <hr width="65%"/><table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-24" HREF="#fr_pz1-24" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>1 <a href="">15 U.S.C. 78k-1</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-25" HREF="#fr_pz1-25" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>2 17 <a href="">CFR 242.608</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-3" HREF="#fr_pz2-3" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>3 <a href="SEC Final Rule, Release No. 34-67457">Securities Exchange Act Release No. 67457</a> (July 18, 2012), <a href="https://www.federalregister.gov/documents/2012/08/01/2012-17918/consolidated-audit-trail">77 FR 45722</a> (August 1, 2012).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-4" HREF="#fr_pz2-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>4 Pursuant to Section I(C) of the Selection NMS Plan, a &#8220;Bid&#8221; is a proposal submitted by a Bidder in response to the RFP.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-5" HREF="#fr_pz2-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>5 See <a href="">Securities Exchange Act Release No. 70892</a> (Nov. 15, 2013), <a href="https://www.federalregister.gov/documents/2013/11/21/2013-27906/joint-industry-plan-bats-exchange-inc-bats-y-exchange-inc-box-options-exchange-llc-c2-options">78 FR 69910</a> (Nov. 21, 2013)(Notice of Selection NMS Plan).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-7" HREF="#fr_pz2-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>6 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-8" HREF="#fr_pz2-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>7 See <a href="">Securities Exchange Act Release No. 71596 (Feb. 21, 2014)</a>, <a href="">79 FR 11152</a> (Feb. 27, 2014)(Approval Order).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-8" HREF="#fr_pz3-8" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>8 See <a href="">17 CFR 242.608(a)(4) and (a)(5)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-9" HREF="#fr_pz3-9" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>9 See Letter from the Participants to Brent J. Fields, Secretary, Commission, dated December 12, 2014.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-5" HREF="#fr_pz4-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>10 See <a href="https://www.federalregister.gov/documents/2013/11/21/2013-27906/joint-industry-plan-bats-exchange-inc-bats-y-exchange-inc-box-options-exchange-llc-c2-options">78 FR 69910 at 69917</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-6" HREF="#fr_pz4-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>11 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz4-7" HREF="#fr_pz4-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>12 Id. at <a href="https://www.federalregister.gov/documents/2013/11/21/2013-27906/joint-industry-plan-bats-exchange-inc-bats-y-exchange-inc-box-options-exchange-llc-c2-options">69917-18</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz8-7" HREF="#fr_pz8-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>13 <a href="">17 CFR 242.608</a>.</p>
+    </small></td></tr></tbody></table>
+  </div>
+</body></html>

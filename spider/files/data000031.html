@@ -1,0 +1,313 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: SEC Names Manisha Kimmel as Senior Policy Advisor to the Chairman on the Consolidated Audit Trail</code>
+  <code class="meta">source: SEC Press Release</code>
+  <code class="meta">source_type: Press Release</code>
+  <code class="meta">language: English</code>
+  <div class="level2" id="fb6bcbcb-be07-497c-925b-2edd8cf73175"><code class="pubeffdate">pubdate: Jan. 29, 2019 effdate: N/A</code>
+    <h1 class="headline">SEC Names Manisha Kimmel as Senior Policy Advisor to the Chairman on the Consolidated Audit Trail</h1>
+    <code class="topic">Topic: US SEC Press Release, Chairman on the Consolidated Audit Trail</code>
+    <code class="compliance_user">Compliance User: eef72c84-6879-40fd-9f89-9961ff3af81a</code>
+    <code class="keywords">Keywords: 
+      Chairman, 
+    </code>
+    <p id="7ebfd88b-2930-4259-9f53-a1b1f256a10d">FOR IMMEDIATE RELEASE</p>
+    <p id="388e2ce0-e968-4a91-8535-8e7a316ae70d">2019-5</p>
+    <p id="979e6243-62f5-4aa0-9c39-a5da1dd5017e">Washington D.C., Jan. 29, 2019 &#8212; The Securities and Exchange Commission today announced that Manisha Kimmel will serve as Senior Policy Advisor for Regulatory Reporting to Chairman Jay Clayton. In this new role, Ms. Kimmel will coordinate the SEC&#8217;s oversight of the self-regulatory organizations&#8217; (SROs) creation and implementation of the Consolidated Audit Trail (CAT). Ms. Kimmel will work closely with the Division of Trading and Markets and other divisions and offices on the CAT and other regulatory reporting matters.</p>
+    <p id="de2d0818-a35a-45b8-b222-1e47ce94519d">In the wake of the 2010 &#8220;Flash Crash,&#8221; the Commission adopted a rule that requires the national securities exchanges and FINRA (collectively, the SROs) to work together to develop and submit to the SEC a plan to create, implement and maintain a CAT. The CAT is designed to provide a single, comprehensive database that, when fully implemented, will allow regulators to more efficiently and accurately track trading in equities and options throughout the U.S. markets. The CAT is intended to, among other things, allow the Commission to better carry out its oversight responsibility by improving its ability to reconstruct trading activity following a market disruption or other event, which in turn would allow the Commission to more quickly understand the causes of such an event and respond appropriately.</p>
+    <p id="cd1a0da5-0328-4add-9930-6da78526e758">&#8220;Manisha knows the value of orderly, deep, and transparent markets to our investors and our country, and I am grateful that she has decided to take on this new, important role,&#8221; said Chairman Jay Clayton. &#8220;I am confident that her extensive experience and expertise in market data and regulatory reporting will further enhance the Commission&#8217;s ability to effectively oversee the SROs&#8217; implementation of the CAT.&#8221;</p>
+    <p id="2fa99e13-a560-43b4-8d73-7f3eacf79238">&#8220;I am honored to have been chosen by the Chairman to advise him on matters related to the SROs&#8217; implementation of the CAT, and I look forward to working with the SEC&#8217;s talented staff on these important topics,&#8221; said Ms. Kimmel.</p>
+    <p id="54f0ab38-83fc-4381-9251-471d7c40e92b">Kimmel joins the SEC from Refinitiv, where she served as Head of Regulatory and Compliance, Wealth Management. In addition to her role at Refinitiv, Ms. Kimmel served on the Advisory Committee for CAT NMS LLC, a diverse group of industry experts that offers advice to SROs on technical specifications, reporting functionality, and other matters relating to the CAT.  She has previously been a member of the SEC&#8217;s Equity Market Structure Advisory Committee (EMSAC). Prior to her time at Refinitiv, Ms. Kimmel served as Managing Director of the Financial Information Forum, where she worked with broker dealers, exchanges, and vendors on issues involving regulatory and market data technology issues. She has also held positions at Jordan &amp; Jordan and Automatic Data Processing. Ms. Kimmel earned her B.S. in Economics from the Wharton School of Business at the University of Pennsylvania and her B.S. in Engineering from Penn&#8217;s School of Engineering and Applied Sciences.</p>
+  </div>
+</body></html>

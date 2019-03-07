@@ -1,0 +1,323 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: CAT NMS PLAN Rollout Plan (SEC Rule 613 Rollout Plan)</code>
+  <code class="meta">document_type: Plan</code>
+  <code class="meta">source: US/SEC/Plan/Rollout Plan</code>
+  <code class="meta">source_type: Rollout Plan</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: N/A</code>
+  <div id="80ad2319-0c83-4410-8e42-05ef0e24dd5e" class="level2"><code class="pubeffdate">pubdate: N/A effdate: N/A</code>
+    <h1 class="headline">CAT NMS PLAN Rollout Plan (SEC Rule 613 Rollout Plan)</h1>
+    <code class="topic" id="topic-80ad2319-0c83-4410-8e42-05ef0e24dd5e">Topic: CAT NMS, Rollout Plan</code>
+    <code class="compliance_user">Compliance User: SRO/Broker-dealers</code>
+    <code class="keywords">Keywords: 
+      NMS Plan Participant, 
+      SRO, 
+      Implementation Date, 
+    </code>
+    <p id="ef83ee67-16ac-4a22-9f57-7dca6366b828">SEC RULE 613 ROLLOUT PLAN</p>
+    <p id="25d10d20-4388-4560-8335-83cf0d38ba40">Event: CAT Processor Selected by NMS Plan Participants</p>
+    <p id="82aaf447-e865-440f-bf65-97cc60713ca8">Implementation Date: Within two months after effectiveness of the approved NMS Plan (January 17, 2017)</p>
+    <p id="7cedfedd-504f-467c-9f5e-60a90b9b7a5d">Event: Business Clock Synchronization for SROs and Broker-dealers</p>
+    <p id="1000b167-0563-4184-b0ec-52d69c5dbc83">Implementation Date: Within four months after effectiveness of the approved NMS Plan (March 15, 2017)</p>
+    <p id="6a9e97b5-30e5-4224-9b8d-f8f323f59992">Event: SROs begin submitting data to the central repository</p>
+    <p id="773abf2a-9600-41c1-afad-fbf9299abd71">Implementation Date: Within one year after the effectiveness of the approved NMS Plan (November 15, 2017)</p>
+    <p id="df6ee94c-8e62-4dfd-95b7-7066b4478658">Event: SROs must implement enhanced surveillance using CAT data</p>
+    <p id="3cff56d6-d1f4-48e9-8ce3-71dd8e8f71a8">Implementation Date: Within 14 months after effectiveness of the approved NMS Plan (January 15, 2018)</p>
+    <p id="23f932a6-9487-4c76-aace-2ee6f96d4164">Event: SRO members, except small members, must being submitting data to central repository</p>
+    <p id="f73eba2f-71f2-4004-8785-351892028e10">Implementation Date: Within two years after effectiveness of the approved NMS Plan (November 15, 2018)</p>
+    <p id="2e19a23e-506b-46a1-9cba-1d66dd53e99b">Event: Small SRO members must begin submitting data to the central repository</p>
+    <p id="10c26742-175f-4bb7-9447-42d815aa0b6d">Implementation Date: Within three years after effectiveness of the approved NMS Plan (November 15, 2019)</p>
+  </div>
+</body></html>

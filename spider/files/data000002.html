@@ -1,0 +1,719 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: Financial Industry Regulatory Authority</code>
+  <code class="meta">content_type: compilation</code>
+  <code class="meta">document_title: 6800. CONSOLIDATED AUDIT TRAIL COMPLIANCE RULE</code>
+  <code class="meta">source: FINRA Rule 6800</code>
+  <code class="meta">source_type: FINRA Manual</code>
+  <code class="meta">language: English</code>
+  <div class="level2" id="d022fcfa-30bb-475c-b9b2-415f57cb9646"><code class="pubeffdate">pubdate: N/A effdate: N/A</code>
+    <h1 class="headline">6800. CONSOLIDATED AUDIT TRAIL COMPLIANCE RULE</h1>
+    <code class="topic">Topic: FINRA Manual, Rules, 6800</code>
+    <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+    <code class="keywords">Keywords: 
+      Trading, 
+      Small industry, 
+    </code>
+    <div class="level3" id="0cb02e01-a069-41d6-b247-6965783b978e"><code class="pubeffdate">pubdate: N/A effdate: June 30, 2017</code>
+      <h2>6810. Definitions</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Definition</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        SRO, 
+        Definition, 
+        Trading, 
+      </code>
+      <p id="13b20240-14af-48d0-8784-cdcaa7c7e12e">For purposes of the Rule 6800 Series:</p>
+      <p id="52915448-d69c-4413-b929-9a1da10e253b">(a) "Account Effective Date" means:</p>
+      <p id="8813e291-0cec-4920-b8b0-4ad391622d8f">(1) with regard to those circumstances in which an Industry Member has established a trading relationship with an institution but has not established an account with that institution:</p>
+      <p id="e22a5739-3562-4271-b882-8cdf39f9f945">(A) when the trading relationship was established prior to November 15, 2018 for Industry Members other than Small Industry Members, or prior to November 15, 2019 for Small Industry Members, either</p>
+      <p id="189b6354-63c6-4278-a242-c5247e848e6b">(i) the date the relationship identifier was established within the Industry Member;</p>
+      <p id="7e33810b-81f9-4536-a4d4-e368148a2e0f">(ii) the date when trading began (i.e., the date the first order was received) using the relevant relationship identifier; or</p>
+      <p id="6f7ce83d-6ea7-4b65-ae68-9f5e7cefb214">(iii) if both dates are available, the earlier date will be used to the extent that the dates differ; or</p>
+      <p id="b6da1742-ccee-4ddc-8906-1d0a6fa56174">(B) when the trading relationship was established on or after November 15, 2018 for Industry Members other than Small Industry Members, or on or after November 15, 2019 for Small Industry Members, the date the Industry Member established the relationship identifier, which would be no later than the date the first order was received;</p>
+      <p id="dad11e06-b9bf-4148-ba07-e580cbace2b6">(2) where an Industry Member changes back office providers or clearing firms prior to November 15, 2018 for Industry Members other than Small Industry Members, or prior to November 15, 2019 for Small Industry Members, the date an account was established at the relevant Industry Member, either directly or via transfer;</p>
+      <p id="a76fee0a-357f-4555-a5e4-1e427255fc47">(3) where an Industry Member acquires another Industry Member prior to November 15, 2018 for Industry Members other than Small Industry Members, or prior to November 15, 2019 for Small Industry Members, the date an account was established at the relevant Industry Member, either directly or via transfer;</p>
+      <p id="b173e515-27d9-4658-9005-6f1f48dd60aa">(4) where there are multiple dates associated with an account established prior to November 15, 2018 for Industry Members other than Small Industry Members, or prior to November 15, 2019 for Small Industry Members, the earliest available date;</p>
+      <p id="7db6ff68-bdee-4463-9d63-04ceac601049">(5) with regard to Industry Member proprietary accounts established prior to November 15, 2018 for Industry Members other than Small Industry Members, or prior to November 15, 2019 for Small Industry Members:</p>
+      <p id="e80a31d3-824a-4891-8946-f222d5133273">(A) the date established for the account in the Industry Member or in a system of the Industry Member or</p>
+      <p id="eb8b5a3a-c997-4a5b-8226-090cdfe2a2bb">(B) the date when proprietary trading began in the account (i.e., the date on which the first orders were submitted from the account).</p>
+      <p id="d92b59cc-356f-4a58-8a20-c490c8ef2524">With regard to paragraph (a)(2) through paragraph (a)(5), the Account Effective Date will be no later than the date trading occurs at the Industry Member or in the Industry Member's system.</p>
+      <p id="dcf32a01-1a6f-44e8-b934-3eb094bb9da4">(b) "Active Accounts" means an account that has had activity in Eligible Securities within the last six months.</p>
+      <p id="0da05975-2be5-456f-bcfa-9e8bdd541a46">(c) "Allocation Report" means a report made to the Central Repository by an Industry Member that identifies the Firm Designated ID for any account(s), including subaccount(s), to which executed shares are allocated and provides the security that has been allocated, the identifier of the firm reporting the allocation, the price per share of shares allocated, the side of shares allocated, the number of shares allocated to each account, and the time of the allocation; provided, for the avoidance of doubt, any such Allocation Report shall not be required to be linked to particular orders or executions.</p>
+      <p id="63ae3865-ab62-4600-b731-f6d189b6e460">(d) "Business Clock" means a clock used to record the date and time of any Reportable Event required to be reported under this Rule Series.</p>
+      <p id="5b07fbd3-6f7e-4819-a1b0-bf26c7f5d3d6">(e) "CAT" means the consolidated audit trail contemplated by <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613 of SEC Regulation NMS</a>.</p>
+      <p id="d983b97f-38bf-4ac5-966a-63ba76cb99c9">(f) "CAT NMS Plan" means the National Market System Plan Governing the Consolidated Audit Trail, as amended from time to time.</p>
+      <p id="7c6ecb46-dad9-479d-92dd-5371d2c347b5">(g) "CAT-Order-ID" means a unique order identifier or series of unique order identifiers that allows the Central Repository to efficiently and accurately link all Reportable Events for an order, and all orders that result from the aggregation or disaggregation of such order.</p>
+      <p id="dc064a54-eba9-4ba8-8632-c1a83f44c3aa">(h) "CAT Reporting Agent" means a Data Submitter that is a third party that enters into an agreement with an Industry Member pursuant to which the CAT Reporting Agent agrees to fulfill such Industry Member's reporting obligations under this Rule Series.</p>
+      <p id="ad0304ea-dfdd-4e87-9437-ff12148f469c">(i) "Central Repository" means the repository responsible for the receipt, consolidation, and retention of all information reported to the CAT pursuant to <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613 of SEC Regulation NMS</a> and the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="59fcce4f-79bb-41f2-b049-1591af41584f">(j) "Compliance Threshold" has the meaning set forth in <a href="FINRA Manual, Rules, 6800, Timely, Accurate and Complete Data">Rule 6893(d)</a>.</p>
+      <p id="7ea03795-815a-4843-b6e2-2083709fcda1">(k) "Customer" means:</p>
+      <p id="9130b2b4-b4d7-4af5-93eb-869d34bbfa21">(1) the account holder(s) of the account at an Industry Member originating the order; and</p>
+      <p id="5e2c3967-812d-4282-b1e0-94cbb4ae0c95">(2) any person from whom the Industry Member is authorized to accept trading instructions for such account, if different from the account holder(s).</p>
+      <p id="cdf2e9b0-db72-48c2-ad49-d82912b30501">(l) "Customer Account Information" shall include, but not be limited to, account number, account type, customer type, date account opened, and large trader identifier (if applicable); except, however, that:</p>
+      <p id="dbd568b1-0ca8-42a5-b290-339cc0e0b9ba">(1) in those circumstances in which an Industry Member has established a trading relationship with an institution but has not established an account with that institution, the Industry Member will:</p>
+      <p id="718f2303-f6ee-4de6-b803-eb9b95bf6fea">(A) provide the Account Effective Date in lieu of the "date account opened";</p>
+      <p id="08beed40-62f3-4f76-a069-07e82a2ebac0">(B) provide the relationship identifier in lieu of the "account number"; and</p>
+      <p id="69af5fcb-6619-4bb6-adf3-9a0bb74e2ab8">(C) identify the "account type" as a "relationship";</p>
+      <p id="d0571a78-8ae8-4c7a-8487-d0a5bb2a416a">(2) in those circumstances in which the relevant account was established prior to November 15, 2018 for Industry Members other than Small Industry Members, or prior to November 15, 2019 for Small Industry Members, and no "date account opened" is available for the account, the Industry Member will provide the Account Effective Date in the following circumstances:</p>
+      <p id="a8610e94-cf3b-4840-9a4c-6cdb43bc0e9c">(A) where an Industry Member changes back office providers or clearing firms and the date account opened is changed to the date the account was opened on the new back office/clearing firm system;</p>
+      <p id="7357dd82-58d5-4d86-aebb-46a342c74854">(B) where an Industry Member acquires another Industry Member and the date account opened is changed to the date the account was opened on the post-merger back office/clearing firm system;</p>
+      <p id="1e1dafcb-8e8d-4275-ad95-2336007acffa">(C) where there are multiple dates associated with an account in an Industry Member's system, and the parameters of each date are determined by the individual Industry Member; and</p>
+      <p id="dd481833-354e-4c99-b29f-e456cfd53987">(D) where the relevant account is an Industry Member proprietary account.</p>
+      <p id="0bcec8be-9401-4e94-880b-ec7da1e90e8a">(m) "Customer Identifying Information" means information of sufficient detail to identify a Customer, including, but not limited to:</p>
+      <p id="b839439d-fe06-4f18-99c3-760eefb876c7">(1) with respect to individuals: name, address, date of birth, individual tax payer identification number ("ITIN")/social security number ("SSN"), individual's role in the account (e.g., primary holder, joint holder, guardian, trustee, person with the power of attorney); and</p>
+      <p id="943613b0-ce9f-4997-ab20-9713282aaafe">(2) with respect to legal entities: name, address, Employer Identification Number ("EIN")/Legal Entity Identifier ("LEI") or other comparable common entity identifier, if applicable; provided, however, that an Industry Member that has an LEI for a Customer must submit the Customer's LEI in addition to other information of sufficient detail to identify a Customer.</p>
+      <p id="5daf4a3f-e221-42e7-ab80-c6f40921d215">(n) "Data Submitter" means any person that reports data to the Central Repository, including national securities exchanges, national securities associations, broker-dealers, the SIPs for the CQS, CTA, UTP and Plan for Reporting of Consolidated Options Last Sale Reports and Quotation Information ("OPRA") Plans, and certain other vendors or third parties that may submit data to the Central Repository on behalf of Industry Members.</p>
+      <p id="7a3f019d-06ad-4ac9-9e27-b36855774f5f">(o) "Eligible Security" includes (1) all NMS Securities and (2) all OTC Equity Securities.</p>
+      <p id="fef2fbab-489d-435e-945e-99248c82acac">(p) "Error Rate" means the percentage of Reportable Events collected by the Central Repository in which the data reported does not fully and accurately reflect the order event that occurred in the market.</p>
+      <p id="9c6d3ac4-91d6-40e3-8303-555b9089a8a9">(q) "Firm Designated ID" means a unique identifier for each trading account designated by Industry Members for purposes of providing data to the Central Repository, where each such identifier is unique among all identifiers from any given Industry Member for each business date.</p>
+      <p id="00b2b2ae-0c4d-4a97-ac2f-bb1998085657">(r) "Industry Member" means a member of a national securities exchange or a member of a national securities association that is required to record and report information pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a> and this Rule 6800 Series.</p>
+      <p id="0c1f2a91-570a-4853-9254-6a17d8b6c09d">(s) "Industry Member Data" has the meaning set forth in <a href="FINRA Manual, Rules, 6800, Industry Member Data Reporting">Rule 6830(a)(2)</a>.</p>
+      <p id="f801bf9f-c064-463c-b6a1-3ac4a36f1630">(t) "Initial Plan Processor" means the first Plan Processor selected by the Operating Committee in accordance with <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613 of SEC Regulation NMS</a> and <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">Section 6.1 of the CAT NMS Plan</a>.</p>
+      <p id="eb170686-e789-402e-aa34-94ddfef4db9a">(u) "Listed Option" or "Option" have the meaning set forth in <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=d0c5b085958de65d03adcd3dcf8e0fc7&amp;mc=true&amp;node=pt17.4.242&amp;rgn=div5#se17.4.242_1600">Rule 600(b)(35) of SEC Regulation NMS</a>.</p>
+      <p id="72b763f7-384e-491a-ad8c-c32f071c41ce">(v) "Manual Order Event" means a non-electronic communication of orderrelated information for which Industry Members must record and report the time of the event.</p>
+      <p id="5d600ed2-1488-4300-8b4e-ecaf77d02b55">(w) "Material Terms of the Order" includes: the NMS Security or OTC Equity Security symbol; security type; price (if applicable); size (displayed and non-displayed); side (buy/sell); order type; if a sell order, whether the order is long, short, short exempt; open/close indicator (except on transactions in equities); time in force (if applicable); if the order is for a Listed Option, option type (put/call), option symbol or root symbol, underlying symbol, strike price, expiration date, and open/close (except on market maker quotations); and any special handling instructions.</p>
+      <p id="245cedc3-6629-44db-98b3-e606b36f19d5">(x) "NMS Security" means any security or class of securities for which transaction reports are collected, processed, and made available pursuant to an effective transaction reporting plan, or an effective national market system plan for reporting transactions in Listed Options.</p>
+      <p id="af5c8152-bd12-4c20-ba07-fec02d300f84">(y) "NMS Stock" means any NMS Security other than an option.</p>
+      <p id="0141a5f1-acc1-4f0b-8e88-d66752f6f8d3">(z) "Operating Committee" means the governing body of the CAT NMS, LLC designated as such and described in <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">Article IV of the CAT NMS Plan</a>.</p>
+      <p id="43d1dea3-aa3c-4252-9286-e7e6788409c3">(aa) "Options Market Maker" means a broker-dealer registered with an exchange for the purpose of making markets in options contracts traded on the exchange.</p>
+      <p id="e6fcbad0-e53c-44bf-ab54-af8298420f4c">(bb) "Order" or "order", with respect to Eligible Securities, shall include:</p>
+      <p id="253c0119-d3ba-4f75-9b1e-6cdeaa399a21">(1) Any order received by an Industry Member from any person;</p>
+      <p id="504a68a4-35e2-43be-97e3-b7a5ffc05821">(2) Any order originated by an Industry Member; or</p>
+      <p id="c3d9578e-0485-4c5a-8b70-01388e734568">(3) Any bid or offer.</p>
+      <p id="e0dfd122-cef7-4699-a58f-5a4202734e37">(cc) "OTC Equity Security" means any equity security, other than an NMS Security, subject to prompt last sale reporting rules of a registered national securities association and reported to one of such association's equity trade reporting facilities.</p>
+      <p id="84dbf6c7-2e35-4f1e-926c-f389d3f24a66">(dd) "Participant" means each Person identified as such in <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">Exhibit A of the CAT NMS Plan</a>, as amended, in such Person's capacity as a Participant in CAT NMS, LLC.</p>
+      <p id="3221398a-4b04-4a7b-a86f-e3530770846b">(ee) "Person" means any individual, partnership, limited liability company, corporation, joint venture, trust, business trust, cooperative or association and any heirs, executors, administrators, legal representatives, successors and assigns of such Person where the context so permits.</p>
+      <p id="ab6fd7fc-6562-48e0-984a-8cbf6fd58e2b">(ff) "Plan Processor" means the Initial Plan Processor or any other Person selected by the Operating Committee pursuant to <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613 of SEC Regulation NMS</a> and <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">Sections 4.3(b)(i) and 6.1 of the CAT NMS Plan</a> to perform the CAT processing functions required by <a href="Code of Federal Regulations, Title 17: Commodity and Securities Exchanges, Part 242 - Regulations M, SHO, ATS, AC, NMS, and SBSR and Customer Margin Requirements for Security Features, &#167;242.613">Rule 613 of SEC Regulation NMS</a> and set forth in the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="20dd2a26-8d66-4c7b-9491-103af20bf6bf">(gg) "Received Industry Member Data" has the meaning set forth in <a href="FINRA Manual, Rules, 6800, Industry Member Data Reporting">Rule 6830(a)(2)</a>.</p>
+      <p id="ba103224-2bc8-4698-8dbd-485a3c22ed47">(hh) "Recorded Industry Member Data" has the meaning set forth in <a href="FINRA Manual, Rules, 6800, Industry Member Data Reporting">Rule 6830(a)(1)</a>.</p>
+      <p id="2616fcea-bfdb-4cff-b3ef-4fde06c16deb">(ii) "Reportable Event" includes, but is not limited to, the original receipt or origination, modification, cancellation, routing, execution (in whole or in part) and allocation of an order, and receipt of a routed order.</p>
+      <p id="ba08b323-7955-43c5-8843-76954ca0d21f">(jj) "SRO" means any self-regulatory organization within the meaning of <a href="http://legcounsel.house.gov/Comps/Securities%20Exchange%20Act%20Of%201934.pdf">Section 3(a)(26) of the Exchange Act</a>.</p>
+      <p id="28301759-c2cb-4c7c-905a-4a2e431bd9a5">(kk) "SRO-Assigned Market Participant Identifier" means an identifier assigned to an Industry Member by an SRO or an identifier used by a Participant.</p>
+      <p id="866371c5-3a94-4c90-a77d-d4c88f3750da">(ll) "Small Industry Member" means an Industry Member that qualifies as a small broker-dealer as defined in SEA Rule 0-10(c).</p>
+      <p id="65b6d937-f0b1-4f53-9481-3cb6d72a3258">(mm) "Trading Day" shall have the meaning as is determined by the Operating Committee. For the avoidance of doubt, the Operating Committee may establish different Trading Days for NMS Stocks (as defined in <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=d0c5b085958de65d03adcd3dcf8e0fc7&amp;mc=true&amp;node=pt17.4.242&amp;rgn=div5#se17.4.242_1600">Rule 600(b)(47) of SEC Regulation NMS</a>), Listed Options, OTC Equity Securities, and any other securities that are included as Eligible Securities from time to time.</p>
+      <p id="c13bd351-710d-4ad3-870a-24b43483156b">Amended by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-024">SR-FINRA-2017-024</a> eff. June 30, 2017.</p>
+      <p id="34de08e9-4c63-4ad0-918f-0695841007a8">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="483d8445-d916-4418-be58-0f2a5b042450"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6820. Clock Synchronization</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Clock Synchronization</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Business Clock, 
+        Documentation, 
+        Certification, 
+        Violation, 
+      </code>
+      <p id="d4043ef9-f779-44c7-9519-28d0e5760903">(a) Clock Synchronization</p>
+      <p id="04cdfc7f-4ba3-44bc-a067-aa55a9113299">(1) Each Industry Member shall synchronize its Business Clocks, other than such Business Clocks used solely for Manual Order Events or used solely for the time of allocation on Allocation Reports, at a minimum to within a fifty (50) millisecond tolerance of the time maintained by the atomic clock of the National Institute of Standards and Technology ("NIST"), and maintain such synchronization.</p>
+      <p id="101699f9-70c2-4212-9fdf-6e81c33d7615">(2) Each Industry Member shall synchronize (A) its Business Clocks used solely for Manual Order Events and (B) its Business Clocks used solely for the time of allocation on Allocation Reports at a minimum to within a one second tolerance of the time maintained by the NIST atomic clock, and maintain such synchronization.</p>
+      <p id="973c6366-bc8b-43e8-a353-cb6d07c00d2c">(3) The tolerance for paragraph (a)(1) and (2) of this Rule includes all of the following:</p>
+      <p id="5e1d8fb8-1340-4a95-a290-79b36b7c2e4a">(A) The difference between the NIST atomic clock and the Industry Member's Business Clock;</p>
+      <p id="9525ef27-bbf7-441f-a052-efa1870f6d52">(B) The transmission delay from the source; and</p>
+      <p id="b83b1ffe-687f-4886-8bf0-f0e48bb9c26b">(C) The amount of drift of the Industry Member's Business Clock.</p>
+      <p id="a70e55b1-8a7a-46c3-a3e4-1d397185b0a6">(4) Business Clocks must be synchronized every business day before market open to ensure that timestamps for Reportable Events are accurate. To maintain clock synchronization, Business Clocks must be checked against the NIST atomic clock and re-synchronized, as necessary, throughout the day.</p>
+      <p id="05ba0130-a09b-4455-9527-21f35ba5ee7b">(b) Documentation</p>
+      <p id="19439122-6bd4-49ce-8690-79f1a330b77e">Industry Members must document and maintain their synchronization procedures for Business Clocks. Industry Members must keep a log of the times when they synchronize their Business Clocks and the results of the synchronization process. This log should include notice of any time a Business Clock drifts more than the applicable tolerance specified in paragraph (a) of this Rule. Such log must include results for a period of not less than five years ending on the then current date, or for the entire period for which the Industry Member has been required to comply with this Rule if less than five years.</p>
+      <p id="9078f45b-f515-4005-9be6-e58b64a50a75">(c) Certification</p>
+      <p id="f97f930c-4a74-44b3-90b1-eaeea40f1008">Each Industry Member shall certify to FINRA that its Business Clocks satisfy the synchronization requirements set forth in paragraph (a) of this Rule periodically in accordance with the certification schedule established by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="4c08933c-34f7-43fb-a3dc-f5d146f55d05">(d) Violation Reporting</p>
+      <p id="bdbe4ff9-ab05-405b-959e-c18ec3430262">Each Industry Member with Business Clocks must report to the Plan Processor and FINRA violations of paragraph (a) of this Rule pursuant to the thresholds set by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="220518ec-1a21-4eb7-bc18-8d38aace97c3">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="f7e963aa-ec1c-43f5-ab9c-342ffd6bdc9a"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6830. Industry Member Data Reporting</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Industry Member Data Reporting</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Recording, 
+        Reporting, 
+        CAT-Order-ID, 
+        Industry Member Data, 
+        NMS Security, 
+        Symbology, 
+        Error Correction, 
+      </code>
+      <p id="f80b3be5-ee18-440f-bdd6-ea7a8e8956d0">(a) Recording and Reporting Industry Member Data</p>
+      <p id="2e3b32be-2ef1-420a-80a1-c7501efa96ff">(1) Subject to paragraph (a)(3) below, each Industry Member shall record and electronically report to the Central Repository the following details for each order and each Reportable Event, as applicable ("Recorded Industry Member Data") in the manner prescribed by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>:</p>
+      <p id="aef9e8fd-9fe7-4843-bff4-e3504dacea8b">(A) for original receipt or origination of an order:</p>
+      <p id="455c8ee4-8db8-4f41-9724-02aff3201a52">(i) Firm Designated ID(s) for each Customer;</p>
+      <p id="6ae2a683-11e2-489e-9aee-0b681ac085f6">(ii) CAT-Order-ID;</p>
+      <p id="a14156b3-a808-46c7-a79b-5cc5fbf9141e">(iii) SRO-Assigned Market Participant Identifier of the Industry Member receiving or originating the order;</p>
+      <p id="1509ea81-00ce-4a0f-8757-0982dbf623e5">(iv) date of order receipt or origination;</p>
+      <p id="468e1753-1efe-4a23-99a4-55f0f2c50f27">(v) time of order receipt or origination (using timestamps pursuant to <a href="FINRA Manual, Rules, 6800, Time Stamps">Rule 6860</a>); and</p>
+      <p id="17946507-c6ee-4696-afaa-54f9ac8e93bd">(vi) Material Terms of the Order;</p>
+      <p id="24f6678e-3647-4ad8-b767-d4cedfcd6287">(B) for the routing of an order:</p>
+      <p id="e47dcd37-399d-4b17-87b3-e038bb5d77ff">(i) CAT-Order-ID;</p>
+      <p id="9e856475-9018-45a4-82ae-03040c5e8c6c">(ii) date on which the order is routed;</p>
+      <p id="13a5e362-ddc6-483f-b106-b6fdec4ea3dd">(iii) time at which the order is routed (using timestamps pursuant to <a href="FINRA Manual, Rules, 6800, Time Stamps">Rule 6860</a>);</p>
+      <p id="07773466-a1c3-48c9-800d-cdc554ebc661">(iv) SRO-Assigned Market Participant Identifier of the Industry Member routing the order;</p>
+      <p id="f8ebc28a-444f-477c-a1ff-45cd66ef2918">(v) SRO-Assigned Market Participant Identifier of the Industry Member or Participant to which the order is being routed;</p>
+      <p id="df984a90-f141-4df2-aa29-642227b42789">(vi) if routed internally at the Industry Member, the identity and nature of the department or desk to which the order is routed; and</p>
+      <p id="43de6b42-dfdd-4b70-8ce6-4bfec09423e4">(vii) Material Terms of the Order;</p>
+      <p id="bd24297f-3098-4db9-82ad-c678539a2d20">(C) for the receipt of an order that has been routed, the following information:</p>
+      <p id="d36d4b44-bd7c-4941-af48-b6cd653d322e">(i) CAT-Order-ID;</p>
+      <p id="8a1a2387-4df3-41d3-affe-d873cfd6ea2c">(ii) date on which the order is received;</p>
+      <p id="b47c6d75-48f2-47ef-ac29-14e118d79a4e">(iii) time at which the order is received (using timestamps pursuant to <a href="FINRA Manual, Rules, 6800, Time Stamps">Rule 6860</a>);</p>
+      <p id="2ddf98ab-511c-4122-9bf1-ff883705236e">(iv) SRO-Assigned Market Participant Identifier of the Industry Member receiving the order;</p>
+      <p id="ebcfdc5b-063a-4c4c-b373-81cb14372b10">(v) SRO-Assigned Market Participant Identifier of the Industry Member or Participant routing the order; and</p>
+      <p id="754cae14-bfd8-4ac7-a098-66e052ad42af">(vi) Material Terms of the Order;</p>
+      <p id="2a64fd76-9db5-47dd-b0ad-0cc92efb8911">(D) if the order is modified or cancelled:</p>
+      <p id="1fc6b171-4f88-480a-8668-3075d060cdee">(i) CAT-Order-ID;</p>
+      <p id="85d5c076-d7b7-4b77-aa12-e56f4f775ea2">(ii) date the modification or cancellation is received or originated;</p>
+      <p id="5abe6a34-d1ad-4118-a580-2b64f0a775d7">(iii) time at which the modification or cancellation is received or originated (using timestamps pursuant to <a href="FINRA Manual, Rules, 6800, Time Stamps">Rule 6860</a>);</p>
+      <p id="5e7234a6-4a36-4ef2-ab8d-920bd7c54121">(iv) price and remaining size of the order, if modified;</p>
+      <p id="1d036d46-42e8-4a3a-80d4-4140124c7170">(v) other changes in the Material Terms of the Order, if modified; and</p>
+      <p id="ff8191f6-c5fa-45c5-bbf6-7323fd35cb8b">(vi) whether the modification or cancellation instruction was given by the Customer or was initiated by the Industry Member;</p>
+      <p id="a31795b9-51da-425e-8b16-b2254212c6ed">(E) if the order is executed, in whole or in part:</p>
+      <p id="6a806d79-9fdb-474e-b04f-28fd43db8982">(i) CAT-Order-ID;</p>
+      <p id="5ee7e605-b643-48e4-b5ad-79d77aed8da2">(ii) date of execution;</p>
+      <p id="5866c0d8-5e7e-4bcf-ae4a-e5e7a561e9da">(iii) time of execution (using timestamps pursuant to <a href="FINRA Manual, Rules, 6800, Time Stamps">Rule 6860</a>);</p>
+      <p id="929c6562-bb8e-4088-941a-7de5526c4926">(iv) execution capacity (principal, agency or riskless principal);</p>
+      <p id="0e95a61f-3266-4056-98ad-15b99c4c6285">(v) execution price and size;</p>
+      <p id="510d8acd-1168-44ca-a068-486a887ccd73">(vi) SRO-Assigned Market Participant Identifier of the Industry Member executing the order;</p>
+      <p id="c3dc35d9-ebe3-4362-9490-52a9df90acd7">(vii) whether the execution was reported pursuant to an effective transaction reporting plan or the Plan for Reporting of Consolidated Options Last Sale Reports and Quotation Information; and</p>
+      <p id="45e26232-38ca-49d3-9a7e-31f902a24210">(F) other information or additional events as may be prescribed pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="e60e8eec-cd2d-48e3-a0f1-c1988104daf0">(2) Subject to paragraph (a)(3) below, each Industry Member shall record and report to the Central Repository the following, as applicable ("Received Industry Member Data" and collectively with the information referred to in <a href="FINRA Manual, Rules, 6800, Industry Member Data Reporting">Rule 6830(a)(1) "Industry Member Data"</a>)) in the manner prescribed by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>:</p>
+      <p id="b336de04-471f-45b4-b05a-48a1a1c70781">(A) if the order is executed, in whole or in part:</p>
+      <p id="b758d572-0a0e-45bf-b757-00d267a1bcb9">(i) An Allocation Report;</p>
+      <p id="7904bb36-c34b-4858-9389-6a3c3eb3a5dc">(ii) SRO-Assigned Market Participant Identifier of the clearing broker or prime broker, if applicable; and</p>
+      <p id="22bc57f5-a950-458e-bd88-a0b0264bbdfa">(iii) CAT-Order-ID of any contra-side order(s);</p>
+      <p id="6c6d45d3-38ca-4dbd-a91c-d2ccab33e51d">(B) if the trade is cancelled, a cancelled trade indicator; and</p>
+      <p id="1c9907df-0667-4168-9736-881fb23a0d1d">(C) for original receipt or origination of an order, the Firm Designated ID for the relevant Customer, and in accordance with <a href="FINRA Manual, Rules, 6800, Customer Information Reporting">Rule 6840</a>, Customer Account Information and Customer Identifying Information for the relevant Customer.</p>
+      <p id="7a46a7a4-4ddb-4a07-8b1d-fa073ff86e3a">(3) Each Industry Member that is an Options Market Maker is not required to report to the Central Repository the Industry Member Data regarding the routing, modification or cancellation of its quotes in Listed Options. Each Industry Member that is an Options Market Maker shall report to the Exchange the time at which its quote in a Listed Option is sent to the Exchange (and, if applicable, any subsequent quote modification time and/or cancellation time when such modification or cancellation is originated by the Options Market Maker).</p>
+      <p id="956949ac-0335-4610-a3b1-b980e27c9f4f">(b) Timing of Recording and Reporting</p>
+      <p id="926ac423-610f-4517-be4d-6e23f475c32f">(1) Each Industry Member shall record Recorded Industry Member Data contemporaneously with the applicable Reportable Event.</p>
+      <p id="2cd69ee3-1073-482a-8542-d1bdc70b0a9e">(2) Each Industry Member shall report:</p>
+      <p id="f916d76a-f0d5-491d-a89d-c878812a2d44">(A) Recorded Industry Member Data to the Central Repository by 8:00 a.m. Eastern Time on the Trading Day following the day the Industry Member records such Recorded Industry Member Data; and</p>
+      <p id="c832a536-6d11-49b7-afe2-8c08cb779025">(B) Received Industry Member Data to the Central Repository by 8:00 a.m. Eastern Time on the Trading Day following the day the Industry Member receives such Received Industry Member Data.</p>
+      <p id="a2089cad-017b-42b6-a44c-36983cc6dffa">(3) Industry Members may, but are not required to, voluntarily report Industry Member Data prior to the applicable 8:00 a.m. Eastern Time deadline.</p>
+      <p id="101a4b7d-7718-4c92-af0c-cbd16174f5a4">(c) Applicable Securities</p>
+      <p id="ab5043ad-0e4f-4382-acd3-206d0137f86b">(1) Each Industry Member shall record and report to the Central Repository the Industry Member Data as set forth in paragraph (a) of this Rule for each NMS Security registered or listed for trading on such exchange or admitted to unlisted trading privileges on such exchange.</p>
+      <p id="dd601d89-6085-4cb0-a1a1-84e4e34947d1">(2) Each Industry Member shall record and report to the Central Repository the Industry Member Data as set forth in this paragraph (a) of this Rule for each Eligible Security for which transaction reports are required to be submitted to FINRA.</p>
+      <p id="01212c85-c2ee-4ea9-9a4b-b6bb12a0ec59">(d) Security Symbology</p>
+      <p id="8a8d14fb-60e0-4090-bf8b-bcb74363ece5">(1) For each exchange-listed Eligible Security, each Industry Member shall report Industry Member Data to the Central Repository using the symbology format of the exchange listing the security.</p>
+      <p id="0001b269-0a30-4b98-aa7d-ccc6b70db939">(2) For each Eligible Security that is not exchange-listed, each Industry Member shall report Industry Member Data to the Central Repository using such symbology format as approved by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="a8156d59-3494-4d72-a6f8-1efa10422119">(e) Error Correction</p>
+      <p id="415b5f8d-5db3-4738-b592-e9b21e77e37b">For each Industry Member for which errors in Industry Member Data submitted to the Central Repository have been identified by the Plan Processor or otherwise, such Industry Member shall submit corrected Industry Member Data to the Central Repository by 8:00 a.m. Eastern Time on T+3.</p>
+      <p id="b450718d-4fe8-4c55-badc-c7ea71d1b7e3">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="4bae72a5-6e85-453b-9a46-e7d4317361ae"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6840. Customer Information Reporting</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Customer Information Reporting</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Customer Information, 
+        Updating, 
+        Error Correction, 
+      </code>
+      <p id="bf9594fb-0469-402a-8d5f-b1962d04d737">(a) Initial Set of Customer Information</p>
+      <p id="fcf32207-8898-46ea-80c2-afb848491ac5">Each Industry Member shall submit to the Central Repository the Firm Designated ID, Customer Account Information and Customer Identifying Information for each of its Customers with an Active Account prior to such Industry Member's commencement of reporting to the Central Repository and in accordance with the deadlines set forth in <a href="FINRA Manual, Rules, 6800, Development and Testing">Rule 6880</a>.</p>
+      <p id="915dd022-dc9d-481f-8998-4434fce50da9">(b) Daily Updates to Customer Information</p>
+      <p id="8f465496-1971-4c6e-be1a-31421384d0a5">Each Industry Member shall submit to the Central Repository any updates, additions or other changes to the Firm Designated ID, Customer Account Information and Customer Identifying Information for each of its Customers with an Active Account on a daily basis.</p>
+      <p id="790887d7-2e6a-4d0a-8060-dd35d091bf77">(c) Periodic Updates to Complete Set of Customer Information</p>
+      <p id="d233d116-858e-497a-90a9-e4b2bc4e80ab">On a periodic basis as designated by the Plan Processor and approved by the Operating Committee, each Industry Member shall submit to the Central Repository a complete set of Firm Designated IDs, Customer Account Information and Customer Identifying Information for each of its Customers with an Active Account.</p>
+      <p id="c6cd52cc-3204-4e3c-b2c8-2bd18be36067">(d) Error Correction</p>
+      <p id="549a427e-73d8-4357-918f-fdfeee005d68">For each Industry Member for which errors in Firm Designated ID, Customer Account Information and Customer Identifying Information for each of its Customers with an Active Account submitted to the Central Repository have been identified by the Plan Processor or otherwise, such Industry Member shall submit corrected data to the Central Repository by 5:00 p.m. on T+3.</p>
+      <p id="f646f391-e8cd-4955-899b-3593e0dbc354">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="8cd8866e-7c53-4078-b1bb-e64ceb91aa60"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6850. Industry Member Information Reporting</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Industry Member Information Reporting</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Reporting, 
+      </code>
+      <p id="6f92c92f-6883-4f68-8f95-7bdd7cefa9db">Each Industry Member shall submit to the Central Repository information sufficient to identify such Industry Member, including CRD number and LEI, if such LEI has been obtained, prior to such Industry Member's commencement of reporting to the Central Repository and in accordance with the deadlines set forth in <a href="FINRA Manual, Rules, 6800, Development and Testing">Rule 6880</a>, and keep such information up to date as necessary.</p>
+      <p id="5705d9b9-0f11-4674-8919-a4e9e80aa4fa">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="7744fae0-879f-48d4-914c-836a73d759ea"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6860. Time Stamps</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Time Stamps</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Record, 
+        Report, 
+        Time Stamps, 
+      </code>
+      <p id="9deb4baf-08af-43c2-9839-5ee7eb2c64b8">(a) Millisecond Time Stamps</p>
+      <p id="be317782-5c56-4c66-8a92-4745dbfa8cb2">(1) Subject to paragraphs (a)(2) and (b), each Industry Member shall record and report Industry Member Data to the Central Repository with time stamps in milliseconds.</p>
+      <p id="2541ef3f-0b66-461e-b20b-12293eb375ac">(2) Subject to paragraph (b), to the extent that any Industry Member's order handling or execution systems utilize time stamps in increments finer than milliseconds, such Industry Member shall record and report Industry Member Data to the Central Repository with time stamps in such finer increment.</p>
+      <p id="f659af51-32ad-4117-bd19-3521847c2796">(b) One Second Time Stamps/Electronic Order Capture</p>
+      <p id="65473f35-45ad-44ca-a60b-3f331a4a4b73">(1) Each Industry Member may record and report Manual Order Events to the Central Repository in increments up to and including one second, provided that each Industry Member shall record and report the time when a Manual Order Event has been captured electronically in an order handling and execution system of such Industry Member ("Electronic Capture Time") in milliseconds; and</p>
+      <p id="2302a76c-b01c-4a11-b6e3-8bd7205be4de">(2) Each Industry Member may record and report the time of Allocation Reports in increments up to and including one second.</p>
+      <p id="d154ef50-073d-41ac-a5f3-c69736157356">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="6e948a2a-26ac-40e6-a334-870bc093dc0a"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6865. Time Stamp and Clock Synchronization Rule Violations</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Time Stamps and Clock Synchronization Rule Violations</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Reporting, 
+        Business Clocks, 
+        Violation, 
+      </code>
+      <p id="de6bc8bb-703c-4d67-b577-0ab5b5f86324">An Industry Member that engages in a pattern or practice of reporting Reportable Events with time stamps generated by Business Clocks that are not synchronized according the requirements set forth in this Rule Series without reasonable justification or exceptional circumstances may be considered in violation of this Rule.</p>
+      <p id="6cbcd5bc-81c0-4ec7-b139-4f44e6e6e53b">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="bbe64c56-8f3a-4b5d-95cd-ab282f79f5aa"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6870. Connectivity and Data Transmission</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Connectivity and Data Transmission</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Data Transmission, 
+        Connectivity, 
+        CAT Reporting, 
+        Agents, 
+      </code>
+      <p id="ae462d3f-f6df-4686-9cfc-8d4e74231e5b">(a) Data Transmission</p>
+      <p id="7a14c0e2-42ad-419a-b832-1e49a8e98e8f">Each Industry Member shall transmit data as required under the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a> to the Central Repository utilizing such format(s) as may be provided by the Plan Processor and approved by the Operating Committee.</p>
+      <p id="946380e2-3b1f-478f-86e3-b520c278a864">(b) Connectivity</p>
+      <p id="9d5fa136-1665-4eb5-a70b-f62300911ece">Each Industry Member shall connect to the Central Repository using a secure method(s), including but not limited to private line(s) and virtual private network connection(s).</p>
+      <p id="6a088cb0-050a-430c-baa9-ef8197159979">(c) CAT Reporting Agents</p>
+      <p id="fb09ab32-5fa1-4be4-b51f-a43292076830">(1) Any Industry Member may enter into an agreement with a CAT Reporting Agent pursuant to which the CAT Reporting Agent agrees to fulfill the obligations of such Industry Member under this Rule 6800 Series. Any such agreement shall be evidenced in writing, which shall specify the respective functions and responsibilities of each party to the agreement that are required to effect full compliance with the requirements of this Rule Series.</p>
+      <p id="d2c95586-2d34-4fdf-b0a4-39d4f71b407d">(2) All written documents evidencing an agreement described in paragraph (a)(1) shall be maintained by each party to the agreement.</p>
+      <p id="93c095c0-b16d-422b-9781-d18e0bfd1192">(3) Each Industry Member remains primarily responsible for compliance with the requirements of this Rule 6800 Series, notwithstanding the existence of an agreement described in this paragraph (c).</p>
+      <p id="629edabf-9d25-4f6d-bf9c-e6d85dd7a906">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="f2ec810f-9491-4178-821c-4590e17039f6"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6880. Development and Testing</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Development and Testing</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Connectivity, 
+        Reporting, 
+        Member Information, 
+        Submission, 
+        Order Data, 
+        Testing, 
+      </code>
+      <p id="228868b5-24a5-42bd-bd33-3d2bdb57de8f">(a) Development</p>
+      <p id="3a88ccae-300f-4581-ae87-8119e47b2b61">(1) Connectivity and Acceptance Testing</p>
+      <p id="adde3977-f69f-426f-b249-4078bb4ec523">(A) Industry Members (other than Small Industry Members) shall begin connectivity and acceptance testing with the Central Repository no later than August 15, 2018.</p>
+      <p id="face5647-b0e2-4a4a-b65f-7b6b6d19b986">(B) Small Industry Members shall begin connectivity and acceptance testing with the Central Repository no later than August 15, 2019.</p>
+      <p id="ad2ba3b0-25fb-45c2-ae27-fa8eb6ea96f9">(2) Reporting Customer and Industry Member Information</p>
+      <p id="762775de-a4a2-4c62-ae6c-3a1060d8728f">(A) Industry Members (other than Small Industry Members) shall begin reporting Customer and Industry Member information, as required by <a href="FINRA Manual, Rules, 6800, Customer Information Reporting">Rules 6840(a)</a> and <a href="FINRA Manual, Rules, 6800, Industry Member Information Reporting">6850</a>, respectively, to the Central Repository for processing no later than October 15, 2018.</p>
+      <p id="5c64e65a-b1c3-4dcc-9430-10d6fdb52444">(B) Small Industry Members shall begin reporting Customer and Industry Member information, as required by <a href="FINRA Manual, Rules, 6800, Customer Information Reporting">Rules 6840(a)</a> and <a href="FINRA Manual, Rules, 6800, Industry Member Information Reporting">6850</a>, respectively, to the Central Repository for processing no later than October 15, 2019.</p>
+      <p id="8a290b07-327a-4cdf-9a00-0c756f96a7a8">(3) Submission of Order Data</p>
+      <p id="b4bf98fb-3087-4aaa-a93b-79528dc97fa3">(A) Industry Members (other than Small Industry Members)</p>
+      <p id="718cc8be-1438-4bc8-8683-3521f0463498">(i) Industry Members (other than Small Industry Members) are permitted, but not required, to submit order data for testing purposes beginning no later than May 15, 2018.</p>
+      <p id="e2a83a1f-6600-44a2-8ab1-10220e66d6f2">(ii) Industry Members (other than Small Industry Members) shall participate in the coordinated and structured testing of order submission, which will begin no later than August 15, 2018.</p>
+      <p id="590b41d1-3dc1-47eb-afd4-202f2df69d82">(B) Small Industry Members</p>
+      <p id="6aae9bd5-e4a5-4cb0-a989-77b1c5a5df87">(i) Small Industry Members are permitted, but not required, to submit order data for testing purposes beginning no later than May 15, 2019.</p>
+      <p id="c9b3d143-2b30-492c-a078-acc4736a20ac">(ii) Small Industry Members shall participate in the coordinated and structured testing of order submission, which will begin no later than August 15, 2019.</p>
+      <p id="0e528193-3a59-4f1d-9b64-fc1df4e8e4e3">(4) Submission of Options Market Maker Quote. Industry Members are permitted, but not required, to submit Quote Sent Time on Options Market Maker quotes, beginning no later than October 15, 2018.</p>
+      <p id="2f7e1cf2-fb8f-495b-9586-74574f387ad9">(b) Testing</p>
+      <p id="67cc3e60-fe27-48ab-9ea6-b01cbe398e02">Each Industry Member shall participate in testing related to the Central Repository, including any industry-wide disaster recovery testing, pursuant to the schedule established pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="a1f5fbb8-4c23-454f-8e06-fb4763c53535">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="31bd2d63-8c0f-422f-b822-0d0df6469caf"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6890. Recordkeeping</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Recordkeeping</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Recordkeeping, 
+        Records, 
+        SEA Rule 17a-4(f)(1)(i), 
+        SEA Rule 17a-4(f)(1)(ii), 
+      </code>
+      <p id="ca793c08-4299-4adb-8f5e-0b16a3790605">Each Industry Member shall maintain and preserve records of the information required to be recorded under this Rule 6800 Series for the period of time and accessibility specified in <a href="http://www.finra.org/industry/interpretationsfor/sea-rule-17a-4">SEA Rule 17a-4(b)</a>. The records required to be maintained and preserved under this Rule may be immediately produced or reproduced on "micrographic media" as defined in <a href="http://www.finra.org/industry/interpretationsfor/sea-rule-17a-4">SEA Rule 17a-4(f)(1)(i)</a> or by means of "electronic storage media" as defined in <a href="http://www.finra.org/industry/interpretationsfor/sea-rule-17a-4">SEA Rule 17a-4(f)(1)(ii)</a> that meet the conditions set forth in <a href="http://www.finra.org/industry/interpretationsfor/sea-rule-17a-4">SEA Rule 17a-4(f)</a> and be maintained and preserved for the required time in that form.</p>
+      <p id="40d075f7-8c38-4756-9010-1e8e5a4e6c1e">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="ef82b0d4-fcd1-490a-94d8-99a1e6f05eec"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6893. Timely, Accurate and Complete Data</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Timely, Accurate and Complete Data</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Report, 
+        LEIs, 
+        Error Rate, 
+        Compliance Thresholds, 
+      </code>
+      <p id="e3490311-21ed-41bc-a384-9e256126ebee">(a) General</p>
+      <p id="e590613a-0249-4f74-9a23-9dcbe6ca6cfe">Industry Members are required to record and report data to the Central Repository as required by this Rule Series in a manner that ensures the timeliness, accuracy, integrity and completeness of such data.</p>
+      <p id="f65fd338-b364-4f63-8f86-074d328f96a4">(b) LEIs</p>
+      <p id="8fa9534e-1175-4aa4-80fd-783a7f9eef4c">Without limiting the requirement set forth in paragraph (a), Industry Members are required to accurately provide the LEIs in their records as required by this Rule Series and may not knowingly submit inaccurate LEIs to the Central Repository; provided, however, that this requirement does not impose any additional due diligence obligations on Industry Members with regard to LEIs for CAT purposes.</p>
+      <p id="edf8cb4a-df50-4f6c-bb7b-f4378ea1326c">(c) Compliance with Error Rate</p>
+      <p id="997f0c45-c7ca-421e-bcfc-def51b401b4f">If an Industry Member reports data to the Central Repository with errors such that the error percentage exceeds the maximum Error Rate established by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>, then such Industry Member would not be in compliance with the Rule 6800 Series.</p>
+      <p id="04e653a9-eae1-4b89-879b-6d52b25bb010">(d) Compliance Thresholds</p>
+      <p id="5c5b00b0-486f-4045-8405-9e6e3194150d">Each Industry Member shall be required to meet a separate compliance threshold which will be an Industry Member-specific rate that may be used as the basis for further review or investigation into the Industry Member's performance with regard to the CAT ("Compliance Thresholds"). Compliance Thresholds will compare an Industry Member's error rate to the aggregate Error Rate over a period of time to be defined by the Operating Committee. An Industry Member's performance with respect to its Compliance Threshold will not signify, as a matter of law, that such Industry Member has violated this Rule Series.</p>
+      <p id="db258886-9ca6-4923-a9d2-b48ffc9a8277">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="4caebc55-e2ab-455e-bcd3-6407b390d2ae"><code class="pubeffdate">pubdate: N/A effdate: March 15, 2017</code>
+      <h2>6895. Compliance Dates</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Timely, Compliance Dates</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Clock Synchronization, 
+        CAT Data, 
+        Reporting, 
+      </code>
+      <p id="1372e608-763d-4984-a68a-6c10dea4dbff">(a) General</p>
+      <p id="26728280-85ea-4ba1-98d8-24cb9de814d4">Except as set forth in paragraphs (b) and (c) of this Rule or otherwise set forth in this Rule Series, the compliance date for this Rule Series is the date of Commission approval.</p>
+      <p id="60a95b42-db79-4ed0-bc5e-03400e3cdb30">(b) Clock Synchronization</p>
+      <p id="d2459253-4974-4c31-8399-5a638d7325db">(1) Each Industry Member shall comply with <a href="FINRA Manual, Rules, 6800, Clock Synchronization">Rule 6820</a> with regard to Business Clocks that capture time in milliseconds commencing on or before March 15, 2017.</p>
+      <p id="605d74ce-a63f-4245-b6a4-607ce5952948">(2) Each Industry Member shall comply with <a href="FINRA Manual, Rules, 6800, Clock Synchronization">Rule 6820</a> with regard to Business Clocks that do not capture time in milliseconds commencing on or before February 19, 2018.</p>
+      <p id="ca656681-7b07-44f0-aacb-71111b0cbf85">(c) CAT Data Reporting</p>
+      <p id="ee2df110-0bc8-4475-b9b7-6ee08f69f732">(1) Each Industry Member (other than a Small Industry Member) shall record and report the Industry Member Data to the Central Repository by November 15, 2018.</p>
+      <p id="2dddc748-cb21-46b2-91b7-b973fa61117e">(2) Each Industry Member that is a Small Industry Member shall record and report the Industry Member Data to the Central Repository by November 15, 2019.</p>
+      <p id="9c5d620e-d787-48d0-8568-ccb5be79b535">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-003">SR-FINRA-2017-003</a> eff. March 15, 2017.</p>
+    </div>
+    <div class="level3" id="79d3af65-cd78-4805-a814-13925f8a5299"><code class="pubeffdate">pubdate: N/A effdate: Dec. 1, 2017</code>
+      <h2>6898. Consolidated Audit Trail&#8212;Fee Dispute Resolution</h2>
+      <code class="topic">Topic: FINRA Manual, Rules, 6800, Fee Dispute Resolution</code>
+      <code class="compliance_user">Compliance User: bfe292cc-1912-4c19-8cf4-49c80731102b</code>
+      <code class="keywords">Keywords: 
+        Definitions, 
+        Dispute, 
+        Resolution, 
+        Fee, 
+        NMS Plan, 
+        Procedures, 
+        Submission of, 
+        Application, 
+        Hearing and Decision, 
+        Review, 
+        Petition, 
+        Payment, 
+      </code>
+      <p id="a60e333e-5688-4249-a0e2-2546aed2bf86">(a) Definitions</p>
+      <p id="8a019a70-be5c-4552-bc16-7045794ca1cf">(1) For purposes of this Rule, the terms "CAT NMS Plan", "Industry Member", "Operating Committee", and "Participant" are defined as set forth in <a href="FINRA Manual, Rules, 6800, Definition">Rule 6810</a> (Consolidated Audit Trail&#8212;Definitions).</p>
+      <p id="9daa796f-05bb-492f-a97e-546b5738eabe">(2) "Subcommittee" means a subcommittee designated by the Operating Committee pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>.</p>
+      <p id="f7bdd294-da32-4190-b976-9a88249d50c6">(3) "CAT Fee" means any fees contemplated by the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a> and imposed on Industry Members pursuant to FINRA Rules.</p>
+      <p id="ec1e62c2-6997-482a-a8f5-9f0b31637266">(b) Fee Dispute Resolution</p>
+      <p id="e8296a84-2c82-46af-91d7-688a6cd226df">Disputes initiated by an Industry Member with respect to CAT Fees charged to such Industry Member, including disputes related to the designated tier and the fee calculated pursuant to such tier, shall be resolved by the Operating Committee, or a Subcommittee designated by the Operating Committee, of the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a>, pursuant to the Fee Dispute Resolution Procedures adopted pursuant to the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a> and set forth in paragraph (c) of this Rule. Decisions on such matters shall be binding on Industry Members, without prejudice to the rights of any such Industry Member to seek redress from the SEC or in any other appropriate forum.</p>
+      <p id="d7cc8ced-0cff-499c-a151-d253f0d6e507">(c) Fee Dispute Resolution Procedures under the <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">CAT NMS Plan</a></p>
+      <p id="0cbe1a18-e65a-4cbb-a543-2b540780ff6f">(1) Scope of Procedures</p>
+      <p id="d547209d-f198-48a9-b67c-91a00f7e3049">These Fee Dispute Resolution Procedures provide the procedure for Industry Members that dispute CAT Fees charged to such Industry Member, including disputes related to the designated tier and the fee calculated pursuant to such tier, to apply for an opportunity to be heard and to have the CAT Fees charged to such Industry Member reviewed.</p>
+      <p id="7dc44171-849a-429e-9516-7f3320288087">(2) Submission and Time Limitation on Application to CAT NMS, LLC ("Company")</p>
+      <p id="e537edd3-7780-415e-8165-af3d30373ffc">An Industry Member that disputes CAT Fees charged to such Industry Member and that desires to have an opportunity to be heard with respect to such disputed CAT Fees shall file a written application with the Company within 15 business days after being notified of such disputed CAT Fees. The application shall identify the disputed CAT Fees, state the specific reasons why the applicant takes exception to such CAT Fees, and set forth the relief sought. In addition, if the applicant intends to submit any additional documents, statements, arguments or other material in support of the application, the same should be so stated and identified.</p>
+      <p id="7a6e05dd-e82f-429e-861f-f1621ec31fdd">(3) Procedure Following Applications for Hearing</p>
+      <p id="6b36db14-abe9-43de-b801-4aa46acd593a">(A) Fee Review Subcommittee</p>
+      <p id="83200db8-b26b-4672-8b8c-81fce714a986">The Company will refer applications for hearing and review promptly to the Subcommittee designated by the Operating Committee pursuant to <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">Section 4.12 of the CAT NMS Plan</a> with responsibility for conducting the reviews of CAT Fee disputes pursuant to these Fee Dispute Resolution Procedures. This Subcommittee will be referred to as the Fee Review Subcommittee. The members of the Fee Review Subcommittee will be subject to the provisions of <a href="https://www.catnmsplan.com/home/about-cat/cat-nms-plan/index.html">Section 4.3(d) of the CAT NMS Plan</a> regarding recusal and Conflicts of Interest.</p>
+      <p id="f2403e32-fd02-4fc5-b406-8b216bc89e1a">(B) Record</p>
+      <p id="3f97e19e-ade8-44f0-aa8b-7854f6827f58">The Fee Review Subcommittee will keep a record of the proceedings.</p>
+      <p id="edaaa9ef-0708-42f8-b4e1-f505b9eae8cf">(C) Hearings and Documents</p>
+      <p id="0f4d3769-dbd1-4874-97c0-a92eade39eaf">The Fee Review Subcommittee will hold hearings promptly. The Fee Review Subcommittee will set a hearing date. The parties to the hearing (as described in paragraph (c)(4)(A) below) shall furnish the Fee Review Subcommittee with all materials relevant to the proceedings at least 72 hours prior to the date of the hearing. Each party shall have the right to inspect and copy the other party's materials prior to the hearing.</p>
+      <p id="9d3b871d-5cbb-4920-9f49-0beb5b67a92c">(4) Hearing and Decision</p>
+      <p id="5e727558-0590-421d-9485-ce31096bd739">(A) Parties</p>
+      <p id="eaf32c94-99c8-4856-a130-32545c8d2cd9">The parties to the hearing shall consist of the applicant and a representative of the Company who shall present the reasons for the action taken by the Company that allegedly aggrieved the applicant.</p>
+      <p id="15537a77-10f4-40a1-bfac-cf2f37a2a921">(B) Counsel</p>
+      <p id="0c8b84e6-6e90-4686-b713-c2e968d1f4d0">The applicant is entitled to be accompanied, represented and advised by counsel at all stages of the proceedings.</p>
+      <p id="6d756d3d-e11c-4e03-b0c3-c35519873642">(C) Conduct of Hearing</p>
+      <p id="c245ae0c-2218-4540-b510-2226a0f54394">The Fee Review Subcommittee shall determine all questions concerning the admissibility of evidence and shall otherwise regulate the conduct of the hearing. Each of the parties shall be permitted to make an opening statement, present witnesses and documentary evidence, cross examine opposing witnesses and present closing arguments orally or in writing as determined by the Fee Review Subcommittee. The Fee Review Subcommittee also shall have the right to question all parties and witnesses to the proceeding. The Fee Review Subcommittee shall keep a record of the hearing. The formal rules of evidence shall not apply.</p>
+      <p id="03e5c15b-472a-403e-b36d-f600be33e342">(D) Decision</p>
+      <p id="e24b29c8-6887-4bd3-8029-6af93a58947a">The Fee Review Subcommittee shall set forth its decision in writing and send the written decision to the parties to the proceeding. Such decisions shall contain the reasons supporting the conclusions of the Fee Review Subcommittee.</p>
+      <p id="dde38310-32e3-40e7-b674-38d9e8b581dd">(5) Review</p>
+      <p id="06d8ae85-98ad-4424-918b-ebce6ad00e51">(A) Petition</p>
+      <p id="42f92e99-bb4d-4bdb-900e-e6f049741e10">The decision of the Fee Review Subcommittee shall be subject to review by the Operating Committee either on its own motion within 20 business days after issuance of the decision or upon written request submitted by the applicant within 15 business days after issuance of the decision. The applicant's petition shall be in writing and specify the findings and conclusions to which the applicant objects, together with the reasons for such objections. Any objection to a decision not specified in writing shall be considered to have been abandoned and may be disregarded. Parties may petition to submit a written argument to the Operating Committee and may request an opportunity to make an oral argument before the Operating Committee. The Operating Committee shall have sole discretion to grant or deny either request.</p>
+      <p id="50c61708-f7e3-47cc-9aa6-64591a33a0e1">(B) Conduct of Review</p>
+      <p id="6b15f8db-fe2d-4b11-b371-388fa468633d">The Operating Committee shall conduct the review. The review shall be made upon the record and shall be made after such further proceedings, if any, as the Operating Committee may order. Based upon such record, the Operating Committee may affirm, reverse or modify, in whole or in part, the decision of the Fee Review Subcommittee. The decision of the Operating Committee shall be in writing, shall be sent to the parties to the proceeding and shall be final.</p>
+      <p id="ceb0e20f-0ae0-4b75-afd0-1a5e73c0c6c2">(6) Time Limit for Review</p>
+      <p id="213e39b4-a6d0-4280-919d-59665ff681d5">A final decision regarding the disputed CAT Fees by the Operating Committee, or the Fee Review Subcommittee (if there is no review by the Operating Committee), must be provided within 90 days of the date on which the Industry Member filed a written application regarding disputed CAT Fees with the Company pursuant to paragraph (c)(2) of these Fee Dispute Resolution Procedures. The Operating Committee may extend the 90-day time limit under this paragraph (c)(6) at its discretion.</p>
+      <p id="71107c55-0a9b-47e4-a6c4-8e283e726f0f">(7) Miscellaneous Provisions</p>
+      <p id="fe5e748b-536c-497e-88d9-8a88bb4de21d">(A) Service of Notice</p>
+      <p id="99ee38d8-70f2-4b5d-88fd-6235fd3092b1">Any notices or other documents may be served upon the applicant either personally or by leaving the same at its, his or her place of business or by deposit in the United States post office, postage prepaid, by registered or certified mail, addressed to the applicant at its, his or her last known business or residence address.</p>
+      <p id="188ace67-f242-4392-a939-d9b537954371">(B) Extension of Certain Time Limits</p>
+      <p id="75011e7b-ca7f-44cd-84ea-f6b345045799">Any time limits imposed under these Fee Dispute Resolution Procedures for the submission of answers, petitions or other materials may be extended by permission of the Operating Committee. All papers and documents relating to review by the Fee Review Subcommittee or the Operating Committee must be submitted to the Fee Review Subcommittee or Operating Committee, as applicable.</p>
+      <p id="0bf873f9-3364-4a0d-b6cb-6c29ec82e1d0">(8) Agency Review</p>
+      <p id="74d87786-d7c1-4655-b156-bb80d69363fb">Decisions on such CAT Fee disputes made pursuant to these Fee Dispute Resolution Procedures shall be binding on Industry Members, without prejudice to the rights of any such Industry Member to seek redress from the SEC or in any other appropriate forum.</p>
+      <p id="7f7ea5b5-258d-4ee3-b2e3-afdd05bbc936">(9) Payment of Disputed CAT Fees</p>
+      <p id="3aa42c0d-ad7c-4aab-a1ee-d4446b3c9e5c">(A) Timing of Fee Payment</p>
+      <p id="49b013db-95cb-4415-847f-4ed2cf7662f8">An Industry Member that files a written application with the Company regarding disputed CAT Fees in accordance with these Fee Dispute Resolution Procedures is not required to pay such disputed CAT Fees until the dispute is resolved in accordance with these Fee Dispute Resolution Procedures, including any review pursuant to paragraph (c)(8). For the purposes of this paragraph (c)(9), the disputed CAT Fees means the amount of the invoiced CAT Fees that the Industry Member has asserted pursuant to these Fee Dispute Resolution Procedures that such Industry Member does not owe to the Company. The Industry Member must pay any invoiced CAT Fees that are not disputed CAT Fees when due as set forth in the original invoice.</p>
+      <p id="3ea9a2fb-25e9-411c-a6b1-3cc95b3d841c">(B) Interest on Unpaid CAT Fees</p>
+      <p id="8671b6de-22f9-47a1-8e9a-33de2810a7fc">Once the dispute regarding CAT Fees is resolved pursuant to these Fee Dispute Resolution Procedures, if it is determined that the Industry Member owes any of the disputed CAT Fees, then the Industry Member must pay such disputed CAT Fees that are owed as well as interest on such disputed CAT Fees from the original due date (that is, 30 days after receipt of the original invoice of such CAT Fees) until such disputed CAT Fees are paid at a per annum rate equal to the lesser of (i) the Prime Rate plus 300 basis points, or (ii) the maximum rate permitted by applicable law.</p>
+      <p id="b27944d3-0dc2-4eef-9e82-4522b692ec84">Adopted by <a href="http://www.finra.org/industry/rule-filings/sr-finra-2017-020">SR-FINRA-2017-020</a> eff. Dec. 1, 2017.</p>
+      <p id="cfcaa917-0e03-476a-8a31-34a9a700a784">Selected Notice: <a href="http://www.finra.org/industry/notices/17-39">17-39</a>.</p>
+    </div>
+  </div>
+</body></html>

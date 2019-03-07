@@ -32,10 +32,10 @@ var hitTemplate = `
       <h5>
         {{__hitIndex}}.
         <a href="files/{{file_name}}#{{id}}">
-          {{title}}
+          {{document_title}} - {{title}}
         </a>
       </h5>
-      {{source_type}} {{content_type}} {{pubdate}} {{source}}  {{Compliance User}}
+      Published: {{pubdate}} Effective: {{effdate}}
     </div>
 </div>
 `;
@@ -110,7 +110,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#authority',
-    attributeName: 'authority',
+    attributeName: 'regulatory_authority',
     limit: 5,
     showMore: true,
     cssClasses: refinementClasses,
@@ -141,6 +141,46 @@ search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#applicability',
     attributeName: 'applicability',
+    limit: 5,
+    showMore: true,
+    cssClasses: refinementClasses,
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#compliance_user',
+    attributeName: 'Compliance User',
+    limit: 5,
+    showMore: true,
+    cssClasses: refinementClasses,
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#content_type',
+    attributeName: 'content_type',
+    limit: 5,
+    showMore: true,
+    cssClasses: refinementClasses,
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#pubdate',
+    attributeName: 'pubdate',
+    limit: 5,
+    showMore: true,
+    cssClasses: refinementClasses,
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#effdate',
+    attributeName: 'effdate',
     limit: 5,
     showMore: true,
     cssClasses: refinementClasses,

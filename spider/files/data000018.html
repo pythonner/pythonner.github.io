@@ -1,0 +1,403 @@
+<html><head><style type="text/css">
+			body {
+				font-family: Arial;
+			}
+
+			pre {
+        font-family: Arial;
+			}
+
+			.page_no {
+				font-weight:bold;
+				font-style:italic;
+				text-decoration:none;
+			}
+
+			.highlight {
+				font-weight:bold;
+				background-color:yellow;
+				color:black;
+			}
+
+			.bcitehi {
+				font-weight:bold;
+				background-color:pink;
+				color:black;
+			}
+
+			/*.UNICODE {
+			}
+
+			blockquote {
+			}
+
+			.tableofcontents {
+			}
+
+			div.blockgroup {
+			}
+
+			p {
+			}  */
+
+			* {
+				font-size: 11pt;
+			}
+
+			.main {
+				text-align:center;
+				font-weight:bold;
+				color:black;
+			}
+
+			.ftnote {
+				font-style:italic;
+			}
+
+			.headline {
+				font-weight:bold;
+				color:black;
+				font-size:1.8em;
+				text-align:center;
+			}
+
+			p.group{
+				padding-top: 0;
+				padding-bottom: 1px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+				margin-bottom: 1px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.big {
+				font-size: 13pt;
+			}
+
+			.indent {
+				text-indent:2.5em;
+			}
+
+			.level2 {
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			.level3 {
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			.level4 {
+				margin-left:7.5em;
+				margin-right:7.5em;
+			}
+
+			.level5 {
+				margin-left:10em;
+				margin-right:10em;
+			}
+
+			.level6 {
+				margin-left:12.5em;
+			}
+
+			a.sup {
+				font-size: 6pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			a.sup1 {
+				font-size: 8pt;
+				vertical-align: top;
+				color: blue;
+			}
+
+			h1.organization {
+				font-weight: bold;
+				text-align:center;
+				font-style: normal;
+			}
+
+			h2.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:2.5em;
+				margin-right:2.5em;
+			}
+
+			h3.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:5em;
+				margin-right:5em;
+			}
+
+			h4.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:7.5em;
+				margin-right:5em;
+			}
+
+			h5.organization {
+				font-weight: bold;
+				text-align:left;
+				margin-left:10em;
+				margin-right:5em;
+			}
+
+			h2.citation {
+				font-weight: bold;
+				text-align:left;
+			}
+
+			div.blcitation {
+				font-size: 7pt;
+				text-align:center;
+			}
+
+			ul.dash {
+				list-style-type: none;
+			}
+
+			ul.bullet {
+				list-style-type: disc;
+			}
+
+			ul.none {
+				list-style-type: none;
+			}
+
+			li.off {
+				list-style-type: none;
+			}
+
+			.mypre {
+				font-size: 100%;
+			}
+
+			.TOC {
+				text-align:left;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.TOC hr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.bluehr {
+				color:#339999;
+				background-color:#339999;
+				width:100%;
+				clear: both;
+				border: none;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			.tocentry {
+				text-indent:-18px;
+				padding-left:18px;
+				color: #003399;
+				font-weight: 700;
+			}
+
+			.doctext {
+				margin:0 auto;
+				text-align: left;
+			}
+
+			a:link {
+				color: #003399;
+				font-weight: 700;
+			}
+
+			a:visited {
+				color: #660066;
+				font-weight: 700;
+			}
+
+			.fn{
+				padding-left: 50 px;
+				font-weight: 550;
+			}
+
+			.fr a:link {
+				color: #003399;
+				font-weight: 600;
+			}
+
+			.fr a:visited {
+				color: #660066;
+				font-weight: 600;
+			}
+
+			.headinga {
+				color: #339999;
+				font-size: 20px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.volume {
+				text-align:center;
+				padding:5px;
+				margin:0 auto;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			h2.blcitation {
+				font-size: 7pt;
+				text-align:center;
+				white-space:nowrap;
+			}
+
+			cite.blcitation {
+				white-space:nowrap;
+			}
+
+			table.page_legend {
+					width: 100px;
+					text-align: left;
+					background-color: white;
+					font-family: Bloomberg Proportional Unicode;
+					font-size: 12px
+			}
+			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
+
+			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+				font-size: .9em;
+				color: silver;
+				border: 1px solid silver;
+				display: inline-table;
+		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
+  <code class="meta">jurisdiction: US</code>
+  <code class="meta">regulatory_authority: US/SEC</code>
+  <code class="meta">content_type: periodic</code>
+  <code class="meta">document_title: Joint Industry Plan (Notice of Plan Amendment Release 34-79898)</code>
+  <code class="meta">document_type: Notices</code>
+  <code class="meta">source: US/SEC/Notices/Notice of Plan Amendment</code>
+  <code class="meta">source_type: Notice of Plan Amendment</code>
+  <code class="meta">language: English</code>
+  <code class="meta">citation: Notice of Plan Amendment Release 34-79898</code>
+  <div id="dc5bf4da-7417-48f8-bc99-66556b711db1" class="level2"><code class="pubeffdate">pubdate: January 30, 2017 effdate: N/A</code>
+    <h1 class="headline">Joint Industry Plan (Notice of Plan Amendment Release 34-79898)</h1>
+    <code class="topic" id="topic-dc5bf4da-7417-48f8-bc99-66556b711db1">Topic: SEC Release, Release No. 34-79898, Joint Industry Plan; Notice of Filing and Effectiveness of Amendment to the Plan Governing the Consolidated Audit Trail to Add MIAX PEARL, LLC as a Participant</code>
+    <code class="compliance_user">Compliance User: MIAX PEARL, LLC</code>
+    <code class="keywords">Keywords: 
+      Securities Exchange Act - Section 11A, 
+      Rule 608, 
+      MIAX PEARL, LLC, 
+      CAT NMS plan, 
+    </code>
+    <p id="5e8e46d9-5d9b-45b3-9da2-b76a3d8107df">SECURITIES AND EXCHANGE COMMISSION</p>
+    <p id="9ba6168f-2625-4f61-bd21-c80fb105cfc0">(Release No. 34-79898; File No. 4-698)</p>
+    <p id="614d0f91-d791-4d89-8e8f-3bc77e07b4e2">January 30, 2017</p>
+    <p id="776d6d6a-f7fa-42ab-a044-27ff879bcec9">Joint Industry Plan; Notice of Filing and Immediate Effectiveness of Amendment to the Plan Governing the Consolidated Audit Trail to Add MIAX PEARL, LLC as a Participant</p>
+    <p id="8dedd1df-d9fb-464e-b480-f511f22ca58b">Pursuant to Section 11A(a)(3) of the Securities Exchange Act of 1934 (&#8220;Act&#8221;)<a class="sup" HREF="#fn_pz1-16" NAME="fr_pz1-16">1</a> and Rule 608 thereunder,<a class="sup" HREF="#fn_pz1-17" NAME="fr_pz1-17">2</a> notice is hereby given that on January 12, 2017, MIAX PEARL, LLC (&#8220;MIAX PEARL&#8221; or &#8220;Exchange&#8221;) filed with the Securities and Exchange Commission (&#8220;Commission&#8221;) an amendment to the Plan Governing the Consolidated Audit Trail (&#8220;Plan&#8221;).<a class="sup" HREF="#fn_pz1-18" NAME="fr_pz1-18">3</a> The Commission approved the application of MIAX PEARL to register as a national securities exchange on December 13, 2016.<a class="sup" HREF="#fn_pz1-19" NAME="fr_pz1-19">4</a> One of the conditions of the Commission&#8217;s approval was the requirement for MIAX PEARL to join the CAT NMS Plan.<a class="sup" HREF="#fn_pz1-21" NAME="fr_pz1-21">5</a> The amendment adds MIAX PEARL as a Participant to the Plan.<a class="sup" HREF="#fn_pz1-22" NAME="fr_pz1-22">6</a> The Commission is publishing this notice to solicit comments on the amendment from interested persons.</p>
+    <div id="39ee2974-34d4-4539-84be-ec149996ffb2" class="level3"><code class="pubeffdate">pubdate: January 30, 2017 effdate: N/A</code>
+      <h2>I. Description and Purpose of the Amendment</h2>
+      <code class="topic" id="topic-39ee2974-34d4-4539-84be-ec149996ffb2">Topic: SEC Release, Release No. 34-79898, Joint Industry Plan; Notice of Filing and Effectiveness of Amendment to the Plan Governing the Consolidated Audit Trail to Add MIAX PEARL, LLC as a Participant, Description and Purpose of the Amendment</code>
+      <code class="compliance_user">Compliance User: MIAX PEARL, LLC</code>
+      <code class="keywords">Keywords: 
+        Rule 608, 
+        MIAX PEARL, LLC, 
+        CAT NMS plan, 
+        Participant, 
+      </code>
+      <p id="f8597dff-16f4-4888-9b89-9e03ac65883c">The amendment to the CAT NMS Plan adds MIAX PEARL as a Participant.<a class="sup" HREF="#fn_pz1-23" NAME="fr_pz1-23">7</a> The CAT NMS Plan provides that any Person<a class="sup" HREF="#fn_pz2-4" NAME="fr_pz2-4">8</a> approved by the Commission as a national securities exchange or national securities association under the Exchange Act may become a Participant by submitting to the Company a completed application in the form provided by the Company.<a class="sup" HREF="#fn_pz2-5" NAME="fr_pz2-5">9</a> As a condition to admission as a Participant, said Person shall: (i) execute a counterpart of the CAT NMS Plan, at which time Exhibit A shall be amended to reflect the status of said Person as a Participant (including said Person's address for purposes of notices delivered pursuant to the CAT NMS Plan); and (ii) pay a fee to the Company as set forth in the Plan (the &#8220;Participation Fee&#8221;).<a class="sup" HREF="#fn_pz2-6" NAME="fr_pz2-6">10</a> The amendment to the Plan reflecting the admission of a new Participant shall be effective only when: (x) it is approved by the Commission in accordance with <a href="">Rule 608</a> or otherwise becomes effective pursuant to <a href="">Rule 608</a>; and (y) the prospective Participant pays the Participation Fee.<a class="sup" HREF="#fn_pz2-7" NAME="fr_pz2-7">11</a></p>
+      <p id="28f6cdc9-d69b-4b43-991d-08aa58b85035">MIAX PEARL has executed a copy of the current CAT NMS Plan, amended to include MIAX PEARL in the List of Parties (including the address of MIAX PEARL), paid the applicable Participation Fee and provided each current Plan Participant with a copy of the executed and amended Plan.<a class="sup" HREF="#fn_pz3-22" NAME="fr_pz3-22">12</a></p>
+    </div>
+    <div id="a70e6f52-1775-4164-84ac-f5280a920d0b" class="level3"><code class="pubeffdate">pubdate: January 30, 2017 effdate: N/A</code>
+      <h2>II. Effectiveness of the CAT NMS Plan Amendment</h2>
+      <code class="topic" id="topic-a70e6f52-1775-4164-84ac-f5280a920d0b">Topic: SEC Release, Release No. 34-79898, Joint Industry Plan; Notice of Filing and Effectiveness of Amendment to the Plan Governing the Consolidated Audit Trail to Add MIAX PEARL, LLC as a Participant, Effectiveness of the CAT NMS Plan Amendment</code>
+      <code class="compliance_user">Compliance User: MIAX PEARL, LLC</code>
+      <code class="keywords">Keywords: 
+        Rule 608, 
+        Effectivity, 
+      </code>
+      <p id="5406a0cf-2d87-4535-9b16-d1c11634f1fb">The foregoing Plan amendment has become effective pursuant to Rule 608(b)(3)(iii)<a class="sup" HREF="#fn_pz3-23" NAME="fr_pz3-23">13</a> because it involves solely technical or ministerial matters. At any time within sixty days of the filing of this amendment, the Commission may summarily abrogate the amendment and require that it be refiled pursuant to paragraph (a)(1) of Rule 608,<a class="sup" HREF="#fn_pz3-24" NAME="fr_pz3-24">14</a> if it appears to the Commission that such action is necessary or appropriate in the public interest, for the protection of investors or the maintenance of fair and orderly markets, to remove impediments to, and perfect the mechanisms of, a national market system or otherwise in furtherance of the purposes of the Act.</p>
+    </div>
+    <div id="26cbbcf4-acf2-47a9-8b21-f1c5af962135" class="level3"><code class="pubeffdate">pubdate: January 30, 2017 effdate: N/A</code>
+      <h2>III. Solicitation of Comments</h2>
+      <code class="topic" id="topic-26cbbcf4-acf2-47a9-8b21-f1c5af962135">Topic: SEC Release, Release No. 34-79898, Joint Industry Plan; Notice of Filing and Effectiveness of Amendment to the Plan Governing the Consolidated Audit Trail to Add MIAX PEARL, LLC as a Participant, Solicitation of Comments</code>
+      <code class="compliance_user">Compliance User: MIAX PEARL, LLC</code>
+      <code class="keywords">Keywords: 
+        Comments, 
+        Electronic Comments, 
+        Paper Comments, 
+        File Number 4-698, 
+        5 U.S.C. 552, 
+      </code>
+      <p id="ab1ef3fa-4a2f-48bd-b12f-0d801fd5c1f8">Interested persons are invited to submit written data, views and arguments concerning the foregoing, including whether the amendment is consistent with the Act. Comments may be submitted by any of the following methods:</p>
+      <p id="88dd6cf2-2b5c-4cc0-9f5d-e83f9b487230">Electronic Comments:</p>
+      <p id="42636cb6-5e72-47fc-9fa3-a4a78620c690">&#8226; Use the Commission&#8217;s Internet comment form (<a href="">http://www.sec.gov/rules/sro.shtml</a>); or</p>
+      <p id="86079285-37fe-4793-83c3-412310becf3a">&#8226; Send an e-mail to rule-comments@sec.gov. Please include File Number 4-698 on the subject line.</p>
+      <p id="d55d7a4f-6974-4b83-a262-d3e570eebdea">Paper Comments:</p>
+      <p id="b9c55913-8048-4db5-8355-c7b0dce76d0e">&#8226; Send paper comments in triplicate to Brent J. Fields, Secretary, Securities and Exchange Commission, 100 F Street, NE, Washington, DC 20549-1090.</p>
+      <p id="b09d32de-f382-4955-9d8f-d8b76af59074">All submissions should refer to File Number 4-698. This file number should be included on the subject line if e-mail is used. To help the Commission process and review your comments more efficiently, please use only one method. The Commission will post all comments on the Commission&#8217;s Internet website (<a href="">http://www.sec.gov/rules/sro.shtml</a>). Copies of the submission, all subsequent amendments, all written statements with respect to the proposed rule change that are filed with the Commission, and all written communications relating to the amendment between the Commission and any person, other than those that may be withheld from the public in accordance with the provisions of <a href="">5 U.S.C. 552</a>, will be available for website viewing and printing in the Commission&#8217;s Public Reference Room, 100 F Street, NE, Washington, DC 20549, on official business days between the hours of 10:00 am and 3:00 pm. Copies of such filing also will be available for inspection and copying at the principal office of MIAX PEARL. All comments received will be posted without change; the Commission does not edit personal identifying information from submissions. You should submit only information that you wish to make available publicly. All submissions should refer to File Number 4-698 and should be submitted on or before [insert date 21 days from publication in the Federal Register].</p>
+      <p id="caf7f1c1-ed81-4f74-97ec-d5de446634b9">By the Commission.</p>
+      <p id="c72bf378-37eb-46f7-8bde-80c5e8f61868">Eduardo A. Aleman</p>
+      <p id="e8224e25-d927-47dc-bb13-510807355f97">Assistant Secretary</p>
+    </div>
+    <hr width="65%"/><table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-16" HREF="#fr_pz1-16" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>1 <a href="">15 U.S.C. 78k-1(a)(3)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-17" HREF="#fr_pz1-17" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>2 <a href="">17 CFR 242.608</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-18" HREF="#fr_pz1-18" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>3 The Commission approved the CAT NMS Plan on November 15, 2016. See <a href="">Securities Exchange Act Release No. 79318</a>, <a href="">81 FR 84695</a> (Nov. 23, 2016).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-19" HREF="#fr_pz1-19" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>4 See <a href="">Securities and Exchange Act Release No. 79543</a> (Dec. 13, 2016), <a href="">81 FR 92901</a> (Dec. 20, 2016) (File No. 10-227).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-21" HREF="#fr_pz1-21" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>5 See id. <a href="">81 FR at 92916</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-22" HREF="#fr_pz1-22" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>6 See Letter from Barbara J. Comly, Executive Vice President, General Counsel, and Corporate Secretary, MIAX PEARL, to Brent J. Fields, Secretary, Commission, dated January 11, 2017.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz1-23" HREF="#fr_pz1-23" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>7 See <a href="CAT NMS Plan, Article I - Definitions, Definitions">Section 1.1 of the CAT NMS Plan</a>. The term &#8220;Participant&#8221; is defined in the CAT NMS Plan as any Person that becomes a Participant as permitted by this agreement, in such Person&#8217;s capacity as a Participant in the Company (it being understood that the Participants shall comprise the &#8220;members&#8221; of the Company (as the term &#8220;member&#8221; is defined in <a href="http://delcode.delaware.gov/title6/c018/sc01/index.shtml">Section 18-101(11) of the Delaware Act</a>)). As defined in the CAT NMS Plan, the name of the &#8220;Company&#8221; is CAT NMS, LLC.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-4" HREF="#fr_pz2-4" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>8 See <a href="CAT NMS Plan, Article I - Definitions, Definitions">Section 1.1 of the CAT NMS Plan</a>. The term &#8220;Person&#8221; is defined as means any individual, partnership, limited liability company, corporation, joint venture, trust, business trust, cooperative or association and any heirs, executors, administrators, legal representatives, successors and assigns of such Person where the context so permits.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-5" HREF="#fr_pz2-5" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>9 See <a href="CAT NMS Plan, Article III - Participation, New Participants">Section 3.3 of the CAT NMS Plan</a>. MIAX PEARL was approved as a national securities exchange on December 13, 2016. See <a href="">Securities and Exchange Act Release No. 79543</a>, <a href="">81 FR 92901</a> (Dec. 20, 2016) (File No. 10-227).</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-6" HREF="#fr_pz2-6" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>10 See <a href="CAT NMS Plan, Article III - Participation, New Participants">Section 3.3 of the CAT NMS Plan</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz2-7" HREF="#fr_pz2-7" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>11 Id.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-22" HREF="#fr_pz3-22" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>12 See supra note 6.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-23" HREF="#fr_pz3-23" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>13 <a href="">17 CFR 242.608(b)(3)(iii)</a>.</p>
+    </small></td></tr></tbody></table>
+    <table><tbody><tr align="left" valign="top"><td align="left" valign="top"><a name="fn_pz3-24" HREF="#fr_pz3-24" class="sup1">fn</a></td><td align="left" valign="top"><small>
+      <p>14 <a href="">17 CFR 242.608(a)(1)</a>.</p>
+    </small></td></tr></tbody></table>
+  </div>
+</body></html>
