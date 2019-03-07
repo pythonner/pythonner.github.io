@@ -29,10 +29,10 @@ var hitTemplate = `
       <div class="row">
         <div class="col">
           <h5>
-            <a href="files/{{basename}}">
+            <a href="files/{{filename}}#{{id}}">
               {{h1}} 
             </a>
-            <a href="files/{{basename}}" target="_blank">
+            <a href="files/{{filename}}#{{id}}" target="_blank">
               <i class="fa fa-external-link"></i>
             </a>
           </h5>
@@ -42,7 +42,7 @@ var hitTemplate = `
       <div class="row">
         <div class="col">
           <p class="summary">
-            {{summary}}
+            {{source_type}}
           </p>
         </div>
       </div>
