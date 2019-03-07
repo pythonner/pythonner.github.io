@@ -29,10 +29,10 @@ var hitTemplate = `
       <div class="row">
         <div class="col">
           <h5>
-            <a href="files/{{filename}}#{{id}}">
+            <a href="files/{{file_name}}#{{id}}">
               {{h1}} 
             </a>
-            <a href="files/{{filename}}#{{id}}" target="_blank">
+            <a href="files/{{file_name}}#{{id}}" target="_blank">
               <i class="fa fa-external-link"></i>
             </a>
           </h5>
