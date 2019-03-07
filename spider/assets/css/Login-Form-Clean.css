@@ -85,3 +85,7 @@
   flex: 1 1 auto;
 }
 
+#news-columns .card {
+  margin-bottom: 15px;
+}
+
