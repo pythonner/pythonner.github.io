@@ -35,6 +35,7 @@ var hitTemplate = `
           {{title}}
         </a>
       </h5>
+      {{source_type}} {{content_type}} {{pubdate}} {{source}}  {{Compliance User}}
     </div>
 </div>
 `;
