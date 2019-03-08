@@ -29,15 +29,19 @@ search.addWidget(
 var hitTemplate = `
   <div class="media">
     <div class="media-body">
-      <h5>
+      <h5 class="mb-0">
         {{__hitIndex}}.
         <a href="files/{{file_name}}#{{id}}">
           {{document_title}} - {{title}}
         </a>
       </h5>
       <ol class="document-dates">
+        {{#pubdate}}
         <li>Published: {{pubdate}}</li>
+        {{/pubdate}}
+        {{#effdate}}
         <li>Effective: {{effdate}}</li>
+        {{/effdate}}
       </ol>
     </div>
 </div>
@@ -60,6 +64,12 @@ search.addWidget(
     transformData: {
         item: function(item) {
             item.__hitIndex++;
+            if (item.pubdate === 'N/A') {
+                item.pubdate = null;
+            }
+            if (item.effdate === 'N/A') {
+                item.effdate = null;
+            }
             return item;
         },
     },
@@ -142,16 +152,6 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.refinementList({
-    container: '#applicability',
-    attributeName: 'applicability',
-    limit: 5,
-    showMore: true,
-    cssClasses: refinementClasses,
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.refinementList({
     container: '#compliance_user',
     attributeName: 'Compliance User',
     limit: 5,
@@ -164,26 +164,6 @@ search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#content_type',
     attributeName: 'content_type',
-    limit: 5,
-    showMore: true,
-    cssClasses: refinementClasses,
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.refinementList({
-    container: '#pubdate',
-    attributeName: 'pubdate',
-    limit: 5,
-    showMore: true,
-    cssClasses: refinementClasses,
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.refinementList({
-    container: '#effdate',
-    attributeName: 'effdate',
     limit: 5,
     showMore: true,
     cssClasses: refinementClasses,
