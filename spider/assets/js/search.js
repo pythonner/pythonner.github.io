@@ -35,7 +35,10 @@ var hitTemplate = `
           {{document_title}} - {{title}}
         </a>
       </h5>
-      Published: {{pubdate}} Effective: {{effdate}}
+      <ol class="document-dates">
+        <li>Published: {{pubdate}}</li>
+        <li>Effective: {{effdate}}</li>
+      </ol>
     </div>
 </div>
 `;

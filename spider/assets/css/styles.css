@@ -28,3 +28,42 @@
   flex: 1 1 auto;
 }
 
+#news-columns .card {
+  margin-bottom: 15px;
+}
+
+#results-container #stats div {
+  display: inline-block;
+}
+
+#filters .ais-body {
+  padding-left: 15px;
+}
+
+#stats {
+  font-weight: 300;
+}
+
+#hits .document-dates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#hits .document-dates li {
+  padding: 0 15px;
+}
+
+#hits .document-dates li:first-child {
+  padding-left: 0;
+}
+
+#hits .document-dates li:last-child {
+  padding-right: 0;
+}
+
+#hits .media {
+  padding-bottom: 15px;
+}
+
