@@ -35,7 +35,7 @@ var hitTemplate = `
           {{document_title}} - {{title}}
         </a>
       </h5>
-      <ol class="document-dates">
+      <ol class="document-dates text-muted pl-2">
         {{#pubdate}}
         <li>Published: {{pubdate}}</li>
         {{/pubdate}}
@@ -154,16 +154,6 @@ search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#compliance_user',
     attributeName: 'Compliance User',
-    limit: 5,
-    showMore: true,
-    cssClasses: refinementClasses,
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.refinementList({
-    container: '#content_type',
-    attributeName: 'content_type',
     limit: 5,
     showMore: true,
     cssClasses: refinementClasses,

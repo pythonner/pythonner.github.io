@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body style="background-color: rgb(232,232,232);"><nav class="navbar navbar-light navbar-expand-md bg-white">
+<body style="background-color: rgb(232,232,232);"><nav class="navbar navbar-light navbar-expand-md bg-white shadow-sm">
   <div class="container">
     <a href="home.html" class="navbar-brand d-block">
       <img src="assets/img/logo.png" height="35px" />
@@ -104,12 +104,12 @@
         <div class="row">
             <div class="col">
                 <div class="card" style="margin-bottom: 15px;">
-                    <div class="card-body">
+                    <div class="card-body shadow-sm">
                         <div class="row mb-2">
                             <div class="col-md-8">
                                 <form id="search-form">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group" style="width:95%"><input class="form-control" type="text" placeholder="ex. Document Retention Policy" id="q" autofocus="">
+                                        <div class="input-group shadow-sm" style="width:95%"><input class="form-control" type="text" placeholder="ex. Document Retention Policy" id="q" autofocus="">
                                             <div class="input-group-append"><button class="btn btn-primary" type="button"><i class="icon ion-search"></i></button></div>
                                         </div><i class="icon ion-help-circled" style="font-size:1.5rem"></i></div>
                                 </form>
@@ -134,7 +134,7 @@
     </div>
     <div class="row">
         <div class="col-4" style="padding-right: 7.5px;">
-            <div class="card" id="filters" style="max-height: 800px;overflow: auto;">
+            <div class="card shadow-sm" id="filters" style="max-height: 800px;overflow: auto;">
                 <div class="card-body">
                     <div>
                         <h4>Jurisdiction</h4>
@@ -153,12 +153,8 @@
                         <div id="topics"></div>
                     </div>
                     <div>
-                        <h4>Compliance User</h4>
+                        <h4>Applicability</h4>
                         <div id="compliance_user"></div>
-                    </div>
-                    <div>
-                        <h4>Content Type</h4>
-                        <div id="content_type"></div>
                     </div>
                 </div>
             </div>
@@ -166,7 +162,7 @@
         <div class="col-8">
             <div class="row">
                 <div class="col" style="padding-left: 7.5px;">
-                    <div class="card" id="results-container">
+                    <div class="card shadow-sm" id="results-container">
                         <div class="card-header">
                             <h4 class="mb-0">Search Results<small id="stats" class="ml-2"></small></h4>
                         </div>

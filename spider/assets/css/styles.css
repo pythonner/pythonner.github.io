@@ -71,3 +71,24 @@ footer {
   z-index: 1000;
 }
 
+.filters-list-item .ais-refinement-list--label {
+  position: relative;
+  padding: 0 30px 0 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+.filters-list-item .ais-refinement-list--label .ais-refinement-list--checkbox {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.filters-list-item .ais-refinement-list--label .ais-refinement-list--count {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
