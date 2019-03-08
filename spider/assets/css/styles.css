@@ -92,3 +92,9 @@ footer {
   top: 0;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
