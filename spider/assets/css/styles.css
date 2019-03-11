@@ -98,3 +98,7 @@ footer {
   }
 }
 
+#monitoring-table td {
+  vertical-align: middle;
+}
+

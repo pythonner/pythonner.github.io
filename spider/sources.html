@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="40x39" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -37,7 +38,7 @@
           </a>
         </li>
         <li role="presentation" class="nav-item dropdown">
-          <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="icon ion-flag"></i>
             Monitoring
           </a>
@@ -45,50 +46,66 @@
             <a class="dropdown-item active" href="sources.html">
               Sources
             </a>
-            <a class="dropdown-item" href="timelines.html">
-              Timelines
-            </a>
-            <a class="dropdown-item" href="feeds.html">
-              Feeds
-            </a>
-            <a class="dropdown-item" href="tracking.html">
-              Tracking
+            <a class="dropdown-item" href="topics.html">
+              Topics
             </a>
           </div>
         </li>
         <li role="presentation" class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="icon ion-document-text"></i>
+            Reports
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="reports.html">
+              View
+            </a>
+            <a class="dropdown-item" href="new_report.html">
+              Create
+            </a>
+          </div>
+        </li>
+          <li role="presentation" class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="icon ion-pie-graph"></i>
-            Research
+            Analytics
           </a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="analytics.html">
-              Analytics
+              View
             </a>
-            <a class="dropdown-item" href="reports.html">
-              Reports
+            <a class="dropdown-item" href="new_analytics.html">
+              Create
             </a>
-            <a class="dropdown-item" href="alerts.html">
-              Search Alerts
-            </a>   
           </div>
         </li>
-        <li role="presentation" class="nav-item">
-          <a class="nav-link" href="workspace.html">
+        <li role="presentation" class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="icon ion-grid"></i>
             Workspace
           </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="collaboration.html">
+              Collaboration
+            </a>
+            <a class="dropdown-item" href="experts.html">
+              Experts
+            </a>
+          </div>
         </li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
         <li role="presentation" class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <i class="icon ion-android-settings"></i>
-            Settings
+            <i class="icon ion-person"></i>
+            Profile
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="profile.html">
-              Profile
+            <a class="dropdown-item" href="settings.html">
+              Settings
+            </a>
+            <a class="dropdown-item" href="feeds.html">
+              Feeds
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="index.html">
@@ -100,14 +117,14 @@
     </div>
   </div>
 </nav>
-    <div class="container" style="padding-top: 15px;">
+    <div class="container" style="padding-top: 15px; padding-bottom: 100px;">
         <div class="row" style="margin-bottom: 15px;">
             <div class="col d-flex align-items-center">
-                <h1 class="mr-3">Sources</h1>
+                <h1 class="mr-3 mb-0">Sources</h1>
                 <ol class="breadcrumb mb-0" style="font-size: 0.8rem;background-color: inherit;">
                     <li class="breadcrumb-item"><a href="home.html">Home</a></li>
                     <li class="breadcrumb-item">Monitoring</li>
-                    <li class="breadcrumb-item"><a href="alerts.html">Sources</a></li>
+                    <li class="breadcrumb-item"><a href="sources.html">Sources</a></li>
                 </ol>
             </div>
         </div>
@@ -115,83 +132,191 @@
             <div class="col" style="padding-right: 7.5px;">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <form class="form-inline">
-                            <div class="form-group mr-4"><label class="mr-2">Country</label><select class="form-control" style="width: 200px;"><option value="14">United States</option><option value="">European Union</option></select></div>
-                            <div class="form-group mr-4"><label class="mr-2">Authority</label><select class="form-control" style="width: 200px;"><option value="14">U.S. SEC</option></select></div>
-                            <div class="form-group"><label class="mr-2">List By</label><select class="form-control" style="width: 200px;"><option value="14">Source Type</option></select></div>
-                        </form>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-body p-2" style="max-height: 400px;overflow: auto;">
-                                        <ul class="list-unstyled">
-                                            <li class="text-primary form-check" style="margin-left: 1.25rem;"><i class="icon ion-minus position-absolute" style="margin-left: -2.2rem;top: 1.5px;"></i><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">U.S. SEC</label>
-                                                <ul class="list-unstyled"
-                                                    style="margin-left: -1.25rem;">
-                                                    <li class="form-check" style="margin-left: 1.25rem;"><i class="icon ion-minus position-absolute" style="margin-left: -2.2rem;top: 1.5px;"></i><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Regulation</label>
-                                                        <ul
-                                                            class="list-unstyled">
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Comment Letters</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Concept Releases</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Enforcement Actions</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Exemptive Applications &amp; Orders</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Final Rule Releases</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Interim Final Rules</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Interpretative Releases</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Notices &amp; Orders</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">PCAOB Rulemaking</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Petitions</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Policy Statements</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Proposed Rule Releases</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Reports &amp; Other Content</label></li>
-                                                            <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">SRO Rulemaking</label></li>
-                                                </ul>
-                                                </li>
-                                                <li class="form-check" style="margin-left: 1.25rem;"><i class="icon ion-minus position-absolute" style="margin-left: -2.2rem;top: 1.5px;"></i><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">News</label>
-                                                    <ul class="list-unstyled">
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Press Releases</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Public Statements</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Speeches</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Testimony</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Spotlight Topics</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Media</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Press Contacts</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Events</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">Webcasts</label></li>
-                                                        <li class="form-check"><input type="checkbox" checked="" class="form-check-input"><label class="form-check-label">What's New</label></li>
-                                                    </ul>
-                                                </li>
-                                        </ul>
-                                        </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <p class="lead">Select one or more sources to save a new Source Feed</p>
-                                    <div class="form-group"><label>Name</label><input class="form-control" type="text" placeholder="name"></div>
-                                    <div class="form-group">
-                                        <div><label>Frequency</label></div>
-                                        <div class="form-check form-check-inline"><input type="radio" name="frequency" value="twice daily" checked="" class="form-check-input"><label class="form-check-label">Daily (AM &amp; PM)</label></div>
-                                        <div class="form-check form-check-inline"><input type="radio" name="frequency" value="twice daily" class="form-check-input"><label class="form-check-label">Daily</label></div>
-                                        <div class="form-check form-check-inline"><input type="radio" name="frequency" value="twice daily" class="form-check-input"><label class="form-check-label">Weekly</label></div>
-                                        <div class="form-check form-check-inline"><input type="radio" name="frequency" value="twice daily" class="form-check-input"><label class="form-check-label">Monthly</label></div>
-                                    </div>
-                                    <div class="form-group row"><label class="col-form-label col-md-2">Delivery</label>
-                                        <div class="col-md-10">
-                                            <div class="d-flex align-items-center mb-2"><input type="radio" name="delivery" value="email" checked="" class="mr-1"><label class="mb-0 mr-3 pr-4">Email</label><input class="form-control d-inline-block" type="text" placeholder="email address"></div>
-                                            <div
-                                                class="d-flex align-items-top"><input type="radio" name="delivery" value="ftp" class="mr-1" style="margin-top: 9px;"><label class="mb-0 mr-3 pr-4" style="padding-top:5px">FTP</label>
-                                                <div class="flex-fill"><input class="form-control border-bottom-0" type="text" disabled="" placeholder="hostname / IP : port"><input class="form-control border-bottom-0" type="text" disabled="" placeholder="username"><input class="form-control"
-                                                        type="text" disabled="" placeholder="password"></div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="form-group text-right"><button class="btn btn-primary" type="button">Save</button></div>
-                            </form>
-                        </div>
+                        <form class="form-inline mb-2">
+                            <div class="form-group mr-4"><label class="mr-2">Country</label><select class="form-control" style="width: 200px;"><option value="any">Any</option><option value="usa" selected="">United States</option><option value="canada">Canada</option><option value="uk">United Kingdom</option></select></div>
+                            <div
+                                class="form-group mr-4"><label class="mr-2">Authority</label><select class="form-control" style="width: 200px;"><option value="any">Any</option><option value="us_sec" selected="">U.S. SEC</option></select></div>
+                    <div class="form-group mr-4"><label class="mr-2">Source Type</label><select class="form-control" style="width: 200px;"><option value="all">All</option><option value="regulation">Regulation</option><option value="news">News</option></select></div>
+                    <div class="form-group mr-4"><label class="mr-2">Period</label><select class="form-control" style="width: 200px;"><option value="daily">Daily</option><option value="weekly" selected="">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></div>
+                    </form>
+                    <div id="sources-graph-container" class="mb-3"></div>
+                    <div class="table-responsive-md table-borderless" id="monitoring-table">
+                        <table class="table table-striped table-bordered table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Country</th>
+                                    <th>Authority</th>
+                                    <th>Source</th>
+                                    <th class="text-center">Today</th>
+                                    <th class="text-center">Week</th>
+                                    <th class="text-center">Month</th>
+                                    <th class="text-center">Year</th>
+                                    <th class="text-center">Alert</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td><a href="#">Regulation</a><i class="fas fa-angle-down ml-2"></i></td>
+                                    <td class="text-center"><a href="#">7</a></td>
+                                    <td class="text-center"><a href="#">78</a></td>
+                                    <td class="text-center"><a href="#">311</a></td>
+                                    <td class="text-center"><a href="#">782</a></td>
+                                    <td class="text-center"><a href="#">Enable</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Comment Letters</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Weekly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Concept Releases</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">4</a></td>
+                                    <td class="text-center"><a href="#">12</a></td>
+                                    <td class="text-center"><a href="#">45</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Enforcement Actions</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">5</a></td>
+                                    <td class="text-center"><a href="#">Daily (AM &amp; PM)</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Exemptive Applications &amp; Orders</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">8</a></td>
+                                    <td class="text-center"><a href="#">Monthly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Final Rule Releases</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">8</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Interim Final Rules</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">8</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Interpretative Releases</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">8</a></td>
+                                    <td class="text-center"><a href="#">Weekly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Notices &amp; Orders</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">8</a></td>
+                                    <td class="text-center"><a href="#">Weekly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">P.C.A.O.B. Rulemaking</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Weekly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Petitions</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Daily (AM &amp; PM)</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Policy Statements</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Monthly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Proposed Rule Releases</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Monthly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">Reports &amp; Other Content</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Monthly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td class="pl-4">-&nbsp;<a href="#">S.R.O. Rulemaking</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">Monthly</a></td>
+                                </tr>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>U.S. SEC</td>
+                                    <td><a href="#">News</a><i class="fas fa-angle-up ml-2"></i></td>
+                                    <td class="text-center"><a href="#">7</a></td>
+                                    <td class="text-center"><a href="#">78</a></td>
+                                    <td class="text-center"><a href="#">311</a></td>
+                                    <td class="text-center"><a href="#">782</a></td>
+                                    <td class="text-center"><a href="#">Enable</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -204,7 +329,10 @@
         src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="assets/js/search.js"></script>
+        <script src="assets/js/sources.js"></script>
 </body>
 
 </html>
