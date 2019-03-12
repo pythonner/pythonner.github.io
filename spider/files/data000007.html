@@ -35,10 +35,8 @@
       <p id="59e2591f-3cdb-42a2-92c5-ad3440a11602">This document provides Participants with information to understand their responsibilities to comply with <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=7b6877b9e1830e7e40c606dc443096e5&amp;mc=true&amp;node=pt17.4.242&amp;rgn=div5#se17.4.242_1613">SEC Rule 613</a> and CAT NMS Plan, and describes the requirements for reporting data to CAT, including detailed information about data elements and file formats of each reportable event. It also describes how Participants should submit files to CAT, including access instructions, network and transport options, and testing requirements.</p>
       <p id="da48bd6f-ecaf-45d7-b4d4-0bd0b31e2065">This document does not include information for Industry Members. A separate document, CAT Reporting Technical Specifications for Industry Members, will be published to provide technical specifications for Industry Members.</p>
       <p id="aabd76b0-7dca-4909-9737-0351f55eec9f">Contents and Structure</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A-.png"/>
       <p id="1d0aed53-18b2-47f6-ad87-198af20bc50f">Revision / Change Process</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AX4.png"/>
-    </div>
+      </div>
     <div id="781340c0-eed8-41c8-a10e-b7d2462b4e6d" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
       <h2>1. Introduction</h2>
       <code class="topic" id="topic-781340c0-eed8-41c8-a10e-b7d2462b4e6d">Topic: CAT Participant Technical Specifications v1.7.1, Introduction</code>
@@ -125,7 +123,6 @@
           CAT Reporter ID, 
         </code>
         <p id="6616eb0f-e8ee-453b-8612-4303cd37dbb8">CAT uses a number of identifiers, many of which readily convey their meaning from the context in which they are used. The subsections below include terms associated with the entities that will report data into the CAT and their respective roles. As shown in the diagram below, Exchange ID is a subset of Participant ID, which is a subset of Reporter ID.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z15-12.png"/>
         <div id="27bde324-79cc-4da4-8e30-f1ec62b4cfe9" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>1.3.1. Reporter ID</h4>
           <code class="topic" id="topic-27bde324-79cc-4da4-8e30-f1ec62b4cfe9">Topic: CAT Participant Technical Specifications v1.7.1, Introduction, CAT Identifiers, Reporter ID</code>
@@ -209,8 +206,6 @@
         <p id="c08df4a4-873a-42fc-b9d1-6a2d5b3bb5c3">A schema will be provided for each data object that can be reported in both JSON and CSV.</p>
         <p id="1e510ef7-ae0f-42e5-9fad-0f67c7a777e1">When a data field is marked as either optional or conditional, some records may not provide values for that field. In such a case, the field is simply not reported as part of the JSON record, or reported as an empty column of a CSV record.</p>
         <p id="e4fe43ce-12d5-42c3-b4b3-d20e69734dbd">Data Types</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AMiN.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z19-1.png"/>
         <div id="c150fea7-3b1c-4f12-b227-2adf8cbcf220" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>1.5.1. Data Validation</h4>
           <code class="topic" id="topic-c150fea7-3b1c-4f12-b227-2adf8cbcf220">Topic: CAT Participant Technical Specifications v1.7.1, Introduction, Fundamental Data Types, Data Validation</code>
@@ -248,8 +243,6 @@
         <p id="edcd228d-72b7-4ba6-aa65-5cc063e0c4a1">Each member may have multiple aliases, but a specific Member Alias may only be assigned once per SRO. Note that the member dictionary is loaded each day, and the values only apply to that trading day. Thus, Member Aliases could be reassigned on subsequent trading days.</p>
         <p id="3656cdf0-1a12-4005-9d5e-38f37a3a8ae5">The data will be uploaded as a file of newline-delimited JSON objects, one object per member entry. The member dictionary is necessary to process other file uploads, and must be uploaded to CAT no later than 6:00AM Eastern, with entries sufficient to support all reports submitted on that trading day (this is a same-day upload requirement whereas order events are required to be reported by 8:00AM Eastern the following trading day).</p>
         <p id="743ff8e4-5972-49eb-aa2e-f98b05ad3b77">Member Dictionary Entry</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Amfq.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z22-1.png"/>
         <p id="b475cfba-2e9e-48e8-b21f-a06b7ae9dbb5">The Inactive status can be used if a Participant wants to report a member who may have been temporarily deactivated. If a member is removed, the member may be reported as Inactive or may be not reported at all.</p>
         <p id="ef0f4495-880f-4a43-9b21-e6834668c4cd">The following example shows a potential member dictionary for exchange Exch1 where the first entry represents an industry member that is also a member of the reporting SRO, the second entry represents an industry member that is not a member of the reporting SRO, and the third entry represents the SRO itself, with various facilities that have been given Member Alias values.</p>
         <p id="0aa63155-678b-4e87-8f2e-b80971b16ccb">{</p>
@@ -311,7 +304,6 @@
           </code>
           <p id="63d5c34b-91fd-4171-8e94-8f7069a8b80d">To add a new issue, an Add Symbol Entry record is submitted. Note that this record is for adding a brand new symbol only - one that has never existed in the CAT system.</p>
           <p id="12280a81-3aed-496c-b0ae-dfa551ea9a12">Add Symbol Entry</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AouS.png"/>
           <p id="07c121bf-9296-4413-a785-791f043a5d39">This record type is to be submitted when a symbol is assigned to a brand new issue for the very first time. The symbol must not be assigned to any other participant in the beginDate, endDate range. The symbol will be brand new, and will be assigned a new and unique internal CAT Symbol ID. It will not be linked to any other symbol.</p>
           <p id="a033ffc6-af12-4f54-8086-6870ef02f124">Once a symbol has been added to the database, it cannot be removed via the API. A request must be made to the CAT support desk to perform such an operation. Even then, a symbol will only be removed if it was a clear error, and the symbol was never activated.</p>
         </div>
@@ -327,8 +319,7 @@
           <p id="7c32eba8-bc98-4e53-862e-4928e2fd719b">An existing symbol can be restated, providing an explicit check that the exchange and CAT have the same information for the symbol. This is accomplished by submitting a Symbol Master Restatement. The fields for a restatement are identical to those for an add. However, it makes explicit the understanding that the symbol is expected to already be present in the system.</p>
           <p id="20bf18aa-f1ec-4c49-9a7c-711445c8b2c7">The values presented in the restatement must exactly match what is in the CAT database, or the record will be rejected.</p>
           <p id="187c7b97-33e3-4812-b4e7-2e48e1e6fd0a">Symbol Master Restatement</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ANm-g.png"/>
-        </div>
+          </div>
         <div id="163977a3-4391-44b1-ab8c-2313940202dc" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>2.2.3. Updating an Issue</h4>
           <code class="topic" id="topic-163977a3-4391-44b1-ab8c-2313940202dc">Topic: CAT Participant Technical Specifications v1.7.1, Reference Data, Equity Symbols, Updating an Issue</code>
@@ -340,7 +331,6 @@
           </code>
           <p id="6c02b9f9-18bd-4817-b2b7-8b1caa145071">An issue is updated when any field of an existing issue needs to be changed. Two Symbol Entry objects are passed. The first represents the expected current state of the symbol entry before being updated, and the second represents the new values for the fields that will be updated. The current state of the database must match the expected symbol entry or the update request will be rejected (when comparing name value pairs, the order in which the name/values appear is not considered). If successful, the database will be changed to reflect the updates requested, and the response will contain a complete updated entry.</p>
           <p id="fdc633b1-8535-41cd-a488-dab3b184835a">Update Symbol Entry</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A8DA.png"/>
           <p id="12a4c9b2-6590-405d-9f41-34668a9ee051">The SRO requesting the update must be the current "owner" (i.e., listing participant) of the symbol. All updates are kept, and the history of updates can be queried for a given CAT Symbol ID or a symbol name. Note that an update request will not allow the listing participant to be changed. To change the listing participant of a symbol, submit a Symbol Master Transfer record.</p>
         </div>
         <div id="91f0b798-2916-4456-9954-3554244d7da1" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
@@ -352,7 +342,6 @@
           </code>
           <p id="8f50d4c6-9c14-4471-a895-61b6d5e1c376">To transfer an existing issue from one listing participant to another, the new ownership participant must submit a Symbol Master Transfer request. The request will be validated for data accuracy, and once validated, a transfer will be scheduled inside the system.</p>
           <p id="8c5f4c65-fc77-4a12-8036-d0016f900935">Symbol Master Transfer</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ACph4.png"/>
           <p id="9c7c304a-5837-4a51-9cd2-54ccb3636ee1">Transfer requests should be submitted prior to the effectiveDate, in which case the transfer will be scheduled for the night before the effectiveDate. If the effectiveDate is the same date as the record submission, then the request will be applied immediately instead of being scheduled. This use pattern may be necessary at times, but is discouraged as it does not leave much time for review of the changes by all parties and opens a potential race condition window.</p>
           <p id="394d6704-e153-492e-9859-052981dc4107">Current owners are encouraged to release the symbol prior to transfer by submitting an Update Symbol Entry record (USE), and setting the endDate to be the last day they are responsible for the issue. This is especially important if there may be a gap between the time the symbol is delisted and resisted by another exchange.</p>
           <p id="59ac900d-22a0-424d-a6c2-f6a78e92a1bb">If the current owner has not submitted an update to their endDate when the transfer is applied, then the current owner's endDate will be automatically updated to be one day prior to the effectiveDate in the transfer request.</p>
@@ -493,7 +482,6 @@
           <p id="ddd99af4-9af1-415c-8d3d-81f830574f48">For example, assume an exchange receives an order for a symbol in the symbology ABC.B, and then routes it to an away exchange, but the away exchange requires the symbol to be represented as ABC B. This exchange would have to process its routing logs to convert each use of ABC B to ABC.B. However, if it loaded a symbol dictionary with a set of aliases, then it could report events with both ABC.B and ABC B and CAT would determine that they meant the same thing.</p>
           <p id="ad6478b0-a2d1-4f51-87ae-773111dd7ebf">Note that the symbol dictionary is completely optional. If each symbol will be reported in all events in its native symbology, then the reporter would not need to upload a symbol dictionary.</p>
           <p id="4d05966f-ce65-4ca3-bd0f-a9e5cc107830">Symbol Dictionary Entry</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ATiW.png"/>
           <p id="e2ead027-d700-4d6a-86e5-790b82508835">In the following example, the reporter (MYID)has three internal mappings for the symbol FOO.A: an internal symbol number (345), and two different symbology values (FOO/A and "FOO A").</p>
           <p id="f5d46679-8878-4d95-9576-857249071d33">{</p>
           <p id="4de22469-518d-4b8c-8b8e-797dffca7d53">"type": "SDE",</p>
@@ -529,7 +517,6 @@
           </code>
           <p id="47b633a7-909b-45b1-a60d-594124b862e5">The dictionary mapping for an option series (flex or simple) will contain the following information, which allows options events to be reported using the Option ID reported in the dictionary entry.</p>
           <p id="3801ab4f-e31a-47c6-8057-0cdd8a23f0ec">Simple Option Series Dictionary Entries</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ACyP.png"/>
           <p id="5ede834b-92f0-4d06-8509-d509702a05b9">For example, the following dictionary entry would be for the January 19, 2018 150.0 Put for BRK class B. Note that the primary deliverable is reported in NYSE symbology because BRK.B is listed on NYSE.</p>
           <p id="efd44f1e-2dcb-46b4-9529-3367f2a83c11">{</p>
           <p id="05379925-cbb7-47fd-b5f9-66ca03384698">"type": "OSDE",</p>
@@ -647,8 +634,6 @@
           <p id="153d8163-2d79-4434-bf18-bc9e396357db">"settlement": "PM"</p>
           <p id="33955f1f-05d3-4a5d-967d-739449a16d1a">}</p>
           <p id="ef7de1ba-1f7a-4c77-b858-e3c5aec4eeb7">The pre- and post-Spinoff JSON Dictionary Entries shown above are also shown in table format below.</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z38-13.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z39-1.png"/>
           <p id="a4ded67b-8318-4da8-98d2-19de2496fd70">A final example demonstrates the impact of the third corporate action event &#8211; the stock split on November 1, 2018.</p>
           <p id="6b8fe7fc-73fc-4935-82d2-72b950c494f0">On November 1, 2018 ABCD undergoes a 3 for 2 stock split. Option contracts in ABCD and ABCD1 are affected. Contracts in ABCD become ABCD2 delivering 150 shares of underlying stock ABCD. Option symbol ABCD2 = 150 ABCD. Contracts in ABCD1 remain ABCD1 and deliver 150 shares ABCD and 10 shares EFGH. Option symbol ABCD1 = 150 ABCD + 10 EFGH. The exchange will again list a new ABCD delivering 100 shares of ABCD stock upon exercise.</p>
           <p id="90b19bbe-043a-49ec-b789-aef382f43428">Before 3:2 Stock Split -- ABCD delivers 100 shares of ABCD. ABCD1 options deliver 100 shares of ABCD + 10 shares EFGH.</p>
@@ -733,7 +718,6 @@
           </code>
           <p id="6cd0b025-f97e-4c3b-98b3-5c366b4b6e00">The dictionary mapping for a complex option will contain the following information. Each complex option can contain multiple legs, where each leg is either an option leg or a stock leg (stock leg will generically refer to equity/exchange-traded fund "ETF").</p>
           <p id="81fa54ad-6592-4990-9683-4bf588d4152f">Complex Option Dictionary Entries</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AsVI0.png"/>
           <p id="36331bba-1785-4f52-9244-b4cabca0db5e">The Option ID must be unique. Duplicate dictionary entries are ignored. Entries that have the same Option ID, but different details are rejected. Any entry which defines the opposite side of an existing entry will be rejected. For example, a complex option dictionary entry to Buy one (1) contract of option 1234 and Sell two (2) contracts of option 4321 is considered to be the "opposite side" of an entry to Sell one (1) contract of option 1234 and Buy two (2) contracts of 4321. Thus, if both were submitted the second would be rejected.</p>
           <p id="95021419-34c4-438e-9422-7565fbd788de">JSON Example</p>
           <p id="236e68f5-0381-4f37-8a00-4f067a7c0731">{</p>
@@ -891,8 +875,7 @@
         <p id="f2f51b71-78a5-4648-9f46-97525d6206db">The Routing Party is a text string that the exchange has assigned to the firm routing the order. Complexity arises when a member is assigned multiple values by the exchange. The determination as to which value is used by both parties depends on protocol-specific information. The text string can be a Member Alias, but there is no restriction that it must be a Member Alias. It can be any string, so long as both the sender of the order and the exchange agree on using the same string for their orders.</p>
         <p id="87c4e638-e70d-42c4-8b35-50b647451074">The Session ID is also exchange-assigned, usually a unique login account, an actual protocol session name, IP/port combination, or some other means of identifying a particular API session. The Session ID identifies the specific session used to route the order. Even in cases where there is only one session in use between reporters, the same non-empty value must be reported in the session field by both parties.</p>
         <p id="8933f53a-3c16-4608-8ecd-81940ee74a81">CAT, in cooperation with each exchange, will determine how the Routing Party, Routed Order ID, and Session ID are derived for each API supported by the exchange. This guidance will be documented and published on the CAT website.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z48-1.png"/>
-      </div>
+        </div>
       <div id="17c8c286-c0db-42d3-90f4-f56f0c7a44e0" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>3.5. Material Terms of an Order</h3>
         <code class="topic" id="topic-17c8c286-c0db-42d3-90f4-f56f0c7a44e0">Topic: CAT Participant Technical Specifications v1.7.1, Special Data Elements and Common Events, Material Terms of an Order</code>
@@ -946,8 +929,7 @@
           Conditional, 
         </code>
         <p id="a474e760-dc71-4bc6-a180-a62960a76110">Subsequent sections describe event types and their fields. Each field will be notated with the abbreviation R, O, C, or r to represent whether it is required, optional, conditional, or required conditionally. This codification will be present in the last column of each table describing an event.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z50-5.png"/>
-      </div>
+        </div>
       <div id="11f8b617-f510-48d1-9ca2-63875e104a7a" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>3.7. Common Events</h3>
         <code class="topic" id="topic-11f8b617-f510-48d1-9ca2-63875e104a7a">Topic: CAT Participant Technical Specifications v1.7.1, Special Data Elements and Common Events, Common Events</code>
@@ -989,7 +971,6 @@
           <p id="e0a51e0d-f00b-472d-991d-16e1f2d63456">&#8220;Self-help&#8221; declarations allow market participants to disregard the protected quotations of trading centers that are experiencing systems problems such as failure, material delay, or malfunction.</p>
           <p id="6d65507a-1cbc-4b73-b8e0-dc984c5424c1">Participants must report to CAT any self-help declarations they make. If a self-help declaration is carried over to the next day, it must be reported again on that day. The following data is required to be reported for Self-Help declarations:</p>
           <p id="8186f29a-9182-48cc-b216-1dfe8aa71f2d">Self-Help Declaration</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AMVd.png"/>
           <p id="b29b291d-b2a2-4558-a573-7d19a30f32be">Both the declared and revoked timestamps can be reported in one single event by including both declaredTimestamp and revokedTimestamp. Alternatively, the declaration and revocation can be reported independently by just including the relevant timestamp in separate events.</p>
         </div>
         <div id="1b437aab-eaa0-4a7e-86f8-41970ed1da6a" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
@@ -1005,7 +986,6 @@
           <p id="e4c83026-3d5e-41b2-848a-e3130fbfa679">This event is used for stock and option trades. If the trade references a stock, then the symbol field must be provided. If the trade references an option, then the optionID field must be provided.</p>
           <p id="c42bc74d-66f1-4fa5-9a0c-f1ff7869b489">The description uses "trade" in a general manner. If the event references a trade, the tradeID field is required. If the event references a fill, the fillID and side are required.</p>
           <p id="1289ad79-d9c3-4b72-bd72-601a76e4548e">Supplemental Trade Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AoqkL.png"/>
           <p id="9bd875bb-b7ff-46d9-af14-493d0322ed19">Lifecycle keys for this event:</p>
           <p id="2800b030-848b-414c-a9c5-356df827cf73">&#8226; Trade Key: date, exchange, symbol, tradeID</p>
           <p id="6c728998-cefe-43ee-a8f3-ece6b3f79737">&#8226; Trade Key: date, exchange, optionID, tradeID</p>
@@ -1038,7 +1018,6 @@
         <p id="a1da210b-f0eb-4b74-aae4-94b4e5e10e61">Note that for the order accepted event, the firm that sends the order to the exchange will be referred to as the routing firm. In the next event, order route event (<a href="#6f7205e0-b2ae-49e1-90cc-bb2a0e7be8f6">section 4.2</a>), the routing broker dealer will also be referred to as the routing firm.</p>
         <p id="6f67c274-4354-45f4-9e3c-0b91a3921df2">The Order ID that is used in orders must be globally unique when combined with the date, exchange, symbol and general side, where the general side is either Buy or Sell.</p>
         <p id="e7cf84e8-7617-4346-b215-e9c96c80a987">Order Accepted</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AhAv.png"/>
         <p id="45634389-a403-4c1f-98cd-7926265d0418">Lifecycle keys for this event:</p>
         <p id="6dacf081-d812-45d4-89cf-c62ab3204a1a">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="454dcef4-116c-40ea-a0f3-266d0641effd">&#8226; Route Link Key: date, symbol, routingParty, routedOrderID, session, exchange</p>
@@ -1058,7 +1037,6 @@
         <p id="d82a0325-bf35-4ab9-950f-f0c0026fa107">The Routing Firm must be represented by an entry in the exchange's member dictionary (though not necessarily a member of the exchange). Furthermore, as explained in the linkage section, both the exchange and the Routing Firm must know which Member Alias is to be reported to CAT because both will have to report the same Member Alias (the exchange in their Route event, and the firm in their Accepted event). Either both sides must use a constant value, or there must be some way to derive the value being used (via session configurations or in the message itself).</p>
         <p id="735ec26a-7cac-4fd0-a728-4efa37e3648f">If the exchange creates a derived order, and passes that order ID to the firm via its API, then the Routed Order ID will be the order ID of the derived order. If, however, there is no derived order and the exchange passes its own internal order ID to the routing broker, then the internal order ID will also be assigned as the Routed Order ID. In this case, both the order ID and the routed order ID are populated with the same value.</p>
         <p id="7352f384-2cb5-4445-a4d9-78d0520de8ce">Order Route</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A5Yx.png"/>
         <p id="ca9201dd-052a-4029-a282-a6eae13e211b">Lifecycle keys for this event:</p>
         <p id="e53e85a0-8369-4cdb-93a5-a1c733c2cb45">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="7c3cd87f-45fd-42d8-9c2a-fe86f0f9dce8">&#8226; Route Link Key: date, symbol, exchange, routedOrderID, session, routingParty</p>
@@ -1073,7 +1051,6 @@
         <p id="e6b5d058-820a-48cc-a1e1-f7506b094fd0">In some cases, an exchange may have multiple internal subsystems involved in handling orders. In such cases, and order may be accepted by one internal system, and then routed to one or more internal systems for processing. Routes within an exchange are not required to be reported to CAT. However, there are cases where it is difficult for an exchange to report the entire status of an order to CAT when its internal processing is handled on multiple systems. Specifically, ensuring that the events contain the same order identifiers would require substantial post processing.</p>
         <p id="e1058168-1a36-441d-94fd-3b49a2923d86">Thus, an internal route event may be reported to CAT, indicating that an order is being passed from one internal system to another. This will allow CAT to link events that are related to the same order within an exchange, even if the exchange has changed the identifiers on the order as it moves between internal systems.</p>
         <p id="ab0b27a6-36a3-4e7c-9fa4-7cc348f3ec64">Internal Order Route</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Alfb.png"/>
         <p id="b5ced867-6a72-4529-8708-df13b201e480">Lifecycle keys for this event:</p>
         <p id="482dce16-d574-47ac-9794-cce24ba45a0e">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="392d8053-18db-49ec-8644-0858ecf28b1d">&#8226; Route Link Key: date, symbol, exchange, routedOrderID, session, routingParty</p>
@@ -1090,7 +1067,6 @@
         <p id="19f025f6-e233-410f-8317-88722bca403a">Some times, during the course of an order modification, a new internal order is generated (with a new order ID) and completely replaces the previous order (though the new order will be linked to the original order). Both of these cases are handled by the Order Modified event. If the order ID remains the same, then the Original Order ID field will be the same. If the order ID changes, then the Order ID field will contain the new internal ID of the order, and the Original Order ID will contain internal ID of the order prior to being replaced.</p>
         <p id="1ec60c89-0a0e-460a-9bf3-72712870ac4e">When a modification is reported, the full state of the order is reported, including those fields which have not changed.</p>
         <p id="bcd2b79c-fb3c-4730-bddf-a86459b35ce5">Order Modified</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AFnJ.png"/>
         <p id="37318c33-4ea5-4142-9027-4aca766e6b86">Lifecycle keys for this event:</p>
         <p id="f6763e26-cbba-4342-a070-ad9316a05b00">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="95baaeec-9d52-4ea7-98a6-c793d0bde206">&#8226; Previous Order Key: date, exchange, symbol, originalOrderID</p>
@@ -1111,7 +1087,6 @@
         <p id="a1abc133-73f5-4d0a-938d-51cfb6d4911d">If either the displayPrice or the displayQty change, they both need to be reported. The only exception is if the displayQty changes from non-zero to zero. In such a case, the displayQty would be reported, but the displayPrice would not be reported since there is no display quantity.</p>
         <p id="61a6ccca-6700-4a31-9697-e790557daba6">This event is meant to capture the most common simple adjustments to orders (e.g., reduction in shares, short-to-long sell, price-only changes). Any modification that cannot be fully represented in this event must be reported via the Order Modified event.</p>
         <p id="c53c0fad-128c-4a47-9c57-18182059585d">Order Adjusted</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AIkS.png"/>
         <p id="e9ddfb94-3966-4239-b43b-de5977e8d3d2">Lifecycle keys for this event:</p>
         <p id="57c4068f-cd06-4c09-9c28-ba8a1f589eb4">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="41bd0456-dd15-43ac-9b54-448554e06d81">&#8226; Previous Order Key: date, exchange, symbol, originalOrderID</p>
@@ -1128,7 +1103,6 @@
         <p id="3954e7e3-5ef4-4cc8-a8ad-0b5fad1cdd28">A Canceled event should be used anytime any part of an order is cancelled. For example, an order can be partially reduced either with a cancel message or a modify (cancel/replace) message. If an actual cancel is processed by the exchange, a Canceled event would be reported. If a modify and/or cancel/replace was sent to the exchange, a Modified event would be reported. This keeps the reported event in line with the original intent.</p>
         <p id="5debae75-d647-4806-b327-5e1893e63614">Some protocols only allow full cancels; partial cancels must be accomplished via a cancel/ replace. In such cases, partial cancels would always be reported as Modified events.</p>
         <p id="b702ddc0-07fa-4dfd-a7f3-544411a0dd32">Order Canceled</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A0E8.png"/>
         <p id="f91e3c29-ea08-4f32-b14d-1d31475000d4">Lifecycle keys for this event:</p>
         <p id="b273aa58-8ec8-4a61-85f3-52956ea8e530">&#8226; Order Key: date, exchange, symbol, orderID</p>
       </div>
@@ -1142,10 +1116,7 @@
         <p id="529bf2e1-7751-4dfd-bb84-739c0faecddb">All trade events are reported to CAT as two-sided transactions, with a single event.</p>
         <p id="460d9d05-22ab-4440-9965-3c66bd63b5ea">Each order trade event is represented with the following details. The details in the table Order Trade Side Details must be populated for each side of the trade.</p>
         <p id="514704e9-1693-4673-9468-f17f4ea07a39">Order Trade Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AOyn.png"/>
         <p id="0a9c7453-6265-425e-865b-8c0dd8b1160e">Order Trade Side Details</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AWk3.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z68-1.png"/>
         <p id="8902cdf6-5ad1-4d9d-8568-78a8cf5a2f09">Lifecycle keys for this event:</p>
         <p id="8bbe5e5e-df00-48da-88b6-a48bc91079cc">&#8226; Order Key: date, exchange, symbol, buyDetails.orderID</p>
         <p id="f5157f15-9961-410c-9041-ad7b9b79c0d7">&#8226; Order Key: date, exchange, symbol, sellDetails.orderID</p>
@@ -1164,7 +1135,6 @@
         </code>
         <p id="c5dbcbde-ff88-4420-a24c-78127a67c4ec">When a routed order executes, the routing firm acquires the position. The exchange will report the fill with the order on one side, and the routing firm on the other side.</p>
         <p id="5d81d9f6-f4d6-490a-8cc0-f4ec0cfb4b61">Order Fill Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ACvK.png"/>
         <p id="f8b3be35-7cc4-4831-8519-6050da9c538c">Lifecycle keys for this event:</p>
         <p id="e4641786-c25b-4143-8a4a-b4182bbf6d57">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="10430bd9-afd6-4fe6-a112-7cf7a9350d37">&#8226; Fill Key: date, exchange, symbol, fillID</p>
@@ -1185,7 +1155,6 @@
         <p id="8888fd06-3959-4717-aff0-347c2483b3bb">Each batch execution needs an identifier (bulkPrintID) which is unique for that set of executions, by date, reporter, and symbol. An event will be reported to CAT for every order that participated in the batch execution.</p>
         <p id="9776f9ad-9bcc-4465-a8d9-ddb46a6fce6c">For example, if the opening cross matched 1,000,000 shares of symbol ABCD across 5,000 buy orders and 4,000 sell orders, then there would be 9,000 Bulk Print Event reports sent to CAT for that cross. Each event would contain the same bulkPrintID, which would uniquely identify that particular cross event. The total of all buy-orders execution quantities should be equal to the total total of all sell-orders execution quantities (in this example, 1,000,000 shares).</p>
         <p id="f573a9a1-5144-42bb-b752-ffbea2a25a5a">Bulk Print Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A_pn.png"/>
         <p id="4b71010b-6615-4afa-ae01-067d71cd1e4b">Lifecycle keys for this event:</p>
         <p id="035a2022-f468-47e6-a29d-e47e41663b47">&#8226; Order Key: date, exchange, symbol, orderID</p>
       </div>
@@ -1201,7 +1170,6 @@
         </code>
         <p id="332d00bb-ef1d-4d16-ad86-281455ce95ed">When an exchange initiates a cancel request on an order it has previously routed away, it must report its intent to cancel, using a Cancel Route Event.</p>
         <p id="f5cbf288-c76a-4b99-84f9-63bb185fb6ec">Order Cancel Route</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Aqsr.png"/>
         <p id="2f68e0b0-a5e3-475c-b293-c7bc4f2831c2">Lifecycle keys for this event:</p>
         <p id="ce238781-a696-4b25-a4a5-5df5e6e4bf8a">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="823b11f0-6fd7-49c7-bf8e-ea120b8d6eaf">&#8226; Route Link Key: date, symbol, exchange, routedOrderID, session, routingParty</p>
@@ -1217,7 +1185,6 @@
         <p id="b78d55b3-fb0c-4d3e-9918-cda80109fe8e">When an exchange initiates a modify or cancel/replace request on an order it has previously routed away, it must report its intent to modify the order, using a Modify Route Event.</p>
         <p id="4ea76629-2bfa-43d5-8230-925e9f097004">If the request does not change the routed order ID, then both routedOrderID and routedOriginalOrderID must be the same.</p>
         <p id="fe696ce8-afac-4704-b771-4a2911e08774">Modify Route</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A_BB.png"/>
         <p id="0115a5b1-cc3b-4b23-a8c3-9fe1c9c230fe">Lifecycle keys for this event:</p>
         <p id="47127f65-1b52-44bc-bbb7-e790574ae869">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="782d1b78-acec-4dc2-9a4f-e5970035e279">&#8226; Route Link Key: date, symbol, exchange, routedOrderID, session, routingParty</p>
@@ -1235,7 +1202,6 @@
         <p id="132bd2d8-a2d7-45e3-a96f-54b55cd374d5">Orders that persist across business days (e.g., GTC orders) must be restated each day before any other activity is reported for that symbol. The restatement is an explicit confirmation that the order is still active in the reporter&#8217;s order book, and also provides an opportunity to use per-day unique order IDs for all orders.</p>
         <p id="d7e528f0-5d05-4f8e-b87b-d43b25e99d25">The attributes of the order will be restated in terms of the order's current state, after any corporate actions have been processed (e.g., if a 2:1 split occurred, the quantity and price would reflect the resulting change).</p>
         <p id="b7a025e8-3009-490e-be2b-25c610b682db">Order Restatement</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AE0u.png"/>
         <p id="6b188867-45d3-41e2-a971-f539ff7e04cd">Lifecycle keys for this event:</p>
         <p id="cc48924a-527d-4462-bde1-0976eb843b57">&#8226; Order Key: date, exchange, symbol, orderID</p>
         <p id="a7d8c4b7-5757-408b-a4ee-f6c6d5f1b958">&#8226; Previous Order Key: originalOrderDate, exchange, symbol, originalOrderID</p>
@@ -1250,7 +1216,6 @@
         </code>
         <p id="49e766b1-0473-426b-af52-9880c5bfe3ee">When a trade is broken, an event is reported to CAT with the appropriate information. Note that CAT adds the event to the history of the order. The broken trade is not removed from the history, as it is something that actually happened and should be recorded.</p>
         <p id="d29ba5b5-9774-47a1-a30f-f0686553b1a2">Order Trade Break</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AVPhe.png"/>
         <p id="9149a412-131e-4cb5-bfa0-bbe95a24c589">Lifecycle keys for this event:</p>
         <p id="14d836b1-d61e-4a70-9a21-df5386f485e8">&#8226; Trade Key: tradeDate, exchange, symbol, tradeID</p>
       </div>
@@ -1282,8 +1247,7 @@
         </code>
         <p id="032f14a5-7289-4c37-b291-847a592b769d">The lifecycle keys for each event are summarized in the following table.</p>
         <p id="6c4e0c51-7342-4b4c-a306-a06739bcda6b">Lifecycle Keys for Equity Events</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ABbbW.png"/>
-      </div>
+        </div>
     </div>
     <div id="0ce1256e-3f06-45a8-bd36-b723aa71af60" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
       <h2>5. Events for Options Exchanges</h2>
@@ -1295,7 +1259,6 @@
       </code>
       <p id="426c67fe-6363-4416-9086-2b00caab2733">These events are specific for options exchanges.</p>
       <p id="6740ec44-5d44-4ae4-a8b8-0dbb66554f04">Events for Options Exchanges</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AnOeS.png"/>
       <div id="17d775f7-94b7-4ed1-960e-c76e7c1750fc" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>5.1. Market Maker Quotes</h3>
         <code class="topic" id="topic-17d775f7-94b7-4ed1-960e-c76e7c1750fc">Topic: CAT Participant Technical Specifications v1.7.1, Events for Options Exchanges, Market Maker Quotes</code>
@@ -1319,7 +1282,6 @@
         <p id="5ae7c37d-3ea1-4f5c-a0f1-119e1bf4720a">Note that all pre-open quotes are still reportable to CAT. This exception is explicitly for those cases where the exchange allows quotes to be sent before they are officially accepted - but those quotes are neither processed, nor entered into the book, nor accepted for participating in the opening nor any other trading session.</p>
         <p id="e3b5fad3-aa81-47a1-a434-1111f653cfe9">Once the system has started accepting quotes (either because a set time has arrived, or it has sent out a message indicating that quotes are now being accepted), then all quotes must be reported. CAT does not have rules in place for when exchanges start accepting quotes, but it seems that all exchanges start accepting quotes at least five minutes before the start of trading.</p>
         <p id="217813bf-311a-4e96-9d1b-56a303bac43e">For example, in the following diagram, an exchange ignores quotes until they send their "Now Accepting Quotes" message. Thereafter all quotes are processed and reported to CAT.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z84-4.png"/>
         <p id="4259418c-9f27-4729-9e73-d7d94587f93c">Similarly, if a quote is rejected and neither accepted nor booked, then the quote should not be reported to CAT.</p>
         <div id="200a3aa6-a3b1-4864-bfcf-c6e2350396d2" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>5.1.1. Quote Event</h4>
@@ -1333,7 +1295,6 @@
           </code>
           <p id="4aed90cc-ee26-47db-8edd-5eab8b40d522">The following data elements are to be reported with all quote events. For two-sided quotes, all bid/ask/price/qty values are required. For one-sided quotes, both the price and quantity fields are required, but only for one side.</p>
           <p id="a6dd9420-4e04-4c58-87bb-31dd5891c04a">Quote Events</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AmUq5.png"/>
           <p id="5ca5bf87-205a-40ce-bc06-9ae8662b4dfc">Lifecycle keys for this event:</p>
           <p id="2dd83b77-3137-4607-a04f-e5129efd7778">&#8226; Quote Key: date, exchange, optionID, quoteID</p>
           <p id="b0f8a38c-5dea-494a-bc16-0a2c1c67dec5">&#8226; Previous Quote Key: date, exchange, optionID, originalQuoteID</p>
@@ -1348,7 +1309,6 @@
           </code>
           <p id="00ed900c-f4a1-4420-88ba-0e0cba634dbd">The following data elements are required for cancel quote events.</p>
           <p id="ba2c14f5-2733-4142-b07a-703d0ffe3502">Quote Cancel Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ANve.png"/>
           <p id="def0f07d-4229-443b-a6fc-d5545279cd7e">Lifecycle keys for this event:</p>
           <p id="d2223814-481f-4a4b-8621-f1896562eb5b">&#8226; Quote Key: date, exchange, optionID, quoteID</p>
         </div>
@@ -1378,7 +1338,6 @@
           <p id="81520a13-6df5-43c9-b7b3-2530038ed8cc">A simple option order can represent either a stand-alone option series, or one leg of a complex parent order. If the order represents a leg of a complex order, then the field Complex Order ID will be set to the Order ID of the parent complex order. If necessary, the event timestamp and sequence number could be the same as those in the parent complex order.</p>
           <p id="f0651892-8c2c-4c56-a665-ac1e460ede98">Fields marked with a lower-case 'r' are required if the event represents a normal option order, and they are conditional if the event represents a leg of a complex order.</p>
           <p id="30c319af-86d5-486d-9bbb-c5eb5fbde591">Simple Option Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Ah-Sx.png"/>
           <p id="b1e803e7-e28b-49a9-890e-4f84a35664f8">Lifecycle keys for this event:</p>
           <p id="2482ae71-ac13-42b0-b17c-7c73e4aabe17">&#8226; Order Key: date, exchange, optionID, orderID</p>
           <p id="b43931c9-f027-425f-a898-2f532c26402d">&#8226; Route Link Key: date, optionID, routingParty, routedOrderID, session, exchange</p>
@@ -1391,8 +1350,6 @@
           <p id="305f3fd3-f81b-4894-afca-56ed5cfec40b">Note that the following fields are conditional in this event. If they are present, then they do not have to appear in the individual order events for option legs, unless the value for a leg would be different from the value in the complex order. In other words, these field values apply to all option legs, unless the option leg contains a different value. If these fields are missing, then the data must be present in each option leg.</p>
           <p id="2e9392df-69c7-4510-a2be-0c2e05627add">coverage, exchOriginCode, executingFirm, cmtaFirm, mktMkrSubAccount</p>
           <p id="bf5490d6-4c90-47ae-90a8-6bd109869caf">Complex Option Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Ao1C.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z92-1.png"/>
           <p id="0bf8553b-f179-43b2-bb99-28daa6fb5dcb">Lifecycle keys for this event:</p>
           <p id="577142aa-7a34-47e7-a119-d3c845935ad9">&#8226; Order Key: date, exchange, optionID, orderID (if not isGloballyUnique)</p>
           <p id="f7c95dbd-75ed-4dea-9462-cd80ee873653">Order Key: date, exchange, orderID (if isGloballyUnique)</p>
@@ -1657,7 +1614,6 @@
         <p id="5b7d73ae-5242-4bfe-a86e-2b4c24d84165">If a trade is corrected in any way, a correction event must be reported to CAT with all details of the trade, after having been corrected. This event must capture the entire state of the trade after having been corrected.</p>
         <p id="4dc613ba-bd85-4c56-90df-c8ca7b51ce46">As with trade breaks, CAT will still keep the original trade, adding the correction to the audit trail of the trade being corrected.</p>
         <p id="62847749-77f8-4276-8d59-463148939093">Options Trade Correction</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AIM1.png"/>
         <p id="b93cb65a-0bf7-4db5-b9ec-0f5a61650669">Lifecycle keys for this event:</p>
         <p id="41ccd712-1d1a-48d8-93f5-61fda7371154">&#8226; Order Key: date, exchange, optionID, buyDetails.orderID</p>
         <p id="84fec445-d10b-461e-84d3-d9472a02ce18">&#8226; Order Key: date, exchange, optionID, sellDetails.orderID</p>
@@ -1676,10 +1632,7 @@
         </code>
         <p id="65f49dec-25fe-48a6-a973-55c3e2433528">The lifecycle keys for each event are summarized in the following table.</p>
         <p id="fbf8eec9-66c3-4377-b290-ab6d3342d3a1">Lifecycle Keys for Option Events</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A0Xo.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z128-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z129-1.png"/>
-      </div>
+        </div>
     </div>
     <div id="abde5fea-12df-4c9d-bf3d-4903f5d6566f" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
       <h2>6. Other Reporting</h2>
@@ -1708,9 +1661,7 @@
         </code>
         <p id="0a5ccd1f-0991-4d71-ba93-a6c1887cc95f">OTC Bulletin Board quote data must be reported to the CAT by FINRA as a CSV with the following fields:</p>
         <p id="ec71a1b8-9bcf-4d49-b4aa-6d432d753838">OTC BB Quote Elements</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ALEPW.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z131-1.png"/>
-      </div>
+        </div>
       <div id="54761f78-df02-41dd-b5ad-216e9916b7dd" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>6.3. FINRA Reporting of Halt/Resume Data</h3>
         <code class="topic" id="topic-54761f78-df02-41dd-b5ad-216e9916b7dd">Topic: CAT Participant Technical Specifications v1.7.1, Other Reporting, FINRA Reporting of Halt/Resume Data</code>
@@ -1720,9 +1671,7 @@
         </code>
         <p id="5f4d9c2c-515f-42f5-9ff8-2d6a5b2c5911">Halt/resume data must be reported to the CAT by FINRA as a CSV with the following fields:</p>
         <p id="348f0985-d1c0-49be-bd8a-5598d5f098e7">FINRA Halt/Resume</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ADPj.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z132-1.png"/>
-      </div>
+        </div>
     </div>
     <div id="9e369e6f-a22e-4984-b267-ae4ae04a4d39" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
       <h2>7. Stock Exchange Event Examples</h2>
@@ -1740,11 +1689,7 @@
           Modified Event, 
         </code>
         <p id="f61aad36-5a32-482a-b507-65089513df28">This section will illustrate examples for an order accepted event, an order modified event, and an order canceled event using the following scenario: A new order is routed to the exchange, accepted by the exchange, updated by the firm that sent the order, and is finally canceled by the exchange.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z133-4.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z133-5.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z134-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z135-1.png"/>
-      </div>
+        </div>
       <div id="c4677b4e-addb-4c7f-a234-21d2526e20f8" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>7.1.1. JSON Examples</h3>
         <code class="topic" id="topic-c4677b4e-addb-4c7f-a234-21d2526e20f8">Topic: CAT Participant Technical Specifications v1.7.1, Stock Exchange Event Examples, JSON Examples</code>
@@ -1753,12 +1698,9 @@
           JSON Examples, 
         </code>
         <p id="8dbfc310-85fb-4d60-b57d-67ef054daef2">Order Accepted Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z135-3.png"/>
         <p id="df9d14ed-dca1-4c27-8376-f3acd858bee4">Order Modified Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z136-2.png"/>
         <p id="0be778cb-d41b-4179-84d9-0e31e3e9b182">Order Canceled Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z136-29.png"/>
-      </div>
+        </div>
     </div>
     <div id="d0f4da76-244c-4cbe-8868-2b3c0611cda8" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
       <h2>7.2. Order Trade Event Example</h2>
@@ -1771,10 +1713,6 @@
       <p id="96d87706-c81c-405c-85af-8e235f3933ed">In this scenario, the exchange is required to report the following events to CAT:</p>
       <p id="44897978-ee2f-4e85-bf20-18800116e0fb">1) Order Accepted Events from each of the orders; and</p>
       <p id="9d5320d1-b976-48eb-a2e9-22e7fb00005e">2) The order trade event</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z137-6.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z137-7.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z138-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z139-1.png"/>
       <div id="0252ba94-ba9e-4c19-87a8-63d8f99ea731" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>7.2.1. JSON Examples</h3>
         <code class="topic" id="topic-0252ba94-ba9e-4c19-87a8-63d8f99ea731">Topic: CAT Participant Technical Specifications v1.7.1, Order Trade Event Example, JSON Examples</code>
@@ -1783,12 +1721,9 @@
           JSON Examples, 
         </code>
         <p id="ee4d6953-5f55-4775-989c-b9d2344fa3c4">Order Accepted Event: Sell</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z140-2.png"/>
         <p id="bfe02c6d-6563-4329-9996-f4ab37c60c5a">Order Accepted Event: Buy</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z140-28.png"/>
         <p id="eed60cb3-951c-4d95-b1b6-c5477a72448b">Order Trade Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z141-2.png"/>
-      </div>
+        </div>
       <div id="ab453444-e16a-438b-b5d2-e16003457358" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>7.3. Order Route and Order Fill Event Examples</h3>
         <code class="topic" id="topic-ab453444-e16a-438b-b5d2-e16003457358">Topic: CAT Participant Technical Specifications v1.7.1, Order Trade Event Example, Order Route and Order Fill Event Examples</code>
@@ -1805,18 +1740,11 @@
         <p id="3c4fdb72-e20c-4baa-abb0-62bb2480cf34">1) Order Accepted Event of the original order,</p>
         <p id="ea9c3891-c589-4798-a657-9cdfec8e5b59">2) The Order Route Event, and</p>
         <p id="18d4d673-2865-49ec-a5cb-f8c09685e6f1">3) The Order Fill Event.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AREa.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z142-5.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z143-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z144-1.png"/>
         <p id="61dfa9c9-3145-4b83-88e9-115abb0a7ee0">JSON Examples</p>
         <p id="0b075c57-088b-4b12-bec2-98ac30e11038">Order Accepted Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z144-4.png"/>
         <p id="55ba6787-e987-4031-b851-ed99cb7830f7">Order Route Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z145-2.png"/>
         <p id="f00e55d6-233f-468d-8ceb-47e252d04169">Order Fill Event</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z145-29.png"/>
-      </div>
+        </div>
       <div id="20be3e21-13cb-48a8-a557-e9e3f872c400" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>7.4. Order Restatement Example</h3>
         <code class="topic" id="topic-20be3e21-13cb-48a8-a557-e9e3f872c400">Topic: CAT Participant Technical Specifications v1.7.1, Order Trade Event Example, Order Restatement Example</code>
@@ -1825,9 +1753,6 @@
           Restated Event, 
         </code>
         <p id="ff9f13b4-923e-4882-96b2-55b44f885e5e">This series of examples shows a restatement of a GTC order before market open the following day. Also it is assumed that a stock split on the symbol ABCD has taken effect, and that this is reflected in the restatement.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-ARj_.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z146-2.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z147-1.png"/>
         <div id="060b8e09-70d6-4e6f-85c4-5dd10d94dac5" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>7.4.1. JSON Examples</h4>
           <code class="topic" id="topic-060b8e09-70d6-4e6f-85c4-5dd10d94dac5">Topic: CAT Participant Technical Specifications v1.7.1, Order Trade Event Example, Order Restatement Example, JSON Examples</code>
@@ -1836,10 +1761,8 @@
             JSON Examples, 
           </code>
           <p id="71534cfb-1781-42fd-a334-ee8ed254f9da">Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z148-1.png"/>
           <p id="d2372a66-1f00-4d78-97e0-32e6f679ad49">Order Restatement Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z148-27.png"/>
-        </div>
+          </div>
       </div>
       <div id="7aa2a608-95d1-4ed1-b7f2-173c13d6a7cb" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>7.5. Order Modified Example</h3>
@@ -1849,9 +1772,6 @@
           Modified Event, 
         </code>
         <p id="e266d06b-0282-40a2-8656-034677222013">This section will show how an order modified event is reported when the order type is changed by the initiating member firm from a limit order to a market order. This series of events will follow the submission of a limit order from a member firm to the exchange, that is subsequently modified by the member firm.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z149-3.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z149-4.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z150-1.png"/>
         <div id="0c872257-4812-468f-866b-aedca7fafaf6" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>7.5.1. JSON Examples</h4>
           <code class="topic" id="topic-0c872257-4812-468f-866b-aedca7fafaf6">Topic: CAT Participant Technical Specifications v1.7.1, Order Trade Event Example, Order Modified Example, JSON Examples</code>
@@ -1860,10 +1780,8 @@
             JSON Examples, 
           </code>
           <p id="1f51ac62-f8a4-4bba-823c-9f9f3ac613f4">Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z151-2.png"/>
           <p id="893d402d-3282-4fd4-80b6-f77a308aa443">Order Modified Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z152-2.png"/>
-        </div>
+          </div>
       </div>
       <div id="92a2dd2b-a315-4020-a26b-13465dfac34b" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>7.6. Order Adjusted Example</h3>
@@ -1873,9 +1791,6 @@
           Order Adjusted Example, 
         </code>
         <p id="100231f5-f4e0-49c6-8a88-97210d80ed72">This section will show how an order adjusted event is reported when a change in the NBBO causes the working price of an order to change. This series of events will follow the route of a peg order followed by an adjustment of the price.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z153-2.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z153-3.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z154-1.png"/>
         <div id="7ca9d6d0-09a9-46f5-bd1b-ccf0cb15209b" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>7.6.1. JSON Examples</h4>
           <code class="topic" id="topic-7ca9d6d0-09a9-46f5-bd1b-ccf0cb15209b">Topic: CAT Participant Technical Specifications v1.7.1, Order Trade Event Example, Order Adjusted Example, JSON Examples</code>
@@ -1884,10 +1799,8 @@
             JSON Examples, 
           </code>
           <p id="70529579-a030-4dff-9ae6-f1ad6ee03837">Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z155-3.png"/>
           <p id="7614a3ca-ec33-40cf-a5db-be46a15b7983">Order Adjusted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z155-29.png"/>
-        </div>
+          </div>
       </div>
     </div>
     <div id="ba94ed3d-ea1e-4a10-a716-20f24ce177fc" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
@@ -1916,20 +1829,12 @@
             Two Sided Quote Examples, 
           </code>
           <p id="fd44a481-dfa9-4167-a86d-633fccda278f">The following section will provide examples of reportable events for a two-sided market maker quote when it is posted as a new quote, updated by the market maker, then canceled by the market maker or the exchange. Both the new quote and the updated quote are expressed by the Quote Event, while the quote cancel is expressed by the Quote Cancel Event.</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z156-7.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z156-8.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z157-1.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z158-1.png"/>
           <p id="f37c0fe7-df6e-46e0-8e78-00374f050b32">8.1.1.1. JSON Examples</p>
           <p id="4c6246c4-6df0-415a-a6df-b7602b208ebe">Quote Event (Step 2)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z158-3.png"/>
           <p id="b1e12f49-4b3a-45bf-b9b0-f087b722bbd7">Quote Event (Step 4)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z159-2.png"/>
           <p id="74d31a06-f06e-42b9-9e07-392bc84e7e0e">Quote Cancel Event (Step 6a)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z159-18.png"/>
           <p id="a5e4cdb3-7c8d-44ea-994b-87000c580e24">Quote Cancel Event (Step 5b)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z159-32.png"/>
-        </div>
+          </div>
         <div id="58e0a04f-a5ca-49a8-9f41-9484db3b4bd7" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>8.1.2. Example One Sided Quotes</h4>
           <code class="topic" id="topic-58e0a04f-a5ca-49a8-9f41-9484db3b4bd7">Topic: CAT Participant Technical Specifications v1.7.1, Options Exchange Event Examples, Quote and Quote Cancel Events, Example One Sided Quotes</code>
@@ -1938,19 +1843,12 @@
             Example One-sided, 
           </code>
           <p id="a5085644-e025-408f-b2d8-09eea107e7d8">The following section will provide examples of reported events for a one-sided market maker quote when it is posted as a new quote, updated by the market maker, then canceled by the market maker or the exchange. Both the new quote and the update are expressed by the Quote Event, while the quote cancel is expressed by the Quote Cancel Event.</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Al8b.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z160-3.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z161-1.png"/>
           <p id="94a82819-a1da-45cd-b283-744763727809">8.1.2.1. JSON Examples</p>
           <p id="444c24c3-5f37-4158-a417-140ccb348b76">Quote Event (Step 2)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z162-2.png"/>
           <p id="c5165a27-ef89-46c6-8098-e3349b5c53ec">Quote Event (Step 4)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z162-16.png"/>
           <p id="c5cd5c11-a186-4e20-b069-04b49f228fca">Quote Cancel Event (Step 6a)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z162-31.png"/>
           <p id="8d19947a-b4fa-4205-9b0a-ee3389dbfb52">Quote Cancel Event (Step 5b)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z163-2.png"/>
-        </div>
+          </div>
       </div>
       <div id="5978c0f8-80d7-40e8-aab6-94f17329079d" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>8.2. Option Order Event Examples</h3>
@@ -1967,10 +1865,7 @@
             Simple Option Order, 
           </code>
           <p id="5e9b1f20-ae9d-4eee-aeb2-cf0e7c95e85e">This example describes a Simple Option Order Accepted Event in which the exchange receives and accepts an order for a simple option. Note that in this example Complex Order ID is not provided because there is no parent complex order.</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z163-18.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z163-19.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z164-1.png"/>
-        </div>
+          </div>
         <div id="6e5b2bd4-8044-413a-bb2c-4eb3824a98a3" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>8.2.1.1. JSON Example</h4>
           <code class="topic" id="topic-6e5b2bd4-8044-413a-bb2c-4eb3824a98a3">Topic: CAT Participant Technical Specifications v1.7.1, Options Exchange Event Examples, Option Order Event Examples, JSON Example</code>
@@ -1979,8 +1874,7 @@
             JSON Examples, 
           </code>
           <p id="33486a00-2220-4119-b3f9-d6a4fa098494">Simple Option Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z165-2.png"/>
-        </div>
+          </div>
         <div id="8c2aff7c-249d-427d-8b31-c8ac9b589ad6" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>8.2.2. Example Complex Option Order Accepted Event</h4>
           <code class="topic" id="topic-8c2aff7c-249d-427d-8b31-c8ac9b589ad6">Topic: CAT Participant Technical Specifications v1.7.1, Options Exchange Event Examples, Option Order Event Examples, Example Complex Option Order Accepted Event</code>
@@ -1990,15 +1884,10 @@
           </code>
           <p id="cf2e5698-5028-4281-992e-9c13019293f1">In the example below, the exchange only creates leg orders at the time an order is executed. Thus, an order on the complex option would have a report sent to CAT for an order accepted event at the parent level of the complex order. Any leg reports would wait until the leg orders are actually created when a trade occurs.</p>
           <p id="7398d235-8cba-4f1c-8b9c-69f1e8efda64">The examples in this section will use an order on the complex option with optionID 9843. This hypothetical complex option has two option series legs:</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z166-4.png"/>
           <p id="219bc134-c0d5-4826-950e-84919768a02a">For this example, we suppose at 192411.121456789 on April 20, 2017 an order was accepted for 10 units of complex option 9843 at net price -65 per unit.</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z166-8.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z166-9.png"/>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z167-1.png"/>
           <p id="6c2ba19f-1e17-4134-8127-320cb75cb652">8.2.2.1. JSON Examples</p>
           <p id="c3fdec43-2cff-4890-b791-74195ca56e9f">Complex Order Accepted Event (Step 3)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z167-3.png"/>
-        </div>
+          </div>
       </div>
       <div id="48876083-07b6-4f8f-97be-8fe4ada6c148" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>8.3. Simple Option Trade Event Examples</h3>
@@ -2008,10 +1897,6 @@
           Simple Option Order, 
         </code>
         <p id="2441a7ff-a567-4300-9851-6052e97ca345">The below section will provide an example of a trade event for an option series where a broker order is executed against an existing market maker quote.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A1sq.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z168-3.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z169-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z170-1.png"/>
         <div id="9cbf691b-966d-4de6-9efb-d30be1ea667a" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>8.3.1. JSON Examples</h4>
           <code class="topic" id="topic-9cbf691b-966d-4de6-9efb-d30be1ea667a">Topic: CAT Participant Technical Specifications v1.7.1, Options Exchange Event Examples, Simple Option Trade Event Examples, JSON Examples</code>
@@ -2020,12 +1905,9 @@
             JSON Examples, 
           </code>
           <p id="878da836-c6c9-4d7e-bf63-ec08afbe36de">Quote Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z170-3.png"/>
           <p id="ac95b8fd-dc4c-498c-818f-ece7aa51dd3c">Simple Option Order Accepted Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z171-2.png"/>
           <p id="98974383-5f5f-415a-a706-5cd569bfd5fa">Option Trade Event</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z172-2.png"/>
-        </div>
+          </div>
       </div>
       <div id="20339d1d-4551-4432-9c10-e8a7346eccd9" class="level4"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
         <h3>8.4. Complex Options Trade Events and Examples</h3>
@@ -2035,7 +1917,6 @@
           Complex Options Trade Events, 
         </code>
         <p id="5ef124ff-5cc6-4424-88ba-234e15c6da09">In all cases, complex option trades are reported to CAT only at the leg level. There is no roll-up trade reported at the complex order level. For example, an order on the complex option (ID 9851) below would have had corresponding orders reported to CAT for each of the underlying legs. As the following examples will show, trades on this complex option will report by leg, with each leg trade event corresponding to an order event on the leg that is in turn attached to a parent-level complex order event.</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z173-3.png"/>
         <p id="712b255c-55f8-45de-a583-cbbf209eed6a">This section follows a series of trade events on the complex option described above, along with examples of the quotes and orders that would be referenced in those trades.</p>
         <p id="d488f6dc-615d-4fe8-b46b-2aced7eac0b6">&#8226; A new market maker quote is posted for the option leg 1491</p>
         <p id="5255d27a-aed2-45b1-a0c4-a8b78fa1d8bf">&#8226; A new market maker quote is posted for the option leg 1492</p>
@@ -2043,14 +1924,7 @@
         <p id="b23041da-0516-4470-b4fc-f35bf9ced5dc">&#8226; A trade on the first option leg 1491 is reported (10 contracts)</p>
         <p id="a611a975-ec5c-40f0-8fd6-b62f06c20a2c">&#8226; A trade on the second option leg 1492 is reported (10 contracts)</p>
         <p id="14ded4a9-12d5-4b3e-bf8f-962d4be31690">&#8226; A route on the stock leg XYZZY is reported (1,000 shares)</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z173-6.png"/>
         <p id="b3b0c5fd-b0c0-4abc-92ec-d12aa0dbb7ef">&#8226; A fill on the stock leg XYZZY is reported (1,000 shares)</p>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z174-2.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z175-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z176-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z177-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z178-1.png"/>
-        <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z179-1.png"/>
         <div id="81d2d9aa-fa62-4302-9bf2-d53715e098d6" class="level5"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
           <h4>8.4.1. JSON Examples</h4>
           <code class="topic" id="topic-81d2d9aa-fa62-4302-9bf2-d53715e098d6">Topic: CAT Participant Technical Specifications v1.7.1, Options Exchange Event Examples, Complex Options Trade Events and Examples, JSON Examples</code>
@@ -2059,26 +1933,16 @@
             JSON Examples, 
           </code>
           <p id="714a45e7-de16-4834-b5c6-a699819234fb">Quote Event (Step 2)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z180-2.png"/>
           <p id="007472bb-f83c-43be-867a-1f4b17b4de50">Quote Event (Step 4)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z180-18.png"/>
           <p id="a7b7d29c-c5de-4423-bae2-8efa76a9f710">Complex Option Order Accepted Event (Step 7)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z181-2.png"/>
           <p id="ad3e4c73-773a-4c6d-950c-baf25c0f71d9">Simple Option Order Accepted Event (Step 8)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z181-19.png"/>
           <p id="0c5d2ff5-950d-4dec-acb8-7578eac4a940">Simple Option Order Accepted Event (Step 9)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z182-2.png"/>
           <p id="e1da12c2-4b93-4603-8577-1a251de05e9c">Stock Leg Order Accepted Event (Step 10)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z182-27.png"/>
           <p id="b7a7c8f5-b7a3-4cd8-93c5-5eb64c180781">Option Trade Event (Step 11)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z183-2.png"/>
           <p id="b964cf97-b3a8-4650-a35a-4e0284c5dfdd">Option Trade Event (Step 12)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z184-2.png"/>
           <p id="cbd6a976-95c3-4c2f-a8b2-1de5b61e12d3">Option Route Event (Step 13)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z185-2.png"/>
           <p id="fd4131a5-ba80-45a8-808f-0c1894d5b5d2">Stock Leg Fill Event (Step 14)</p>
-          <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z185-30.png"/>
-        </div>
+          </div>
       </div>
     </div>
     <div id="d80501da-358a-4837-9d34-4403e0792b52" class="level3"><code class="pubeffdate">pubdate: September 09, 2018 effdate: N/A</code>
@@ -2197,46 +2061,20 @@
       <p id="46efe7d9-58e3-47c2-b34b-ac7be3d40575">C.1. NASDAQ Specifications</p>
       <p id="880b8223-e9a3-4520-9167-db8140abe44c">NASDAQ will submit all data for the day using a single file type, similar to all other file submissions, with the base filename NASDDaily. The file will contain any or all record types listed in this section, and shall be submitted in JSON format. Note that each record type is identified by a type field.</p>
       <p id="d37a6e47-1d06-417d-b4f7-2bf60ea759c2">C.1.1. NASDAQ Equities Daily List - Notes for the Day</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A74iF.png"/>
       <p id="b4f8a06f-f47c-4652-b10f-c78da7b24e61">C.1.2. NASDAQ Equities Daily List</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AkW8.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z194-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z195-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z196-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z197-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z198-1.png"/>
       <p id="3ce08b47-1b49-46de-86a0-e7a776545aa2">C.1.3. NASDAQ Dividends Daily List</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z198-3.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z199-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z200-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z201-1.png"/>
       <p id="61cb0c80-147b-4928-88a3-bb4838747ee3">C.1.4. NASDAQ Next Day X-Rates Daily List</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z201-3.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z202-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z203-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z204-1.png"/>
       <p id="d1f1626d-743a-4011-a3b2-d1bf4141a158">C.2. BATS Specifications</p>
       <p id="b694fcba-5962-4ce4-96fc-e75594ed3498">Bats will submit all reports using one single file type, with the base filename BATSDaily. Each report will be submitted in CSV format, where the first column designates the type of that record. Each record type may have different numbers of columns, but each record of the same type must have all columns in the definition for that record type.</p>
       <p id="4e421772-e1c5-4840-a03f-e988cd49ab99">C.2.1. Header Record</p>
       <p id="6cc2e76c-7dbb-4796-b4af-eff180abd93e">The very first record of the file must be a header record, which provides general information about the submitted records. There must be exactly one header record, which contains the following fields.</p>
       <p id="9bd12e9a-2896-4294-bf1a-7a99d01fd455">Header Record</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Aq0fr.png"/>
       <p id="85c586ce-97ef-44d7-adcc-c53c9e6c6292">C.2.2. Daily Listed Securities Record</p>
       <p id="1b1c68c5-dfe9-48bc-b5a1-5c364e91dee4">Daily Listed Securities Record Fields</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A_2l.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z206-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z207-1.png"/>
       <p id="81d64cd0-c6ff-4e62-b069-69990043ec1d">C.2.3. Daily Distribution Record</p>
       <p id="64f7e5dc-22a7-46f2-9634-70222daa9059">Daily Distribution Record Fields</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A7jU.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z208-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z209-1.png"/>
       <p id="33214b58-4efe-4ee4-ba75-8f8540ca11e6">C.2.4. Daily Corporate Action Record</p>
       <p id="0a0d1e17-d0c6-4bd1-b136-bf3e172be955">Daily Corporate Actions Record Fields</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Alm5.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z210-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z211-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z212-1.png"/>
       <p id="9e3f77dc-2972-4be3-88e3-c5f4032cdb2d">C.3. NYSE Specification</p>
       <p id="f865e7e0-d272-458d-bce3-9d2624ec7169">The NYSE Group Corporate Actions product is comprised of several reports and provides information for equities listed on the NYSE, NYSE MKT and NYSE Arca market centers, including, but not limited to, new listings (for example IPOs, spin-offs and structured product listings), corporate actions, cash dividends, proxy related matters, and so forth.</p>
       <p id="871c1bd0-ff30-4143-9466-36e9fd65d015">NYSE will submit all reports using one single file type, with the base filename NYSEDaily. Each report will be submitted in CSV format, where the first column designates the type of that record. Each record type may have different numbers of columns, but each record of the same type must have all columns in the definition for that record type.</p>
@@ -2244,33 +2082,15 @@
       <p id="2d89dc39-33f2-48bf-ab5f-5a3164ac1e79">C.3.1. NYSE Corporate Actions</p>
       <p id="530916b2-eef5-474d-9e9c-50774c5a5500">The NYSE corporate actions and group ex-date corporate actions will be submitted with a record of this type.</p>
       <p id="6492dd1a-26d9-4d9c-aa16-d236ffe7aa74">NYSE Group Daily Corporate Actions &amp; NYSE Group Ex-Date Corporate Actions</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-Am-g.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z214-1.png"/>
       <p id="23f6d9fb-3495-409c-917e-0dfa748be0f1">C.4. FINRA Daily Specification</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z215-2.png"/>
       <p id="ca912a72-2235-4910-8ea9-071529a4cb56">C.4.1. FINRA Corporate Actions</p>
       <p id="8c00e2c7-165e-4d77-8364-729dba259c66">The layout of the FINRA Corporate Action.</p>
       <p id="6b7ce07f-7ff2-412e-8e00-8059c4d0813f">FINRA OTC Corporate Action</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AcQHK.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z216-1.png"/>
       <p id="9faf43fa-45ca-4e5f-a618-d343624b4f59">The following table contains the valid choices for the field DAILY_LIST_RSN_CD.</p>
       <p id="57c7fe23-2252-4f2f-b7ba-6570b22be9ee">Daily List Reason Codes</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-A8sx.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z217-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z218-1.png"/>
       <p id="ad1fcd60-59c6-426e-95ed-472bdd2848c1">D. FINRA Trade Reporting Facility (TRF) Fields</p>
       <p id="dc03baa4-6307-40b9-91a3-51229aed6c9d">These message types go into the FinraTransactions file kind.</p>
       <p id="c27560f8-a8ef-48a2-848b-89b80574703b">TRF Trade Report Required Fields</p>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-AkWqR.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z220-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z221-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z222-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z223-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z224-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z225-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z226-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z227-1.png"/>
-      <img src="../xml/images/img-732d41dc-406e-11e9-a802-1866da051c2b-z228-1.png"/>
       <p id="e2059b56-b124-427e-868c-50ef440397ba">E. Market Move Scenarios</p>
       <p id="df8e7e01-869c-4ce5-b57a-2949e213195f">This appendix provides guidance on how some common scenarios where a listed symbol can move from one listing participant to another should be handled.</p>
       <p id="b18fea12-f266-4858-b4f2-c71a6adf7997">E.1. Common Scenarios</p>
