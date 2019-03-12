@@ -57,7 +57,7 @@ if (document.getElementById('q')) {
               </button>
             </div>
             <div class="modal-body">
-              <iframe src="/files/{{file_name}}#{{id}}" frameborder="0" height="${iFrameHeight}">
+              <iframe src="files/{{file_name}}#{{id}}" frameborder="0" height="${iFrameHeight}">
             </div>
           </div>
         </div>
