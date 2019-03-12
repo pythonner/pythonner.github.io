@@ -1,4 +1,4 @@
-<html><head><style type="text/css">
+
 			body {
 				font-family: Arial;
 			}
@@ -287,38 +287,4 @@
 				color: silver;
 				border: 1px solid silver;
 				display: inline-table;
-		</style></head><body onload="resizeImg()" text="#000000" bgcolor="#FFFFFF" link="#000099" vlink="#990099" alink="#000099" id="body">
-  <code class="meta">jurisdiction: US</code>
-  <code class="meta">regulatory_authority: US/SEC</code>
-  <code class="meta">content_type: compilation</code>
-  <code class="meta">document_title: OATS to CAT Events Field Level Mapping</code>
-  <code class="meta">document_type: Specifications</code>
-  <code class="meta">source: US/SEC/Specifications/Technical Specifications</code>
-  <code class="meta">source_type: Technical Specifications</code>
-  <code class="meta">language: English</code>
-  <code class="meta">citation: N/A</code>
-  <div id="0358d772-976c-489f-acce-ff2336824f8e" class="level2"><code class="pubeffdate">pubdate: August 15, 2018 effdate: N/A</code>
-    <h1 class="headline">OATS to CAT Events Field Level Mapping</h1>
-    <code class="topic" id="topic-0358d772-976c-489f-acce-ff2336824f8e">Topic: CAT NMS Plan, Technical Specifications, OATS to CAT Events Field Level Mapping</code>
-    <code class="compliance_user">Compliance User: OATS</code>
-    <code class="keywords">Keywords: 
-      CAT Event Types, 
-      Oats Retirement, 
-      CAT Mapping, 
-    </code>
-    <p id="554978d5-c9b8-4187-9ab4-1730ac7a636e">NW_CAT_Mapping</p>
-    
-    <p id="675cee24-2a18-4aba-8a9d-7e496f503e15">RT_CAT_Mapping</p>
-    
-    <p id="7ec487bd-e90a-477f-8288-621bbc19360d">EX_CAT_Mapping</p>
-    
-    <p id="bfb506c2-7286-4917-b46f-32d875488e98">DS_CAT_Maping</p>
-    
-    <p id="d3082b74-9f3b-497b-9c09-96dae9226667">CL_CAT_Mapping</p>
-    
-    <p id="260f8d33-d0af-4b8b-a94d-c309a2cbd4db">CR_CAT_Mapping</p>
-    
-    <p id="936da4e0-5068-477f-9275-3653acf6f7fd">OM_CAT_Mapping</p>
-    
-  </div>
-</body></html>
+		
