@@ -1,290 +1,254 @@
+body, code {
+    font-family: "Source Sans Pro",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 14px;
+}
 
-			body {
-				font-family: Arial;
-			}
+body {
+    background-color: #eee;
+    padding: 20px;
+}
 
-			pre {
-        font-family: Arial;
-			}
+.page_no {
+     font-weight:bold;
+     font-style:italic;
+     text-decoration:none;
+}
 
-			.page_no {
-				font-weight:bold;
-				font-style:italic;
-				text-decoration:none;
-			}
+.highlight {
+     font-weight:bold;
+     background-color:yellow;
+     color:black;
+}
 
-			.highlight {
-				font-weight:bold;
-				background-color:yellow;
-				color:black;
-			}
+.bcitehi {
+     font-weight:bold;
+     background-color:pink;
+     color:black;
+}
 
-			.bcitehi {
-				font-weight:bold;
-				background-color:pink;
-				color:black;
-			}
+.main {
+     text-align:center;
+     font-weight:bold;
+     color:black;
+}
 
-			/*.UNICODE {
-			}
+.ftnote {
+     font-style:italic;
+}
 
-			blockquote {
-			}
+.headline {
+     font-weight:bold;
+     color:black;
+     font-size:1.8em;
+     text-align:center;
+}
 
-			.tableofcontents {
-			}
+p.group {
+     padding-top: 0;
+     padding-bottom: 1px;
+     padding-left: 0;
+     padding-right: 0;
+     margin-top: 0;
+     margin-bottom: 1px;
+     margin-left: 0;
+     margin-right: 0;
+}
 
-			div.blockgroup {
-			}
+.big {
+     font-size: 13pt;
+}
 
-			p {
-			}  */
+.indent {
+     text-indent:2.5em;
+}
 
-			* {
-				font-size: 11pt;
-			}
+.level2 {
+     margin-left:2.5em;
+     margin-right:2.5em;
+}
 
-			.main {
-				text-align:center;
-				font-weight:bold;
-				color:black;
-			}
+.level3 {
+     margin-left:5em;
+     margin-right:5em;
+}
 
-			.ftnote {
-				font-style:italic;
-			}
+.level4 {
+     margin-left:7.5em;
+     margin-right:7.5em;
+}
 
-			.headline {
-				font-weight:bold;
-				color:black;
-				font-size:1.8em;
-				text-align:center;
-			}
+.level5 {
+     margin-left:10em;
+     margin-right:10em;
+}
 
-			p.group{
-				padding-top: 0;
-				padding-bottom: 1px;
-				padding-left: 0;
-				padding-right: 0;
-				margin-top: 0;
-				margin-bottom: 1px;
-				margin-left: 0;
-				margin-right: 0;
-			}
+.level6 {
+     margin-left:12.5em;
+}
 
-			.big {
-				font-size: 13pt;
-			}
+a.sup {
+     font-size: 6pt;
+     vertical-align: top;
+     color: blue;
+}
 
-			.indent {
-				text-indent:2.5em;
-			}
+a.sup1 {
+     font-size: 8pt;
+     vertical-align: top;
+     color: blue;
+}
 
-			.level2 {
-				margin-left:2.5em;
-				margin-right:2.5em;
-			}
+h1.organization {
+     font-weight: bold;
+     text-align:center;
+     font-style: normal;
+}
 
-			.level3 {
-				margin-left:5em;
-				margin-right:5em;
-			}
+h2.organization {
+     font-weight: bold;
+     text-align:left;
+     margin-left:2.5em;
+     margin-right:2.5em;
+}
 
-			.level4 {
-				margin-left:7.5em;
-				margin-right:7.5em;
-			}
+h3.organization {
+     font-weight: bold;
+     text-align:left;
+     margin-left:5em;
+     margin-right:5em;
+}
+ h4.organization {
+     font-weight: bold;
+     text-align:left;
+     margin-left:7.5em;
+     margin-right:5em;
+}
+ h5.organization {
+     font-weight: bold;
+     text-align:left;
+     margin-left:10em;
+     margin-right:5em;
+}
+ h2.citation {
+     font-weight: bold;
+     text-align:left;
+}
+ div.blcitation {
+     font-size: 7pt;
+     text-align:center;
+}
+ ul.dash {
+     list-style-type: none;
+}
+ ul.bullet {
+     list-style-type: disc;
+}
+ ul.none {
+     list-style-type: none;
+}
+ li.off {
+     list-style-type: none;
+}
+ .mypre {
+     font-size: 100%;
+}
+ .TOC {
+     text-align:left;
+     padding:5px;
+     margin:0 auto;
+     color: #000000;
+     font-weight: 500;
+}
+ .TOC hr {
+     color:#339999;
+    /*background-color:#339999;
+    */
+     width:100%;
+     clear: both;
+     border: none;
+}
+ .bluehr {
+     color:#339999;
+    /*background-color:#339999;
+    */
+     width:100%;
+     clear: both;
+     border: none;
+}
+ .headinga {
+     color: #339999;
+     font-size: 20px;
+     font-weight: 500;
+     text-align: center;
+}
+ .tocentry {
+     text-indent:-18px;
+     padding-left:18px;
+     color: #003399;
+     font-weight: 700;
+}
+ .doctext {
+     margin:0 auto;
+     text-align: left;
+}
+ a:link {
+     color: #003399;
+     font-weight: 700;
+}
+ a:visited {
+     color: #660066;
+     font-weight: 700;
+}
+ .fn{
+     padding-left: 50px;
+     font-weight: 500;
+}
+ .fr a:link {
+     color: #003399;
+     font-weight: 600;
+}
+ .fr a:visited {
+     color: #660066;
+     font-weight: 600;
+}
+ .headinga {
+     color: #339999;
+     font-size: 20px;
+     font-weight: 600;
+     text-align: center;
+}
+ .volume {
+     text-align:center;
+     padding:5px;
+     margin:0 auto;
+     color: #000000;
+     font-weight: 500;
+}
+ h2.blcitation {
+     font-size: 7pt;
+     text-align:center;
+     white-space:nowrap;
+}
+ cite.blcitation {
+     white-space:nowrap;
+}
+ table.page_legend {
+     width: 100px;
+     text-align: left;
+     background-color: white;
+     font-family: "Bloomberg Proportional Unicode",sans-serif;
+     font-size: 12px
+}
+ div.page_text {
+     padding-left: 50px;
+     margin:0 0 0 50px;
+     text-align: center;
+     width:100px;
+     font-size: 12px;
+}
+.topic, .keywords, .compliance_user, .meta, .pubeffdate {
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
 
-			.level5 {
-				margin-left:10em;
-				margin-right:10em;
-			}
-
-			.level6 {
-				margin-left:12.5em;
-			}
-
-			a.sup {
-				font-size: 6pt;
-				vertical-align: top;
-				color: blue;
-			}
-
-			a.sup1 {
-				font-size: 8pt;
-				vertical-align: top;
-				color: blue;
-			}
-
-			h1.organization {
-				font-weight: bold;
-				text-align:center;
-				font-style: normal;
-			}
-
-			h2.organization {
-				font-weight: bold;
-				text-align:left;
-				margin-left:2.5em;
-				margin-right:2.5em;
-			}
-
-			h3.organization {
-				font-weight: bold;
-				text-align:left;
-				margin-left:5em;
-				margin-right:5em;
-			}
-
-			h4.organization {
-				font-weight: bold;
-				text-align:left;
-				margin-left:7.5em;
-				margin-right:5em;
-			}
-
-			h5.organization {
-				font-weight: bold;
-				text-align:left;
-				margin-left:10em;
-				margin-right:5em;
-			}
-
-			h2.citation {
-				font-weight: bold;
-				text-align:left;
-			}
-
-			div.blcitation {
-				font-size: 7pt;
-				text-align:center;
-			}
-
-			ul.dash {
-				list-style-type: none;
-			}
-
-			ul.bullet {
-				list-style-type: disc;
-			}
-
-			ul.none {
-				list-style-type: none;
-			}
-
-			li.off {
-				list-style-type: none;
-			}
-
-			.mypre {
-				font-size: 100%;
-			}
-
-			.TOC {
-				text-align:left;
-				padding:5px;
-				margin:0 auto;
-				color: #000000;
-				font-weight: 500;
-			}
-
-			.TOC hr {
-				color:#339999;
-				background-color:#339999;
-				width:100%;
-				clear: both;
-				border: none;
-			}
-
-			.bluehr {
-				color:#339999;
-				background-color:#339999;
-				width:100%;
-				clear: both;
-				border: none;
-			}
-
-			.headinga {
-				color: #339999;
-				font-size: 20px;
-				font-weight: 500;
-				text-align: center;
-			}
-
-			.tocentry {
-				text-indent:-18px;
-				padding-left:18px;
-				color: #003399;
-				font-weight: 700;
-			}
-
-			.doctext {
-				margin:0 auto;
-				text-align: left;
-			}
-
-			a:link {
-				color: #003399;
-				font-weight: 700;
-			}
-
-			a:visited {
-				color: #660066;
-				font-weight: 700;
-			}
-
-			.fn{
-				padding-left: 50 px;
-				font-weight: 550;
-			}
-
-			.fr a:link {
-				color: #003399;
-				font-weight: 600;
-			}
-
-			.fr a:visited {
-				color: #660066;
-				font-weight: 600;
-			}
-
-			.headinga {
-				color: #339999;
-				font-size: 20px;
-				font-weight: 600;
-				text-align: center;
-			}
-
-			.volume {
-				text-align:center;
-				padding:5px;
-				margin:0 auto;
-				color: #000000;
-				font-weight: 500;
-			}
-
-			h2.blcitation {
-				font-size: 7pt;
-				text-align:center;
-				white-space:nowrap;
-			}
-
-			cite.blcitation {
-				white-space:nowrap;
-			}
-
-			table.page_legend {
-					width: 100px;
-					text-align: left;
-					background-color: white;
-					font-family: Bloomberg Proportional Unicode;
-					font-size: 12px
-			}
-			div.page_text {  padding-left: 50 px; margin:0 0 0 50px;  text-align: center;  width:100px; font-size: 12px}
-
-			.topic, .keywords, .compliance_user, .meta, .pubeffdate {
-				font-size: .9em;
-				color: silver;
-				border: 1px solid silver;
-				display: inline-table;
-		
