@@ -48,10 +48,10 @@ if (document.getElementById('sources-graph-container')) {
         },
         series: [{
             name: 'Regulation',
-            data: [15, 23, 14, 7, 12]
+            data: [15, 23, 14, 21, 35]
         }, {
             name: 'News',
-            data: [24, 20, 13, 32, 11]
+            data: [24, 20, 56, 32, 42]
         }]
     });
 }
@@ -105,11 +105,11 @@ if (document.getElementById('topics-graph-container')) {
             }
         },
         series: [{
-            name: 'Topic A',
-            data: [15, 23, 14, 7, 12, 31]
+            name: 'Audit Trail Systems',
+            data: [73, 89, 155, 143, 120, 168]
         }, {
-            name: 'Topic B',
-            data: [24, 20, 13, 32, 11, 4]
+            name: 'CAT NMS Plan',
+            data: [301, 126, 256, 412, 127, 219]
         }]
     });
 }

@@ -133,72 +133,119 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <form class="form-inline mb-2">
-                            <div class="form-group mr-4"><label class="mr-2">Topic Category</label><select class="form-control" style="width: 200px;"><option value="all">All</option></select></div>
-                            <div class="form-group mr-4"><label class="mr-2">Period</label><select class="form-control" style="width: 200px;"><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly" selected="">Monthly</option><option value="yearly">Yearly</option></select></div>
-                        </form>
-                        <div id="topics-graph-container" class="mb-3"></div>
-                        <div class="table-responsive-md table-borderless" id="monitoring-table">
-                            <table class="table table-striped table-bordered table-hover table-sm">
-                                <thead>
-                                    <tr>
-                                        <th>Country</th>
-                                        <th>Authority</th>
-                                        <th>Topic</th>
-                                        <th class="text-center">Today</th>
-                                        <th class="text-center">Week</th>
-                                        <th class="text-center">Month</th>
-                                        <th class="text-center">Year</th>
-                                        <th class="text-center">Alert</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>United States</td>
-                                        <td>U.S. SEC</td>
-                                        <td><a href="#">Topic A</a><i class="fas fa-angle-down ml-2"></i></td>
-                                        <td class="text-center"><a href="#">7</a></td>
-                                        <td class="text-center"><a href="#">78</a></td>
-                                        <td class="text-center"><a href="#">311</a></td>
-                                        <td class="text-center"><a href="#">782</a></td>
-                                        <td class="text-center"><a href="#">Enable</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>United States</td>
-                                        <td>U.S. SEC</td>
-                                        <td class="pl-4">-&nbsp;<a href="#">Topic A Child 1</a></td>
-                                        <td class="text-center"><a href="#">1</a></td>
-                                        <td class="text-center"><a href="#">3</a></td>
-                                        <td class="text-center"><a href="#">6</a></td>
-                                        <td class="text-center"><a href="#">11</a></td>
-                                        <td class="text-center"><a href="#">Weekly</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>United States</td>
-                                        <td>U.S. SEC</td>
-                                        <td class="pl-4">-&nbsp;<a href="#">Topic A Child 2</a></td>
-                                        <td class="text-center"><a href="#">1</a></td>
-                                        <td class="text-center"><a href="#">4</a></td>
-                                        <td class="text-center"><a href="#">12</a></td>
-                                        <td class="text-center"><a href="#">45</a></td>
-                                        <td class="text-center"><a href="#">Daily</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>United States</td>
-                                        <td>U.S. SEC</td>
-                                        <td><a href="#">Topic B</a><i class="fas fa-angle-up ml-2"></i></td>
-                                        <td class="text-center"><a href="#">7</a></td>
-                                        <td class="text-center"><a href="#">78</a></td>
-                                        <td class="text-center"><a href="#">311</a></td>
-                                        <td class="text-center"><a href="#">782</a></td>
-                                        <td class="text-center"><a href="#">Enable</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="form-group mr-4"><label class="mr-2">Topic Category</label><select class="form-control" style="width: 200px;"><option value="all">All</option><option value="ats">Audit Trail Systems</option><option value="">CAT NMS Plan</option></select></div>
+                            <div
+                                class="form-group mr-4"><label class="mr-2">Period</label><select class="form-control" style="width: 200px;"><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly" selected="">Monthly</option><option value="yearly">Yearly</option></select></div>
+                    </form>
+                    <div id="topics-graph-container" class="mb-3"></div>
+                    <div class="table-responsive-md table-borderless" id="monitoring-table">
+                        <table class="table table-striped table-bordered table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Topic</th>
+                                    <th class="text-center">Today</th>
+                                    <th class="text-center">Week</th>
+                                    <th class="text-center">Month</th>
+                                    <th class="text-center">Year</th>
+                                    <th class="text-center">Alert</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Audit Trail Systems</a><i class="fas fa-angle-down ml-2"></i></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">33</a></td>
+                                    <td class="text-center"><a href="#">168<br></a></td>
+                                    <td class="text-center"><a href="#">2,095<br></a></td>
+                                    <td class="text-center"><a href="#">Enable</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">Consolidated Audit Trail (CAT)</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">39</a></td>
+                                    <td class="text-center"><a href="#">425</a></td>
+                                    <td class="text-center"><a href="#">Weekly</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">Electronic Blue Sheets (EBS)</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">30</a></td>
+                                    <td class="text-center"><a href="#">584</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">Large Trader Reporting (LTR)</a></td>
+                                    <td class="text-center"><a href="#">1</a></td>
+                                    <td class="text-center"><a href="#">10</a></td>
+                                    <td class="text-center"><a href="#">53</a></td>
+                                    <td class="text-center"><a href="#">676</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">Order Audit Trail System (OATS)</a></td>
+                                    <td class="text-center"><a href="#">3</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">46</a></td>
+                                    <td class="text-center"><a href="#">410</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">CAT NMS Plan</a><i class="fas fa-angle-down ml-2"></i></td>
+                                    <td class="text-center"><a href="#">12</a></td>
+                                    <td class="text-center"><a href="#">61</a></td>
+                                    <td class="text-center"><a href="#">219<br></a></td>
+                                    <td class="text-center"><a href="#">1,003<br></a></td>
+                                    <td class="text-center"><a href="#">Enable</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">CAT NMS Plan Processor</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">12</a></td>
+                                    <td class="text-center"><a href="#">57</a></td>
+                                    <td class="text-center"><a href="#">163</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">CAT Clock Synchronization</a></td>
+                                    <td class="text-center"><a href="#">6</a></td>
+                                    <td class="text-center"><a href="#">15</a></td>
+                                    <td class="text-center"><a href="#">31</a></td>
+                                    <td class="text-center"><a href="#">364</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">CAT NMS Technical Specifications</a></td>
+                                    <td class="text-center"><a href="#">4</a></td>
+                                    <td class="text-center"><a href="#">10</a></td>
+                                    <td class="text-center"><a href="#">41</a></td>
+                                    <td class="text-center"><a href="#">88</a></td>
+                                    <td class="text-center"><a href="#">Weekly</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">CAT NMS Helpdesk</a></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center"><a href="#">13</a></td>
+                                    <td class="text-center"><a href="#">32</a></td>
+                                    <td class="text-center"><a href="#">134</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4">-&nbsp;<a href="#">CAT NMS Reporting</a></td>
+                                    <td class="text-center"><a href="#">2</a></td>
+                                    <td class="text-center"><a href="#">11</a></td>
+                                    <td class="text-center"><a href="#">58</a></td>
+                                    <td class="text-center"><a href="#">254</a></td>
+                                    <td class="text-center"><a href="#">Daily</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <footer class="text-center d-xl-flex justify-content-xl-center align-items-xl-center bg-dark text-light position-fixed">
         <p class="d-xl-flex m-0">Copyright © 2019 Innodata</p><small><a class="text-light" href="#" style="margin-left: 15px;text-decoration: underline;">Terms of Use</a><span>&nbsp; &nbsp;| &nbsp;&nbsp;</span><a class="text-light" href="#" style="text-decoration: underline;">Privacy Policy</a></small></footer>
