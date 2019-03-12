@@ -33,7 +33,7 @@ if (document.getElementById('q')) {
         <div class="media-body">
           <h5 class="mb-0">
             {{__hitIndex}}.
-            <a data-toggle="modal" href="#document-{{id}}">
+            <a data-toggle="modal" href="#modal-{{objectID}}">
               {{document_title}}
             </a>
           </h5>
@@ -47,7 +47,7 @@ if (document.getElementById('q')) {
           </ol>
         </div>
       </div>
-      <div class="modal fade" tabindex="-1" role="dialog" id="document-{{id}}" aria-hidden="true">
+      <div class="modal fade" tabindex="-1" role="dialog" id="modal-{{objectID}}" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -57,7 +57,7 @@ if (document.getElementById('q')) {
               </button>
             </div>
             <div class="modal-body">
-              <iframe src="files/{{file_name}}#{{id}}" frameborder="0" height="${iFrameHeight}">
+              <iframe src="files/{{file_name}}" frameborder="0" height="${iFrameHeight}">
             </div>
           </div>
         </div>
