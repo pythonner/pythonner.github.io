@@ -27,12 +27,13 @@ if (document.getElementById('q')) {
       })
     );
 
+    var iFrameHeight = Math.max(200, Math.round(window.innerHeight * 0.6));
     var hitTemplate = `
       <div class="media">
         <div class="media-body">
           <h5 class="mb-0">
             {{__hitIndex}}.
-            <a href="files/{{file_name}}#{{id}}">
+            <a data-toggle="modal" href="#document-{{id}}">
               {{document_title}} - {{title}}
             </a>
           </h5>
@@ -45,7 +46,22 @@ if (document.getElementById('q')) {
             {{/effdate}}
           </ol>
         </div>
-    </div>
+      </div>
+      <div class="modal fade" tabindex="-1" role="dialog" id="document-{{id}}" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{document_title}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe src="/files/{{file_name}}#{{id}}" frameborder="0" height="${iFrameHeight}">
+            </div>
+          </div>
+        </div>
+      </div>
     `;
 
     var noResultsTemplate = `
@@ -53,6 +69,12 @@ if (document.getElementById('q')) {
         No results found matching <strong>{{query}}</strong>.
       </div>
     `;
+
+    var dateFormatOptions = {
+      month: 'long',
+      day: '2-digit',
+      year: 'numeric',
+    };
 
     search.addWidget(
       instantsearch.widgets.hits({
@@ -65,12 +87,18 @@ if (document.getElementById('q')) {
         transformData: {
             item: function(item) {
                 item.__hitIndex++;
-                if (item.pubdate === 'N/A') {
-                    item.pubdate = null;
-                }
-                if (item.effdate === 'N/A') {
-                    item.effdate = null;
-                }
+                ['pubdate', 'effdate'].forEach(function(date) {
+                   if (item[date] === 'N/A') {
+                     item[date] = null;
+                   } else if (!!item[date]) {
+                     try {
+                       var dateObj = new Date(item[date]);
+                       item[date] = dateObj.toLocaleDateString('en-US', dateFormatOptions);
+                     } catch (err) {
+                       item[date] = null;
+                     }
+                   }
+                });
                 return item;
             },
         },

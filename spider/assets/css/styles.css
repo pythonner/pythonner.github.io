@@ -102,3 +102,13 @@ footer {
   vertical-align: middle;
 }
 
+#results-container .modal iframe {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  #results-container .modal .modal-dialog {
+    min-width: 1000px;
+  }
+}
+
