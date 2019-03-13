@@ -138,57 +138,151 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Country</label>
-                                                <div class="col"><select class="form-control"><option value="US">United States</option></select></div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Authority</label>
-                                                <div class="col"><select class="form-control"><option value="sec">U.S. SEC</option></select></div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Source</label>
-                                                <div class="col"><select class="form-control"><option value="any" selected="">Any</option><option value="regulation">Regulation</option><option value="news">News</option></select></div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Citation</label>
+                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Sources</label>
                                                 <div class="col">
-                                                    <div class="input-group"><input class="form-control" type="text" placeholder="citation">
-                                                        <div class="input-group-append"><span class="input-group-text"><i class="icon ion-search"></i></span></div>
-                                                    </div>
+                                                    <div class="form-check"><input type="radio" name="source-selection" value="all" checked="" id="include-all-sources" class="form-check-input"><label class="form-check-label" for="include-all-sources">Include all sources</label></div>
+                                                    <div
+                                                        class="form-check"><input type="radio" name="source-selection" value="some" id="include-some-sources" class="form-check-input"><label class="form-check-label mb-2" for="include-some-sources">Include only these sources:</label>
+                                                        <select
+                                                            class="form-control" disabled="">
+                                                            <option value="14">United States</option>
+                                                            </select>
+                                                            <div class="bg-light border rounded-0" style="max-height: 250px;overflow: auto;pointer-events: none;">
+                                                                <div class="table-responsive table-borderless">
+                                                                    <table class="table table-striped table-bordered table-hover table-sm">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th><input type="checkbox" checked=""></th>
+                                                                                <th>Country</th>
+                                                                                <th>Authority</th>
+                                                                                <th>Source</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td>Regulation (All)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Comment Letters</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Concept Releases</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Enforcement Actions</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Exemptive Applications &amp; Orders</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Final Rule Releases</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Interim Final Rules</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Interperative Releases</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Notices &amp; Orders</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- P.C.A.O.B. Rulemaking</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Petitions</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Policy Statements</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Proposed Rule Releases</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- Reports &amp; Other Content</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><input type="checkbox" checked=""></td>
+                                                                                <td>United States</td>
+                                                                                <td>U.S. SEC</td>
+                                                                                <td class="pl-4">- S.R.O. Rulemaking</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Topics</label>
-                                                <div class="col d-flex align-items-center"><span class="badge badge-pill badge-secondary mr-2" style="padding: 9px 10px;">Consolidated Audit Trail<a class="text-white ml-2" href="#"><i class="fas fa-times"></i></a></span><button class="btn btn-primary btn-sm"
-                                                        type="button"><i class="fas fa-plus"></i></button></div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Applicability</label>
-                                                <div class="col"><select class="form-control"><option value="trading">Securities Trading</option></select></div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Format</label>
-                                                <div class="col"><select class="form-control"><option value="standard" selected="">Standard</option><option value="timeline">Timeline</option><option value="comp_chart">Comparative Chart</option><option value="comp_calendar">Compliance Calendar</option></select></div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Options</label>
-                                                <div class="col">
-                                                    <div class="form-check"><input class="form-check-input" type="checkbox" checked="" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Include Law Changes and Horizon</label></div>
-                                                    <div class="form-check"><input class="form-check-input" type="checkbox" checked="" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Include all Related Regulators</label></div>
-                                                    <div class="form-check"><input class="form-check-input" type="checkbox" checked="" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Exclude Enforcement Actions</label></div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Frequency</label>
-                                                <div class="col"><select class="form-control"><option value="available">Update as available</option></select></div>
-                                            </div>
-                                            <div class="form-group text-right"><button class="btn btn-primary" type="button">Create</button></div>
-                                        </form>
                                     </div>
+                                    <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Topics</label>
+                                        <div class="col d-flex align-items-center"><span class="badge badge-pill badge-secondary mr-2" style="padding: 9px 10px;">Registered Representatives<a class="text-white ml-2" href="#"><i class="fas fa-times"></i></a></span><button class="btn btn-primary btn-sm"
+                                                type="button"><i class="fas fa-plus"></i></button></div>
+                                    </div>
+                                    <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Applicability</label>
+                                        <div class="col"><select class="form-control"><option value="trading">Securities Trading</option></select></div>
+                                    </div>
+                                    <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Format</label>
+                                        <div class="col"><select class="form-control"><option value="standard" selected="">Standard</option><option value="timeline">Timeline</option><option value="comp_chart">Comparative Chart</option><option value="comp_calendar">Compliance Calendar</option></select></div>
+                                    </div>
+                                    <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Frequency</label>
+                                        <div class="col"><select class="form-control"><option value="available">Update as available</option></select></div>
+                                    </div>
+                                    <div class="form-group text-right"><button class="btn btn-primary" type="button">Create</button></div>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="col-md-4 offset-md-1">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="mb-0">Recent Reports Created</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <ul class="list-unstyled card-text">
-                                            <li><em>Mar 6 2019</em><a href="#" class="ml-2">SEC Rule 631 Tracking</a></li>
-                                        </ul>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 offset-md-1">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Recent Reports Created</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled card-text">
+                                        <li><em>Mar 6 2019</em><a href="#" class="ml-2">SEC Rule 631 Tracking</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -196,6 +290,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <footer class="text-center d-xl-flex justify-content-xl-center align-items-xl-center bg-dark text-light position-fixed">
         <p class="d-xl-flex m-0">Copyright © 2019 Innodata</p><small><a class="text-light" href="#" style="margin-left: 15px;text-decoration: underline;">Terms of Use</a><span>&nbsp; &nbsp;| &nbsp;&nbsp;</span><a class="text-light" href="#" style="text-decoration: underline;">Privacy Policy</a></small></footer>
