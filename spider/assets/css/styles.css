@@ -112,3 +112,7 @@ footer {
   }
 }
 
+body {
+  overflow-y: overlay;
+}
+
