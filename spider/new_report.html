@@ -144,12 +144,25 @@
                                             <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Authority</label>
                                                 <div class="col"><select class="form-control"><option value="sec">U.S. SEC</option></select></div>
                                             </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Citation</label>
-                                                <div class="col"><select class="form-control"><option value="631">Rule 631</option></select></div>
+                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Source</label>
+                                                <div class="col"><select class="form-control"><option value="any" selected="">Any</option><option value="regulation">Regulation</option><option value="news">News</option></select></div>
                                             </div>
-                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Keywords</label>
+                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Citation</label>
+                                                <div class="col">
+                                                    <div class="input-group"><input class="form-control" type="text" placeholder="citation">
+                                                        <div class="input-group-append"><span class="input-group-text"><i class="icon ion-search"></i></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Topics</label>
                                                 <div class="col d-flex align-items-center"><span class="badge badge-pill badge-secondary mr-2" style="padding: 9px 10px;">Consolidated Audit Trail<a class="text-white ml-2" href="#"><i class="fas fa-times"></i></a></span><button class="btn btn-primary btn-sm"
                                                         type="button"><i class="fas fa-plus"></i></button></div>
+                                            </div>
+                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Applicability</label>
+                                                <div class="col"><select class="form-control"><option value="trading">Securities Trading</option></select></div>
+                                            </div>
+                                            <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Format</label>
+                                                <div class="col"><select class="form-control"><option value="standard" selected="">Standard</option><option value="timeline">Timeline</option><option value="comp_chart">Comparative Chart</option><option value="comp_calendar">Compliance Calendar</option></select></div>
                                             </div>
                                             <div class="form-group row mb-2"><label class="text-right col-form-label col-md-3">Options</label>
                                                 <div class="col">
@@ -169,7 +182,7 @@
                             <div class="col-md-4 offset-md-1">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="mb-0">Recent Tracking Reports</h5>
+                                        <h5 class="mb-0">Recent Reports Created</h5>
                                     </div>
                                     <div class="card-body">
                                         <ul class="list-unstyled card-text">
