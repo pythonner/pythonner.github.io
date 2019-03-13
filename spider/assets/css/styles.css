@@ -116,3 +116,7 @@ body {
   overflow-y: overlay;
 }
 
+#feeds-list td {
+  vertical-align: middle;
+}
+

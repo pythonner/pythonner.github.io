@@ -132,7 +132,99 @@
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body text-center">
-                        <h3 class="card-title mb-0">User feeds settings.</h3>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <form class="form-inline">
+                                <div class="form-group"><label class="mr-2">Country</label><select class="form-control" style="width:200px"><option value="us">United States</option></select></div>
+                            </form><span>Call <a href="tel:18888888888">1-888-888-8888<i class="icon ion-iphone ml-1"></i></a>&nbsp;for Support</span></div>
+                        <div class="table-responsive" id="feeds-list">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th>Authority</th>
+                                        <th>Feed</th>
+                                        <th class="text-left">Status</th>
+                                        <th>Frequency</th>
+                                        <th>Type</th>
+                                        <th>Last Update</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>United States</td>
+                                        <td>All</td>
+                                        <td><a href="#">U.S. Sources (All)</a></td>
+                                        <td class="text-left">
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-1" checked="" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Inactive</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-1" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Active</label></div>
+                                        </td>
+                                        <td><select disabled="" class="form-control"><option value="available">As Available</option><option value="twice_daily">Daily (AM &amp; PM)</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></td>
+                                        <td><select disabled="" class="form-control"><option value="14">Batch</option></select></td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>United States</td>
+                                        <td>U.S. FEDERAL</td>
+                                        <td><a href="#">U.S. Federal &amp; SRO (All)</a></td>
+                                        <td class="text-left">
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-2" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Inactive</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-2" checked="" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Active</label></div>
+                                        </td>
+                                        <td><select class="form-control"><option value="available">As Available</option><option value="twice_daily">Daily (AM &amp; PM)</option><option value="daily" selected="">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></td>
+                                        <td><select class="form-control"><option value="14">Batch</option></select></td>
+                                        <td>Mar 15 2019 7:00am EST</td>
+                                    </tr>
+                                    <tr>
+                                        <td>United States</td>
+                                        <td>U.S. STATE</td>
+                                        <td><a href="#">U.S. State Sources (All)</a></td>
+                                        <td class="text-left">
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-3" checked="" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Inactive</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-3" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Active</label></div>
+                                        </td>
+                                        <td><select disabled="" class="form-control"><option value="available">As Available</option><option value="twice_daily">Daily (AM &amp; PM)</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></td>
+                                        <td><select disabled="" class="form-control"><option value="14">Batch</option></select></td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>United States</td>
+                                        <td>U.S. SEC</td>
+                                        <td><a href="#">U.S. SEC (All)</a></td>
+                                        <td class="text-left">
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-4" checked="" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Inactive</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-4" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Active</label></div>
+                                        </td>
+                                        <td><select disabled="" class="form-control"><option value="available">As Available</option><option value="twice_daily">Daily (AM &amp; PM)</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></td>
+                                        <td><select disabled="" class="form-control"><option value="14">Batch</option></select></td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>United States</td>
+                                        <td>U.S. SRO</td>
+                                        <td><a href="#">U.S. SRO (All)</a></td>
+                                        <td class="text-left">
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-5" checked="" id="formCheck-9"><label class="form-check-label" for="formCheck-9">Inactive</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-5" id="formCheck-10"><label class="form-check-label" for="formCheck-10">Active</label></div>
+                                        </td>
+                                        <td><select disabled="" class="form-control"><option value="available">As Available</option><option value="twice_daily">Daily (AM &amp; PM)</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></td>
+                                        <td><select disabled="" class="form-control"><option value="14">Batch</option></select></td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>United States</td>
+                                        <td>U.S. SRO</td>
+                                        <td><a href="#">FINRA Regulation</a></td>
+                                        <td class="text-left">
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-6" checked="" id="formCheck-11"><label class="form-check-label" for="formCheck-11">Inactive</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio" name="feed-6" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Active</label></div>
+                                        </td>
+                                        <td><select disabled="" class="form-control"><option value="available">As Available</option><option value="twice_daily">Daily (AM &amp; PM)</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="yearly">Yearly</option></select></td>
+                                        <td><select disabled="" class="form-control"><option value="14">Batch</option></select></td>
+                                        <td>--</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
