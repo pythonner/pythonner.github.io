@@ -34,7 +34,7 @@ if (document.getElementById('q')) {
           <h5 class="mb-0">
             {{__hitIndex}}.
             <a data-toggle="modal" href="#document-{{id}}">
-              {{document_title}} - {{title}}
+              {{document_title}}
             </a>
           </h5>
           <ol class="document-dates text-muted pl-2">
