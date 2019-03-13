@@ -120,3 +120,7 @@ body {
   vertical-align: middle;
 }
 
+#hits .media h5 {
+  font-weight: normal;
+}
+

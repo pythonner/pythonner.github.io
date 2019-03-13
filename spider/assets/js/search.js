@@ -37,7 +37,7 @@ if (document.getElementById('q')) {
               {{document_title}}
             </a>
           </h5>
-          <ol class="document-dates text-muted pl-2">
+          <ol class="document-dates pl-2">
             {{#pubdate}}
             <li>Published: {{pubdate}}</li>
             {{/pubdate}}
