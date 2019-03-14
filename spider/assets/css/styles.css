@@ -124,3 +124,38 @@ body {
   font-weight: normal;
 }
 
+.forum-table thead tr th {
+  border: 1px solid #373a3c;
+  border-bottom: 0;
+}
+
+.forum-table tbody tr.subheader td {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
+.forum-table tbody tr.forum-list td {
+  border-bottom: 0;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+
+.forum-table tbody tr.forum-list:last-child td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.forum-table tbody tr td {
+  vertical-align: middle;
+}
+
+.forum-table tbody tr td:first-child {
+  width: 60%;
+}
+
+.forum-table tbody tr td:last-child {
+  width: 25%;
+}
+
