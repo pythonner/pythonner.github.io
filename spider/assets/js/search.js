@@ -2,8 +2,8 @@ if (document.getElementById('q')) {
     /* global instantsearch */
 
     var search = instantsearch({
-      appId: '95DVATT6CT',
-      apiKey: '351c572afbb661b6120c8ec22ccda01e',
+      appId: 'PH1RESW6XC',
+      apiKey: '53d499dea359bf7e18c269df37553e95',
       indexName: 'dev_SPIDER',
       urlSync: {}
     });
