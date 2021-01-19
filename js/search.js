@@ -3,7 +3,7 @@
 var search = instantsearch({
   appId: '3IMV4A54L6',
   apiKey: '14764fe83aec89f7335d3f2c85b21774',
-  indexName: 'open_data_v3',
+  indexName: 'open_data_v4',
   urlSync: {}
 });
 
