@@ -11581,6 +11581,16 @@ html.boxed .page {
   content: "\f1db";
 }
 
+
+.fa-user-check:before {
+  content: "\f4fc";
+}
+
+.fa-sports:before {
+  content: "\f1e3";
+}
+
+
 .fa-header:before {
   content: "\f1dc";
 }
